@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof de Basse - Apprendre la basse en ligne</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(26, 26, 46, 0.95);
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FF6B35;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .hero {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #FF6B35, #F7B267);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            color: #b4b4b4;
+            margin-bottom: 2rem;
+        }
+        .section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border: 2px solid rgba(255, 107, 53, 0.3);
+        }
+        h2 {
+            color: #F7B267;
+            margin-bottom: 1rem;
+        }
+        .info {
+            background: rgba(0, 123, 255, 0.1);
+            border: 1px solid rgba(0, 123, 255, 0.3);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        a {
+            color: #FF6B35;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: #888;
+            margin-top: 5rem;
+        }
+        ul {
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+        li {
+            margin: 0.5rem 0;
+        }
+        code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>🎸</span>
+                <span>Prof de Basse</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Apprenez la Basse Électrique</h1>
+        <p>Une méthode interactive et progressive pour maîtriser la basse</p>
+    </section>
+
+    <section class="section">
+        <div class="box">
+            <h2>🚀 Site en construction</h2>
+            <p>Votre système de génération automatique est configuré !</p>
+            
+            <div class="info">
+                <p><strong>📝 Pour que vos leçons apparaissent automatiquement :</strong></p>
+                <ol style="margin-left: 2rem; margin-top: 1rem;">
+                    <li>Créez des dossiers nommés <code>Niveau-1</code>, <code>Niveau-2</code>, etc.</li>
+                    <li>Ajoutez vos fichiers de leçons <code>.html</code> dans ces dossiers</li>
+                    <li>L'index se régénèrera automatiquement et listera toutes vos leçons !</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>📚 Structure recommandée</h2>
+            <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px; overflow-x: auto;">
+Prof-de-basse/
+├── index.html              # Cette page
+├── Niveau-1/               # Créez ce dossier
+│   ├── lecon-1.html
+│   ├── lecon-2.html
+│   └── ...
+├── Niveau-2/               # Créez ce dossier
+│   ├── lecon-1.html
+│   └── ...
+└── audio/                  # Optionnel
+    └── ...
+            </pre>
+        </div>
+
+        <div class="box">
+            <h2>🔗 Liens utiles</h2>
+            <ul>
+                <li><a href="https://github.com/11drumboy11/Prof-de-basse">📁 Repository GitHub</a></li>
+                <li><a href="https://github.com/11drumboy11/Prof-de-basse/actions">⚙️ GitHub Actions</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Prof de Basse - Créé avec ❤️</p>
+    </footer>
+</body>
+</html>
