@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Méthodes - Prof de Basse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: #FF6B35;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .back-link:hover {
+            background: #FF6B35;
+            color: white;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #FF6B35;
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            color: #b4b4b4;
+            font-size: 1.2rem;
+        }
+        .section {
+            margin-bottom: 4rem;
+        }
+        .section-title {
+            font-size: 2rem;
+            color: #F7B267;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(247, 178, 103, 0.3);
+        }
+        .methods-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .method-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 107, 53, 0.3);
+            transition: all 0.3s;
+        }
+        .method-card:hover {
+            transform: translateY(-5px);
+            border-color: #FF6B35;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+        }
+        .method-card h3 {
+            color: #FF6B35;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .method-card p {
+            color: #b4b4b4;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .mp3-count {
+            display: inline-block;
+            background: rgba(255, 107, 53, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            color: #F7B267;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .method-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .method-link {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #FF6B35;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        .method-link:hover {
+            background: #ff5522;
+            transform: translateY(-2px);
+        }
+        .method-link.secondary {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .method-link.secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .realbook-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .realbook-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 2px solid rgba(247, 178, 103, 0.3);
+            transition: all 0.3s;
+        }
+        .realbook-item:hover {
+            border-color: #F7B267;
+            transform: translateX(5px);
+        }
+        .realbook-item h4 {
+            color: #F7B267;
+            margin-bottom: 0.5rem;
+        }
+        .realbook-item a {
+            color: #FF6B35;
+            text-decoration: none;
+        }
+        .realbook-item a:hover {
+            text-decoration: underline;
+        }
+        .info-box {
+            background: rgba(0, 123, 255, 0.1);
+            border: 1px solid rgba(0, 123, 255, 0.3);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        .info-box h3 {
+            color: #5db7ff;
+            margin-bottom: 1rem;
+        }
+        .info-box p {
+            color: #b4b4b4;
+            line-height: 1.8;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .methods-grid,
+            .realbook-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../" class="back-link">← Retour à l'accueil</a>
+        
+        <header>
+            <h1>📚 Méthodes & Ressources</h1>
+            <p class="subtitle">Méthodes complètes, realbooks et fichiers d'accompagnement</p>
+        </header>
+
+        <div class="info-box">
+            <h3>💡 Note importante</h3>
+            <p>Chaque méthode inclut des fichiers audio MP3 pour l'accompagnement. Les exercices sont numérotés et correspondent aux pistes audio pour faciliter la pratique.</p>
+        </div>
+
+        <!-- Méthodes avec MP3 -->
+        <section class="section">
+            <h2 class="section-title">🎵 Méthodes avec accompagnements MP3</h2>
+            
+            <div class="methods-grid">
+                <!-- 70 Funk & Disco Bass -->
+                <div class="method-card">
+                    <h3>70s Funk & Disco Bass</h3>
+                    <div class="mp3-count">🎧 99 pistes MP3</div>
+                    <p>Méthode complète de basse funk et disco des années 70. Tous les styles essentiels avec backing tracks professionnels.</p>
+                    <div class="method-links">
+                        <a href="'70s Funk & Disco Bass_avec_liens.html" class="method-link">📖 Voir la méthode</a>
+                        <a href="70 Funk & Disco bass MP3/" class="method-link secondary">🎵 Fichiers MP3</a>
+                    </div>
+                </div>
+
+                <!-- Jon Liebman Funk Fusion -->
+                <div class="method-card">
+                    <h3>Jon Liebman - Funk Fusion Bass</h3>
+                    <div class="mp3-count">🎧 99 pistes MP3</div>
+                    <p>Méthode de référence pour le funk fusion. Techniques avancées et grooves complexes avec accompagnements de qualité studio.</p>
+                    <div class="method-links">
+                        <a href="Jon Liebman - Funk Fusion Bass_avec_liens.html" class="method-link">📖 Voir la méthode</a>
+                        <a href="John Liebman Funk Fusion Mp3/" class="method-link secondary">🎵 Fichiers MP3</a>
+                    </div>
+                </div>
+
+                <!-- Paul Westwood Bass Bible Vol 1 -->
+                <div class="method-card">
+                    <h3>Paul Westwood - Bass Bible Vol 1</h3>
+                    <div class="mp3-count">🎧 92 pistes MP3</div>
+                    <p>Histoire mondiale des styles et techniques. Du blues au reggae en passant par le funk et la soul. Référence absolue.</p>
+                    <div class="method-links">
+                        <a href="Paul westwood MP3/Paul Westwood 1/Bass Bible Vol 1 - World History Of Styles & Techniques [Disc 1]/" class="method-link secondary">🎵 Fichiers MP3</a>
+                    </div>
+                </div>
+
+                <!-- Paul Westwood Bass Bible Vol 2 -->
+                <div class="method-card">
+                    <h3>Paul Westwood - Bass Bible Vol 2</h3>
+                    <div class="mp3-count">🎧 73 pistes MP3</div>
+                    <p>Suite de la Bass Bible. Musiques africaines, slap, fretless, harmoniques naturelles et techniques modernes.</p>
+                    <div class="method-links">
+                        <a href="Paul westwood MP3/Paul Westwood 2/Bass Bible Vol 2 - World History Of Styles (Book)/" class="method-link secondary">🎵 Fichiers MP3</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Realbooks -->
+        <section class="section">
+            <h2 class="section-title">📖 Realbooks</h2>
+            <p style="color: #b4b4b4; margin-bottom: 2rem;">Collections de standards avec tablatures et partitions. Idéal pour élargir votre répertoire.</p>
+            
+            <div class="realbook-list">
+                <!-- Jazz Fake Book -->
+                <div class="realbook-item">
+                    <h4>Aebersold - The Jazz Fake Book</h4>
+                    <p style="color: #b4b4b4; margin-bottom: 0.5rem;">Standards de jazz essentiels</p>
+                    <a href="Reabook/Aebersold - The Jazz Fake Book_part1_avec_liens.html">→ Partie 1</a><br>
+                    <a href="Reabook/Aebersold - The Jazz Fake Book_part2_avec_liens.html">→ Partie 2</a>
+                </div>
+
+                <!-- Realbook Bass F -->
+                <div class="realbook-item">
+                    <h4>Realbook Bass F</h4>
+                    <p style="color: #b4b4b4; margin-bottom: 0.5rem;">Realbook complet pour basse</p>
+                    <a href="Reabook/Realbook Bass F_part1_avec_liens.html">→ Partie 1</a><br>
+                    <a href="Reabook/Realbook Bass F_part2_avec_liens.html">→ Partie 2</a><br>
+                    <a href="Reabook/Realbook Bass F_part3_avec_liens.html">→ Partie 3</a>
+                </div>
+
+                <!-- Real Rock Book -->
+                <div class="realbook-item">
+                    <h4>The Real Rock Book</h4>
+                    <p style="color: #b4b4b4; margin-bottom: 0.5rem;">Classiques du rock</p>
+                    <a href="Reabook/The_Real_Rock_Book_part1_avec_liens.html">→ Partie 1</a><br>
+                    <a href="Reabook/The_Real_Rock_Book_part2_avec_liens.html">→ Partie 2</a><br>
+                    <a href="Reabook/The_Real_Rock_Book_part3_avec_liens.html">→ Partie 3</a>
+                </div>
+
+                <!-- Volume 2 Contrebasse -->
+                <div class="realbook-item">
+                    <h4>Volume 2 - Contrebasse</h4>
+                    <p style="color: #b4b4b4; margin-bottom: 0.5rem;">Standards pour contrebasse</p>
+                    <a href="Reabook/Volume-2-contrebasse_part1_avec_liens.html">→ Partie 1</a><br>
+                    <a href="Reabook/Volume-2-contrebasse_part2_avec_liens.html">→ Partie 2</a><br>
+                    <a href="Reabook/Volume-2-contrebasse_part3_avec_liens.html">→ Partie 3</a>
+                </div>
+
+                <!-- Realbook Volume 3 -->
+                <div class="realbook-item">
+                    <h4>Realbook Volume 3-C</h4>
+                    <p style="color: #b4b4b4; margin-bottom: 0.5rem;">Collection de standards</p>
+                    <a href="Reabook/realbook Volume-3-C_avec_liens.html">→ Accéder</a>
+                </div>
+
+                <!-- Aebersold French -->
+                <div class="realbook-item">
+                    <h4>Aebersold - FRENCH</h4>
+                    <p style="color: #b4b4b4; margin-bottom: 0.5rem;">Version française</p>
+                    <a href="aebersold-FRENCH_avec_liens.html">→ Accéder</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section d'information -->
+        <section class="section">
+            <div style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 15px; border: 2px solid rgba(255, 107, 53, 0.3);">
+                <h2 style="color: #F7B267; margin-bottom: 1.5rem;">🎯 Comment utiliser ces ressources</h2>
+                <div style="color: #b4b4b4; line-height: 1.8;">
+                    <p style="margin-bottom: 1rem;"><strong style="color: #FF6B35;">1. Méthodes avec MP3 :</strong> Consultez le document HTML de la méthode, puis utilisez les fichiers MP3 correspondants pour jouer avec l'accompagnement.</p>
+                    
+                    <p style="margin-bottom: 1rem;"><strong style="color: #FF6B35;">2. Realbooks :</strong> Parcourez les standards, choisissez un morceau et travaillez-le à votre rythme.</p>
+                    
+                    <p style="margin-bottom: 1rem;"><strong style="color: #FF6B35;">3. Organisation :</strong> Les exercices et pistes MP3 sont numérotés de façon cohérente pour faciliter votre pratique.</p>
+                    
+                    <p><strong style="color: #FF6B35;">💡 Astuce :</strong> Commencez par les méthodes Funk & Disco ou Funk Fusion qui sont très complètes et progressives.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
