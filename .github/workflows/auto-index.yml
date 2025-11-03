@@ -1,0 +1,57 @@
+name: Auto-Generate Index Files
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch:  # Permet de lancer manuellement
+
+jobs:
+  generate-indexes:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Récupère tout l'historique
+      
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: 📊 Scan repository structure
+        run: |
+          echo "🔍 Scanning repository..."
+          find . -name "*.mp3" -o -name "*.MP3" | wc -l
+          find . -name "*.png" -o -name "*.jpg" | wc -l
+      
+      - name: 🎸 Generate index.html files
+        run: |
+          python3 .github/scripts/auto-index-generator.py
+      
+      - name: 📝 Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet || echo "changes=true" >> $GITHUB_OUTPUT
+      
+      - name: 💾 Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "🤖 Auto-generate index.html files [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: ✅ Success
+        run: |
+          echo "✅ Index files generated successfully!"
