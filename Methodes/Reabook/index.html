@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reabook - Prof de Basse</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+        }
+        header h1 { font-size: 32px; margin-bottom: 10px; }
+        .breadcrumb {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+        }
+        main { padding: 30px; }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .item-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .item-card:hover {
+            background: #e8eaf6;
+            transform: translateX(5px);
+        }
+        .item-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .item-meta {
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📁 Reabook</h1>
+            <div class="breadcrumb">
+                <a href="/">🏠 Accueil</a> / Methodes/Reabook
+            </div>
+        </header>
+        
+        <main>
+
+            <div class="section">
+                <div class="section-title">📄 Fichiers</div>
+                <div class="item-grid">
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/Aebersold - The Jazz Fake Book_part1_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 Aebersold - The Jazz Fake Book_part1_avec_liens.html</div>
+                        <div class="item-meta">87.2 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/Aebersold - The Jazz Fake Book_part2_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 Aebersold - The Jazz Fake Book_part2_avec_liens.html</div>
+                        <div class="item-meta">46.2 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/Realbook Bass F_part1_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 Realbook Bass F_part1_avec_liens.html</div>
+                        <div class="item-meta">81.0 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/Realbook Bass F_part2_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 Realbook Bass F_part2_avec_liens.html</div>
+                        <div class="item-meta">82.0 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/Realbook Bass F_part3_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 Realbook Bass F_part3_avec_liens.html</div>
+                        <div class="item-meta">16.9 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/The_Real_Rock_Book_part1_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 The_Real_Rock_Book_part1_avec_liens.html</div>
+                        <div class="item-meta">43.1 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/The_Real_Rock_Book_part2_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 The_Real_Rock_Book_part2_avec_liens.html</div>
+                        <div class="item-meta">43.9 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/The_Real_Rock_Book_part3_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 The_Real_Rock_Book_part3_avec_liens.html</div>
+                        <div class="item-meta">18.0 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/Volume-2-contrebasse_part1_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 Volume-2-contrebasse_part1_avec_liens.html</div>
+                        <div class="item-meta">78.0 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/Volume-2-contrebasse_part2_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 Volume-2-contrebasse_part2_avec_liens.html</div>
+                        <div class="item-meta">78.6 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/Volume-2-contrebasse_part3_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 Volume-2-contrebasse_part3_avec_liens.html</div>
+                        <div class="item-meta">87.3 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/Reabook/realbook Volume-3-C_avec_liens.html', '_blank')">
+                        <div class="item-name">🌐 realbook Volume-3-C_avec_liens.html</div>
+                        <div class="item-meta">45.6 B</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>

@@ -7,61 +7,106 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #ffffff;
-            min-height: 100vh;
-            padding: 2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
-        h1 { font-size: 3rem; color: #FF6B35; margin-bottom: 2rem; text-align: center; }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 2rem;
-            padding: 0.8rem 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            color: #FF6B35;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-        .back-link:hover { background: #FF6B35; color: white; }
-        .lesson-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 2rem;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
             border-radius: 15px;
-            border: 2px solid rgba(255, 107, 53, 0.3);
-            margin-bottom: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        .lesson-card:hover { border-color: #FF6B35; }
-        .lesson-card h2 { color: #F7B267; margin-bottom: 1rem; }
-        .lesson-link {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            background: #FF6B35;
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+        }
+        header h1 { font-size: 32px; margin-bottom: 10px; }
+        .breadcrumb {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .breadcrumb a {
             color: white;
             text-decoration: none;
-            border-radius: 8px;
-            margin-top: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
         }
-        .lesson-link:hover { background: #ff5522; }
+        main { padding: 30px; }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .item-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .item-card:hover {
+            background: #e8eaf6;
+            transform: translateX(5px);
+        }
+        .item-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .item-meta {
+            font-size: 13px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="../" class="back-link">← Retour à l'accueil</a>
-        <h1>🎯 Exercices Pratiques</h1>
+        <header>
+            <h1>📁 Pratique</h1>
+            <div class="breadcrumb">
+                <a href="/">🏠 Accueil</a> / Pratique
+            </div>
+        </header>
         
-        <div class="lesson-card">
-            <h2>Pratique - Partie 1</h2>
-            <p>Exercices techniques et coordination</p>
-            <a href="Pratique 1.html" class="lesson-link">Commencer →</a>
-        </div>
+        <main>
 
-        <div class="lesson-card">
-            <h2>Pratique - Partie 2</h2>
-            <p>Développement de la dextérité</p>
-            <a href="Pratique 2.html" class="lesson-link">Commencer →</a>
-        </div>
+            <div class="section">
+                <div class="section-title">📄 Fichiers</div>
+                <div class="item-grid">
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Pratique/Pratique 1.html', '_blank')">
+                        <div class="item-name">🌐 Pratique 1.html</div>
+                        <div class="item-meta">46.1 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Pratique/Pratique 2.html', '_blank')">
+                        <div class="item-name">🌐 Pratique 2.html</div>
+                        <div class="item-meta">25.5 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Pratique/index.html', '_blank')">
+                        <div class="item-name">🌐 index.html</div>
+                        <div class="item-meta">2.2 B</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
     </div>
 </body>
 </html>
