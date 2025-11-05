@@ -1,0 +1,70 @@
+name: 🎸 Prof de Basse - Auto Indexer
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'Methodes/**'
+      - 'Exercices/**'
+      - '*.mp3'
+      - '*.pdf'
+      - '*.png'
+      - '*.jpg'
+      - '*.json'
+  workflow_dispatch:
+
+jobs:
+  auto-index:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: 📦 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pathlib json re Pillow mutagen
+      
+      - name: 🔍 Extract musical metadata
+        run: |
+          python scripts/extract_musical_metadata.py
+      
+      - name: 📊 Generate complete resource map
+        run: |
+          python scripts/generate_complete_map.py
+      
+      - name: 🏗️ Update main index.html
+        run: |
+          python scripts/update_main_index.py
+      
+      - name: ✅ Verify outputs
+        run: |
+          ls -lh resources/
+          ls -lh prompts/
+          echo "✅ Generated files:"
+          cat resources/stats.json
+      
+      - name: 💾 Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Prof de Basse Bot 🎸"
+          git add resources/ prompts/ index.html
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update: Resource map + GPT prompts [$(date +'%Y-%m-%d %H:%M')]" && git push)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 🎉 Summary
+        run: |
+          echo "🎸 Prof de Basse Auto-Indexer completed!"
+          echo "✅ Metadata extracted"
+          echo "✅ Resource map updated"
+          echo "✅ GPT prompts regenerated"
+          echo "✅ Changes committed to repo"
