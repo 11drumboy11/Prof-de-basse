@@ -3,248 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>'70s Funk & Disco Bass.pdf</title>
+    <title>'70s Funk & Disco Bass_with_index - Prof de Basse</title>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        .page {
-            margin-bottom: 40px;
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        .page img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
         }
-        .page-number {
-            color: #666;
+        header h1 { font-size: 32px; margin-bottom: 10px; }
+        .breadcrumb {
             font-size: 14px;
-            margin-bottom: 10px;
+            opacity: 0.9;
+            margin-top: 10px;
         }
-        .song-info {
-            background: #e3f2fd;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+        }
+        main { padding: 30px; }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .item-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .item-card:hover {
+            background: #e8eaf6;
+            transform: translateX(5px);
+        }
+        .item-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .item-meta {
+            font-size: 13px;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <h1>'70s Funk & Disco Bass.pdf</h1>
-    <p style="text-align: center; color: #666;">
-        29 pages | 28 morceaux indexés
-    </p>
-    <div class="page" data-page="1">
-        <div class="page-number">Page 1</div>
-        <img src="./assets/page_0001.png" alt="Page 1">
-    </div>
-    <div class="page" data-page="2">
-        <div class="page-number">Page 2</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 1 0</strong>
-        </div>
-        <img src="./assets/page_0002.jpg" alt="Page 2">
-    </div>
-    <div class="page" data-page="3">
-        <div class="page-number">Page 3</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 5 o</strong>
-        </div>
-        <img src="./assets/page_0003.jpg" alt="Page 3">
-    </div>
-    <div class="page" data-page="4">
-        <div class="page-number">Page 4</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 9 o</strong>
-        </div>
-        <img src="./assets/page_0004.jpg" alt="Page 4">
-    </div>
-    <div class="page" data-page="5">
-        <div class="page-number">Page 5</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 13 </strong>
-        </div>
-        <img src="./assets/page_0005.jpg" alt="Page 5">
-    </div>
-    <div class="page" data-page="6">
-        <div class="page-number">Page 6</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 17 0</strong>
-        </div>
-        <img src="./assets/page_0006.jpg" alt="Page 6">
-    </div>
-    <div class="page" data-page="7">
-        <div class="page-number">Page 7</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 21 </strong>
-        </div>
-        <img src="./assets/page_0007.jpg" alt="Page 7">
-    </div>
-    <div class="page" data-page="8">
-        <div class="page-number">Page 8</div>
-        <div class="song-info">
-            <strong>🎵 Play 4 times</strong>
-        </div>
-        <img src="./assets/page_0008.jpg" alt="Page 8">
-    </div>
-    <div class="page" data-page="9">
-        <div class="page-number">Page 9</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 28 - </strong>
-        </div>
-        <img src="./assets/page_0009.jpg" alt="Page 9">
-    </div>
-    <div class="page" data-page="10">
-        <div class="page-number">Page 10</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 31    Pattern 32</strong>
-        </div>
-        <img src="./assets/page_0010.jpg" alt="Page 10">
-    </div>
-    <div class="page" data-page="11">
-        <div class="page-number">Page 11</div>
-        <div class="song-info">
-            <strong>🎵 - Pattern 33 </strong>
-        </div>
-        <img src="./assets/page_0011.jpg" alt="Page 11">
-    </div>
-    <div class="page" data-page="12">
-        <div class="page-number">Page 12</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 35 </strong>
-        </div>
-        <img src="./assets/page_0012.jpg" alt="Page 12">
-    </div>
-    <div class="page" data-page="13">
-        <div class="page-number">Page 13</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 37 </strong>
-        </div>
-        <img src="./assets/page_0013.jpg" alt="Page 13">
-    </div>
-    <div class="page" data-page="14">
-        <div class="page-number">Page 14</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 40</strong>
-        </div>
-        <img src="./assets/page_0014.jpg" alt="Page 14">
-    </div>
-    <div class="page" data-page="15">
-        <div class="page-number">Page 15</div>
-        <div class="song-info">
-            <strong>🎵 Play 4 times</strong>
-        </div>
-        <img src="./assets/page_0015.jpg" alt="Page 15">
-    </div>
-    <div class="page" data-page="16">
-        <div class="page-number">Page 16</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 47 </strong>
-        </div>
-        <img src="./assets/page_0016.jpg" alt="Page 16">
-    </div>
-    <div class="page" data-page="17">
-        <div class="page-number">Page 17</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 52 </strong>
-        </div>
-        <img src="./assets/page_0017.jpg" alt="Page 17">
-    </div>
-    <div class="page" data-page="18">
-        <div class="page-number">Page 18</div>
-        <div class="song-info">
-            <strong>🎵 Play 4 rimes</strong>
-        </div>
-        <img src="./assets/page_0018.jpg" alt="Page 18">
-    </div>
-    <div class="page" data-page="19">
-        <div class="page-number">Page 19</div>
-        <div class="song-info">
-            <strong>🎵 Play 4 times</strong>
-        </div>
-        <img src="./assets/page_0019.jpg" alt="Page 19">
-    </div>
-    <div class="page" data-page="20">
-        <div class="page-number">Page 20</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 61 </strong>
-        </div>
-        <img src="./assets/page_0020.jpg" alt="Page 20">
-    </div>
-    <div class="page" data-page="21">
-        <div class="page-number">Page 21</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 64 </strong>
-        </div>
-        <img src="./assets/page_0021.jpg" alt="Page 21">
-    </div>
-    <div class="page" data-page="22">
-        <div class="page-number">Page 22</div>
-        <div class="song-info">
-            <strong>🎵 Play 4 times</strong>
-        </div>
-        <img src="./assets/page_0022.jpg" alt="Page 22">
-    </div>
-    <div class="page" data-page="23">
-        <div class="page-number">Page 23</div>
-        <div class="song-info">
-            <strong>🎵 pattern 71 pattern72 pattern 73 pattern 74</strong>
-        </div>
-        <img src="./assets/page_0023.jpg" alt="Page 23">
-    </div>
-    <div class="page" data-page="24">
-        <div class="page-number">Page 24</div>
-        <div class="song-info">
-            <strong>🎵 Play 4 times</strong>
-        </div>
-        <img src="./assets/page_0024.jpg" alt="Page 24">
-    </div>
-    <div class="page" data-page="25">
-        <div class="page-number">Page 25</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 78 </strong>
-        </div>
-        <img src="./assets/page_0025.jpg" alt="Page 25">
-    </div>
-    <div class="page" data-page="26">
-        <div class="page-number">Page 26</div>
-        <div class="song-info">
-            <strong>🎵 Play 4 times</strong>
-        </div>
-        <img src="./assets/page_0026.jpg" alt="Page 26">
-    </div>
-    <div class="page" data-page="27">
-        <div class="page-number">Page 27</div>
-        <div class="song-info">
-            <strong>🎵 Play 4 times</strong>
-        </div>
-        <img src="./assets/page_0027.jpg" alt="Page 27">
-    </div>
-    <div class="page" data-page="28">
-        <div class="page-number">Page 28</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 89 </strong>
-        </div>
-        <img src="./assets/page_0028.jpg" alt="Page 28">
-    </div>
-    <div class="page" data-page="29">
-        <div class="page-number">Page 29</div>
-        <div class="song-info">
-            <strong>🎵 Pattern 99 </strong>
-        </div>
-        <img src="./assets/page_0029.jpg" alt="Page 29">
+    <div class="container">
+        <header>
+            <h1>📁 '70s Funk & Disco Bass_with_index</h1>
+            <div class="breadcrumb">
+                <a href="/">🏠 Accueil</a> / Methodes/'70s Funk & Disco Bass_with_index
+            </div>
+        </header>
+        
+        <main>
+
+            <div class="section">
+                <div class="section-title">📂 Sous-dossiers</div>
+                <div class="item-grid">
+
+                    <div class="item-card" onclick="window.location.href='assets/index.html'">
+                        <div class="item-name">📂 assets</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">📄 Fichiers</div>
+                <div class="item-grid">
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s Funk & Disco Bass_with_index/index.html', '_blank')">
+                        <div class="item-name">🌐 index.html</div>
+                        <div class="item-meta">8.1 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s Funk & Disco Bass_with_index/songs_index.json', '_blank')">
+                        <div class="item-name">📊 songs_index.json</div>
+                        <div class="item-meta">5.2 B</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
     </div>
 </body>
 </html>
