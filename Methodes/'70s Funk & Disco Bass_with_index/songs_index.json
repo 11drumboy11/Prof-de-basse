@@ -1,224 +1,200 @@
 {
-  "pattern_1_0_2": {
-    "title": "Pattern 1 0",
+  "m_m_d_includes_99_demo_tracks_1": {
+    "title": "m 'M D INCLUDES 99 DEMO TRACKS",
+    "composer": null,
+    "page": 1,
+    "file": "page_0001.jpg",
+    "format": "jpg",
+    "confidence": 0.7420262145996094,
+    "ocr_raw": "m 'M’ €D INCLUDES 99 DEMO TRACKS\n",
+    "pattern_detected": null,
+    "track_detected": null
+  },
+  "bl_2": {
+    "title": "Pattern 1 Pattern 2 Pattern 3 Pattern 4",
+    "composer": null,
     "page": 2,
     "file": "page_0002.jpg",
     "format": "jpg",
-    "confidence": 0.8094777679443359,
-    "ocr_raw": "Pattern 1 0\n"
+    "confidence": 1,
+    "ocr_raw": "bl “ —\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_5_o_3": {
-    "title": "Pattern 5 o",
+  "rans_3": {
+    "title": "Pattern 5 Pattern 6 Pattern 7 Pattern 8",
+    "composer": null,
     "page": 3,
     "file": "page_0003.jpg",
     "format": "jpg",
-    "confidence": 0.807960433959961,
-    "ocr_raw": "Pattern 5 o\n"
+    "confidence": 1,
+    "ocr_raw": "rans @ .\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_9_o_4": {
-    "title": "Pattern 9 o",
+  "pattern_9_9_-_4": {
+    "title": "Pattern 9 Pattern 10 Pattern 11 Pattern 12",
+    "composer": null,
     "page": 4,
     "file": "page_0004.jpg",
     "format": "jpg",
-    "confidence": 0.8175655364990234,
-    "ocr_raw": "Pattern 9 o\n"
+    "confidence": 1,
+    "ocr_raw": "Pattern 9 9 -\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_13_5": {
-    "title": "Pattern 13 ",
-    "page": 5,
-    "file": "page_0005.jpg",
-    "format": "jpg",
-    "confidence": 0.8121091461181641,
-    "ocr_raw": "Pattern 13 ®\n"
-  },
-  "pattern_17_0_6": {
-    "title": "Pattern 17 0",
+  "i_4_6": {
+    "title": "Pattern 17 Pattern 18 Pattern 19 Pattern 20",
+    "composer": null,
     "page": 6,
     "file": "page_0006.jpg",
     "format": "jpg",
-    "confidence": 0.7871328735351563,
-    "ocr_raw": "Pattern 17 0\n"
+    "confidence": 1,
+    "ocr_raw": "i 4 .\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_21_7": {
-    "title": "Pattern 21 ",
-    "page": 7,
-    "file": "page_0007.jpg",
-    "format": "jpg",
-    "confidence": 0.7880155181884766,
-    "ocr_raw": "Pattern 21 @\n"
-  },
-  "play_4_times_8": {
-    "title": "Play 4 times",
+  "s_e_8": {
+    "title": "Pattern 25 Pattern 26 Pattern 27",
+    "composer": null,
     "page": 8,
     "file": "page_0008.jpg",
     "format": "jpg",
-    "confidence": 0.8174095916748046,
-    "ocr_raw": "Play 4 times\n"
+    "confidence": 1,
+    "ocr_raw": "s @ e\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_28_-_9": {
-    "title": "Pattern 28 - ",
+  "d_t_9": {
+    "title": "Pattern 28 Pattern 29 Pattern 30",
+    "composer": null,
     "page": 9,
     "file": "page_0009.jpg",
     "format": "jpg",
-    "confidence": 0.7548613739013672,
-    "ocr_raw": "Pattern 28 @ - ]\n"
+    "confidence": 1,
+    "ocr_raw": "D =T\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "-_pattern_33_11": {
-    "title": "- Pattern 33 ",
-    "page": 11,
-    "file": "page_0011.jpg",
-    "format": "jpg",
-    "confidence": 0.7118783569335938,
-    "ocr_raw": "- Pattern 33 @\n"
-  },
-  "pattern_35_12": {
-    "title": "Pattern 35 ",
-    "page": 12,
-    "file": "page_0012.jpg",
-    "format": "jpg",
-    "confidence": 0.7982532501220703,
-    "ocr_raw": "Pattern 35 @\n"
-  },
-  "pattern_37_13": {
-    "title": "Pattern 37 ",
+  "en_13": {
+    "title": "Pattern 37 Pattern 38",
+    "composer": null,
     "page": 13,
     "file": "page_0013.jpg",
     "format": "jpg",
-    "confidence": 0.7921759033203125,
-    "ocr_raw": "Pattern 37 @\n"
+    "confidence": 1,
+    "ocr_raw": "en & ‘\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_40_14": {
-    "title": "Pattern 40",
+  "saniseleies_14": {
+    "title": "Pattern 39 Pattern 40 Pattern 41",
+    "composer": null,
     "page": 14,
     "file": "page_0014.jpg",
     "format": "jpg",
-    "confidence": 0.9412834167480468,
-    "ocr_raw": "Pattern 40\n\n"
+    "confidence": 1,
+    "ocr_raw": "| saniSeleies\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "play_4_times_15": {
-    "title": "Play 4 times",
+  "fv_s_15": {
+    "title": "Pattern 42 Pattern 43 Pattern 44 Pattern 45 Pattern 46",
+    "composer": null,
     "page": 15,
     "file": "page_0015.jpg",
     "format": "jpg",
-    "confidence": 0.8984154510498047,
-    "ocr_raw": "Play 4 times\n"
+    "confidence": 1,
+    "ocr_raw": "fv s ——~\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_47_16": {
-    "title": "Pattern 47 ",
+  "l_g_-_16": {
+    "title": "Pattern 47 Pattern 48 Pattern 49 Pattern 50 Pattern 51",
+    "composer": null,
     "page": 16,
     "file": "page_0016.jpg",
     "format": "jpg",
-    "confidence": 0.7746523284912109,
-    "ocr_raw": "Pattern 47 @\n"
+    "confidence": 1,
+    "ocr_raw": "l g = -\n\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_52_17": {
-    "title": "Pattern 52 ",
-    "page": 17,
-    "file": "page_0017.jpg",
-    "format": "jpg",
-    "confidence": 0.7966936492919922,
-    "ocr_raw": "Pattern 52 @\n"
-  },
-  "play_4_rimes_18": {
-    "title": "Play 4 rimes",
-    "page": 18,
-    "file": "page_0018.jpg",
-    "format": "jpg",
-    "confidence": 0.7414366149902344,
-    "ocr_raw": "Play 4 rimes\n"
-  },
-  "play_4_times_19": {
-    "title": "Play 4 times",
+  "paernss_o_19": {
+    "title": "Pattern 58 Pattern 59 Pattern 60",
+    "composer": null,
     "page": 19,
     "file": "page_0019.jpg",
     "format": "jpg",
-    "confidence": 0.8065956115722657,
-    "ocr_raw": "Play 4 times\n"
+    "confidence": 1,
+    "ocr_raw": "paernss o\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_61_20": {
-    "title": "Pattern 61 ",
+  "e_-_20": {
+    "title": "Pattern 61 Pattern 62 Pattern 63",
+    "composer": null,
     "page": 20,
     "file": "page_0020.jpg",
     "format": "jpg",
-    "confidence": 0.7976779937744141,
-    "ocr_raw": "Pattern 61 @\n\n"
+    "confidence": 1,
+    "ocr_raw": "e @ -\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_64_21": {
-    "title": "Pattern 64 ",
+  "mnu_21": {
+    "title": "Pattern 64 Pattern 65 Pattern 66",
+    "composer": null,
     "page": 21,
     "file": "page_0021.jpg",
     "format": "jpg",
-    "confidence": 0.797330551147461,
-    "ocr_raw": "Pattern 64 @\n"
+    "confidence": 1,
+    "ocr_raw": "m..nu@\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "play_4_times_22": {
-    "title": "Play 4 times",
+  "eflgeeei_22": {
+    "title": "Pattern 67 Pattern 68 Pattern 69 Pattern 70",
+    "composer": null,
     "page": 22,
     "file": "page_0022.jpg",
     "format": "jpg",
-    "confidence": 0.8991159057617187,
-    "ocr_raw": "Play 4 times\n"
+    "confidence": 1,
+    "ocr_raw": ",';Efﬁ:Lg{EEE_—iﬂ\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "play_4_times_24": {
-    "title": "Play 4 times",
+  "lhihj_24": {
+    "title": "Pattern 75 Pattern 76 Pattern 77",
+    "composer": null,
     "page": 24,
     "file": "page_0024.jpg",
     "format": "jpg",
-    "confidence": 0.9186177062988281,
-    "ocr_raw": "Play 4 times\n"
+    "confidence": 1,
+    "ocr_raw": "L*'_’:;—H\"i—’;h‘;,*?’——‘j\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "pattern_78_25": {
-    "title": "Pattern 78 ",
+  "purns_25": {
+    "title": "Pattern 78 Pattern 79 Pattern 80",
+    "composer": null,
     "page": 25,
     "file": "page_0025.jpg",
     "format": "jpg",
-    "confidence": 0.7869320678710937,
-    "ocr_raw": "Pattern 78 @\n"
+    "confidence": 1,
+    "ocr_raw": "purns @)\n",
+    "pattern_detected": null,
+    "track_detected": null
   },
-  "play_4_times_26": {
-    "title": "Play 4 times",
-    "page": 26,
-    "file": "page_0026.jpg",
-    "format": "jpg",
-    "confidence": 0.9103707885742187,
-    "ocr_raw": "Play 4 times\n"
-  },
-  "play_4_times_27": {
-    "title": "Play 4 times",
+  "eutense_27": {
+    "title": "Pattern 85 Pattern 86 Pattern 87 Pattern 88",
+    "composer": null,
     "page": 27,
     "file": "page_0027.jpg",
     "format": "jpg",
-    "confidence": 0.8527976989746093,
-    "ocr_raw": "Play 4 times\n"
-  },
-  "pattern_89_28": {
-    "title": "Pattern 89 ",
-    "page": 28,
-    "file": "page_0028.jpg",
-    "format": "jpg",
-    "confidence": 0.8062185668945312,
-    "ocr_raw": "Pattern 89 @\n"
-  },
-  "pattern_99_29": {
-    "title": "Pattern 99 ",
-    "page": 29,
-    "file": "page_0029.jpg",
-    "format": "jpg",
-    "confidence": 0.8040054321289063,
-    "ocr_raw": "Pattern 99 @\n"
-  },
-  "pattern_31_pattern_32_10": {
-    "title": "Pattern 31    Pattern 32",
-    "composer": null,
-    "page": 10,
-    "file": "page_0010.jpg",
-    "format": "jpg"
-  },
-  "pattern_71_pattern72_pattern_73_pattern_74_23": {
-    "title": "pattern 71 pattern72 pattern 73 pattern 74",
-    "composer": null,
-    "page": 23,
-    "file": "page_0023.jpg",
-    "format": "jpg"
+    "confidence": 1,
+    "ocr_raw": "eutense @\n",
+    "pattern_detected": null,
+    "track_detected": null
   }
 }
