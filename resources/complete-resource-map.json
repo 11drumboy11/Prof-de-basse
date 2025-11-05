@@ -2658,11 +2658,21 @@
     "Methodes/'70s Funk & Disco Bass_with_index/songs_index.json": {
       "path": "Methodes/'70s Funk & Disco Bass_with_index/songs_index.json",
       "realbook_name": "Unknown",
-      "total_songs": 28,
+      "total_songs": 18,
       "songs": [
         {
-          "id": "pattern_1_0_2",
-          "title": "Pattern 1 0",
+          "id": "m_m_d_includes_99_demo_tracks_1",
+          "title": "m 'M D INCLUDES 99 DEMO TRACKS",
+          "composer": null,
+          "page": 1,
+          "file": "page_0001.jpg",
+          "format": "jpg",
+          "realbook": "Unknown",
+          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0001.jpg"
+        },
+        {
+          "id": "bl_2",
+          "title": "Pattern 1 Pattern 2 Pattern 3 Pattern 4",
           "composer": null,
           "page": 2,
           "file": "page_0002.jpg",
@@ -2671,8 +2681,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0002.jpg"
         },
         {
-          "id": "pattern_5_o_3",
-          "title": "Pattern 5 o",
+          "id": "rans_3",
+          "title": "Pattern 5 Pattern 6 Pattern 7 Pattern 8",
           "composer": null,
           "page": 3,
           "file": "page_0003.jpg",
@@ -2681,8 +2691,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0003.jpg"
         },
         {
-          "id": "pattern_9_o_4",
-          "title": "Pattern 9 o",
+          "id": "pattern_9_9_-_4",
+          "title": "Pattern 9 Pattern 10 Pattern 11 Pattern 12",
           "composer": null,
           "page": 4,
           "file": "page_0004.jpg",
@@ -2691,18 +2701,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0004.jpg"
         },
         {
-          "id": "pattern_13_5",
-          "title": "Pattern 13 ",
-          "composer": null,
-          "page": 5,
-          "file": "page_0005.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0005.jpg"
-        },
-        {
-          "id": "pattern_17_0_6",
-          "title": "Pattern 17 0",
+          "id": "i_4_6",
+          "title": "Pattern 17 Pattern 18 Pattern 19 Pattern 20",
           "composer": null,
           "page": 6,
           "file": "page_0006.jpg",
@@ -2711,18 +2711,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0006.jpg"
         },
         {
-          "id": "pattern_21_7",
-          "title": "Pattern 21 ",
-          "composer": null,
-          "page": 7,
-          "file": "page_0007.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0007.jpg"
-        },
-        {
-          "id": "play_4_times_8",
-          "title": "Play 4 times",
+          "id": "s_e_8",
+          "title": "Pattern 25 Pattern 26 Pattern 27",
           "composer": null,
           "page": 8,
           "file": "page_0008.jpg",
@@ -2731,8 +2721,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0008.jpg"
         },
         {
-          "id": "pattern_28_-_9",
-          "title": "Pattern 28 - ",
+          "id": "d_t_9",
+          "title": "Pattern 28 Pattern 29 Pattern 30",
           "composer": null,
           "page": 9,
           "file": "page_0009.jpg",
@@ -2741,28 +2731,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0009.jpg"
         },
         {
-          "id": "-_pattern_33_11",
-          "title": "- Pattern 33 ",
-          "composer": null,
-          "page": 11,
-          "file": "page_0011.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0011.jpg"
-        },
-        {
-          "id": "pattern_35_12",
-          "title": "Pattern 35 ",
-          "composer": null,
-          "page": 12,
-          "file": "page_0012.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0012.jpg"
-        },
-        {
-          "id": "pattern_37_13",
-          "title": "Pattern 37 ",
+          "id": "en_13",
+          "title": "Pattern 37 Pattern 38",
           "composer": null,
           "page": 13,
           "file": "page_0013.jpg",
@@ -2771,8 +2741,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0013.jpg"
         },
         {
-          "id": "pattern_40_14",
-          "title": "Pattern 40",
+          "id": "saniseleies_14",
+          "title": "Pattern 39 Pattern 40 Pattern 41",
           "composer": null,
           "page": 14,
           "file": "page_0014.jpg",
@@ -2781,8 +2751,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0014.jpg"
         },
         {
-          "id": "play_4_times_15",
-          "title": "Play 4 times",
+          "id": "fv_s_15",
+          "title": "Pattern 42 Pattern 43 Pattern 44 Pattern 45 Pattern 46",
           "composer": null,
           "page": 15,
           "file": "page_0015.jpg",
@@ -2791,8 +2761,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0015.jpg"
         },
         {
-          "id": "pattern_47_16",
-          "title": "Pattern 47 ",
+          "id": "l_g_-_16",
+          "title": "Pattern 47 Pattern 48 Pattern 49 Pattern 50 Pattern 51",
           "composer": null,
           "page": 16,
           "file": "page_0016.jpg",
@@ -2801,28 +2771,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0016.jpg"
         },
         {
-          "id": "pattern_52_17",
-          "title": "Pattern 52 ",
-          "composer": null,
-          "page": 17,
-          "file": "page_0017.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0017.jpg"
-        },
-        {
-          "id": "play_4_rimes_18",
-          "title": "Play 4 rimes",
-          "composer": null,
-          "page": 18,
-          "file": "page_0018.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0018.jpg"
-        },
-        {
-          "id": "play_4_times_19",
-          "title": "Play 4 times",
+          "id": "paernss_o_19",
+          "title": "Pattern 58 Pattern 59 Pattern 60",
           "composer": null,
           "page": 19,
           "file": "page_0019.jpg",
@@ -2831,8 +2781,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0019.jpg"
         },
         {
-          "id": "pattern_61_20",
-          "title": "Pattern 61 ",
+          "id": "e_-_20",
+          "title": "Pattern 61 Pattern 62 Pattern 63",
           "composer": null,
           "page": 20,
           "file": "page_0020.jpg",
@@ -2841,8 +2791,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0020.jpg"
         },
         {
-          "id": "pattern_64_21",
-          "title": "Pattern 64 ",
+          "id": "mnu_21",
+          "title": "Pattern 64 Pattern 65 Pattern 66",
           "composer": null,
           "page": 21,
           "file": "page_0021.jpg",
@@ -2851,8 +2801,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0021.jpg"
         },
         {
-          "id": "play_4_times_22",
-          "title": "Play 4 times",
+          "id": "eflgeeei_22",
+          "title": "Pattern 67 Pattern 68 Pattern 69 Pattern 70",
           "composer": null,
           "page": 22,
           "file": "page_0022.jpg",
@@ -2861,8 +2811,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0022.jpg"
         },
         {
-          "id": "play_4_times_24",
-          "title": "Play 4 times",
+          "id": "lhihj_24",
+          "title": "Pattern 75 Pattern 76 Pattern 77",
           "composer": null,
           "page": 24,
           "file": "page_0024.jpg",
@@ -2871,8 +2821,8 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0024.jpg"
         },
         {
-          "id": "pattern_78_25",
-          "title": "Pattern 78 ",
+          "id": "purns_25",
+          "title": "Pattern 78 Pattern 79 Pattern 80",
           "composer": null,
           "page": 25,
           "file": "page_0025.jpg",
@@ -2881,64 +2831,14 @@
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0025.jpg"
         },
         {
-          "id": "play_4_times_26",
-          "title": "Play 4 times",
-          "composer": null,
-          "page": 26,
-          "file": "page_0026.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0026.jpg"
-        },
-        {
-          "id": "play_4_times_27",
-          "title": "Play 4 times",
+          "id": "eutense_27",
+          "title": "Pattern 85 Pattern 86 Pattern 87 Pattern 88",
           "composer": null,
           "page": 27,
           "file": "page_0027.jpg",
           "format": "jpg",
           "realbook": "Unknown",
           "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0027.jpg"
-        },
-        {
-          "id": "pattern_89_28",
-          "title": "Pattern 89 ",
-          "composer": null,
-          "page": 28,
-          "file": "page_0028.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0028.jpg"
-        },
-        {
-          "id": "pattern_99_29",
-          "title": "Pattern 99 ",
-          "composer": null,
-          "page": 29,
-          "file": "page_0029.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0029.jpg"
-        },
-        {
-          "id": "pattern_31_pattern_32_10",
-          "title": "Pattern 31    Pattern 32",
-          "composer": null,
-          "page": 10,
-          "file": "page_0010.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0010.jpg"
-        },
-        {
-          "id": "pattern_71_pattern72_pattern_73_pattern_74_23",
-          "title": "pattern 71 pattern72 pattern 73 pattern 74",
-          "composer": null,
-          "page": 23,
-          "file": "page_0023.jpg",
-          "format": "jpg",
-          "realbook": "Unknown",
-          "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0023.jpg"
         }
       ]
     },
@@ -6494,7 +6394,7 @@
     "total_mp3": 363,
     "total_pdf": 0,
     "total_realbooks": 2,
-    "total_songs": 382,
+    "total_songs": 372,
     "by_method": {
       "70 Funk & Disco bass MP3": 99,
       "Paul westwood MP3": 165,
@@ -6519,7 +6419,7 @@
     },
     "realbooks": {
       "Unknown": {
-        "total_songs": 28,
+        "total_songs": 18,
         "path": "Methodes/'70s Funk & Disco Bass_with_index/songs_index.json"
       },
       "Realbook Bass F_with_index": {
@@ -6533,124 +6433,112 @@
     "funk_intermediate": [],
     "jazz_standards": [
       {
-        "title": "Pattern 1 0",
+        "title": "m 'M D INCLUDES 99 DEMO TRACKS",
+        "composer": null,
+        "page": 1,
+        "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0001.jpg"
+      },
+      {
+        "title": "Pattern 1 Pattern 2 Pattern 3 Pattern 4",
         "composer": null,
         "page": 2,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0002.jpg"
       },
       {
-        "title": "Pattern 5 o",
+        "title": "Pattern 5 Pattern 6 Pattern 7 Pattern 8",
         "composer": null,
         "page": 3,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0003.jpg"
       },
       {
-        "title": "Pattern 9 o",
+        "title": "Pattern 9 Pattern 10 Pattern 11 Pattern 12",
         "composer": null,
         "page": 4,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0004.jpg"
       },
       {
-        "title": "Pattern 13 ",
-        "composer": null,
-        "page": 5,
-        "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0005.jpg"
-      },
-      {
-        "title": "Pattern 17 0",
+        "title": "Pattern 17 Pattern 18 Pattern 19 Pattern 20",
         "composer": null,
         "page": 6,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0006.jpg"
       },
       {
-        "title": "Pattern 21 ",
-        "composer": null,
-        "page": 7,
-        "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0007.jpg"
-      },
-      {
-        "title": "Play 4 times",
+        "title": "Pattern 25 Pattern 26 Pattern 27",
         "composer": null,
         "page": 8,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0008.jpg"
       },
       {
-        "title": "Pattern 28 - ",
+        "title": "Pattern 28 Pattern 29 Pattern 30",
         "composer": null,
         "page": 9,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0009.jpg"
       },
       {
-        "title": "- Pattern 33 ",
-        "composer": null,
-        "page": 11,
-        "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0011.jpg"
-      },
-      {
-        "title": "Pattern 35 ",
-        "composer": null,
-        "page": 12,
-        "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0012.jpg"
-      },
-      {
-        "title": "Pattern 37 ",
+        "title": "Pattern 37 Pattern 38",
         "composer": null,
         "page": 13,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0013.jpg"
       },
       {
-        "title": "Pattern 40",
+        "title": "Pattern 39 Pattern 40 Pattern 41",
         "composer": null,
         "page": 14,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0014.jpg"
       },
       {
-        "title": "Play 4 times",
+        "title": "Pattern 42 Pattern 43 Pattern 44 Pattern 45 Pattern 46",
         "composer": null,
         "page": 15,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0015.jpg"
       },
       {
-        "title": "Pattern 47 ",
+        "title": "Pattern 47 Pattern 48 Pattern 49 Pattern 50 Pattern 51",
         "composer": null,
         "page": 16,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0016.jpg"
       },
       {
-        "title": "Pattern 52 ",
-        "composer": null,
-        "page": 17,
-        "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0017.jpg"
-      },
-      {
-        "title": "Play 4 rimes",
-        "composer": null,
-        "page": 18,
-        "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0018.jpg"
-      },
-      {
-        "title": "Play 4 times",
+        "title": "Pattern 58 Pattern 59 Pattern 60",
         "composer": null,
         "page": 19,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0019.jpg"
       },
       {
-        "title": "Pattern 61 ",
+        "title": "Pattern 61 Pattern 62 Pattern 63",
         "composer": null,
         "page": 20,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0020.jpg"
       },
       {
-        "title": "Pattern 64 ",
+        "title": "Pattern 64 Pattern 65 Pattern 66",
         "composer": null,
         "page": 21,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0021.jpg"
       },
       {
-        "title": "Play 4 times",
+        "title": "Pattern 67 Pattern 68 Pattern 69 Pattern 70",
         "composer": null,
         "page": 22,
         "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0022.jpg"
+      },
+      {
+        "title": "Pattern 75 Pattern 76 Pattern 77",
+        "composer": null,
+        "page": 24,
+        "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0024.jpg"
+      },
+      {
+        "title": "Pattern 78 Pattern 79 Pattern 80",
+        "composer": null,
+        "page": 25,
+        "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0025.jpg"
+      },
+      {
+        "title": "Pattern 85 Pattern 86 Pattern 87 Pattern 88",
+        "composer": null,
+        "page": 27,
+        "png_url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/'70s%20Funk%20&%20Disco%20Bass_with_index/assets/page_0027.jpg"
       },
       {
         "title": "edited volumes which abound on the market today The Real Book is",
