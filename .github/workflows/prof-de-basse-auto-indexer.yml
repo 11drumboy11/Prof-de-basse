@@ -1,4 +1,4 @@
-name: 🎸 Prof de Basse - Auto Indexer
+name: 🎸 Prof de Basse - Auto Indexer FIXED
 
 on:
   push:
@@ -6,11 +6,10 @@ on:
     paths:
       - 'Methodes/**'
       - 'Exercices/**'
-      - '*.mp3'
-      - '*.pdf'
-      - '*.png'
-      - '*.jpg'
-      - '*.json'
+      - '**.mp3'
+      - '**.pdf'
+      - '**.png'
+      - '**.json'
   workflow_dispatch:
 
 jobs:
@@ -28,43 +27,88 @@ jobs:
         with:
           python-version: '3.11'
       
-      - name: 📦 Install dependencies
+      - name: 📦 Install dependencies (optional)
         run: |
           python -m pip install --upgrade pip
-          pip install pathlib json re Pillow mutagen
+          # Note: json, pathlib, re sont des modules built-in, pas besoin de les installer
+          echo "✅ Python standard library ready (json, pathlib, re, os)"
       
-      - name: 🔍 Extract musical metadata
+      - name: 🔍 Verify repository structure
         run: |
+          echo "📁 Checking scripts directory..."
+          ls -la scripts/ || echo "⚠️  scripts/ not found"
+          echo ""
+          echo "📁 Checking Methodes directory..."
+          ls -la Methodes/ | head -20 || echo "⚠️  Methodes/ not found"
+      
+      - name: 🔧 Make script executable
+        run: |
+          chmod +x scripts/extract_musical_metadata.py
+      
+      - name: 🎵 Extract musical metadata
+        id: extract
+        run: |
+          echo "🎸 Running metadata extraction..."
           python scripts/extract_musical_metadata.py
       
-      - name: 📊 Generate complete resource map
+      - name: 📊 Verify extraction results
         run: |
-          python scripts/generate_complete_map.py
+          if [ -f "resources/complete-resource-map.json" ]; then
+            echo "✅ JSON generated successfully"
+            echo ""
+            echo "📄 File info:"
+            ls -lh resources/complete-resource-map.json
+            echo ""
+            echo "📊 Statistics:"
+            cat resources/stats.json
+          else
+            echo "❌ JSON file not generated"
+            exit 1
+          fi
       
-      - name: 🏗️ Update main index.html
+      - name: 📝 Create workflow summary
+        if: always()
         run: |
-          python scripts/update_main_index.py
-      
-      - name: ✅ Verify outputs
-        run: |
-          ls -lh resources/
-          ls -lh prompts/
-          echo "✅ Generated files:"
-          cat resources/stats.json
+          echo "# 🎸 Prof de Basse - Indexation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "resources/stats.json" ]; then
+            echo "## ✅ Extraction réussie!" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### 📊 Statistiques" >> $GITHUB_STEP_SUMMARY
+            echo '```json' >> $GITHUB_STEP_SUMMARY
+            cat resources/stats.json >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ❌ Erreur d'extraction" >> $GITHUB_STEP_SUMMARY
+            echo "Vérifier les logs ci-dessus." >> $GITHUB_STEP_SUMMARY
+          fi
       
       - name: 💾 Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "Prof de Basse Bot 🎸"
-          git add resources/ prompts/ index.html
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update: Resource map + GPT prompts [$(date +'%Y-%m-%d %H:%M')]" && git push)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+          git add resources/
+          
+          if git diff --staged --quiet; then
+            echo "ℹ️  Pas de changements à commiter"
+          else
+            git commit -m "🤖 Auto-update: Resource map [$(date +'%Y-%m-%d %H:%M')]"
+            git push
+            echo "✅ Changements commitées et pushées"
+          fi
       
-      - name: 🎉 Summary
+      - name: 🎉 Workflow completed
         run: |
-          echo "🎸 Prof de Basse Auto-Indexer completed!"
-          echo "✅ Metadata extracted"
-          echo "✅ Resource map updated"
-          echo "✅ GPT prompts regenerated"
-          echo "✅ Changes committed to repo"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "🎸 Prof de Basse Auto-Indexer terminé!"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          
+          if [ -f "resources/stats.json" ]; then
+            echo ""
+            cat resources/stats.json
+            echo ""
+          fi
+          
+          echo "✅ Workflow réussi!"
