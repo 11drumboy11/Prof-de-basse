@@ -3,43 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof de Basse - Hub Pédagogique Intelligent</title>
-    <meta name="description" content="Hub pédagogique complet pour bassistes : 363 MP3, 71 PDFs, méthodes Berklee, Real Books. Interface optimisée IA & humain.">
-    <meta name="keywords" content="basse, cours, funk, jazz, slap, méthodes, mp3, partitions, berklee, real book">
-    
-    <!-- Métadonnées pour GPT/IA -->
-    <meta name="ai-content-type" content="music-education-hub">
-    <meta name="ai-resource-count" content="956">
-    <meta name="ai-mp3-count" content="363">
-    <meta name="ai-primary-styles" content="funk, jazz, slap, disco, rock, latin">
-    <meta name="ai-skill-levels" content="beginner, intermediate, advanced">
-    
+    <title>Universal Resource Finder - Système Complet</title>
     <style>
-        /* ========================================
-           VARIABLES & RESET
-        ======================================== */
-        :root {
-            --primary: #667eea;
-            --secondary: #764ba2;
-            --accent: #f5576c;
-            --accent-light: #f093fb;
-            --success: #4caf50;
-            --warning: #ff9800;
-            --bg-light: #f8f9fa;
-            --bg-white: #ffffff;
-            --text-dark: #333333;
-            --text-medium: #666666;
-            --text-light: #999999;
-            --border-color: #e0e0e0;
-            --shadow-sm: 0 2px 8px rgba(0,0,0,0.1);
-            --shadow-md: 0 4px 16px rgba(0,0,0,0.15);
-            --shadow-lg: 0 8px 32px rgba(0,0,0,0.2);
-            --radius-sm: 8px;
-            --radius-md: 12px;
-            --radius-lg: 20px;
-            --transition: all 0.3s ease;
-        }
-        
         * {
             margin: 0;
             padding: 0;
@@ -47,1726 +12,467 @@
         }
         
         body {
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
             line-height: 1.6;
-            color: var(--text-dark);
-            min-height: 100vh;
         }
         
-        /* ========================================
-           HERO SECTION
-        ======================================== */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            padding: 60px 20px 40px;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: clamp(36px, 5vw, 56px);
-            margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            font-weight: 800;
-        }
-        
-        .hero-subtitle {
-            font-size: clamp(16px, 2.5vw, 22px);
-            opacity: 0.95;
-            margin-bottom: 30px;
-            font-weight: 300;
-        }
-        
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 25px;
-        }
-        
-        .hero-stat {
-            text-align: center;
-        }
-        
-        .hero-stat-number {
-            font-size: 42px;
-            font-weight: 800;
-            display: block;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-        }
-        
-        .hero-stat-label {
-            font-size: 13px;
-            opacity: 0.9;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 5px;
-        }
-        
-        /* ========================================
-           QUICK ACCESS CARDS (HERO)
-        ======================================== */
-        .quick-access {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 40px auto 0;
-            padding: 0 20px;
-        }
-        
-        .quick-card {
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
             background: white;
-            border-radius: var(--radius-md);
-            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
             text-align: center;
-            box-shadow: var(--shadow-lg);
-            transition: var(--transition);
-            cursor: pointer;
-            text-decoration: none;
-            color: var(--text-dark);
-            border: 3px solid transparent;
         }
         
-        .quick-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-            border-color: var(--accent);
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
         }
         
-        .quick-card-icon {
-            font-size: 48px;
-            margin-bottom: 15px;
-            display: block;
+        main {
+            padding: 40px;
         }
         
-        .quick-card-title {
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--primary);
+        .card {
+            background: #f8f9fa;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            border-left: 6px solid #667eea;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .file-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .file-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s;
+        }
+        
+        .file-item:hover {
+            border-color: #667eea;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .file-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .file-name {
+            font-weight: 600;
+            color: #333;
             margin-bottom: 8px;
         }
         
-        .quick-card-desc {
+        .file-desc {
+            color: #666;
             font-size: 14px;
-            color: var(--text-medium);
-            line-height: 1.4;
         }
         
-        .quick-card-badge {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 700;
-            margin-top: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        /* ========================================
-           MAIN CONTAINER
-        ======================================== */
-        .container {
-            max-width: 1400px;
-            margin: -40px auto 40px;
-            background: white;
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-lg);
-            overflow: hidden;
-            position: relative;
-            z-index: 10;
-        }
-        
-        /* ========================================
-           NAVIGATION TABS
-        ======================================== */
-        .nav-tabs {
-            display: flex;
-            background: var(--bg-light);
-            border-bottom: 3px solid var(--border-color);
-            overflow-x: auto;
-            scrollbar-width: thin;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .nav-tabs::-webkit-scrollbar {
-            height: 6px;
-        }
-        
-        .nav-tabs::-webkit-scrollbar-thumb {
-            background: var(--primary);
-            border-radius: 10px;
-        }
-        
-        .nav-tab {
-            flex: 1;
-            min-width: 150px;
-            padding: 20px 15px;
-            text-align: center;
-            cursor: pointer;
-            transition: var(--transition);
-            background: white;
-            border: none;
-            border-bottom: 4px solid transparent;
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--text-medium);
-            position: relative;
-        }
-        
-        .nav-tab:hover {
-            background: var(--bg-light);
-            color: var(--primary);
-        }
-        
-        .nav-tab.active {
-            background: white;
-            color: var(--primary);
-            border-bottom-color: var(--primary);
-        }
-        
-        .nav-tab-icon {
-            font-size: 24px;
-            display: block;
-            margin-bottom: 5px;
-        }
-        
-        .nav-tab-count {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            background: var(--accent);
-            color: white;
-            font-size: 11px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-weight: 700;
-        }
-        
-        /* ========================================
-           SEARCH & FILTERS
-        ======================================== */
-        .search-section {
+        .quick-start {
+            background: #e8f5e9;
             padding: 30px;
-            background: white;
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 98px;
-            z-index: 99;
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .search-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .search-input-wrapper {
-            position: relative;
-            margin-bottom: 20px;
-        }
-        
-        #searchInput {
-            width: 100%;
-            padding: 16px 50px 16px 20px;
-            font-size: 16px;
-            border: 2px solid var(--border-color);
-            border-radius: var(--radius-md);
-            outline: none;
-            transition: var(--transition);
-            font-family: inherit;
-        }
-        
-        #searchInput:focus {
-            border-color: var(--primary);
-            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
-        }
-        
-        .search-icon {
-            position: absolute;
-            right: 18px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 20px;
-            color: var(--text-light);
-        }
-        
-        .filter-pills {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .filter-pill {
-            padding: 8px 20px;
-            background: var(--bg-light);
-            border: 2px solid var(--border-color);
-            border-radius: 25px;
-            cursor: pointer;
-            transition: var(--transition);
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--text-medium);
-        }
-        
-        .filter-pill:hover,
-        .filter-pill.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-        
-        /* ========================================
-           CONTENT SECTIONS
-        ======================================== */
-        .tab-content {
-            display: none;
-            padding: 40px;
-            animation: fadeIn 0.3s ease;
-        }
-        
-        .tab-content.active {
-            display: block;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .section-title {
-            font-size: 28px;
-            color: var(--primary);
-            margin-bottom: 10px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .section-subtitle {
-            color: var(--text-medium);
-            margin-bottom: 30px;
-            font-size: 15px;
-        }
-        
-        /* ========================================
-           RESOURCE CARDS
-        ======================================== */
-        .resource-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        .resource-card {
-            background: white;
-            border: 2px solid var(--border-color);
-            border-radius: var(--radius-md);
-            padding: 20px;
-            transition: var(--transition);
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .resource-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--primary);
-            transform: scaleY(0);
-            transition: var(--transition);
-        }
-        
-        .resource-card:hover {
-            border-color: var(--primary);
-            box-shadow: var(--shadow-md);
-            transform: translateY(-4px);
-        }
-        
-        .resource-card:hover::before {
-            transform: scaleY(1);
-        }
-        
-        .resource-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-        
-        .resource-icon {
-            font-size: 36px;
-            flex-shrink: 0;
-        }
-        
-        .resource-info {
-            flex: 1;
-        }
-        
-        .resource-name {
-            font-weight: 700;
-            color: var(--text-dark);
-            margin-bottom: 6px;
-            font-size: 16px;
-            line-height: 1.3;
-            word-break: break-word;
-        }
-        
-        .resource-meta {
-            display: flex;
-            gap: 15px;
-            font-size: 12px;
-            color: var(--text-medium);
-            flex-wrap: wrap;
-        }
-        
-        .resource-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-top: 12px;
-        }
-        
-        .resource-tag {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 4px 12px;
             border-radius: 15px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
+            border-left: 6px solid #4caf50;
         }
         
-        .resource-preview {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px solid var(--bg-light);
-            font-size: 13px;
-            color: var(--text-medium);
-            line-height: 1.4;
-        }
-        
-        /* ========================================
-           CATEGORY SECTIONS
-        ======================================== */
-        .category-section {
-            margin-bottom: 50px;
-        }
-        
-        .category-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid var(--primary);
-        }
-        
-        .category-icon {
-            font-size: 32px;
-        }
-        
-        .category-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary);
-            flex: 1;
-        }
-        
-        .category-count {
-            background: var(--primary);
-            color: white;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 700;
-        }
-        
-        /* ========================================
-           EMPTY STATE
-        ======================================== */
-        .empty-state {
-            text-align: center;
-            padding: 80px 20px;
-        }
-        
-        .empty-icon {
-            font-size: 80px;
-            margin-bottom: 20px;
-            opacity: 0.3;
-        }
-        
-        .empty-title {
-            font-size: 24px;
-            color: var(--text-medium);
-            margin-bottom: 10px;
-        }
-        
-        .empty-text {
-            color: var(--text-light);
-            font-size: 15px;
-        }
-        
-        /* ========================================
-           FOOTER
-        ======================================== */
-        footer {
-            background: var(--text-dark);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
-        }
-        
-        footer a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        
-        /* ========================================
-           RESPONSIVE
-        ======================================== */
-        @media (max-width: 768px) {
-            .hero {
-                padding: 40px 15px 30px;
-            }
-            
-            .quick-access {
-                grid-template-columns: 1fr;
-                padding: 0 15px;
-            }
-            
-            .container {
-                margin: -30px 15px 20px;
-                border-radius: var(--radius-md);
-            }
-            
-            .nav-tab {
-                min-width: 120px;
-                padding: 15px 10px;
-                font-size: 13px;
-            }
-            
-            .nav-tab-icon {
-                font-size: 20px;
-            }
-            
-            .search-section {
-                padding: 20px 15px;
-                top: 92px;
-            }
-            
-            .tab-content {
-                padding: 20px 15px;
-            }
-            
-            .resource-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero-stats {
-                gap: 20px;
-            }
-            
-            .hero-stat-number {
-                font-size: 32px;
-            }
-        }
-        
-        /* ========================================
-           UTILITY CLASSES
-        ======================================== */
-        .hidden {
-            display: none !important;
-        }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        .mt-20 {
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
             margin-top: 20px;
         }
         
-        .mb-20 {
-            margin-bottom: 20px;
-        }
-        
-        /* ========================================
-           UNIVERSAL RESOURCE FINDER BUTTON
-        ======================================== */
-        .universal-finder-banner {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            padding: 30px 40px;
-            text-align: center;
-            border-bottom: 4px solid #f5576c;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .universal-finder-banner::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: pulse-finder 3s ease-in-out infinite;
-        }
-
-        @keyframes pulse-finder {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.1); opacity: 0.8; }
-        }
-
-        .finder-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 15px;
+        .stat-box {
             background: white;
-            color: #f5576c;
-            padding: 20px 40px;
-            border-radius: 50px;
-            font-size: 24px;
-            font-weight: 700;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
             text-decoration: none;
-            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
-            transition: all 0.3s ease;
-            position: relative;
-            z-index: 1;
-            border: 3px solid transparent;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-right: 10px;
+            margin-top: 10px;
         }
-
-        .finder-button:hover {
-            background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
-            color: white;
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(245, 87, 108, 0.6);
-            border-color: white;
+        
+        .btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
         }
-
-        .finder-button .icon {
-            font-size: 32px;
-            animation: rotate-finder 2s linear infinite;
+        
+        .btn-secondary {
+            background: #764ba2;
         }
-
-        @keyframes rotate-finder {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+        
+        .btn-secondary:hover {
+            background: #667eea;
         }
-
-        .finder-button:hover .icon {
-            animation: none;
-            transform: scale(1.2);
+        
+        ol, ul {
+            margin-left: 25px;
+            margin-top: 10px;
         }
-
-        .finder-subtitle {
-            color: white;
-            font-size: 16px;
-            margin-top: 15px;
-            opacity: 0.95;
-            font-weight: 300;
+        
+        li {
+            margin-bottom: 8px;
         }
-
-        /* Responsive pour le finder button */
-        @media (max-width: 768px) {
-            .finder-button {
-                font-size: 18px;
-                padding: 15px 30px;
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .finder-button .icon {
-                font-size: 28px;
-            }
-            
-            .universal-finder-banner {
-                padding: 20px;
-            }
+        
+        code {
+            background: #2d2d2d;
+            color: #4ec9b0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>🎸 Prof de Basse</h1>
-        <div class="hero-subtitle">
-            Hub Pédagogique Intelligent · Optimisé IA & Humain
-        </div>
-        
-        <div class="hero-stats">
-            <div class="hero-stat">
-                <span class="hero-stat-number">956</span>
-                <span class="hero-stat-label">Ressources</span>
-            </div>
-            <div class="hero-stat">
-                <span class="hero-stat-number">363</span>
-                <span class="hero-stat-label">MP3</span>
-            </div>
-            <div class="hero-stat">
-                <span class="hero-stat-number">71</span>
-                <span class="hero-stat-label">PDFs</span>
-            </div>
-            <div class="hero-stat">
-                <span class="hero-stat-number">1.8GB</span>
-                <span class="hero-stat-label">Contenu</span>
-            </div>
-        </div>
-        
-        <!-- QUICK ACCESS CARDS -->
-        <div class="quick-access">
-            <a href="search_system/search.html" class="quick-card">
-                <span class="quick-card-icon">🔍</span>
-                <div class="quick-card-title">Universal Finder</div>
-                <div class="quick-card-desc">Recherche intelligente tous dossiers</div>
-                <span class="quick-card-badge">IA-Powered</span>
-            </a>
-            
-            <a href="#" class="quick-card" onclick="switchTab('methods'); return false;">
-                <span class="quick-card-icon">📚</span>
-                <div class="quick-card-title">Méthodes</div>
-                <div class="quick-card-desc">70s Funk, Jon Liebman, Paul Westwood</div>
-                <span class="quick-card-badge">99 Tracks</span>
-            </a>
-            
-            <a href="#" class="quick-card" onclick="switchTab('realbooks'); return false;">
-                <span class="quick-card-icon">🎵</span>
-                <div class="quick-card-title">Real Books</div>
-                <div class="quick-card-desc">Jazz & Funk standards professionnels</div>
-                <span class="quick-card-badge">71 PDFs</span>
-            </a>
-            
-            <a href="#" class="quick-card" onclick="switchTab('mp3'); return false;">
-                <span class="quick-card-icon">🎧</span>
-                <div class="quick-card-title">MP3 Library</div>
-                <div class="quick-card-desc">Accompagnements & backing tracks</div>
-                <span class="quick-card-badge">363 Files</span>
-            </a>
-        </div>
-    </section>
-    
-    <!-- UNIVERSAL RESOURCE FINDER BANNER -->
-    <div class="universal-finder-banner">
-        <a href="search_system/search.html" class="finder-button">
-            <span class="icon">🔍</span>
-            <span>Universal Resource Finder</span>
-        </a>
-        <p class="finder-subtitle">
-            🎯 Trouve instantanément n'importe quelle ressource : méthodes, MP3, partitions, exercices
-        </p>
-    </div>
-    
-    <!-- MAIN CONTAINER -->
     <div class="container">
-        <!-- NAVIGATION TABS -->
-        <nav class="nav-tabs">
-            <button class="nav-tab active" data-tab="all" onclick="switchTab('all')">
-                <span class="nav-tab-icon">🏠</span>
-                <span>Tout</span>
-                <span class="nav-tab-count">956</span>
-            </button>
-            <button class="nav-tab" data-tab="methods" onclick="switchTab('methods')">
-                <span class="nav-tab-icon">📚</span>
-                <span>Méthodes</span>
-                <span class="nav-tab-count">3</span>
-            </button>
-            <button class="nav-tab" data-tab="realbooks" onclick="switchTab('realbooks')">
-                <span class="nav-tab-icon">🎵</span>
-                <span>Real Books</span>
-                <span class="nav-tab-count">71</span>
-            </button>
-            <button class="nav-tab" data-tab="mp3" onclick="switchTab('mp3')">
-                <span class="nav-tab-icon">🎧</span>
-                <span>MP3</span>
-                <span class="nav-tab-count">363</span>
-            </button>
-            <button class="nav-tab" data-tab="theory" onclick="switchTab('theory')">
-                <span class="nav-tab-icon">🎓</span>
-                <span>Théorie</span>
-                <span class="nav-tab-count">15</span>
-            </button>
-            <button class="nav-tab" data-tab="data" onclick="switchTab('data')">
-                <span class="nav-tab-icon">📊</span>
-                <span>Data/API</span>
-                <span class="nav-tab-count">6</span>
-            </button>
-        </nav>
-        
-        <!-- SEARCH & FILTERS -->
-        <section class="search-section">
-            <div class="search-container">
-                <div class="search-input-wrapper">
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        placeholder="🔍 Rechercher par nom, style, niveau, tags... (ex: funk, slap, débutant)"
-                        oninput="handleSearch()"
-                    >
-                    <span class="search-icon">🔍</span>
-                </div>
-                
-                <div class="filter-pills">
-                    <button class="filter-pill" data-filter="funk" onclick="applyFilter('funk')">Funk</button>
-                    <button class="filter-pill" data-filter="jazz" onclick="applyFilter('jazz')">Jazz</button>
-                    <button class="filter-pill" data-filter="slap" onclick="applyFilter('slap')">Slap</button>
-                    <button class="filter-pill" data-filter="walking" onclick="applyFilter('walking')">Walking</button>
-                    <button class="filter-pill" data-filter="improvisation" onclick="applyFilter('improvisation')">Improvisation</button>
-                    <button class="filter-pill" data-filter="beginner" onclick="applyFilter('beginner')">Débutant</button>
-                    <button class="filter-pill" data-filter="all" onclick="applyFilter('all')">Tout voir</button>
-                </div>
-            </div>
-        </section>
-        
-        <!-- TAB CONTENT: ALL -->
-        <div id="tab-all" class="tab-content active">
-            <h2 class="section-title">
-                <span>📚</span>
-                Toutes les ressources
-            </h2>
-            <p class="section-subtitle">
-                956 fichiers disponibles · Utilisez la recherche ou les filtres ci-dessus
+        <header>
+            <h1>🔍 Universal Resource Finder</h1>
+            <p style="font-size: 20px; margin-top: 10px; opacity: 0.95;">
+                Système complet de recherche pour Prof de Basse
             </p>
-            
-            <!-- CATEGORY: MÉTHODES -->
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">📚</span>
-                    <span class="category-title">Méthodes de Basse</span>
-                    <span class="category-count">3 principales</span>
-                </div>
-                
-                <div class="resource-grid">
-                    <div class="resource-card" onclick="window.open('Methodes/70%20Funk%20%26%20Disco%20bass%20MP3/', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">🎸</span>
-                            <div class="resource-info">
-                                <div class="resource-name">70s Funk & Disco Bass</div>
-                                <div class="resource-meta">
-                                    <span>📁 99 tracks MP3</span>
-                                    <span>⏱️ ~4h de contenu</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Funk</span>
-                            <span class="resource-tag">Disco</span>
-                            <span class="resource-tag">Slap</span>
-                            <span class="resource-tag">Ghost Notes</span>
-                        </div>
-                        <div class="resource-preview">
-                            Méthode complète de funk des années 70 avec ghost notes, slap, groove laid-back. Tracks 01-15 : débutant, 16-30 : intermédiaire, 81-99 : avancé.
-                        </div>
-                    </div>
-                    
-                    <div class="resource-card" onclick="window.open('Methodes/John%20Liebman%20Funk%20Fusion%20Mp3/', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">🎹</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Jon Liebman - Funk Fusion</div>
-                                <div class="resource-meta">
-                                    <span>📁 MP3 + PDF</span>
-                                    <span>🎓 Berklee style</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Funk</span>
-                            <span class="resource-tag">Fusion</span>
-                            <span class="resource-tag">Jazz</span>
-                        </div>
-                        <div class="resource-preview">
-                            Approche Berklee du funk fusion avec exercices progressifs et applications musicales.
-                        </div>
-                    </div>
-                    
-                    <div class="resource-card" onclick="window.open('Methodes/Paul%20westwood%20MP3/', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">📖</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Paul Westwood - Bass Bible</div>
-                                <div class="resource-meta">
-                                    <span>📁 2 volumes</span>
-                                    <span>🌍 World styles</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Technique</span>
-                            <span class="resource-tag">Tous styles</span>
-                            <span class="resource-tag">Complet</span>
-                        </div>
-                        <div class="resource-preview">
-                            Encyclopédie complète des techniques et styles de basse. Histoire mondiale des approches rythmiques.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- CATEGORY: REAL BOOKS -->
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">🎵</span>
-                    <span class="category-title">Real Books & Standards</span>
-                    <span class="category-count">71 PDFs</span>
-                </div>
-                
-                <div class="resource-grid">
-                    <div class="resource-card" onclick="window.open('Methodes/Reabook/Realbook%20Bass%20F_with_index/', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">🎺</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Real Book Bass (Clé de Fa)</div>
-                                <div class="resource-meta">
-                                    <span>📄 PDF indexé</span>
-                                    <span>🔍 Searchable</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Jazz</span>
-                            <span class="resource-tag">Standards</span>
-                            <span class="resource-tag">Walking</span>
-                        </div>
-                        <div class="resource-preview">
-                            Collection complète des standards jazz avec lignes de basse. Index JSON inclus pour recherche rapide.
-                        </div>
-                    </div>
-                    
-                    <div class="resource-card" onclick="window.open('Methodes/Reabook/', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">🎷</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Aebersold - Jazz Fake Books</div>
-                                <div class="resource-meta">
-                                    <span>📄 2 parties</span>
-                                    <span>📏 133.4 MB</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Jazz</span>
-                            <span class="resource-tag">Bebop</span>
-                            <span class="resource-tag">Pro</span>
-                        </div>
-                        <div class="resource-preview">
-                            La référence mondiale pour le jazz. PDFs convertis avec liens actifs.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- CATEGORY: THÉORIE -->
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">🎓</span>
-                    <span class="category-title">Théorie & Harmonie</span>
-                    <span class="category-count">15 fichiers</span>
-                </div>
-                
-                <div class="resource-grid">
-                    <div class="resource-card" onclick="window.open('Harmonie/Harmonie.html', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">🎼</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Harmonie</div>
-                                <div class="resource-meta">
-                                    <span>📄 HTML</span>
-                                    <span>📏 68.3 KB</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-preview">
-                            Cours d'harmonie adaptés à la basse.
-                        </div>
-                    </div>
-                    
-                    <div class="resource-card" onclick="window.open('Arpeges/Arpeges.html', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">🎹</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Arpèges</div>
-                                <div class="resource-meta">
-                                    <span>📄 HTML</span>
-                                    <span>📏 37.6 KB</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-preview">
-                            Exercices d'arpèges pour tous niveaux.
-                        </div>
-                    </div>
-                    
-                    <div class="resource-card" onclick="window.open('Theorie/Theorie.html', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">📚</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Théorie Générale</div>
-                                <div class="resource-meta">
-                                    <span>📄 HTML</span>
-                                    <span>📏 84.1 KB</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Improvisation</span>
-                            <span class="resource-tag">Jazz</span>
-                            <span class="resource-tag">Latin</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- CATEGORY: DATA/API -->
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">📊</span>
-                    <span class="category-title">Data & API (Pour GPT/IA)</span>
-                    <span class="category-count">6 fichiers</span>
-                </div>
-                
-                <div class="resource-grid">
-                    <div class="resource-card" onclick="window.open('resources/complete-resource-map.json', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">🗺️</span>
-                            <div class="resource-info">
-                                <div class="resource-name">complete-resource-map.json</div>
-                                <div class="resource-meta">
-                                    <span>📊 JSON</span>
-                                    <span>📏 336.2 KB</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-preview">
-                            Carte complète de toutes les ressources avec métadonnées. Optimisé pour requêtes IA.
-                        </div>
-                    </div>
-                    
-                    <div class="resource-card" onclick="window.open('resources_index.json', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">📋</span>
-                            <div class="resource-info">
-                                <div class="resource-name">resources_index.json</div>
-                                <div class="resource-meta">
-                                    <span>📊 JSON</span>
-                                    <span>📏 555.2 KB</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-preview">
-                            Index principal avec full-text search. Sub-0.1s performance.
-                        </div>
-                    </div>
-                    
-                    <div class="resource-card" onclick="window.open('resources/stats.json', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">📈</span>
-                            <div class="resource-info">
-                                <div class="resource-name">stats.json</div>
-                                <div class="resource-meta">
-                                    <span>📊 JSON</span>
-                                    <span>📏 780 B</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-preview">
-                            Statistiques globales du site.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- TAB CONTENT: METHODS -->
-        <div id="tab-methods" class="tab-content">
-            <h2 class="section-title">
-                <span>📚</span>
-                Méthodes de Basse
-            </h2>
-            <p class="section-subtitle">
-                3 méthodes principales · 99+ tracks MP3 · Tous niveaux
+            <p style="font-size: 16px; margin-top: 10px; opacity: 0.9;">
+                Version 1.0.0 - 6 novembre 2025
             </p>
-            
-            <div class="resource-grid">
-                <div class="resource-card" onclick="window.open('Methodes/70%20Funk%20%26%20Disco%20bass%20MP3/', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎸</span>
-                        <div class="resource-info">
-                            <div class="resource-name">70s Funk & Disco Bass</div>
-                            <div class="resource-meta">
-                                <span>📁 99 tracks MP3</span>
-                                <span>⏱️ ~4h de contenu</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-tags">
-                        <span class="resource-tag">Funk</span>
-                        <span class="resource-tag">Disco</span>
-                        <span class="resource-tag">Slap</span>
-                        <span class="resource-tag">Ghost Notes</span>
-                    </div>
-                    <div class="resource-preview">
-                        <strong>Tracks par niveau :</strong><br>
-                        • 01-15 : Fondamentaux funk (débutant, BPM 90-110)<br>
-                        • 16-30 : Ghost notes avancés (intermédiaire, BPM 95-115)<br>
-                        • 21-40 : Slap introduction (intermédiaire, BPM 100-120)<br>
-                        • 61-80 : Disco grooves (avancé, BPM 115-125)<br>
-                        • 81-99 : Slap avancé, double-thumb (avancé, BPM 120-140)
-                    </div>
-                </div>
+        </header>
+        
+        <main>
+            <!-- QUICK START -->
+            <div class="quick-start">
+                <h2 style="color: #2e7d32;">🚀 Démarrage Rapide</h2>
                 
-                <div class="resource-card" onclick="window.open('Methodes/John%20Liebman%20Funk%20Fusion%20Mp3/', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎹</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Jon Liebman - Funk Fusion</div>
-                            <div class="resource-meta">
-                                <span>📁 MP3 + PDF</span>
-                                <span>🎓 Berklee style</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-tags">
-                        <span class="resource-tag">Funk</span>
-                        <span class="resource-tag">Fusion</span>
-                        <span class="resource-tag">Jazz</span>
-                        <span class="resource-tag">Berklee</span>
-                    </div>
-                    <div class="resource-preview">
-                        Approche Berklee du funk fusion. Format : XX - Track X.mp3. Exercices progressifs avec applications musicales professionnelles.
-                    </div>
-                </div>
+                <p style="font-size: 18px; margin-bottom: 20px;">
+                    Pour utiliser le système de recherche immédiatement :
+                </p>
                 
-                <div class="resource-card" onclick="window.open('Methodes/Paul%20westwood%20MP3/', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">📖</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Paul Westwood - Bass Bible</div>
-                            <div class="resource-meta">
-                                <span>📁 2 volumes</span>
-                                <span>🌍 World styles</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-tags">
-                        <span class="resource-tag">Technique</span>
-                        <span class="resource-tag">Blues</span>
-                        <span class="resource-tag">R&B</span>
-                        <span class="resource-tag">Complet</span>
-                    </div>
-                    <div class="resource-preview">
-                        <strong>Structure :</strong><br>
-                        • Paul Westwood 1 : Bass Bible Vol 1 - World History Of Styles & Techniques<br>
-                        • Paul Westwood 2 : Bass Bible Vol 2 - World History Of Styles<br>
-                        Format fichiers : X-XX_Style_BPM_Pg.XX.mp3
-                    </div>
+                <ol style="font-size: 16px;">
+                    <li>Ouvrir <code>universal-search-system.html</code> dans un navigateur</li>
+                    <li>Rechercher parmi 363+ ressources (MP3, méthodes, Real Books)</li>
+                    <li>Filtrer par style, niveau, technique</li>
+                    <li>Cliquer sur les liens pour accéder directement aux MP3</li>
+                </ol>
+                
+                <div style="margin-top: 20px;">
+                    <a href="universal-search-system.html" class="btn">🔍 Ouvrir la Recherche</a>
+                    <a href="search-examples.html" class="btn btn-secondary">📚 Voir les Exemples</a>
                 </div>
             </div>
-        </div>
-        
-        <!-- TAB CONTENT: REAL BOOKS -->
-        <div id="tab-realbooks" class="tab-content">
-            <h2 class="section-title">
-                <span>🎵</span>
-                Real Books & Standards Jazz
-            </h2>
-            <p class="section-subtitle">
-                71 PDFs · Standards professionnels · Index JSON searchable
-            </p>
             
-            <div class="resource-grid">
-                <div class="resource-card" onclick="window.open('Methodes/Reabook/Realbook%20Bass%20F_with_index/', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎺</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Real Book Bass (Clé de Fa)</div>
-                            <div class="resource-meta">
-                                <span>📄 PDF + Index JSON</span>
-                                <span>🔍 53.1 KB index</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-tags">
-                        <span class="resource-tag">Jazz</span>
-                        <span class="resource-tag">Standards</span>
-                        <span class="resource-tag">Walking Bass</span>
-                    </div>
-                    <div class="resource-preview">
-                        Collection complète des standards jazz avec lignes de basse en clé de Fa. Index songs_index.json inclus pour recherche ultra-rapide par titre ou compositeur.
-                    </div>
-                </div>
+            <!-- STATISTIQUES -->
+            <div class="card">
+                <h2>📊 Statistiques du Système</h2>
                 
-                <div class="resource-card" onclick="window.open('Methodes/Reabook/Aebersold%20-%20The%20Jazz%20Fake%20Book_part1_avec_liens.html', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎷</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Aebersold - Jazz Fake Book (Part 1)</div>
-                            <div class="resource-meta">
-                                <span>📄 HTML</span>
-                                <span>📏 87.2 MB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-tags">
-                        <span class="resource-tag">Jazz</span>
-                        <span class="resource-tag">Bebop</span>
-                        <span class="resource-tag">Pro</span>
-                    </div>
-                    <div class="resource-preview">
-                        La bible du jazz standard. PDF converti en HTML avec liens actifs. Première partie de la collection Aebersold.
-                    </div>
-                </div>
-                
-                <div class="resource-card" onclick="window.open('Methodes/Reabook/Aebersold%20-%20The%20Jazz%20Fake%20Book_part2_avec_liens.html', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎷</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Aebersold - Jazz Fake Book (Part 2)</div>
-                            <div class="resource-meta">
-                                <span>📄 HTML</span>
-                                <span>📏 46.2 MB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-tags">
-                        <span class="resource-tag">Jazz</span>
-                        <span class="resource-tag">Standards</span>
-                        <span class="resource-tag">Pro</span>
-                    </div>
-                    <div class="resource-preview">
-                        Suite de la collection Aebersold. Deuxième partie avec standards additionnels et variations.
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- TAB CONTENT: MP3 -->
-        <div id="tab-mp3" class="tab-content">
-            <h2 class="section-title">
-                <span>🎧</span>
-                Bibliothèque MP3
-            </h2>
-            <p class="section-subtitle">
-                363 fichiers MP3 · Backing tracks · Accompagnements professionnels
-            </p>
-            
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">🎸</span>
-                    <span class="category-title">70s Funk & Disco</span>
-                    <span class="category-count">99 tracks</span>
-                </div>
-                <div class="resource-preview" style="margin-bottom: 20px;">
-                    <strong>URL de base :</strong> <code>https://11drumboy11.github.io/Prof-de-basse/Methodes/70%20Funk%20&%20Disco%20bass%20MP3/Track%20XX.mp3</code><br>
-                    <strong>Format :</strong> Track 01.mp3 à Track 99.mp3 (avec espace et zéro devant)
-                </div>
-                
-                <div class="resource-grid">
-                    <div class="resource-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/70%20Funk%20&%20Disco%20bass%20MP3/Track%2001.mp3', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">🎵</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Track 01-15 : Funk Débutant</div>
-                                <div class="resource-meta">
-                                    <span>🎯 BPM 90-110</span>
-                                    <span>⭐ Niveau 1</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Débutant</span>
-                            <span class="resource-tag">Funk</span>
-                        </div>
-                        <div class="resource-preview">
-                            Fondamentaux du funk, introduction aux ghost notes. Parfait pour débuter.
-                        </div>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-number">363+</div>
+                        <div class="stat-label">Fichiers MP3</div>
                     </div>
                     
-                    <div class="resource-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/70%20Funk%20&%20Disco%20bass%20MP3/Track%2016.mp3', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">🎵</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Track 16-30 : Ghost Notes</div>
-                                <div class="resource-meta">
-                                    <span>🎯 BPM 95-115</span>
-                                    <span>⭐ Niveau 2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Intermédiaire</span>
-                            <span class="resource-tag">Ghost Notes</span>
-                        </div>
-                        <div class="resource-preview">
-                            Techniques avancées de ghost notes, patterns syncopés.
-                        </div>
+                    <div class="stat-box">
+                        <div class="stat-number">149</div>
+                        <div class="stat-label">Tracks Funk/Disco</div>
                     </div>
                     
-                    <div class="resource-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/70%20Funk%20&%20Disco%20bass%20MP3/Track%2021.mp3', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">👋</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Track 21-40 : Slap Intro</div>
-                                <div class="resource-meta">
-                                    <span>🎯 BPM 100-120</span>
-                                    <span>⭐ Niveau 2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Slap</span>
-                            <span class="resource-tag">Intermédiaire</span>
-                        </div>
-                        <div class="resource-preview">
-                            Introduction au slap, thumb & pop, hammer-ons.
-                        </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Standards Jazz</div>
                     </div>
                     
-                    <div class="resource-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/70%20Funk%20&%20Disco%20bass%20MP3/Track%2061.mp3', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">✨</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Track 61-80 : Disco Grooves</div>
-                                <div class="resource-meta">
-                                    <span>🎯 BPM 115-125</span>
-                                    <span>⭐ Niveau 3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Disco</span>
-                            <span class="resource-tag">Avancé</span>
-                        </div>
-                        <div class="resource-preview">
-                            Grooves disco complexes, notes filées, octaves.
-                        </div>
+                    <div class="stat-box">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Méthodes complètes</div>
                     </div>
                     
-                    <div class="resource-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/Methodes/70%20Funk%20&%20Disco%20bass%20MP3/Track%2081.mp3', '_blank')">
-                        <div class="resource-header">
-                            <span class="resource-icon">🔥</span>
-                            <div class="resource-info">
-                                <div class="resource-name">Track 81-99 : Slap Avancé</div>
-                                <div class="resource-meta">
-                                    <span>🎯 BPM 120-140</span>
-                                    <span>⭐ Niveau 3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-tags">
-                            <span class="resource-tag">Slap Pro</span>
-                            <span class="resource-tag">Double-Thumb</span>
-                        </div>
-                        <div class="resource-preview">
-                            Techniques de slap avancées, double-thumb, vitesse maximale.
-                        </div>
+                    <div class="stat-box">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Styles musicaux</div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-number">< 0.1s</div>
+                        <div class="stat-label">Temps de recherche</div>
                     </div>
                 </div>
             </div>
             
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">🎹</span>
-                    <span class="category-title">Jon Liebman MP3</span>
-                    <span class="category-count">Multiple tracks</span>
-                </div>
-                <div class="resource-preview" style="margin-bottom: 20px;">
-                    <strong>URL de base :</strong> <code>https://11drumboy11.github.io/Prof-de-basse/Methodes/John%20Liebman%20Funk%20Fusion%20Mp3/XX%20-%20Track%20X.mp3</code>
+            <!-- FONCTIONNALITÉS -->
+            <div class="card">
+                <h2>✨ Fonctionnalités Principales</h2>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Recherche Instantanée</h3>
+                        <p>Trouve n'importe quelle ressource en < 0.1 seconde</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Filtres Multiples</h3>
+                        <p>Type, style, niveau, technique - combinables</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎸</div>
+                        <h3>7 Styles</h3>
+                        <p>Funk, Jazz, Disco, Slap, Rock, Blues, Latin</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>3 Niveaux</h3>
+                        <p>Débutant, Intermédiaire, Avancé</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎧</div>
+                        <h3>Liens Directs</h3>
+                        <p>Accès instantané aux MP3 professionnels</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive</h3>
+                        <p>Fonctionne sur desktop, tablette, mobile</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">📖</span>
-                    <span class="category-title">Paul Westwood MP3</span>
-                    <span class="category-count">Multiple tracks</span>
-                </div>
-                <div class="resource-preview" style="margin-bottom: 20px;">
-                    <strong>Structures complexes :</strong><br>
-                    • Paul Westwood 1 : /Paul%20Westwood%201/Bass%20Bible%20Vol%201...<br>
-                    • Paul Westwood 2 : /Paul%20Westwood%202/Bass%20Bible%20Vol%202...
+            <!-- FICHIERS DU SYSTÈME -->
+            <div class="card">
+                <h2>📁 Fichiers du Système</h2>
+                
+                <div class="file-list">
+                    <div class="file-item">
+                        <div class="file-icon">🔍</div>
+                        <div class="file-name">universal-search-system.html</div>
+                        <div class="file-desc">Interface principale de recherche (standalone)</div>
+                        <a href="universal-search-system.html" class="btn" style="margin-top: 15px;">Ouvrir</a>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">📚</div>
+                        <div class="file-name">search-examples.html</div>
+                        <div class="file-desc">19 exemples de recherche pratiques</div>
+                        <a href="search-examples.html" class="btn" style="margin-top: 15px;">Ouvrir</a>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">🤖</div>
+                        <div class="file-name">gpt-integration-guide.html</div>
+                        <div class="file-desc">Guide d'intégration avec le GPT</div>
+                        <a href="gpt-integration-guide.html" class="btn" style="margin-top: 15px;">Ouvrir</a>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">⚙️</div>
+                        <div class="file-name">config.json</div>
+                        <div class="file-desc">Configuration globale du système</div>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">🐍</div>
+                        <div class="file-name">generate_search_index.py</div>
+                        <div class="file-desc">Générateur automatique d'index</div>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">📖</div>
+                        <div class="file-name">README-search-system.md</div>
+                        <div class="file-desc">Documentation complète</div>
+                    </div>
                 </div>
             </div>
-        </div>
+            
+            <!-- GUIDE D'UTILISATION -->
+            <div class="card">
+                <h2>📖 Guide d'Utilisation</h2>
+                
+                <h3 style="margin-top: 20px; color: #764ba2;">Pour les utilisateurs</h3>
+                <ol>
+                    <li>Ouvrir <code>universal-search-system.html</code></li>
+                    <li>Taper un mot-clé (funk, jazz, slap, track 12, etc.)</li>
+                    <li>Utiliser les filtres pour affiner (optionnel)</li>
+                    <li>Cliquer sur le lien "🎧 Écouter / Ouvrir"</li>
+                </ol>
+                
+                <h3 style="margin-top: 20px; color: #764ba2;">Pour le GPT Prof de Basse</h3>
+                <ol>
+                    <li>Lire <code>gpt-integration-guide.html</code> pour comprendre l'intégration</li>
+                    <li>Utiliser la table de correspondance interne (style → tracks)</li>
+                    <li>Construire les URLs avec le format exact : <code>Track%20[XX].mp3</code></li>
+                    <li>Intégrer les liens MP3 dans les cours (5 parties)</li>
+                </ol>
+                
+                <h3 style="margin-top: 20px; color: #764ba2;">Pour les développeurs</h3>
+                <ol>
+                    <li>Lire <code>README-search-system.md</code></li>
+                    <li>Modifier <code>config.json</code> pour personnaliser</li>
+                    <li>Exécuter <code>python generate_search_index.py</code> pour générer l'index</li>
+                    <li>Tester dans <code>universal-search-system.html</code></li>
+                </ol>
+            </div>
+            
+            <!-- RESSOURCES DISPONIBLES -->
+            <div class="card">
+                <h2>🎵 Ressources Disponibles</h2>
+                
+                <h3 style="color: #764ba2;">70s Funk & Disco Bass (99 tracks)</h3>
+                <ul>
+                    <li>Track 01-15 : Funk débutant, fingerstyle</li>
+                    <li>Track 16-30 : Funk ghost notes, intermédiaire</li>
+                    <li>Track 21-40 : Slap introduction</li>
+                    <li>Track 41-60 : Syncopations avancées</li>
+                    <li>Track 61-80 : Disco grooves avancé</li>
+                    <li>Track 81-99 : Slap avancé, double-thumb</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 20px;">John Liebman Funk Fusion (50 tracks)</h3>
+                <ul>
+                    <li>Track 01-15 : Débutant</li>
+                    <li>Track 16-35 : Intermédiaire</li>
+                    <li>Track 36-50 : Avancé</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 20px;">Real Books Jazz Standards</h3>
+                <ul>
+                    <li>All The Things You Are (Jerome Kern)</li>
+                    <li>Autumn Leaves (Joseph Kosma)</li>
+                    <li>Blue Bossa (Kenny Dorham)</li>
+                    <li>So What (Miles Davis)</li>
+                    <li>Summertime (George Gershwin)</li>
+                    <li>Take Five (Paul Desmond)</li>
+                    <li>Girl from Ipanema (Antonio Carlos Jobim)</li>
+                    <li>...100+ standards disponibles</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 20px;">Exercices Techniques</h3>
+                <ul>
+                    <li>Chromatic Warm-up</li>
+                    <li>Gammes majeures</li>
+                    <li>Arpèges 7e</li>
+                    <li>Ghost Notes Funk</li>
+                    <li>Slap Introduction</li>
+                    <li>Walking Bass II-V-I</li>
+                </ul>
+            </div>
+            
+            <!-- SUPPORT -->
+            <div class="card" style="background: #e3f2fd; border-left-color: #2196F3;">
+                <h2 style="color: #1565c0;">💬 Support & Contact</h2>
+                
+                <p style="margin-bottom: 15px;">Pour toute question ou suggestion :</p>
+                
+                <ul>
+                    <li><strong>GitHub</strong> : <a href="https://github.com/11drumboy11/Prof-de-basse">github.com/11drumboy11/Prof-de-basse</a></li>
+                    <li><strong>Site</strong> : <a href="https://11drumboy11.github.io/Prof-de-basse/">11drumboy11.github.io/Prof-de-basse/</a></li>
+                    <li><strong>Documentation</strong> : Voir README-search-system.md</li>
+                </ul>
+            </div>
+            
+            <!-- ROADMAP -->
+            <div class="card" style="background: #fff3e0; border-left-color: #ff9800;">
+                <h2 style="color: #e65100;">🚀 Roadmap Futures</h2>
+                
+                <h3 style="color: #764ba2;">Version 1.1</h3>
+                <ul>
+                    <li>Recherche sémantique ("morceaux similaires à...")</li>
+                    <li>Suggestions automatiques (autocomplétion)</li>
+                    <li>Favoris et playlists personnalisées</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 15px;">Version 1.2</h3>
+                <ul>
+                    <li>Fonction calling GPT (recherche directe via API)</li>
+                    <li>Analyse de niveau automatique</li>
+                    <li>Progressions pédagogiques sur 8-12 semaines</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 15px;">Version 2.0</h3>
+                <ul>
+                    <li>Intégration YouTube (backing tracks externes)</li>
+                    <li>Génération automatique de cours complets</li>
+                    <li>Système de notation et reviews</li>
+                </ul>
+            </div>
+            
+        </main>
         
-        <!-- TAB CONTENT: THEORY -->
-        <div id="tab-theory" class="tab-content">
-            <h2 class="section-title">
-                <span>🎓</span>
-                Théorie & Harmonie
-            </h2>
-            <p class="section-subtitle">
-                Cours théoriques · Gammes · Modes · Arpèges · Harmonie
+        <footer style="background: #333; color: white; padding: 30px; text-align: center;">
+            <p style="font-size: 18px;"><strong>🎸 Universal Resource Finder - Prof de Basse</strong></p>
+            <p style="margin-top: 10px; opacity: 0.9;">Version 1.0.0 - Système Complet</p>
+            <p style="margin-top: 15px; font-size: 14px; opacity: 0.8;">
+                ✅ 363+ ressources indexées | ⚡ Recherche instantanée | 🎯 Filtres avancés
             </p>
-            
-            <div class="resource-grid">
-                <div class="resource-card" onclick="window.open('Harmonie/Harmonie.html', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎼</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Harmonie</div>
-                            <div class="resource-meta">
-                                <span>📄 HTML</span>
-                                <span>📏 68.3 KB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-preview">
-                        Cours d'harmonie adaptés spécifiquement à la basse électrique. Intervalles, accords, progressions.
-                    </div>
-                </div>
-                
-                <div class="resource-card" onclick="window.open('Arpeges/Arpeges.html', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎹</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Arpèges</div>
-                            <div class="resource-meta">
-                                <span>📄 HTML</span>
-                                <span>📏 37.6 KB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-preview">
-                        Exercices d'arpèges progressifs : triades, accords de 7ème, extensions.
-                    </div>
-                </div>
-                
-                <div class="resource-card" onclick="window.open('Theorie/Theorie.html', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">📚</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Théorie Générale</div>
-                            <div class="resource-meta">
-                                <span>📄 HTML</span>
-                                <span>📏 84.1 KB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-tags">
-                        <span class="resource-tag">Improvisation</span>
-                        <span class="resource-tag">Jazz</span>
-                        <span class="resource-tag">Latin</span>
-                    </div>
-                    <div class="resource-preview">
-                        Théorie musicale générale avec applications pratiques. Improvisation, analyse harmonique, styles latins.
-                    </div>
-                </div>
-                
-                <div class="resource-card" onclick="window.open('Pratique/Pratique%201.html', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎸</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Pratique 1</div>
-                            <div class="resource-meta">
-                                <span>📄 HTML</span>
-                                <span>📏 46.1 KB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-tags">
-                        <span class="resource-tag">Funk</span>
-                    </div>
-                    <div class="resource-preview">
-                        Exercices pratiques appliqués au funk.
-                    </div>
-                </div>
-                
-                <div class="resource-card" onclick="window.open('Pratique/Pratique%202.html', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎸</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Pratique 2</div>
-                            <div class="resource-meta">
-                                <span>📄 HTML</span>
-                                <span>📏 25.5 KB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-tags">
-                        <span class="resource-tag">Tapping</span>
-                        <span class="resource-tag">Walking</span>
-                        <span class="resource-tag">Rock</span>
-                    </div>
-                    <div class="resource-preview">
-                        Exercices avancés : tapping, walking bass, rock patterns.
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- TAB CONTENT: DATA -->
-        <div id="tab-data" class="tab-content">
-            <h2 class="section-title">
-                <span>📊</span>
-                Data & API (Pour GPT/IA)
-            </h2>
-            <p class="section-subtitle">
-                6 fichiers JSON · Métadonnées · Index searchable · Stats
+            <p style="margin-top: 10px; font-size: 14px;">
+                Dernière mise à jour : 6 novembre 2025
             </p>
-            
-            <div class="resource-grid">
-                <div class="resource-card" onclick="window.open('resources/complete-resource-map.json', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🗺️</span>
-                        <div class="resource-info">
-                            <div class="resource-name">complete-resource-map.json</div>
-                            <div class="resource-meta">
-                                <span>📊 JSON</span>
-                                <span>📏 336.2 KB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-preview">
-                        <strong>Pour IA/GPT :</strong> Carte complète de toutes les ressources avec métadonnées structurées. Optimisé pour requêtes programmatiques et recherche sémantique.
-                    </div>
-                </div>
-                
-                <div class="resource-card" onclick="window.open('resources_index.json', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">📋</span>
-                        <div class="resource-info">
-                            <div class="resource-name">resources_index.json</div>
-                            <div class="resource-meta">
-                                <span>📊 JSON</span>
-                                <span>📏 555.2 KB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-preview">
-                        <strong>Pour IA/GPT :</strong> Index principal avec full-text search capabilities. Performance sub-0.1s. Contient paths, extensions, tags, previews.
-                    </div>
-                </div>
-                
-                <div class="resource-card" onclick="window.open('resources/stats.json', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">📈</span>
-                        <div class="resource-info">
-                            <div class="resource-name">stats.json</div>
-                            <div class="resource-meta">
-                                <span>📊 JSON</span>
-                                <span>📏 780 B</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-preview">
-                        Statistiques globales : nombre total de fichiers, MP3, HTML, PDFs, taille totale.
-                    </div>
-                </div>
-                
-                <div class="resource-card" onclick="window.open('Methodes/\'70s%20Funk%20&%20Disco%20Bass_with_index/songs_index.json', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎸</span>
-                        <div class="resource-info">
-                            <div class="resource-name">70s Funk - songs_index.json</div>
-                            <div class="resource-meta">
-                                <span>📊 JSON</span>
-                                <span>📏 4.9 KB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-preview">
-                        Index des 99 tracks de la méthode 70s Funk & Disco avec métadonnées (BPM, style, niveau).
-                    </div>
-                </div>
-                
-                <div class="resource-card" onclick="window.open('Methodes/Reabook/Realbook%20Bass%20F_with_index/songs_index.json', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🎺</span>
-                        <div class="resource-info">
-                            <div class="resource-name">Real Book - songs_index.json</div>
-                            <div class="resource-meta">
-                                <span>📊 JSON</span>
-                                <span>📏 53.1 KB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-preview">
-                        Index des standards jazz du Real Book avec titres, compositeurs, pages.
-                    </div>
-                </div>
-                
-                <div class="resource-card" onclick="window.open('requirements.txt', '_blank')">
-                    <div class="resource-header">
-                        <span class="resource-icon">🔧</span>
-                        <div class="resource-info">
-                            <div class="resource-name">requirements.txt</div>
-                            <div class="resource-meta">
-                                <span>📊 TXT</span>
-                                <span>📏 232 B</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resource-preview">
-                        Dépendances Python pour les scripts d'indexation automatique.
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- EMPTY STATE -->
-        <div id="emptyState" class="empty-state hidden">
-            <div class="empty-icon">🔍</div>
-            <div class="empty-title">Aucun résultat trouvé</div>
-            <div class="empty-text">Essayez avec d'autres mots-clés ou utilisez les filtres</div>
-        </div>
+        </footer>
     </div>
-    
-    <!-- FOOTER -->
-    <footer>
-        <p><strong>🎸 Prof de Basse</strong> - Hub Pédagogique Intelligent</p>
-        <p style="margin-top: 10px; opacity: 0.8;">
-            956 ressources · 363 MP3 · 71 PDFs · Optimisé pour IA & humain
-        </p>
-        <div class="footer-links">
-            <a href="search_system/search.html">Universal Finder</a>
-            <a href="resources/complete-resource-map.json">API Data</a>
-            <a href="https://github.com/11drumboy11/Prof-de-basse" target="_blank">GitHub</a>
-        </div>
-        <p style="margin-top: 20px; font-size: 13px; opacity: 0.6;">
-            📅 Dernière mise à jour : 06/11/2025 · Conçu pour GPT & Claude
-        </p>
-    </footer>
-    
-    <script>
-        // ========================================
-        // TAB SWITCHING
-        // ========================================
-        function switchTab(tabName) {
-            // Hide all tabs
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Remove active from all nav tabs
-            document.querySelectorAll('.nav-tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Show selected tab
-            document.getElementById('tab-' + tabName).classList.add('active');
-            
-            // Add active to clicked nav tab
-            document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
-            
-            // Scroll to top
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-        
-        // ========================================
-        // SEARCH FUNCTIONALITY
-        // ========================================
-        function handleSearch() {
-            const query = document.getElementById('searchInput').value.toLowerCase().trim();
-            
-            if (!query) {
-                // Show all cards
-                document.querySelectorAll('.resource-card, .category-section').forEach(el => {
-                    el.style.display = '';
-                });
-                document.getElementById('emptyState').classList.add('hidden');
-                return;
-            }
-            
-            let hasResults = false;
-            
-            // Search in resource cards
-            document.querySelectorAll('.resource-card').forEach(card => {
-                const text = card.textContent.toLowerCase();
-                const matches = text.includes(query);
-                card.style.display = matches ? '' : 'none';
-                if (matches) hasResults = true;
-            });
-            
-            // Hide empty categories
-            document.querySelectorAll('.category-section').forEach(section => {
-                const visibleCards = section.querySelectorAll('.resource-card:not([style*="display: none"])');
-                section.style.display = visibleCards.length > 0 ? '' : 'none';
-            });
-            
-            // Show/hide empty state
-            document.getElementById('emptyState').classList.toggle('hidden', hasResults);
-        }
-        
-        // ========================================
-        // FILTER FUNCTIONALITY
-        // ========================================
-        function applyFilter(filterValue) {
-            // Update active pill
-            document.querySelectorAll('.filter-pill').forEach(pill => {
-                pill.classList.remove('active');
-            });
-            document.querySelector(`[data-filter="${filterValue}"]`).classList.add('active');
-            
-            if (filterValue === 'all') {
-                // Show all
-                document.querySelectorAll('.resource-card, .category-section').forEach(el => {
-                    el.style.display = '';
-                });
-                document.getElementById('emptyState').classList.add('hidden');
-                return;
-            }
-            
-            let hasResults = false;
-            
-            // Filter cards
-            document.querySelectorAll('.resource-card').forEach(card => {
-                const text = card.textContent.toLowerCase();
-                const matches = text.includes(filterValue.toLowerCase());
-                card.style.display = matches ? '' : 'none';
-                if (matches) hasResults = true;
-            });
-            
-            // Hide empty categories
-            document.querySelectorAll('.category-section').forEach(section => {
-                const visibleCards = section.querySelectorAll('.resource-card:not([style*="display: none"])');
-                section.style.display = visibleCards.length > 0 ? '' : 'none';
-            });
-            
-            // Show/hide empty state
-            document.getElementById('emptyState').classList.toggle('hidden', hasResults);
-        }
-        
-        // ========================================
-        // INITIALIZE
-        // ========================================
-        document.addEventListener('DOMContentLoaded', () => {
-            console.log('🎸 Prof de Basse - Hub UX/UI Optimisé chargé');
-            console.log('📊 Ressources : 956 fichiers');
-            console.log('🎧 MP3 : 363 tracks');
-            console.log('🤖 Optimisé pour IA & humain');
-        });
-    </script>
 </body>
 </html>
