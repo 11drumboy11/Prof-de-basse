@@ -3,129 +3,476 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>search_system - Prof de Basse</title>
+    <title>Universal Resource Finder - Système Complet</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             padding: 20px;
+            line-height: 1.6;
         }
+        
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             background: white;
-            border-radius: 15px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
+        
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        
+        main {
+            padding: 40px;
+        }
+        
+        .card {
+            background: #f8f9fa;
             padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            border-left: 6px solid #667eea;
         }
-        header h1 { font-size: 32px; margin-bottom: 10px; }
-        .breadcrumb {
-            font-size: 14px;
-            opacity: 0.9;
-            margin-top: 10px;
-        }
-        .breadcrumb a {
-            color: white;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(255,255,255,0.5);
-        }
-        main { padding: 30px; }
-        .section {
-            margin-bottom: 40px;
-        }
-        .section-title {
-            font-size: 24px;
+        
+        h2 {
             color: #667eea;
             margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #667eea;
         }
-        .item-grid {
+        
+        .file-list {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 15px;
+            margin-top: 20px;
         }
-        .item-card {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
+        
+        .file-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
             transition: all 0.3s;
-            cursor: pointer;
         }
-        .item-card:hover {
-            background: #e8eaf6;
-            transform: translateX(5px);
+        
+        .file-item:hover {
+            border-color: #667eea;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        .item-name {
+        
+        .file-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .file-name {
             font-weight: 600;
-            margin-bottom: 5px;
+            color: #333;
+            margin-bottom: 8px;
         }
-        .item-meta {
-            font-size: 13px;
+        
+        .file-desc {
             color: #666;
+            font-size: 14px;
+        }
+        
+        .quick-start {
+            background: #e8f5e9;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 6px solid #4caf50;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stat-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: #764ba2;
+        }
+        
+        .btn-secondary:hover {
+            background: #667eea;
+        }
+        
+        ol, ul {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        code {
+            background: #2d2d2d;
+            color: #4ec9b0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📁 search_system</h1>
-            <div class="breadcrumb">
-                <a href="/">🏠 Accueil</a> / search_system
-            </div>
+            <h1>🔍 Universal Resource Finder</h1>
+            <p style="font-size: 20px; margin-top: 10px; opacity: 0.95;">
+                Système complet de recherche pour Prof de Basse
+            </p>
+            <p style="font-size: 16px; margin-top: 10px; opacity: 0.9;">
+                Version 1.0.0 - 6 novembre 2025
+            </p>
         </header>
         
         <main>
-
-            <div class="section">
-                <div class="section-title">📂 Sous-dossiers</div>
-                <div class="item-grid">
-
-                    <div class="item-card" onclick="window.location.href='data/index.html'">
-                        <div class="item-name">📂 data</div>
-                    </div>
-
-                    <div class="item-card" onclick="window.location.href='docs/index.html'">
-                        <div class="item-name">📂 docs</div>
-                    </div>
-
-                    <div class="item-card" onclick="window.location.href='scripts/index.html'">
-                        <div class="item-name">📂 scripts</div>
-                    </div>
-
+            <!-- QUICK START -->
+            <div class="quick-start">
+                <h2 style="color: #2e7d32;">🚀 Démarrage Rapide</h2>
+                
+                <p style="font-size: 18px; margin-bottom: 20px;">
+                    Pour utiliser le système de recherche immédiatement :
+                </p>
+                
+                <ol style="font-size: 16px;">
+                    <li>Ouvrir <code>universal-search-system.html</code> dans un navigateur</li>
+                    <li>Rechercher parmi 363+ ressources (MP3, méthodes, Real Books)</li>
+                    <li>Filtrer par style, niveau, technique</li>
+                    <li>Cliquer sur les liens pour accéder directement aux MP3</li>
+                </ol>
+                
+                <div style="margin-top: 20px;">
+                    <a href="universal-search-system.html" class="btn">🔍 Ouvrir la Recherche</a>
+                    <a href="search-examples.html" class="btn btn-secondary">📚 Voir les Exemples</a>
                 </div>
             </div>
-
-            <div class="section">
-                <div class="section-title">📄 Fichiers</div>
-                <div class="item-grid">
-
-                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/search_system/INSTALLATION_GITHUB.md', '_blank')">
-                        <div class="item-name">📁 INSTALLATION_GITHUB.md</div>
-                        <div class="item-meta">7.1 B</div>
+            
+            <!-- STATISTIQUES -->
+            <div class="card">
+                <h2>📊 Statistiques du Système</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-number">363+</div>
+                        <div class="stat-label">Fichiers MP3</div>
                     </div>
-
-                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/search_system/config.json', '_blank')">
-                        <div class="item-name">📊 config.json</div>
-                        <div class="item-meta">190.0 B</div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-number">149</div>
+                        <div class="stat-label">Tracks Funk/Disco</div>
                     </div>
-
-                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/search_system/search.html', '_blank')">
-                        <div class="item-name">🌐 search.html</div>
-                        <div class="item-meta">17.2 B</div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Standards Jazz</div>
                     </div>
-
+                    
+                    <div class="stat-box">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Méthodes complètes</div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Styles musicaux</div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-number">< 0.1s</div>
+                        <div class="stat-label">Temps de recherche</div>
+                    </div>
                 </div>
             </div>
-
+            
+            <!-- FONCTIONNALITÉS -->
+            <div class="card">
+                <h2>✨ Fonctionnalités Principales</h2>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Recherche Instantanée</h3>
+                        <p>Trouve n'importe quelle ressource en < 0.1 seconde</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Filtres Multiples</h3>
+                        <p>Type, style, niveau, technique - combinables</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎸</div>
+                        <h3>7 Styles</h3>
+                        <p>Funk, Jazz, Disco, Slap, Rock, Blues, Latin</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>3 Niveaux</h3>
+                        <p>Débutant, Intermédiaire, Avancé</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎧</div>
+                        <h3>Liens Directs</h3>
+                        <p>Accès instantané aux MP3 professionnels</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive</h3>
+                        <p>Fonctionne sur desktop, tablette, mobile</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FICHIERS DU SYSTÈME -->
+            <div class="card">
+                <h2>📁 Fichiers du Système</h2>
+                
+                <div class="file-list">
+                    <div class="file-item">
+                        <div class="file-icon">🔍</div>
+                        <div class="file-name">universal-search-system.html</div>
+                        <div class="file-desc">Interface principale de recherche (standalone)</div>
+                        <a href="universal-search-system.html" class="btn" style="margin-top: 15px;">Ouvrir</a>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">📚</div>
+                        <div class="file-name">search-examples.html</div>
+                        <div class="file-desc">19 exemples de recherche pratiques</div>
+                        <a href="search-examples.html" class="btn" style="margin-top: 15px;">Ouvrir</a>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">🤖</div>
+                        <div class="file-name">gpt-integration-guide.html</div>
+                        <div class="file-desc">Guide d'intégration avec le GPT</div>
+                        <a href="gpt-integration-guide.html" class="btn" style="margin-top: 15px;">Ouvrir</a>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">⚙️</div>
+                        <div class="file-name">config.json</div>
+                        <div class="file-desc">Configuration globale du système</div>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">🐍</div>
+                        <div class="file-name">generate_search_index.py</div>
+                        <div class="file-desc">Générateur automatique d'index</div>
+                    </div>
+                    
+                    <div class="file-item">
+                        <div class="file-icon">📖</div>
+                        <div class="file-name">README-search-system.md</div>
+                        <div class="file-desc">Documentation complète</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- GUIDE D'UTILISATION -->
+            <div class="card">
+                <h2>📖 Guide d'Utilisation</h2>
+                
+                <h3 style="margin-top: 20px; color: #764ba2;">Pour les utilisateurs</h3>
+                <ol>
+                    <li>Ouvrir <code>universal-search-system.html</code></li>
+                    <li>Taper un mot-clé (funk, jazz, slap, track 12, etc.)</li>
+                    <li>Utiliser les filtres pour affiner (optionnel)</li>
+                    <li>Cliquer sur le lien "🎧 Écouter / Ouvrir"</li>
+                </ol>
+                
+                <h3 style="margin-top: 20px; color: #764ba2;">Pour le GPT Prof de Basse</h3>
+                <ol>
+                    <li>Lire <code>gpt-integration-guide.html</code> pour comprendre l'intégration</li>
+                    <li>Utiliser la table de correspondance interne (style → tracks)</li>
+                    <li>Construire les URLs avec le format exact : <code>Track%20[XX].mp3</code></li>
+                    <li>Intégrer les liens MP3 dans les cours (5 parties)</li>
+                </ol>
+                
+                <h3 style="margin-top: 20px; color: #764ba2;">Pour les développeurs</h3>
+                <ol>
+                    <li>Lire <code>README-search-system.md</code></li>
+                    <li>Modifier <code>config.json</code> pour personnaliser</li>
+                    <li>Exécuter <code>python generate_search_index.py</code> pour générer l'index</li>
+                    <li>Tester dans <code>universal-search-system.html</code></li>
+                </ol>
+            </div>
+            
+            <!-- RESSOURCES DISPONIBLES -->
+            <div class="card">
+                <h2>🎵 Ressources Disponibles</h2>
+                
+                <h3 style="color: #764ba2;">70s Funk & Disco Bass (99 tracks)</h3>
+                <ul>
+                    <li>Track 01-15 : Funk débutant, fingerstyle</li>
+                    <li>Track 16-30 : Funk ghost notes, intermédiaire</li>
+                    <li>Track 21-40 : Slap introduction</li>
+                    <li>Track 41-60 : Syncopations avancées</li>
+                    <li>Track 61-80 : Disco grooves avancé</li>
+                    <li>Track 81-99 : Slap avancé, double-thumb</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 20px;">John Liebman Funk Fusion (50 tracks)</h3>
+                <ul>
+                    <li>Track 01-15 : Débutant</li>
+                    <li>Track 16-35 : Intermédiaire</li>
+                    <li>Track 36-50 : Avancé</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 20px;">Real Books Jazz Standards</h3>
+                <ul>
+                    <li>All The Things You Are (Jerome Kern)</li>
+                    <li>Autumn Leaves (Joseph Kosma)</li>
+                    <li>Blue Bossa (Kenny Dorham)</li>
+                    <li>So What (Miles Davis)</li>
+                    <li>Summertime (George Gershwin)</li>
+                    <li>Take Five (Paul Desmond)</li>
+                    <li>Girl from Ipanema (Antonio Carlos Jobim)</li>
+                    <li>...100+ standards disponibles</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 20px;">Exercices Techniques</h3>
+                <ul>
+                    <li>Chromatic Warm-up</li>
+                    <li>Gammes majeures</li>
+                    <li>Arpèges 7e</li>
+                    <li>Ghost Notes Funk</li>
+                    <li>Slap Introduction</li>
+                    <li>Walking Bass II-V-I</li>
+                </ul>
+            </div>
+            
+            <!-- SUPPORT -->
+            <div class="card" style="background: #e3f2fd; border-left-color: #2196F3;">
+                <h2 style="color: #1565c0;">💬 Support & Contact</h2>
+                
+                <p style="margin-bottom: 15px;">Pour toute question ou suggestion :</p>
+                
+                <ul>
+                    <li><strong>GitHub</strong> : <a href="https://github.com/11drumboy11/Prof-de-basse">github.com/11drumboy11/Prof-de-basse</a></li>
+                    <li><strong>Site</strong> : <a href="https://11drumboy11.github.io/Prof-de-basse/">11drumboy11.github.io/Prof-de-basse/</a></li>
+                    <li><strong>Documentation</strong> : Voir README-search-system.md</li>
+                </ul>
+            </div>
+            
+            <!-- ROADMAP -->
+            <div class="card" style="background: #fff3e0; border-left-color: #ff9800;">
+                <h2 style="color: #e65100;">🚀 Roadmap Futures</h2>
+                
+                <h3 style="color: #764ba2;">Version 1.1</h3>
+                <ul>
+                    <li>Recherche sémantique ("morceaux similaires à...")</li>
+                    <li>Suggestions automatiques (autocomplétion)</li>
+                    <li>Favoris et playlists personnalisées</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 15px;">Version 1.2</h3>
+                <ul>
+                    <li>Fonction calling GPT (recherche directe via API)</li>
+                    <li>Analyse de niveau automatique</li>
+                    <li>Progressions pédagogiques sur 8-12 semaines</li>
+                </ul>
+                
+                <h3 style="color: #764ba2; margin-top: 15px;">Version 2.0</h3>
+                <ul>
+                    <li>Intégration YouTube (backing tracks externes)</li>
+                    <li>Génération automatique de cours complets</li>
+                    <li>Système de notation et reviews</li>
+                </ul>
+            </div>
+            
         </main>
+        
+        <footer style="background: #333; color: white; padding: 30px; text-align: center;">
+            <p style="font-size: 18px;"><strong>🎸 Universal Resource Finder - Prof de Basse</strong></p>
+            <p style="margin-top: 10px; opacity: 0.9;">Version 1.0.0 - Système Complet</p>
+            <p style="margin-top: 15px; font-size: 14px; opacity: 0.8;">
+                ✅ 363+ ressources indexées | ⚡ Recherche instantanée | 🎯 Filtres avancés
+            </p>
+            <p style="margin-top: 10px; font-size: 14px;">
+                Dernière mise à jour : 6 novembre 2025
+            </p>
+        </footer>
     </div>
 </body>
 </html>
