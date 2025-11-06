@@ -1,0 +1,170 @@
+#!/usr/bin/env python3
+"""
+Génère unified_index.json avec les VRAIS paths complets
+Compatible avec la structure:
+  Methodes/[Méthode]_with_index/assets/page_XXXX.jpg
+"""
+
+import json
+import os
+from pathlib import Path
+
+def scan_repo_for_resources(base_path='.'):
+    """Scanne tout le repo pour trouver les ressources"""
+    resources = []
+    base_path = Path(base_path)
+    
+    print("🔍 Scan du repo...")
+    
+    # Parcourir tous les fichiers
+    for root, dirs, files in os.walk(base_path):
+        # Ignorer les dossiers cachés et node_modules
+        dirs[:] = [d for d in dirs if not d.startswith('.') and d != 'node_modules']
+        
+        for filename in files:
+            file_path = Path(root) / filename
+            
+            # Calculer le path RELATIF depuis la racine du repo
+            relative_path = file_path.relative_to(base_path)
+            relative_path_str = str(relative_path).replace('\\', '/')
+            
+            # Ignorer certains fichiers
+            if filename.startswith('.') or filename == 'unified_index.json':
+                continue
+            
+            # Déterminer le type de ressource
+            ext = filename.lower().split('.')[-1]
+            
+            resource = None
+            
+            # Images (JPG, PNG)
+            if ext in ['jpg', 'jpeg', 'png']:
+                # Extraire les métadonnées depuis le path
+                parts = relative_path_str.split('/')
+                
+                # Trouver la méthode parente
+                method_name = "Unknown"
+                if 'Methodes' in parts:
+                    method_idx = parts.index('Methodes')
+                    if method_idx + 1 < len(parts):
+                        method_name = parts[method_idx + 1].replace('_with_index', '')
+                
+                # Extraire le numéro de page si présent
+                page_num = None
+                if 'page_' in filename:
+                    try:
+                        page_num = int(filename.split('page_')[1].split('.')[0])
+                    except:
+                        pass
+                
+                resource = {
+                    "type": "image",
+                    "title": f"{method_name} - Page {page_num}" if page_num else filename,
+                    "url": relative_path_str,  # ✅ PATH COMPLET DEPUIS LA RACINE
+                    "metadata": {
+                        "method": method_name,
+                        "page": page_num,
+                        "filename": filename
+                    }
+                }
+            
+            # MP3
+            elif ext == 'mp3':
+                # Extraire métadonnées depuis le path
+                parts = relative_path_str.split('/')
+                
+                method_name = "Unknown"
+                if 'Methodes' in parts:
+                    method_idx = parts.index('Methodes')
+                    if method_idx + 1 < len(parts):
+                        method_name = parts[method_idx + 1]
+                
+                # Extraire le numéro de track
+                track_num = None
+                if 'Track' in filename or 'track' in filename.lower():
+                    try:
+                        # Gérer "Track 01.mp3" et "Track01.mp3"
+                        track_part = filename.lower().split('track')[1].split('.')[0].strip()
+                        track_num = int(track_part)
+                    except:
+                        pass
+                
+                resource = {
+                    "type": "mp3",
+                    "title": f"{method_name} - Track {track_num:02d}" if track_num else filename,
+                    "url": relative_path_str,  # ✅ PATH COMPLET
+                    "metadata": {
+                        "method": method_name,
+                        "track": track_num,
+                        "filename": filename,
+                        "style": "funk" if "funk" in method_name.lower() else "unknown"
+                    }
+                }
+            
+            # PDF
+            elif ext == 'pdf':
+                resource = {
+                    "type": "pdf",
+                    "title": filename.replace('.pdf', ''),
+                    "url": relative_path_str,  # ✅ PATH COMPLET
+                    "metadata": {
+                        "filename": filename
+                    }
+                }
+            
+            # HTML (cours)
+            elif ext == 'html' and filename != 'index.html':
+                resource = {
+                    "type": "course",
+                    "title": filename.replace('.html', '').replace('-', ' ').title(),
+                    "url": relative_path_str,  # ✅ PATH COMPLET
+                    "metadata": {
+                        "filename": filename
+                    }
+                }
+            
+            if resource:
+                resources.append(resource)
+                if len(resources) % 100 == 0:
+                    print(f"  📦 {len(resources)} ressources trouvées...")
+    
+    return resources
+
+
+def generate_unified_index(output_file='unified_index.json'):
+    """Génère l'index unifié"""
+    print("🎸 Génération de l'index unifié...")
+    
+    resources = scan_repo_for_resources()
+    
+    # Trier par type puis par titre
+    resources.sort(key=lambda x: (x['type'], x['title']))
+    
+    # Créer l'index
+    index = {
+        "generated_at": "2025-11-06",
+        "total_resources": len(resources),
+        "resources": resources
+    }
+    
+    # Sauvegarder
+    print(f"💾 Sauvegarde de {len(resources)} ressources dans {output_file}...")
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(index, f, indent=2, ensure_ascii=False)
+    
+    # Statistiques
+    stats = {}
+    for r in resources:
+        t = r['type']
+        stats[t] = stats.get(t, 0) + 1
+    
+    print("\n✅ Index généré avec succès !")
+    print(f"📊 Statistiques:")
+    for type_name, count in sorted(stats.items()):
+        print(f"  - {type_name}: {count}")
+    
+    return index
+
+
+if __name__ == '__main__':
+    generate_unified_index()
