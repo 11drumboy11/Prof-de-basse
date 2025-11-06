@@ -91,7 +91,7 @@ class MegaIndexFusionV2:
             self.errors.append(error_msg)
             return {}
     
-    def normalize_resource(self, resource: Dict, source: str) -> Dict:
+    def normalize_resource(self, resource: Dict, source: str, source_path: Path = None) -> Dict:
         """Normalise une ressource au format standard"""
         
         # Extraire l'ID
@@ -106,7 +106,7 @@ class MegaIndexFusionV2:
             "id": str(resource_id),
             "title": str(resource.get("title", resource.get("name", "Sans titre"))),
             "type": self.detect_type(resource),
-            "url": self.build_url(resource),
+            "url": self.build_url(resource, source_path),
             "source": source,
             "metadata": {}
         }
@@ -160,24 +160,67 @@ class MegaIndexFusionV2:
         else:
             return "other"
     
-    def build_url(self, resource: Dict) -> str:
+    def build_url(self, resource: Dict, source_path: Path = None) -> str:
         """Construit l'URL complète GitHub Pages"""
         base_url = "https://11drumboy11.github.io/Prof-de-basse/"
         
-        # Chercher le chemin
-        path = resource.get("file", resource.get("path", resource.get("url", "")))
+        # Chercher le chemin - essayer plusieurs clés
+        path = resource.get("url", "")
+        if not path:
+            path = resource.get("file", "")
+        if not path:
+            path = resource.get("path", "")
+        if not path:
+            path = resource.get("id", "")
         
         if not path:
             return base_url
         
+        # Si déjà une URL complète, la retourner
         if str(path).startswith("http"):
             return str(path)
         
         # Nettoyer le chemin
-        path = str(path).lstrip("/").lstrip("./")
+        path = str(path)
         
-        # Encoder les espaces et caractères spéciaux
-        path = path.replace(" ", "%20").replace("&", "%26")
+        # Enlever les préfixes relatifs
+        path = path.lstrip("/").lstrip("./")
+        
+        # CORRECTION INTELLIGENTE : Si le chemin semble incomplet (juste un nom de fichier)
+        # et qu'on a le contexte du fichier source, reconstruire le chemin complet
+        if source_path and "/" not in path:
+            # C'est juste un nom de fichier (ex: "page_0374.jpg")
+            # Reconstruire le chemin depuis le fichier source
+            
+            # Ex: source_path = "Real_Books/Real_book_jazz/songs_index.json"
+            # On veut: "Real_Books/Real_book_jazz/assets/page_0374.jpg"
+            
+            source_dir = source_path.parent  # Real_Books/Real_book_jazz/
+            
+            # Chercher un dossier "assets" ou utiliser le dossier parent
+            if (source_dir / "assets").exists():
+                full_path = source_dir / "assets" / path
+            else:
+                full_path = source_dir / path
+            
+            # Convertir en chemin relatif depuis la racine du repo
+            try:
+                rel_path = full_path.relative_to(self.repo_path)
+                path = str(rel_path)
+            except ValueError:
+                # Si on ne peut pas calculer le chemin relatif, garder tel quel
+                pass
+        
+        # Encoder les espaces et caractères spéciaux pour URL
+        # ATTENTION : Ne pas encoder les "/" qui sont des séparateurs de chemin
+        parts = path.split("/")
+        encoded_parts = []
+        for part in parts:
+            # Encoder chaque partie séparément
+            encoded_part = part.replace(" ", "%20").replace("&", "%26")
+            encoded_parts.append(encoded_part)
+        
+        path = "/".join(encoded_parts)
         
         return base_url + path
     
@@ -215,7 +258,8 @@ class MegaIndexFusionV2:
             for resource in resources:
                 try:
                     if isinstance(resource, dict):
-                        normalized = self.normalize_resource(resource, source_name)
+                        # IMPORTANT : Passer le chemin du fichier source pour reconstruire les URLs
+                        normalized = self.normalize_resource(resource, source_name, json_file)
                         
                         # Éviter doublons
                         resource_id = normalized["id"]
