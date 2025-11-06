@@ -15,7 +15,7 @@ import pytesseract
 # CONFIGURATION
 # ============================================================================
 
-REPO_PATH = "/path/to/Prof-de-basse"  # À MODIFIER
+REPO_PATH = "/Users/christophebonnet/Documents/GitHub/Prof-de-basse"  # À MODIFIER
 OUTPUT_JSON = "search_index_ocr.json"
 
 # Dossiers à scanner

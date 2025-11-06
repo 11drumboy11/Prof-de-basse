@@ -53,3 +53,4 @@ test_output/
 
 # NE PAS ignorer les index.html générés (on veut les tracker)
 # !index.html
+Prof-de-basse-OCR/leptonica-*.txt

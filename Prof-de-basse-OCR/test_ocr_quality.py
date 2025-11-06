@@ -18,7 +18,7 @@ from ocr_scanner_v2 import (
 # CONFIGURATION
 # ============================================================================
 
-REPO_PATH = "/path/to/Prof-de-basse"  # À MODIFIER
+REPO_PATH = "/Users/christophebonnet/Documents/GitHub/Prof-de-basse"  # À MODIFIER
 TEST_SAMPLES = 5  # Nombre de fichiers à tester par dossier
 
 # Tests de référence (résultats attendus pour validation)

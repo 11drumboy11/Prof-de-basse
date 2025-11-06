@@ -20,7 +20,7 @@ from ocr_scanner_v2 import (
 # CONFIGURATION
 # ============================================================================
 
-REPO_PATH = "/path/to/Prof-de-basse"  # À MODIFIER
+REPO_PATH = "/Users/christophebonnet/Documents/GitHub/Prof-de-basse"  # À MODIFIER
 INDEX_FILE = "search_index.json"
 CACHE_FILE = "ocr_cache.json"  # Mémoriser fichiers déjà scannés
 
