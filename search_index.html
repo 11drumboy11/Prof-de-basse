@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof de Basse - Universal Resource Finder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .search-section {
+            padding: 40px;
+            background: #f8f9fa;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .search-bar {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        #searchInput:focus {
+            border-color: #764ba2;
+            box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .search-btn {
+            padding: 15px 30px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .search-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        .filters-toggle {
+            background: white;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .filters-toggle:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .filters-panel {
+            margin-top: 20px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            display: none;
+        }
+
+        .filters-panel.active {
+            display: block;
+        }
+
+        .filter-group {
+            margin-bottom: 20px;
+        }
+
+        .filter-group h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .filter-chip {
+            padding: 8px 15px;
+            background: #f0f0f0;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+
+        .filter-chip:hover {
+            background: #e0e0e0;
+        }
+
+        .filter-chip.active {
+            background: #667eea;
+            color: white;
+            border-color: #764ba2;
+        }
+
+        .stats-bar {
+            padding: 20px 40px;
+            background: #e8f5e9;
+            border-bottom: 2px solid #4caf50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stats-info {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .sort-options {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .sort-options label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .sort-options select {
+            padding: 8px 15px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .results-section {
+            padding: 40px;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .resource-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .resource-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .resource-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 15px;
+        }
+
+        .resource-type {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .type-audio {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .type-document {
+            background: #fff3e0;
+            color: #f57c00;
+        }
+
+        .type-image {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .resource-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .resource-collection {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .resource-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            padding: 3px 10px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .resource-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-copy {
+            background: #4caf50;
+            color: white;
+        }
+
+        .btn-copy:hover {
+            background: #45a049;
+        }
+
+        .btn-gpt {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-gpt:hover {
+            background: #764ba2;
+        }
+
+        .export-section {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .export-btn {
+            padding: 15px 25px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-close {
+            font-size: 30px;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .modal-close:hover {
+            color: #333;
+        }
+
+        .code-output {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .no-results-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎸 Universal Resource Finder</h1>
+            <div class="subtitle">Recherche intelligente dans 363+ ressources</div>
+        </header>
+
+        <div class="search-section">
+            <div class="search-bar">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Rechercher par titre, style, technique, niveau... (ex: funk ghost notes)"
+                    autocomplete="off"
+                >
+                <button class="search-btn" onclick="performSearch()">🔍 Rechercher</button>
+                <button class="filters-toggle" onclick="toggleFilters()">⚙️ Filtres</button>
+            </div>
+
+            <div class="filters-panel" id="filtersPanel">
+                <div class="filter-group">
+                    <h3>Type de ressource</h3>
+                    <div class="filter-options">
+                        <div class="filter-chip" data-filter="type" data-value="audio">🎵 Audio (MP3)</div>
+                        <div class="filter-chip" data-filter="type" data-value="document">📄 Document (PDF/HTML)</div>
+                        <div class="filter-chip" data-filter="type" data-value="image">🖼️ Image (PNG/JPG)</div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Style musical</h3>
+                    <div class="filter-options">
+                        <div class="filter-chip" data-filter="style" data-value="funk">Funk</div>
+                        <div class="filter-chip" data-filter="style" data-value="jazz">Jazz</div>
+                        <div class="filter-chip" data-filter="style" data-value="rock">Rock</div>
+                        <div class="filter-chip" data-filter="style" data-value="blues">Blues</div>
+                        <div class="filter-chip" data-filter="style" data-value="latin">Latin</div>
+                        <div class="filter-chip" data-filter="style" data-value="disco">Disco</div>
+                        <div class="filter-chip" data-filter="style" data-value="soul">Soul</div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Niveau</h3>
+                    <div class="filter-options">
+                        <div class="filter-chip" data-filter="level" data-value="débutant">Débutant</div>
+                        <div class="filter-chip" data-filter="level" data-value="intermédiaire">Intermédiaire</div>
+                        <div class="filter-chip" data-filter="level" data-value="avancé">Avancé</div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Technique</h3>
+                    <div class="filter-options">
+                        <div class="filter-chip" data-filter="technique" data-value="slap">Slap</div>
+                        <div class="filter-chip" data-filter="technique" data-value="fingerstyle">Fingerstyle</div>
+                        <div class="filter-chip" data-filter="technique" data-value="picking">Picking</div>
+                        <div class="filter-chip" data-filter="technique" data-value="ghost_notes">Ghost Notes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stats-info" id="statsInfo">
+                Chargement...
+            </div>
+            <div class="sort-options">
+                <label>Trier par :</label>
+                <select id="sortSelect" onchange="sortResults()">
+                    <option value="relevance">Pertinence</option>
+                    <option value="title">Titre (A-Z)</option>
+                    <option value="track">Numéro de track</option>
+                    <option value="collection">Collection</option>
+                    <option value="recent">Plus récent</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <div id="resultsContainer" class="loading">
+                <div class="spinner"></div>
+                <p>Chargement des ressources...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="export-section">
+        <button class="export-btn" onclick="exportSelection()" id="exportBtn" style="display: none;">
+            📋 Exporter sélection (0)
+        </button>
+    </div>
+
+    <div class="modal" id="exportModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📋 Export des ressources</h2>
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="exportContent"></div>
+        </div>
+    </div>
+
+    <script>
+        let allResources = [];
+        let filteredResources = [];
+        let selectedResources = new Set();
+        let activeFilters = {
+            type: new Set(),
+            style: new Set(),
+            level: new Set(),
+            technique: new Set()
+        };
+
+        // Load resources index
+        async function loadResources() {
+            try {
+                const response = await fetch('resources_index.json');
+                const data = await response.json();
+                allResources = data.resources;
+                filteredResources = [...allResources];
+                
+                updateStats();
+                renderResults();
+            } catch (error) {
+                document.getElementById('resultsContainer').innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">⚠️</div>
+                        <h3>Erreur de chargement</h3>
+                        <p>Impossible de charger resources_index.json</p>
+                        <p style="color: #999; font-size: 14px;">Assurez-vous que le fichier existe à la racine du repo</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Toggle filters panel
+        function toggleFilters() {
+            document.getElementById('filtersPanel').classList.toggle('active');
+        }
+
+        // Setup filter chips
+        document.addEventListener('DOMContentLoaded', () => {
+            loadResources();
+            
+            document.querySelectorAll('.filter-chip').forEach(chip => {
+                chip.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const filterType = this.dataset.filter;
+                    const filterValue = this.dataset.value;
+                    
+                    if (this.classList.contains('active')) {
+                        activeFilters[filterType].add(filterValue);
+                    } else {
+                        activeFilters[filterType].delete(filterValue);
+                    }
+                    
+                    applyFilters();
+                });
+            });
+            
+            // Search on Enter
+            document.getElementById('searchInput').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+        });
+
+        // Perform search
+        function performSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            if (!query) {
+                filteredResources = [...allResources];
+            } else {
+                const words = query.split(/\s+/);
+                
+                filteredResources = allResources.filter(resource => {
+                    const searchText = [
+                        resource.title,
+                        resource.filename,
+                        resource.collection,
+                        ...(resource.tags || [])
+                    ].join(' ').toLowerCase();
+                    
+                    return words.every(word => searchText.includes(word));
+                });
+            }
+            
+            applyFilters();
+        }
+
+        // Apply filters
+        function applyFilters() {
+            let results = [...filteredResources];
+            
+            // Apply type filter
+            if (activeFilters.type.size > 0) {
+                results = results.filter(r => activeFilters.type.has(r.type));
+            }
+            
+            // Apply style/level/technique filters (check tags)
+            ['style', 'level', 'technique'].forEach(filterType => {
+                if (activeFilters[filterType].size > 0) {
+                    results = results.filter(r => {
+                        const tags = r.tags || [];
+                        return Array.from(activeFilters[filterType]).some(val => tags.includes(val));
+                    });
+                }
+            });
+            
+            filteredResources = results;
+            updateStats();
+            renderResults();
+        }
+
+        // Sort results
+        function sortResults() {
+            const sortBy = document.getElementById('sortSelect').value;
+            
+            filteredResources.sort((a, b) => {
+                switch(sortBy) {
+                    case 'title':
+                        return a.title.localeCompare(b.title);
+                    case 'track':
+                        return (a.track_number || 0) - (b.track_number || 0);
+                    case 'collection':
+                        return a.collection.localeCompare(b.collection);
+                    case 'recent':
+                        return new Date(b.modified) - new Date(a.modified);
+                    default: // relevance
+                        return 0;
+                }
+            });
+            
+            renderResults();
+        }
+
+        // Update stats
+        function updateStats() {
+            const total = allResources.length;
+            const shown = filteredResources.length;
+            document.getElementById('statsInfo').textContent = 
+                `${shown} ressource${shown > 1 ? 's' : ''} sur ${total}`;
+        }
+
+        // Render results
+        function renderResults() {
+            const container = document.getElementById('resultsContainer');
+            
+            if (filteredResources.length === 0) {
+                container.innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">🔍</div>
+                        <h3>Aucun résultat trouvé</h3>
+                        <p>Essayez de modifier vos critères de recherche</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = '';
+            container.className = 'results-grid';
+            
+            filteredResources.forEach(resource => {
+                const card = createResourceCard(resource);
+                container.appendChild(card);
+            });
+        }
+
+        // Create resource card
+        function createResourceCard(resource) {
+            const card = document.createElement('div');
+            card.className = 'resource-card';
+            card.dataset.url = resource.url;
+            
+            const typeClass = `type-${resource.type}`;
+            const typeIcon = {
+                audio: '🎵',
+                document: '📄',
+                image: '🖼️'
+            }[resource.type] || '📁';
+            
+            const tagsHtml = (resource.tags || []).map(tag => 
+                `<span class="tag">${tag}</span>`
+            ).join('');
+            
+            card.innerHTML = `
+                <div class="resource-header">
+                    <div class="resource-type ${typeClass}">${typeIcon} ${resource.type}</div>
+                    <input type="checkbox" onchange="toggleSelection('${resource.url}')" 
+                           ${selectedResources.has(resource.url) ? 'checked' : ''}>
+                </div>
+                <div class="resource-title">${resource.title}</div>
+                <div class="resource-collection">📁 ${resource.collection}</div>
+                <div class="resource-tags">${tagsHtml}</div>
+                <div class="resource-actions">
+                    <button class="action-btn btn-copy" onclick="copyUrl('${resource.url}')">
+                        📋 Copier URL
+                    </button>
+                    <button class="action-btn btn-gpt" onclick="sendToGPT('${resource.url}')">
+                        🤖 → GPT
+                    </button>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Toggle resource selection
+        function toggleSelection(url) {
+            if (selectedResources.has(url)) {
+                selectedResources.delete(url);
+            } else {
+                selectedResources.add(url);
+            }
+            
+            const btn = document.getElementById('exportBtn');
+            if (selectedResources.size > 0) {
+                btn.style.display = 'block';
+                btn.textContent = `📋 Exporter sélection (${selectedResources.size})`;
+            } else {
+                btn.style.display = 'none';
+            }
+        }
+
+        // Copy URL to clipboard
+        function copyUrl(url) {
+            navigator.clipboard.writeText(url);
+            alert('✅ URL copiée !');
+        }
+
+        // Send to GPT (opens prompt template)
+        function sendToGPT(url) {
+            const resource = allResources.find(r => r.url === url);
+            const prompt = generateGPTPrompt([resource]);
+            
+            navigator.clipboard.writeText(prompt);
+            alert('✅ Prompt GPT copié dans le presse-papier !\n\nCollez-le dans votre conversation avec Prof de Basse GPT.');
+        }
+
+        // Export selection
+        function exportSelection() {
+            const selected = allResources.filter(r => selectedResources.has(r.url));
+            
+            const linksHtml = selected.map(r => 
+                `<div style="margin: 10px 0;">
+                    <a href="${r.url}" target="_blank">${r.title}</a>
+                </div>`
+            ).join('');
+            
+            const markdown = generateMarkdownExport(selected);
+            const gptPrompt = generateGPTPrompt(selected);
+            
+            document.getElementById('exportContent').innerHTML = `
+                <h3>📋 Liens directs</h3>
+                ${linksHtml}
+                
+                <h3 style="margin-top: 30px;">📝 Format Markdown</h3>
+                <div class="code-output">${escapeHtml(markdown)}</div>
+                <button class="search-btn" onclick="copyToClipboard(\`${escapeBackticks(markdown)}\`)">
+                    📋 Copier Markdown
+                </button>
+                
+                <h3 style="margin-top: 30px;">🤖 Prompt GPT optimisé</h3>
+                <div class="code-output">${escapeHtml(gptPrompt)}</div>
+                <button class="search-btn" onclick="copyToClipboard(\`${escapeBackticks(gptPrompt)}\`)">
+                    📋 Copier pour GPT
+                </button>
+            `;
+            
+            document.getElementById('exportModal').classList.add('active');
+        }
+
+        // Generate Markdown export
+        function generateMarkdownExport(resources) {
+            return resources.map(r => {
+                const tags = r.tags.length > 0 ? ` (${r.tags.join(', ')})` : '';
+                if (r.type === 'audio') {
+                    return `🎧 **${r.title}** : [Écouter](${r.url})${tags}`;
+                } else {
+                    return `📄 **${r.title}** : [Voir](${r.url})${tags}`;
+                }
+            }).join('\n\n');
+        }
+
+        // Generate GPT prompt
+        function generateGPTPrompt(resources) {
+            const grouped = {};
+            resources.forEach(r => {
+                if (!grouped[r.collection]) grouped[r.collection] = [];
+                grouped[r.collection].push(r);
+            });
+            
+            let prompt = `Voici ${resources.length} ressource(s) que j'ai trouvée(s) :\n\n`;
+            
+            for (const [collection, items] of Object.entries(grouped)) {
+                prompt += `## ${collection}\n\n`;
+                items.forEach(r => {
+                    const tags = r.tags.length > 0 ? ` [${r.tags.join(', ')}]` : '';
+                    prompt += `- **${r.title}**${tags}\n`;
+                    prompt += `  URL: ${r.url}\n\n`;
+                });
+            }
+            
+            prompt += `\nPeux-tu créer un cours qui utilise ces ressources ?`;
+            
+            return prompt;
+        }
+
+        // Utility functions
+        function escapeHtml(text) {
+            return text.replace(/[<>&"']/g, c => ({
+                '<': '&lt;', '>': '&gt;', '&': '&amp;',
+                '"': '&quot;', "'": '&#39;'
+            }[c]));
+        }
+
+        function escapeBackticks(text) {
+            return text.replace(/`/g, '\\`').replace(/\$/g, '\\$');
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+            alert('✅ Copié dans le presse-papier !');
+        }
+
+        function closeModal() {
+            document.getElementById('exportModal').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
