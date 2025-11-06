@@ -242,6 +242,99 @@
                 grid-template-columns: 1fr;
             }
         }
+        
+        /* UNIVERSAL RESOURCE FINDER BUTTON - Premium Style */
+        .universal-finder-banner {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 30px 40px;
+            text-align: center;
+            border-bottom: 4px solid #f5576c;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .universal-finder-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .finder-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            color: #f5576c;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            border: 3px solid transparent;
+        }
+
+        .finder-button:hover {
+            background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+            color: white;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(245, 87, 108, 0.6);
+            border-color: white;
+        }
+
+        .finder-button .icon {
+            font-size: 32px;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .finder-button:hover .icon {
+            animation: none;
+            transform: scale(1.2);
+        }
+
+        .finder-subtitle {
+            color: white;
+            font-size: 16px;
+            margin-top: 15px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        /* Responsive pour le finder button */
+        @media (max-width: 768px) {
+            .finder-button {
+                font-size: 18px;
+                padding: 15px 30px;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .finder-button .icon {
+                font-size: 28px;
+            }
+            
+            .universal-finder-banner {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -255,6 +348,17 @@
                 📅 Dernière mise à jour : 05/11/2025 19:52
             </div>
         </header>
+        
+        <!-- UNIVERSAL RESOURCE FINDER BANNER -->
+        <div class="universal-finder-banner">
+            <a href="universal-resource-finder.html" class="finder-button">
+                <span class="icon">🔍</span>
+                <span>Universal Resource Finder</span>
+            </a>
+            <p class="finder-subtitle">
+                🎯 Trouve instantanément n'importe quelle ressource : méthodes, MP3, partitions, exercices
+            </p>
+        </div>
         
         <div class="search-bar">
             <input 

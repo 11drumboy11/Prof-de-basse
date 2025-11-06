@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 Recherche - Prof de Basse</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .search-box {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+        }
+        
+        .search-input-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        #searchInput {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 18px;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            outline: none;
+            transition: all 0.3s;
+        }
+        
+        #searchInput:focus {
+            border-color: #764ba2;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        #searchButton {
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        #searchButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        #searchButton:active {
+            transform: translateY(0);
+        }
+        
+        .quick-searches {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .quick-search-tag {
+            padding: 8px 16px;
+            background: #f0f0f0;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .quick-search-tag:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        #loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top: 4px solid white;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        #results {
+            display: none;
+        }
+        
+        .results-header {
+            background: white;
+            border-radius: 15px;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .results-count {
+            font-size: 24px;
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        .result-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        
+        .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        
+        .result-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .result-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .meta-tag {
+            padding: 5px 12px;
+            background: #f0f0f0;
+            border-radius: 15px;
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .result-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .result-link:hover {
+            transform: translateX(5px);
+        }
+        
+        .score-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #4caf50;
+            color: white;
+            border-radius: 15px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+        #noResults {
+            display: none;
+            text-align: center;
+            padding: 60px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .no-results-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .no-results-text {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .no-results-suggestion {
+            font-size: 16px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Recherche Prof de Basse</h1>
+            <p class="subtitle">Trouvez vos morceaux, exercices et ressources</p>
+        </header>
+        
+        <div class="search-box">
+            <div class="search-input-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Recherchez un morceau, un style, une technique..."
+                    autocomplete="off"
+                >
+                <button id="searchButton">Rechercher</button>
+            </div>
+            
+            <div class="quick-searches">
+                <span style="color: #666; margin-right: 10px;">Recherches rapides :</span>
+                <span class="quick-search-tag" data-query="so what">So What</span>
+                <span class="quick-search-tag" data-query="funk">Funk</span>
+                <span class="quick-search-tag" data-query="blues">Blues</span>
+                <span class="quick-search-tag" data-query="jazz">Jazz</span>
+                <span class="quick-search-tag" data-query="disco">Disco</span>
+                <span class="quick-search-tag" data-query="slap">Slap</span>
+            </div>
+        </div>
+        
+        <div id="loading">
+            <div class="spinner"></div>
+            <div>Recherche en cours...</div>
+        </div>
+        
+        <div id="noResults">
+            <div class="no-results-icon">🔍</div>
+            <div class="no-results-text">Aucun résultat trouvé</div>
+            <div class="no-results-suggestion">Essayez avec d'autres mots-clés</div>
+        </div>
+        
+        <div id="results"></div>
+    </div>
+    
+    <script>
+        // Configuration
+        const SEARCH_INDEX_URL = './search_system/data/search_index.json';
+        let searchIndex = null;
+        
+        // Charger l'index au démarrage
+        async function loadSearchIndex() {
+            try {
+                const response = await fetch(SEARCH_INDEX_URL);
+                searchIndex = await response.json();
+                console.log('✅ Index chargé:', searchIndex.metadata.statistics);
+            } catch (error) {
+                console.error('❌ Erreur chargement index:', error);
+            }
+        }
+        
+        // Normaliser le texte (identique au moteur Python)
+        function normalizeText(text) {
+            if (!text) return '';
+            return text.toLowerCase()
+                .replace(/[^a-z0-9\s\-'àâäéèêëïîôùûüÿæœç]/g, ' ')
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+        
+        // Tokenizer
+        function tokenize(text) {
+            return normalizeText(text).split(' ').filter(t => t.length > 0);
+        }
+        
+        // Recherche exacte
+        function searchExactPhrase(query) {
+            if (!searchIndex) return [];
+            
+            const tokens = tokenize(query);
+            if (tokens.length === 0) return [];
+            
+            // Recherche simple (un mot)
+            if (tokens.length === 1) {
+                return searchSingleWord(tokens[0]);
+            }
+            
+            // Recherche multi-mots (phrase exacte)
+            return searchMultiWordPhrase(tokens);
+        }
+        
+        // Recherche d'un seul mot
+        function searchSingleWord(word) {
+            const invertedIndex = searchIndex.inverted_index;
+            const documents = searchIndex.documents;
+            
+            if (!invertedIndex[word]) return [];
+            
+            const wordData = invertedIndex[word];
+            const results = [];
+            
+            for (let i = 0; i < wordData.documents.length; i++) {
+                const docId = wordData.documents[i];
+                const frequency = wordData.frequencies[i];
+                const doc = documents[docId];
+                
+                if (doc) {
+                    results.push({
+                        document: doc,
+                        score: frequency,
+                        matched_phrase: word
+                    });
+                }
+            }
+            
+            // Trier par score décroissant
+            results.sort((a, b) => b.score - a.score);
+            
+            return results;
+        }
+        
+        // Recherche phrase multi-mots
+        function searchMultiWordPhrase(tokens) {
+            const invertedIndex = searchIndex.inverted_index;
+            const documents = searchIndex.documents;
+            
+            // Trouver documents contenant tous les mots
+            const docSets = tokens.map(token => {
+                if (invertedIndex[token]) {
+                    return new Set(invertedIndex[token].documents);
+                }
+                return new Set();
+            });
+            
+            // Intersection
+            const commonDocs = docSets.reduce((acc, set) => {
+                return new Set([...acc].filter(x => set.has(x)));
+            });
+            
+            if (commonDocs.size === 0) return [];
+            
+            // Vérifier positions consécutives
+            const results = [];
+            
+            for (const docId of commonDocs) {
+                const positionsLists = tokens.map(token => {
+                    const wordData = invertedIndex[token];
+                    const docIndex = wordData.documents.indexOf(docId);
+                    return new Set(wordData.positions[docIndex]);
+                });
+                
+                // Vérifier si phrase existe
+                if (checkConsecutivePositions(positionsLists, tokens.length)) {
+                    const score = positionsLists.reduce((sum, set) => sum + set.size, 0);
+                    const doc = documents[docId];
+                    
+                    if (doc) {
+                        results.push({
+                            document: doc,
+                            score: score,
+                            matched_phrase: tokens.join(' ')
+                        });
+                    }
+                }
+            }
+            
+            results.sort((a, b) => b.score - a.score);
+            
+            return results;
+        }
+        
+        // Vérifier positions consécutives
+        function checkConsecutivePositions(positionsLists, numWords) {
+            for (const startPos of positionsLists[0]) {
+                let isConsecutive = true;
+                
+                for (let i = 1; i < numWords; i++) {
+                    const expectedPos = startPos + i;
+                    if (!positionsLists[i].has(expectedPos)) {
+                        isConsecutive = false;
+                        break;
+                    }
+                }
+                
+                if (isConsecutive) return true;
+            }
+            
+            return false;
+        }
+        
+        // Afficher les résultats
+        function displayResults(results, query) {
+            const resultsDiv = document.getElementById('results');
+            const noResultsDiv = document.getElementById('noResults');
+            
+            if (results.length === 0) {
+                resultsDiv.style.display = 'none';
+                noResultsDiv.style.display = 'block';
+                return;
+            }
+            
+            noResultsDiv.style.display = 'none';
+            resultsDiv.style.display = 'block';
+            
+            let html = `
+                <div class="results-header">
+                    <div class="results-count">
+                        🎸 ${results.length} résultat${results.length > 1 ? 's' : ''} pour "${query}"
+                    </div>
+                </div>
+            `;
+            
+            results.forEach((result, index) => {
+                const doc = result.document;
+                const score = result.score;
+                
+                html += `<div class="result-card">`;
+                
+                // Titre
+                if (doc.source === 'songs_index') {
+                    html += `<div class="result-title">🎵 ${doc.title}</div>`;
+                } else {
+                    html += `<div class="result-title">📁 ${doc.filename || doc.title}</div>`;
+                }
+                
+                // Métadonnées
+                html += `<div class="result-meta">`;
+                html += `<span class="score-badge">Score: ${score}</span>`;
+                
+                if (doc.source === 'songs_index') {
+                    html += `<span class="meta-tag">📄 Page ${doc.page}</span>`;
+                    if (doc.file) {
+                        html += `<span class="meta-tag">📷 ${doc.file}</span>`;
+                    }
+                } else {
+                    if (doc.collection) {
+                        html += `<span class="meta-tag">📚 ${doc.collection}</span>`;
+                    }
+                    if (doc.tags && doc.tags.length > 0) {
+                        doc.tags.forEach(tag => {
+                            html += `<span class="meta-tag">🏷️ ${tag}</span>`;
+                        });
+                    }
+                    if (doc.track_number) {
+                        html += `<span class="meta-tag">🎵 Track ${doc.track_number}</span>`;
+                    }
+                }
+                
+                html += `</div>`;
+                
+                // Lien
+                if (doc.url) {
+                    html += `<a href="${doc.url}" class="result-link" target="_blank">Ouvrir la ressource →</a>`;
+                }
+                
+                html += `</div>`;
+            });
+            
+            resultsDiv.innerHTML = html;
+        }
+        
+        // Fonction de recherche
+        async function performSearch(query) {
+            if (!query.trim()) return;
+            
+            // Afficher loading
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            document.getElementById('noResults').style.display = 'none';
+            
+            // Attendre un peu pour simuler une recherche (effet visuel)
+            await new Promise(resolve => setTimeout(resolve, 300));
+            
+            // Rechercher
+            const results = searchExactPhrase(query);
+            
+            // Limiter à 20 résultats
+            const limitedResults = results.slice(0, 20);
+            
+            // Masquer loading
+            document.getElementById('loading').style.display = 'none';
+            
+            // Afficher résultats
+            displayResults(limitedResults, query);
+        }
+        
+        // Event listeners
+        document.getElementById('searchButton').addEventListener('click', () => {
+            const query = document.getElementById('searchInput').value;
+            performSearch(query);
+        });
+        
+        document.getElementById('searchInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const query = e.target.value;
+                performSearch(query);
+            }
+        });
+        
+        // Quick searches
+        document.querySelectorAll('.quick-search-tag').forEach(tag => {
+            tag.addEventListener('click', () => {
+                const query = tag.dataset.query;
+                document.getElementById('searchInput').value = query;
+                performSearch(query);
+            });
+        });
+        
+        // Charger l'index au démarrage
+        loadSearchIndex();
+    </script>
+</body>
+</html>
