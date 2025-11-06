@@ -1,8 +1,8 @@
 {
   "total_mp3": 363,
   "total_pdf": 0,
-  "total_realbooks": 2,
-  "total_songs": 372,
+  "total_realbooks": 3,
+  "total_songs": 421,
   "by_method": {
     "70 Funk & Disco bass MP3": 99,
     "Paul westwood MP3": 165,
@@ -27,8 +27,8 @@
   },
   "realbooks": {
     "Unknown": {
-      "total_songs": 18,
-      "path": "Methodes/'70s Funk & Disco Bass_with_index/songs_index.json"
+      "total_songs": 49,
+      "path": "Methodes/aebersold-FRENCH_converted/songs_index.json"
     },
     "Realbook Bass F_with_index": {
       "total_songs": 354,
