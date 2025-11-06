@@ -3,575 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔍 Universal Resource Finder - Prof de Basse</title>
+    <title>search_system - Prof de Basse</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             padding: 20px;
-            line-height: 1.6;
         }
-        
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
             overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 40px;
-            text-align: center;
+            padding: 30px;
         }
-        
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
-        
-        .search-section {
-            padding: 40px;
-            background: #f8f9fa;
-        }
-        
-        .search-box {
-            position: relative;
-            margin-bottom: 30px;
-        }
-        
-        #searchInput {
-            width: 100%;
-            padding: 20px 60px 20px 20px;
-            font-size: 18px;
-            border: 3px solid #667eea;
-            border-radius: 12px;
-            outline: none;
-            transition: all 0.3s;
-        }
-        
-        #searchInput:focus {
-            border-color: #764ba2;
-            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
-        }
-        
-        .search-icon {
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 24px;
-            color: #667eea;
-        }
-        
-        .filters {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-        
-        .filter-group {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            border: 2px solid #e0e0e0;
-        }
-        
-        .filter-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .filter-group select {
-            width: 100%;
-            padding: 8px;
-            border: 2px solid #667eea;
-            border-radius: 6px;
+        header h1 { font-size: 32px; margin-bottom: 10px; }
+        .breadcrumb {
             font-size: 14px;
-            outline: none;
-        }
-        
-        .stats {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 30px;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        
-        .stat-item {
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 32px;
-            font-weight: bold;
-            color: #667eea;
-        }
-        
-        .stat-label {
-            font-size: 14px;
-            color: #666;
-            margin-top: 5px;
-        }
-        
-        .results {
-            padding: 0 40px 40px 40px;
-        }
-        
-        .result-card {
-            background: white;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            border-left: 5px solid #667eea;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: all 0.3s;
-        }
-        
-        .result-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-        }
-        
-        .result-title {
-            font-size: 20px;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        
-        .result-type {
-            display: inline-block;
-            padding: 4px 12px;
-            background: #667eea;
-            color: white;
-            border-radius: 12px;
-            font-size: 12px;
-            margin-right: 8px;
-        }
-        
-        .result-meta {
-            display: flex;
-            gap: 15px;
-            margin: 10px 0;
-            flex-wrap: wrap;
-        }
-        
-        .meta-item {
-            font-size: 14px;
-            color: #666;
-        }
-        
-        .result-link {
-            display: inline-block;
+            opacity: 0.9;
             margin-top: 10px;
-            padding: 8px 16px;
-            background: #764ba2;
+        }
+        .breadcrumb a {
             color: white;
             text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.3s;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
         }
-        
-        .result-link:hover {
-            background: #667eea;
+        main { padding: 30px; }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .item-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .item-card:hover {
+            background: #e8eaf6;
             transform: translateX(5px);
         }
-        
-        .no-results {
-            text-align: center;
-            padding: 40px;
+        .item-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .item-meta {
+            font-size: 13px;
             color: #666;
-        }
-        
-        .loading {
-            text-align: center;
-            padding: 40px;
-            font-size: 18px;
-            color: #667eea;
-        }
-        
-        .badge {
-            display: inline-block;
-            padding: 3px 8px;
-            background: #e8f5e9;
-            color: #2e7d32;
-            border-radius: 4px;
-            font-size: 12px;
-            margin-right: 5px;
-        }
-        
-        .badge-style {
-            background: #fff3e0;
-            color: #e65100;
-        }
-        
-        .badge-level {
-            background: #e3f2fd;
-            color: #1565c0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🔍 Universal Resource Finder</h1>
-            <p style="font-size: 18px; margin-top: 10px; opacity: 0.95;">
-                Recherche instantanée parmi 363+ MP3, méthodes, partitions et Real Books
-            </p>
+            <h1>📁 search_system</h1>
+            <div class="breadcrumb">
+                <a href="/">🏠 Accueil</a> / search_system
+            </div>
         </header>
         
-        <div class="search-section">
-            <div class="search-box">
-                <input 
-                    type="text" 
-                    id="searchInput" 
-                    placeholder="Rechercher un morceau, technique, artiste, style..."
-                    autocomplete="off"
-                >
-                <span class="search-icon">🔍</span>
-            </div>
-            
-            <div class="filters">
-                <div class="filter-group">
-                    <label>📁 Type de ressource</label>
-                    <select id="filterType">
-                        <option value="">Tous</option>
-                        <option value="mp3">MP3</option>
-                        <option value="method">Méthode</option>
-                        <option value="realbook">Real Book</option>
-                        <option value="exercise">Exercice</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group">
-                    <label>🎸 Style</label>
-                    <select id="filterStyle">
-                        <option value="">Tous</option>
-                        <option value="funk">Funk</option>
-                        <option value="jazz">Jazz</option>
-                        <option value="disco">Disco</option>
-                        <option value="slap">Slap</option>
-                        <option value="rock">Rock</option>
-                        <option value="blues">Blues</option>
-                        <option value="latin">Latin</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group">
-                    <label>📊 Niveau</label>
-                    <select id="filterLevel">
-                        <option value="">Tous</option>
-                        <option value="beginner">Débutant</option>
-                        <option value="intermediate">Intermédiaire</option>
-                        <option value="advanced">Avancé</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group">
-                    <label>🎯 Technique</label>
-                    <select id="filterTechnique">
-                        <option value="">Toutes</option>
-                        <option value="fingerstyle">Fingerstyle</option>
-                        <option value="slap">Slap</option>
-                        <option value="ghostnotes">Ghost Notes</option>
-                        <option value="walking">Walking Bass</option>
-                        <option value="arpeggio">Arpèges</option>
-                    </select>
+        <main>
+
+            <div class="section">
+                <div class="section-title">📂 Sous-dossiers</div>
+                <div class="item-grid">
+
+                    <div class="item-card" onclick="window.location.href='data/index.html'">
+                        <div class="item-name">📂 data</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.location.href='docs/index.html'">
+                        <div class="item-name">📂 docs</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.location.href='scripts/index.html'">
+                        <div class="item-name">📂 scripts</div>
+                    </div>
+
                 </div>
             </div>
-            
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number" id="totalResources">0</div>
-                    <div class="stat-label">Ressources totales</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" id="filteredResults">0</div>
-                    <div class="stat-label">Résultats affichés</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">363+</div>
-                    <div class="stat-label">Fichiers MP3</div>
+
+            <div class="section">
+                <div class="section-title">📄 Fichiers</div>
+                <div class="item-grid">
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/search_system/INSTALLATION_GITHUB.md', '_blank')">
+                        <div class="item-name">📁 INSTALLATION_GITHUB.md</div>
+                        <div class="item-meta">7.1 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/search_system/config.json', '_blank')">
+                        <div class="item-name">📊 config.json</div>
+                        <div class="item-meta">2.6 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/search_system/examples.html', '_blank')">
+                        <div class="item-name">🌐 examples.html</div>
+                        <div class="item-meta">13.5 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/search_system/generate_index.py', '_blank')">
+                        <div class="item-name">📁 generate_index.py</div>
+                        <div class="item-meta">10.7 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/search_system/gpt-guide.html', '_blank')">
+                        <div class="item-name">🌐 gpt-guide.html</div>
+                        <div class="item-meta">13.8 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/search_system/index.html', '_blank')">
+                        <div class="item-name">🌐 index.html</div>
+                        <div class="item-meta">20.3 B</div>
+                    </div>
+
+                    <div class="item-card" onclick="window.open('https://11drumboy11.github.io/Prof-de-basse/search_system/search.html', '_blank')">
+                        <div class="item-name">🌐 search.html</div>
+                        <div class="item-meta">17.2 B</div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        
-        <div class="results">
-            <div id="resultsContainer">
-                <div class="loading">⏳ Chargement des ressources...</div>
-            </div>
-        </div>
+
+        </main>
     </div>
-    
-    <script>
-        // BASE DE DONNÉES COMPLÈTE DES RESSOURCES
-        // Généré automatiquement depuis le repo GitHub
-        const DATABASE = {
-            // 70s FUNK & DISCO (99 tracks)
-            funk_disco: Array.from({length: 99}, (_, i) => {
-                const track = String(i + 1).padStart(2, '0');
-                const level = i < 15 ? 'beginner' : i < 40 ? 'intermediate' : 'advanced';
-                const style = i < 60 ? 'funk' : 'disco';
-                const technique = i < 20 ? 'fingerstyle' : i < 40 ? 'ghostnotes' : 'slap';
-                
-                return {
-                    id: `funk-${track}`,
-                    title: `Track ${track}`,
-                    type: 'mp3',
-                    source: '70s Funk & Disco Bass',
-                    url: `https://11drumboy11.github.io/Prof-de-basse/Methodes/70%20Funk%20&%20Disco%20bass%20MP3/Track%20${track}.mp3`,
-                    style: style,
-                    level: level,
-                    technique: technique,
-                    tempo: 90 + i,
-                    description: `Exercice de ${style} avec technique ${technique}`
-                };
-            }),
-            
-            // JOHN LIEBMAN
-            liebman: Array.from({length: 50}, (_, i) => ({
-                id: `liebman-${i+1}`,
-                title: `Track ${i+1}`,
-                type: 'mp3',
-                source: 'John Liebman Funk Fusion',
-                url: `https://11drumboy11.github.io/Prof-de-basse/Methodes/John%20Liebman%20Funk%20Fusion%20Mp3/${String(i+1).padStart(2, '0')}%20-%20Track%20${i+1}.mp3`,
-                style: 'funk',
-                level: i < 15 ? 'beginner' : i < 35 ? 'intermediate' : 'advanced',
-                technique: 'fingerstyle'
-            })),
-            
-            // REAL BOOKS JAZZ STANDARDS
-            jazz_standards: [
-                {
-                    id: 'jazz-all-the-things',
-                    title: 'All The Things You Are',
-                    type: 'realbook',
-                    source: 'Real Book Jazz',
-                    composer: 'Jerome Kern',
-                    style: 'jazz',
-                    level: 'intermediate',
-                    technique: 'walking',
-                    key: 'Ab',
-                    tempo: 120,
-                    description: 'Standard jazz en Ab majeur avec walking bass'
-                },
-                {
-                    id: 'jazz-autumn-leaves',
-                    title: 'Autumn Leaves',
-                    type: 'realbook',
-                    source: 'Real Book Jazz',
-                    composer: 'Joseph Kosma',
-                    style: 'jazz',
-                    level: 'beginner',
-                    technique: 'walking',
-                    key: 'Gm',
-                    tempo: 140,
-                    description: 'Standard jazz parfait pour débuter le walking'
-                },
-                {
-                    id: 'jazz-blue-bossa',
-                    title: 'Blue Bossa',
-                    type: 'realbook',
-                    source: 'Real Book Jazz',
-                    composer: 'Kenny Dorham',
-                    style: 'latin',
-                    level: 'intermediate',
-                    technique: 'latin',
-                    key: 'Cm',
-                    tempo: 130,
-                    description: 'Bossa nova classique en Cm'
-                },
-                {
-                    id: 'jazz-so-what',
-                    title: 'So What',
-                    type: 'realbook',
-                    source: 'Real Book Jazz',
-                    composer: 'Miles Davis',
-                    style: 'jazz',
-                    level: 'intermediate',
-                    technique: 'modal',
-                    key: 'Dm',
-                    tempo: 136,
-                    description: 'Modal jazz iconique, ligne de Paul Chambers'
-                },
-                {
-                    id: 'jazz-summertime',
-                    title: 'Summertime',
-                    type: 'realbook',
-                    source: 'Real Book Jazz',
-                    composer: 'George Gershwin',
-                    style: 'jazz',
-                    level: 'beginner',
-                    technique: 'walking',
-                    key: 'Am',
-                    tempo: 100,
-                    description: 'Ballade jazz parfaite pour travailler le phrasé'
-                }
-            ],
-            
-            // EXERCICES TECHNIQUES
-            exercises: [
-                {
-                    id: 'ex-chromatic',
-                    title: 'Chromatic Warm-up',
-                    type: 'exercise',
-                    source: 'Prof de Basse',
-                    style: 'technique',
-                    level: 'beginner',
-                    technique: 'fingerstyle',
-                    description: 'Échauffement chromatique sur 4 cordes'
-                },
-                {
-                    id: 'ex-scales-major',
-                    title: 'Gammes majeures',
-                    type: 'exercise',
-                    source: 'Prof de Basse',
-                    style: 'technique',
-                    level: 'beginner',
-                    technique: 'scales',
-                    description: 'Gammes majeures sur 2 octaves'
-                },
-                {
-                    id: 'ex-arpeggios',
-                    title: 'Arpèges 7e',
-                    type: 'exercise',
-                    source: 'Prof de Basse',
-                    style: 'technique',
-                    level: 'intermediate',
-                    technique: 'arpeggio',
-                    description: 'Arpèges d\'accords de 7e'
-                }
-            ]
-        };
-        
-        // Combiner toutes les ressources
-        let allResources = [
-            ...DATABASE.funk_disco,
-            ...DATABASE.liebman,
-            ...DATABASE.jazz_standards,
-            ...DATABASE.exercises
-        ];
-        
-        let filteredResources = [...allResources];
-        
-        // Éléments DOM
-        const searchInput = document.getElementById('searchInput');
-        const filterType = document.getElementById('filterType');
-        const filterStyle = document.getElementById('filterStyle');
-        const filterLevel = document.getElementById('filterLevel');
-        const filterTechnique = document.getElementById('filterTechnique');
-        const resultsContainer = document.getElementById('resultsContainer');
-        const totalResourcesEl = document.getElementById('totalResources');
-        const filteredResultsEl = document.getElementById('filteredResults');
-        
-        // Initialisation
-        totalResourcesEl.textContent = allResources.length;
-        
-        // Fonction de recherche
-        function performSearch() {
-            const query = searchInput.value.toLowerCase();
-            const typeFilter = filterType.value;
-            const styleFilter = filterStyle.value;
-            const levelFilter = filterLevel.value;
-            const techniqueFilter = filterTechnique.value;
-            
-            filteredResources = allResources.filter(resource => {
-                // Recherche textuelle
-                const matchesQuery = !query || 
-                    resource.title.toLowerCase().includes(query) ||
-                    (resource.description && resource.description.toLowerCase().includes(query)) ||
-                    (resource.composer && resource.composer.toLowerCase().includes(query)) ||
-                    resource.source.toLowerCase().includes(query);
-                
-                // Filtres
-                const matchesType = !typeFilter || resource.type === typeFilter;
-                const matchesStyle = !styleFilter || resource.style === styleFilter;
-                const matchesLevel = !levelFilter || resource.level === levelFilter;
-                const matchesTechnique = !techniqueFilter || resource.technique === techniqueFilter;
-                
-                return matchesQuery && matchesType && matchesStyle && matchesLevel && matchesTechnique;
-            });
-            
-            displayResults();
-        }
-        
-        // Afficher les résultats
-        function displayResults() {
-            filteredResultsEl.textContent = filteredResources.length;
-            
-            if (filteredResources.length === 0) {
-                resultsContainer.innerHTML = `
-                    <div class="no-results">
-                        <h3>😕 Aucun résultat trouvé</h3>
-                        <p>Essayez avec d'autres mots-clés ou filtres</p>
-                    </div>
-                `;
-                return;
-            }
-            
-            resultsContainer.innerHTML = filteredResources
-                .slice(0, 50) // Limiter à 50 résultats pour la performance
-                .map(resource => `
-                    <div class="result-card">
-                        <div class="result-title">
-                            ${resource.title}
-                            <span class="result-type">${resource.type.toUpperCase()}</span>
-                        </div>
-                        
-                        <div class="result-meta">
-                            <span class="meta-item">📁 ${resource.source}</span>
-                            ${resource.composer ? `<span class="meta-item">🎼 ${resource.composer}</span>` : ''}
-                            ${resource.tempo ? `<span class="meta-item">♩=${resource.tempo}</span>` : ''}
-                            ${resource.key ? `<span class="meta-item">🎹 ${resource.key}</span>` : ''}
-                        </div>
-                        
-                        <div style="margin-top: 10px;">
-                            ${resource.style ? `<span class="badge badge-style">${resource.style}</span>` : ''}
-                            ${resource.level ? `<span class="badge badge-level">${getLevelLabel(resource.level)}</span>` : ''}
-                            ${resource.technique ? `<span class="badge">${resource.technique}</span>` : ''}
-                        </div>
-                        
-                        ${resource.description ? `<p style="margin-top: 10px; color: #666;">${resource.description}</p>` : ''}
-                        
-                        ${resource.url ? `<a href="${resource.url}" class="result-link" target="_blank">🎧 Écouter / Ouvrir</a>` : ''}
-                    </div>
-                `).join('');
-        }
-        
-        function getLevelLabel(level) {
-            const labels = {
-                'beginner': 'Débutant',
-                'intermediate': 'Intermédiaire',
-                'advanced': 'Avancé'
-            };
-            return labels[level] || level;
-        }
-        
-        // Event listeners
-        searchInput.addEventListener('input', performSearch);
-        filterType.addEventListener('change', performSearch);
-        filterStyle.addEventListener('change', performSearch);
-        filterLevel.addEventListener('change', performSearch);
-        filterTechnique.addEventListener('change', performSearch);
-        
-        // Affichage initial
-        displayResults();
-    </script>
 </body>
 </html>
