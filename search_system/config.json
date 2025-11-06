@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "index_path": "data/search_index.json",
+  "default_max_results": 20,
+  "search_type": "exact_phrase",
+  "base_url": "https://11drumboy11.github.io/Prof-de-basse"
+}
