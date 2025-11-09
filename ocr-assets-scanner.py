@@ -94,7 +94,7 @@ class OCRAssetsScanner:
     
     def find_asset_images(self) -> List[Path]:
         """Trouve toutes les images dans les dossiers assets"""
-        self.log("\n🔍 RECHERCHE DES IMAGES ASSETS...", "INFO")
+        self.log("\n🔍 RECHERCHE DES IMAGES DANS LES DOSSIERS ASSETS...", "INFO")
         
         images = []
         patterns = ["**/*assets*/*.png", "**/*assets*/*.jpg", "**/*assets*/*.jpeg"]
@@ -107,10 +107,10 @@ class OCRAssetsScanner:
         images = list(set(images))
         
         # Exclure certains dossiers
-        exclude = [".git", "node_modules", "__pycache__"]
+        exclude = [".git", "node_modules", "__pycache__", ".github"]
         images = [img for img in images if not any(ex in str(img) for ex in exclude)]
         
-        self.log(f"   ✅ {len(images)} images trouvées", "SUCCESS")
+        self.log(f"   ✅ {len(images)} images trouvées dans les dossiers assets", "SUCCESS")
         return images
     
     def get_file_hash(self, filepath: Path) -> str:
