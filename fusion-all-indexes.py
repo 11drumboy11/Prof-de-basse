@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Fusion Script V2 - Prof de Basse (Version robuste)
-Fusionne TOUS les index JSON avec gestion complète des erreurs
+Fusion Script V3 - Prof de Basse (Version finale avec OCR Assets)
+Fusionne TOUS les index JSON incluant l'OCR des assets
 """
 
 import json
@@ -11,11 +11,11 @@ from typing import Dict, List, Any
 from datetime import datetime
 import sys
 
-class MegaIndexFusionV2:
+class MegaIndexFusionV3:
     def __init__(self, repo_path: str = "."):
         self.repo_path = Path(repo_path)
         self.mega_index = {
-            "version": "3.0.0-MEGA-V2",
+            "version": "3.0.0-MEGA-V3-OCR",
             "generated_at": datetime.now().isoformat(),
             "total_resources": 0,
             "sources": [],
@@ -26,10 +26,10 @@ class MegaIndexFusionV2:
     def log(self, message: str, level: str = "INFO"):
         """Log avec couleurs"""
         colors = {
-            "INFO": "\033[94m",    # Bleu
-            "SUCCESS": "\033[92m", # Vert
-            "WARNING": "\033[93m", # Jaune
-            "ERROR": "\033[91m",   # Rouge
+            "INFO": "\033[94m",
+            "SUCCESS": "\033[92m",
+            "WARNING": "\033[93m",
+            "ERROR": "\033[91m",
             "RESET": "\033[0m"
         }
         color = colors.get(level, colors["RESET"])
@@ -42,20 +42,21 @@ class MegaIndexFusionV2:
         
         json_files = []
         
-        # Patterns de recherche
+        # Patterns de recherche (AJOUTER assets_ocr_index.json)
         patterns = [
             "**/search_index*.json",
             "**/resources_index.json",
             "**/complete-resource-map.json",
             "**/songs_index.json",
-            "**/master_index.json"
+            "**/master_index.json",
+            "assets_ocr_index.json",  # ← NOUVEAU
         ]
         
         for pattern in patterns:
             try:
                 found = list(self.repo_path.glob(pattern))
                 
-                # IMPORTANT : Exclure le dossier search_system (ancien système)
+                # Exclure le dossier search_system (ancien système)
                 found = [f for f in found if "search_system" not in str(f)]
                 
                 if found:
@@ -119,12 +120,17 @@ class MegaIndexFusionV2:
         metadata_fields = [
             "techniques", "styles", "level", "tempo", "key", "composer",
             "page", "track", "pattern", "duration", "tags", "description",
-            "ocr_text", "excerpt", "content", "path", "size"
+            "ocr_text", "excerpt", "content", "path", "size",
+            "ocr_confidence", "ocr_date", "file_hash"  # ← NOUVEAU pour OCR
         ]
         
         for field in metadata_fields:
             if field in resource and resource[field]:
                 normalized["metadata"][field] = resource[field]
+            # Chercher aussi dans resource.metadata
+            elif "metadata" in resource and field in resource["metadata"]:
+                if resource["metadata"][field]:
+                    normalized["metadata"][field] = resource["metadata"][field]
         
         # Texte de recherche
         search_parts = [
@@ -149,17 +155,25 @@ class MegaIndexFusionV2:
     
     def detect_type(self, resource: Dict) -> str:
         """Détecte le type de ressource"""
-        file = str(resource.get("file", resource.get("path", "")))
+        # Essayer plusieurs clés
+        file = str(resource.get("file", resource.get("path", resource.get("id", ""))))
+        resource_type = resource.get("type", "")
         
-        if ".mp3" in file.lower():
+        # Si type déjà défini, l'utiliser
+        if resource_type:
+            return resource_type
+        
+        # Sinon détecter depuis le fichier
+        file_lower = file.lower()
+        if ".mp3" in file_lower:
             return "mp3"
-        elif ".pdf" in file.lower():
+        elif ".pdf" in file_lower:
             return "pdf"
-        elif ".png" in file.lower() or ".jpg" in file.lower() or ".jpeg" in file.lower():
+        elif ".png" in file_lower or ".jpg" in file_lower or ".jpeg" in file_lower:
             return "image"
-        elif ".html" in file.lower():
+        elif ".html" in file_lower:
             return "html"
-        elif ".json" in file.lower():
+        elif ".json" in file_lower:
             return "data"
         else:
             return "other"
@@ -190,15 +204,8 @@ class MegaIndexFusionV2:
         # Enlever les préfixes relatifs
         path = path.lstrip("/").lstrip("./")
         
-        # CORRECTION INTELLIGENTE : Si le chemin semble incomplet (juste un nom de fichier)
-        # et qu'on a le contexte du fichier source, reconstruire le chemin complet
+        # CORRECTION INTELLIGENTE : Si le chemin semble incomplet
         if source_path is not None and "/" not in path:
-            # C'est juste un nom de fichier (ex: "page_0374.jpg")
-            # Reconstruire le chemin depuis le fichier source
-            
-            # Ex: source_path = Path("Methodes/Reabook/Realbook Bass F_with_index/songs_index.json")
-            # On veut: "Methodes/Reabook/Realbook Bass F_with_index/assets/page_0374.jpg"
-            
             source_dir = source_path.parent
             
             # Chercher un dossier "assets" ou utiliser le dossier parent
@@ -213,15 +220,12 @@ class MegaIndexFusionV2:
                 rel_path = full_path.relative_to(self.repo_path)
                 path = str(rel_path)
             except ValueError:
-                # Si on ne peut pas calculer le chemin relatif, garder tel quel
                 pass
         
         # Encoder les espaces et caractères spéciaux pour URL
-        # ATTENTION : Ne pas encoder les "/" qui sont des séparateurs de chemin
         parts = path.split("/")
         encoded_parts = []
         for part in parts:
-            # Encoder chaque partie séparément
             encoded_part = part.replace(" ", "%20").replace("&", "%26").replace("'", "%27")
             encoded_parts.append(encoded_part)
         
@@ -231,7 +235,7 @@ class MegaIndexFusionV2:
     
     def merge_resources(self, json_files: List[Path]) -> List[Dict]:
         """Fusionne toutes les ressources"""
-        self.log("\n📥 FUSION DES RESSOURCES...", "INFO")
+        self.log("\n🔥 FUSION DES RESSOURCES...", "INFO")
         
         all_resources = []
         seen_ids = set()
@@ -250,30 +254,47 @@ class MegaIndexFusionV2:
             
             if "resources" in data:
                 resources = data["resources"]
+                # Si c'est un dict, le convertir en liste
+                if isinstance(resources, dict):
+                    resources = list(resources.values())
             elif isinstance(data, list):
                 resources = data
             elif isinstance(data, dict):
-                # Peut-être un songs_index
+                # Peut-être un songs_index ou assets_ocr_index
                 for key, value in data.items():
                     if isinstance(value, dict):
-                        value["id"] = key
+                        if "id" not in value:
+                            value["id"] = key
                         resources.append(value)
             
             # Normaliser chaque ressource
             for resource in resources:
                 try:
                     if isinstance(resource, dict):
-                        # IMPORTANT : Passer le chemin du fichier source pour reconstruire les URLs
                         normalized = self.normalize_resource(resource, source_name, json_file)
                         
-                        # Éviter doublons
-                        resource_id = normalized["id"]
+                        # Éviter doublons (utiliser file_hash si disponible, sinon id)
+                        resource_hash = normalized.get("metadata", {}).get("file_hash")
+                        resource_id = resource_hash if resource_hash else normalized["id"]
+                        
                         if resource_id not in seen_ids:
                             all_resources.append(normalized)
                             seen_ids.add(resource_id)
+                        else:
+                            # Doublon détecté, mais si l'OCR a plus d'infos, mettre à jour
+                            if source_name == "assets_ocr_index.json":
+                                # Trouver la ressource existante
+                                for i, existing in enumerate(all_resources):
+                                    if existing["id"] == normalized["id"]:
+                                        # Fusionner les métadonnées
+                                        existing["metadata"].update(normalized["metadata"])
+                                        if normalized.get("title") and normalized["title"] != "Sans titre":
+                                            existing["title"] = normalized["title"]
+                                        break
+                                
                 except Exception as e:
                     error_msg = f"Erreur normalisation ressource dans {source_name}: {e}"
-                    self.log(f"   ⚠ {error_msg}", "WARNING")
+                    self.log(f"   ⚠  {error_msg}", "WARNING")
                     self.errors.append(error_msg)
         
         return all_resources
@@ -281,20 +302,13 @@ class MegaIndexFusionV2:
     def create_mega_index(self) -> Dict:
         """Crée le MEGA index complet"""
         self.log("\n" + "="*60, "INFO")
-        self.log("🚀 MEGA INDEX FUSION V2 - Prof de Basse", "INFO")
+        self.log("🚀 MEGA INDEX FUSION V3 (avec OCR) - Prof de Basse", "INFO")
         self.log("="*60, "INFO")
         
         json_files = self.find_all_json_files()
         
         if not json_files:
             self.log("\n❌ ERREUR: Aucun fichier JSON trouvé!", "ERROR")
-            self.log("\n💡 SOLUTIONS:", "INFO")
-            self.log("   1. Vérifie que tu es dans le bon dossier", "INFO")
-            self.log("   2. Lance 'pwd' pour voir où tu es", "INFO")
-            self.log("   3. Les fichiers JSON doivent être dans:", "INFO")
-            self.log("      - Prof-de-basse-OCR/", "INFO")
-            self.log("      - resources/", "INFO")
-            self.log("      - Real_Books/", "INFO")
             return self.mega_index
         
         resources = self.merge_resources(json_files)
@@ -304,13 +318,20 @@ class MegaIndexFusionV2:
         
         # Statistiques
         types_count = {}
+        ocr_count = 0
+        
         for r in resources:
             t = r["type"]
             types_count[t] = types_count.get(t, 0) + 1
+            
+            # Compter ressources avec OCR
+            if r.get("metadata", {}).get("ocr_confidence"):
+                ocr_count += 1
         
         self.mega_index["statistics"] = {
             "by_type": types_count,
-            "sources_merged": len(self.mega_index["sources"])
+            "sources_merged": len(self.mega_index["sources"]),
+            "with_ocr": ocr_count
         }
         
         return self.mega_index
@@ -327,16 +348,17 @@ class MegaIndexFusionV2:
             self.log(f"\n✅ MEGA INDEX CRÉÉ: {output}", "SUCCESS")
             self.log(f"   📊 Total: {self.mega_index['total_resources']} ressources", "INFO")
             self.log(f"   📚 Sources: {self.mega_index['statistics']['sources_merged']} fichiers", "INFO")
+            self.log(f"   🔍 Avec OCR: {self.mega_index['statistics']['with_ocr']} ressources", "SUCCESS")
             
             if self.mega_index["statistics"]["by_type"]:
                 self.log(f"\n📈 Par type:", "INFO")
-                for type_name, count in self.mega_index["statistics"]["by_type"].items():
+                for type_name, count in sorted(self.mega_index["statistics"]["by_type"].items()):
                     self.log(f"   {type_name}: {count}", "INFO")
             
             # Afficher les erreurs si présentes
             if self.errors:
                 self.log(f"\n⚠️  {len(self.errors)} avertissements:", "WARNING")
-                for error in self.errors[:5]:  # Max 5 erreurs
+                for error in self.errors[:5]:
                     self.log(f"   - {error}", "WARNING")
                 if len(self.errors) > 5:
                     self.log(f"   ... et {len(self.errors) - 5} autres", "WARNING")
@@ -350,12 +372,12 @@ class MegaIndexFusionV2:
 def main():
     import argparse
     
-    parser = argparse.ArgumentParser(description='Fusion MEGA Index V2')
+    parser = argparse.ArgumentParser(description='Fusion MEGA Index V3 (avec OCR)')
     parser.add_argument('--repo', default='.', help='Chemin du repo')
     parser.add_argument('--output', default='mega-search-index.json', help='Fichier de sortie')
     args = parser.parse_args()
     
-    fusion = MegaIndexFusionV2(args.repo)
+    fusion = MegaIndexFusionV3(args.repo)
     fusion.create_mega_index()
     success = fusion.save_mega_index(args.output)
     
