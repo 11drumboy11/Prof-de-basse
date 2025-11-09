@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof de Basse - Mega Moteur de Recherche</title>
+    <title>Prof de Basse - Recherche Universelle</title>
+    <meta name="description" content="Moteur de recherche intelligent pour toutes les ressources pédagogiques de basse">
     <style>
         * {
             margin: 0;
@@ -14,8 +15,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
             padding: 20px;
+            line-height: 1.6;
         }
         
         .container {
@@ -23,316 +24,249 @@
             margin: 0 auto;
             background: white;
             border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
         
-        /* HEADER */
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 40px;
+            padding: 60px 40px;
             text-align: center;
         }
         
         header h1 {
             font-size: 48px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
         .subtitle {
-            font-size: 18px;
+            font-size: 20px;
             opacity: 0.95;
-            margin-top: 10px;
         }
         
-        /* SEARCH ZONE */
-        .search-zone {
-            padding: 40px;
-            background: #f8f9fa;
+        /* BARRE DE RECHERCHE STICKY */
+        .search-bar {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 20px 40px;
             border-bottom: 3px solid #667eea;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .search-box {
+        .search-container {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .search-input-wrapper {
+            flex: 1;
+            min-width: 300px;
             position: relative;
-            max-width: 800px;
-            margin: 0 auto 30px;
         }
         
         #searchInput {
             width: 100%;
-            padding: 20px 60px 20px 20px;
-            font-size: 18px;
-            border: 3px solid #667eea;
-            border-radius: 50px;
+            padding: 15px 50px 15px 20px;
+            font-size: 16px;
+            border: 2px solid #667eea;
+            border-radius: 10px;
             outline: none;
             transition: all 0.3s;
         }
         
         #searchInput:focus {
-            border-color: #764ba2;
-            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
         }
         
         .search-icon {
             position: absolute;
-            right: 20px;
+            right: 15px;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 24px;
+            font-size: 20px;
             color: #667eea;
         }
         
-        /* STATS */
-        .stats {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        
-        .stat-card {
-            background: white;
-            padding: 15px 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 32px;
-            font-weight: bold;
-            color: #667eea;
-        }
-        
-        .stat-label {
+        .search-stats {
             font-size: 14px;
             color: #666;
-            margin-top: 5px;
+            padding: 5px 0;
         }
         
-        /* FILTERS */
-        .filters {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        
-        .filter-group {
+        /* FILTRES */
+        .filters-bar {
             display: flex;
             gap: 10px;
-            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
         }
         
-        .filter-label {
-            font-weight: 600;
-            color: #333;
-        }
-        
-        select, .filter-btn {
-            padding: 10px 20px;
-            border: 2px solid #667eea;
-            border-radius: 8px;
+        .filter-chip {
+            padding: 8px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
             background: white;
-            color: #333;
-            font-size: 14px;
             cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .filter-chip:hover {
+            border-color: #667eea;
+            background: #f0f0ff;
+        }
+        
+        .filter-chip.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .advanced-search-link {
+            padding: 8px 16px;
+            background: #764ba2;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
             transition: all 0.3s;
         }
         
-        select:hover, .filter-btn:hover {
-            background: #667eea;
-            color: white;
+        .advanced-search-link:hover {
+            background: #5a3680;
+            transform: translateY(-2px);
         }
         
-        .filter-btn.active {
-            background: #667eea;
-            color: white;
-        }
-        
-        /* RESULTS */
-        .results-zone {
+        /* RÉSULTATS */
+        .results-container {
             padding: 40px;
         }
         
-        .results-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #e0e0e0;
-        }
-        
-        .results-count {
-            font-size: 20px;
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .sort-options {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-        
-        /* RESOURCE CARDS */
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 20px;
-        }
-        
-        .resource-card {
+        .result-card {
             background: white;
             border: 2px solid #e0e0e0;
             border-radius: 12px;
             padding: 20px;
+            margin-bottom: 20px;
             transition: all 0.3s;
             cursor: pointer;
         }
         
-        .resource-card:hover {
+        .result-card:hover {
             border-color: #667eea;
-            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
-            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+            transform: translateY(-3px);
         }
         
-        .resource-header {
+        .result-header {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 15px;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
         }
         
-        .resource-title {
-            font-size: 18px;
+        .result-icon {
+            font-size: 32px;
+        }
+        
+        .result-title {
+            font-size: 20px;
             font-weight: 600;
             color: #333;
             flex: 1;
-            margin-right: 10px;
         }
         
-        .resource-id {
+        .result-type {
+            padding: 4px 12px;
             background: #667eea;
             color: white;
-            padding: 4px 10px;
             border-radius: 12px;
             font-size: 12px;
             font-weight: 600;
         }
         
-        .resource-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        
-        .meta-badge {
-            padding: 5px 12px;
-            border-radius: 8px;
-            font-size: 13px;
-            font-weight: 500;
-        }
-        
-        .badge-method {
-            background: #e3f2fd;
-            color: #1976d2;
-        }
-        
-        .badge-tonalite {
-            background: #f3e5f5;
-            color: #7b1fa2;
-        }
-        
-        .badge-track {
-            background: #fff3e0;
-            color: #e65100;
-        }
-        
-        .badge-page {
-            background: #e8f5e9;
-            color: #2e7d32;
-        }
-        
-        .resource-techniques {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-bottom: 15px;
-        }
-        
-        .technique-tag {
-            background: #f5f5f5;
+        .result-excerpt {
             color: #666;
-            padding: 3px 10px;
-            border-radius: 6px;
-            font-size: 12px;
+            font-size: 14px;
+            margin: 10px 0;
+            line-height: 1.6;
         }
         
-        .resource-actions {
+        .result-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .meta-tag {
+            background: #f0f0f0;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .result-actions {
             display: flex;
             gap: 10px;
+            margin-top: 15px;
         }
         
         .action-btn {
-            flex: 1;
-            padding: 10px;
-            border: none;
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
             border-radius: 8px;
-            font-weight: 600;
             cursor: pointer;
+            font-weight: 600;
             transition: all 0.3s;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
         }
         
-        .btn-partition {
+        .action-btn:hover {
             background: #667eea;
             color: white;
         }
         
-        .btn-partition:hover {
-            background: #5568d3;
-            transform: translateY(-2px);
-        }
-        
-        .btn-mp3 {
-            background: #4caf50;
+        .action-btn.primary {
+            background: #667eea;
             color: white;
         }
         
-        .btn-mp3:hover {
-            background: #45a049;
-            transform: translateY(-2px);
+        .action-btn.primary:hover {
+            background: #5a6bd6;
         }
         
-        .btn-mp3.disabled {
-            background: #ccc;
-            cursor: not-allowed;
-            opacity: 0.6;
+        /* NO RESULTS */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+        
+        .no-results-icon {
+            font-size: 64px;
+            margin-bottom: 20px;
         }
         
         /* LOADING */
         .loading {
             text-align: center;
-            padding: 60px;
+            padding: 60px 20px;
+            color: #667eea;
         }
         
-        .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #667eea;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
+        .loading-spinner {
+            font-size: 48px;
             animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
         }
         
         @keyframes spin {
@@ -340,443 +274,274 @@
             100% { transform: rotate(360deg); }
         }
         
-        /* NO RESULTS */
-        .no-results {
-            text-align: center;
-            padding: 60px;
-            color: #666;
-        }
-        
-        .no-results-icon {
-            font-size: 80px;
-            margin-bottom: 20px;
-        }
-        
-        .no-results h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        
-        /* FOOTER */
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-        
-        footer a {
-            color: #667eea;
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .search-container {
+                flex-direction: column;
+            }
+            
+            .search-input-wrapper {
+                min-width: 100%;
+            }
+            
+            .filters-bar {
+                justify-content: center;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- HEADER -->
         <header>
             <h1>🎸 Prof de Basse</h1>
-            <div class="subtitle">Mega Moteur de Recherche - 1000+ Ressources Pédagogiques</div>
+            <div class="subtitle">
+                Recherche Universelle - 1125+ Ressources
+            </div>
         </header>
         
-        <!-- SEARCH ZONE -->
-        <div class="search-zone">
-            <div class="search-box">
-                <input 
-                    type="text" 
-                    id="searchInput" 
-                    placeholder="Rechercher une tonalité, technique, titre..."
-                    autocomplete="off"
-                >
-                <span class="search-icon">🔍</span>
+        <!-- BARRE DE RECHERCHE STICKY -->
+        <div class="search-bar">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="🔍 Rechercher : 'gamme pentatonique mineure', 'So What', 'funk patterns'..."
+                        autocomplete="off"
+                    >
+                    <span class="search-icon">🔍</span>
+                </div>
+                <a href="advanced-search.html" class="advanced-search-link">
+                    🎯 Recherche Avancée
+                </a>
             </div>
             
-            <!-- STATS -->
-            <div class="stats">
-                <div class="stat-card">
-                    <div class="stat-number" id="totalResources">-</div>
-                    <div class="stat-label">Ressources</div>
+            <div class="filters-bar" id="filtersBar">
+                <div class="filter-chip active" data-filter="type" data-value="all">
+                    📚 Tout
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number" id="totalMethods">-</div>
-                    <div class="stat-label">Méthodes</div>
+                <div class="filter-chip" data-filter="type" data-value="mp3">
+                    🎵 MP3
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number" id="totalMP3">-</div>
-                    <div class="stat-label">MP3 Disponibles</div>
+                <div class="filter-chip" data-filter="type" data-value="pdf">
+                    📄 PDF
+                </div>
+                <div class="filter-chip" data-filter="type" data-value="image">
+                    🖼️ Images
+                </div>
+                <div class="filter-chip" data-filter="style" data-value="funk">
+                    🎸 Funk
+                </div>
+                <div class="filter-chip" data-filter="style" data-value="jazz">
+                    🎺 Jazz
+                </div>
+                <div class="filter-chip" data-filter="style" data-value="slap">
+                    👋 Slap
                 </div>
             </div>
             
-            <!-- FILTERS -->
-            <div class="filters">
-                <div class="filter-group">
-                    <span class="filter-label">Méthode:</span>
-                    <select id="filterMethod">
-                        <option value="">Toutes</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group">
-                    <span class="filter-label">Tonalité:</span>
-                    <select id="filterTonalite">
-                        <option value="">Toutes</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group">
-                    <span class="filter-label">Type:</span>
-                    <button class="filter-btn active" data-type="all">Tous</button>
-                    <button class="filter-btn" data-type="mp3">Avec MP3</button>
-                    <button class="filter-btn" data-type="no-mp3">Sans MP3</button>
-                </div>
+            <div class="search-stats" id="searchStats">
+                Chargement de l'index...
             </div>
         </div>
         
-        <!-- RESULTS -->
-        <div class="results-zone">
-            <div class="results-header">
-                <div class="results-count">
-                    <span id="resultsCount">0</span> résultat(s)
-                </div>
-                <div class="sort-options">
-                    <span class="filter-label">Trier par:</span>
-                    <select id="sortBy">
-                        <option value="relevance">Pertinence</option>
-                        <option value="title">Titre (A-Z)</option>
-                        <option value="method">Méthode</option>
-                        <option value="track">N° Track</option>
-                    </select>
-                </div>
-            </div>
-            
-            <div id="loadingZone" class="loading">
-                <div class="spinner"></div>
-                <p>Chargement des ressources...</p>
-            </div>
-            
-            <div id="resultsGrid" class="results-grid" style="display: none;">
-                <!-- Les cartes seront injectées ici -->
-            </div>
-            
-            <div id="noResults" class="no-results" style="display: none;">
-                <div class="no-results-icon">😕</div>
-                <h3>Aucun résultat trouvé</h3>
-                <p>Essayez avec d'autres mots-clés ou filtres</p>
+        <!-- RÉSULTATS -->
+        <div class="results-container" id="resultsContainer">
+            <div class="loading">
+                <div class="loading-spinner">⏳</div>
+                <p>Chargement du moteur de recherche...</p>
             </div>
         </div>
-        
-        <!-- FOOTER -->
-        <footer>
-            <p><strong>Prof de Basse - Mega Search Engine v4.0</strong></p>
-            <p style="margin-top: 10px;">
-                Système de recherche ultra-rapide pour toutes vos ressources pédagogiques
-            </p>
-            <p style="margin-top: 15px; font-size: 14px;">
-                <a href="https://github.com/11drumboy11/Prof-de-basse" target="_blank">GitHub Repository</a> | 
-                <a href="mailto:contact@profbasse.com">Contact</a>
-            </p>
-        </footer>
     </div>
     
+    <!-- MOTEUR DE RECHERCHE -->
+    <script src="search-engine-pro.js"></script>
+    
     <script>
-        // ============================================
-        // VARIABLES GLOBALES
-        // ============================================
+        // Instance du moteur
+        const searchEngine = new ProfDeBasseSearch();
         
-        let allData = null;
-        let filteredResources = [];
-        let currentFilters = {
-            search: '',
-            method: '',
-            tonalite: '',
-            type: 'all'
+        // Filtres actifs
+        let activeFilters = {
+            type: 'all',
+            style: null,
+            level: null
         };
         
-        // ============================================
-        // CHARGEMENT DES DONNÉES
-        // ============================================
-        
-        async function loadData() {
-            try {
-                const response = await fetch('mega-search-index.json');
-                if (!response.ok) {
-                    throw new Error('Fichier mega-search-index.json introuvable');
-                }
+        // Initialisation
+        async function init() {
+            const success = await searchEngine.init('mega-search-index.json');
+            
+            if (success) {
+                const stats = searchEngine.getStats();
+                document.getElementById('searchStats').textContent = 
+                    `${stats.total} ressources indexées - Recherche prête ✅`;
                 
-                allData = await response.json();
-                console.log('✅ Données chargées:', allData);
-                
-                // Initialiser l'interface
-                initializeUI();
-                
-                // Afficher tous les résultats
-                filterAndDisplay();
-                
-            } catch (error) {
-                console.error('❌ Erreur chargement:', error);
-                document.getElementById('loadingZone').innerHTML = `
+                // Afficher tous les résultats par défaut
+                displayResults(searchEngine.megaIndex);
+            } else {
+                document.getElementById('resultsContainer').innerHTML = `
                     <div class="no-results">
-                        <div class="no-results-icon">❌</div>
-                        <h3>Erreur de chargement</h3>
-                        <p>${error.message}</p>
-                        <p style="margin-top: 15px;">
-                            Assurez-vous que le fichier <code>mega-search-index.json</code> 
-                            est à la racine du site.
-                        </p>
+                        <div class="no-results-icon">⚠️</div>
+                        <h2>Erreur de chargement</h2>
+                        <p>Impossible de charger l'index de recherche.</p>
                     </div>
                 `;
             }
         }
         
-        // ============================================
-        // INITIALISATION UI
-        // ============================================
-        
-        function initializeUI() {
+        // Recherche
+        function performSearch() {
+            const query = document.getElementById('searchInput').value;
+            const results = searchEngine.search(query, activeFilters);
+            displayResults(results);
+            
             // Stats
-            document.getElementById('totalResources').textContent = 
-                allData.metadata.total_resources.toLocaleString();
-            document.getElementById('totalMethods').textContent = 
-                allData.metadata.total_methods;
-            
-            const totalMP3 = allData.all_resources.filter(r => r.mp3_url).length;
-            document.getElementById('totalMP3').textContent = totalMP3.toLocaleString();
-            
-            // Populate filters
-            populateMethodFilter();
-            populateTonaliteFilter();
-            
-            // Hide loading
-            document.getElementById('loadingZone').style.display = 'none';
-            document.getElementById('resultsGrid').style.display = 'grid';
+            document.getElementById('searchStats').textContent = 
+                `${results.length} résultat(s) trouvé(s)`;
         }
         
-        function populateMethodFilter() {
-            const select = document.getElementById('filterMethod');
-            const methods = [...new Set(allData.all_resources.map(r => r.method))].sort();
+        // Afficher résultats
+        function displayResults(results) {
+            const container = document.getElementById('resultsContainer');
             
-            methods.forEach(method => {
-                const option = document.createElement('option');
-                option.value = method;
-                option.textContent = method;
-                select.appendChild(option);
-            });
-        }
-        
-        function populateTonaliteFilter() {
-            const select = document.getElementById('filterTonalite');
-            const tonalites = [...new Set(
-                allData.all_resources
-                    .map(r => r.tonalite)
-                    .filter(t => t)
-            )].sort();
-            
-            tonalites.forEach(tonalite => {
-                const option = document.createElement('option');
-                option.value = tonalite;
-                option.textContent = tonalite;
-                select.appendChild(option);
-            });
-        }
-        
-        // ============================================
-        // FILTRAGE ET RECHERCHE
-        // ============================================
-        
-        function filterAndDisplay() {
-            // Start with all resources
-            filteredResources = [...allData.all_resources];
-            
-            // Apply search
-            if (currentFilters.search) {
-                const searchLower = currentFilters.search.toLowerCase();
-                filteredResources = filteredResources.filter(r => 
-                    r.searchable_text.toLowerCase().includes(searchLower)
-                );
-            }
-            
-            // Apply method filter
-            if (currentFilters.method) {
-                filteredResources = filteredResources.filter(r => 
-                    r.method === currentFilters.method
-                );
-            }
-            
-            // Apply tonalite filter
-            if (currentFilters.tonalite) {
-                filteredResources = filteredResources.filter(r => 
-                    r.tonalite === currentFilters.tonalite
-                );
-            }
-            
-            // Apply type filter
-            if (currentFilters.type === 'mp3') {
-                filteredResources = filteredResources.filter(r => r.mp3_url);
-            } else if (currentFilters.type === 'no-mp3') {
-                filteredResources = filteredResources.filter(r => !r.mp3_url);
-            }
-            
-            // Sort
-            sortResults();
-            
-            // Display
-            displayResults();
-        }
-        
-        function sortResults() {
-            const sortBy = document.getElementById('sortBy').value;
-            
-            switch (sortBy) {
-                case 'title':
-                    filteredResources.sort((a, b) => 
-                        a.title.localeCompare(b.title)
-                    );
-                    break;
-                case 'method':
-                    filteredResources.sort((a, b) => 
-                        a.method.localeCompare(b.method)
-                    );
-                    break;
-                case 'track':
-                    filteredResources.sort((a, b) => 
-                        (a.track_number || 999) - (b.track_number || 999)
-                    );
-                    break;
-                // 'relevance' = order as-is
-            }
-        }
-        
-        // ============================================
-        // AFFICHAGE DES RÉSULTATS
-        // ============================================
-        
-        function displayResults() {
-            const grid = document.getElementById('resultsGrid');
-            const noResults = document.getElementById('noResults');
-            const count = document.getElementById('resultsCount');
-            
-            count.textContent = filteredResources.length.toLocaleString();
-            
-            if (filteredResources.length === 0) {
-                grid.style.display = 'none';
-                noResults.style.display = 'block';
+            if (results.length === 0) {
+                container.innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">🔍</div>
+                        <h2>Aucun résultat</h2>
+                        <p>Essayez avec d'autres mots-clés</p>
+                    </div>
+                `;
                 return;
             }
             
-            grid.style.display = 'grid';
-            noResults.style.display = 'none';
-            
-            // Generate cards
-            grid.innerHTML = filteredResources.map(resource => 
-                createResourceCard(resource)
-            ).join('');
+            const html = results.map(resource => createResultCard(resource)).join('');
+            container.innerHTML = html;
         }
         
-        function createResourceCard(resource) {
-            const hasMp3 = !!resource.mp3_url;
+        // Créer carte résultat
+        function createResultCard(resource) {
+            const icon = getTypeIcon(resource.type);
+            const excerpt = getExcerpt(resource);
+            const tags = getTags(resource);
             
             return `
-                <div class="resource-card">
-                    <div class="resource-header">
-                        <div class="resource-title">${escapeHtml(resource.title)}</div>
-                        <div class="resource-id">#${resource.id}</div>
+                <div class="result-card" onclick="openResource('${resource.url}')">
+                    <div class="result-header">
+                        <div class="result-icon">${icon}</div>
+                        <div class="result-title">${resource.title}</div>
+                        <div class="result-type">${resource.type.toUpperCase()}</div>
                     </div>
                     
-                    <div class="resource-meta">
-                        <span class="meta-badge badge-method">${escapeHtml(resource.method)}</span>
-                        ${resource.tonalite ? 
-                            `<span class="meta-badge badge-tonalite">${escapeHtml(resource.tonalite)}</span>` 
-                            : ''}
-                        ${resource.track_number ? 
-                            `<span class="meta-badge badge-track">Track ${resource.track_number}</span>` 
-                            : ''}
-                        ${resource.page_number ? 
-                            `<span class="meta-badge badge-page">Page ${resource.page_number}</span>` 
-                            : ''}
+                    ${excerpt ? `<div class="result-excerpt">${excerpt}</div>` : ''}
+                    
+                    <div class="result-meta">
+                        ${tags.map(tag => `<span class="meta-tag">${tag}</span>`).join('')}
                     </div>
                     
-                    ${resource.techniques && resource.techniques.length > 0 ? `
-                        <div class="resource-techniques">
-                            ${resource.techniques.map(t => 
-                                `<span class="technique-tag">${escapeHtml(t)}</span>`
-                            ).join('')}
-                        </div>
-                    ` : ''}
-                    
-                    <div class="resource-actions">
-                        ${resource.page_url ? 
-                            `<a href="${resource.page_url}" target="_blank" class="action-btn btn-partition">
-                                📄 Partition
-                            </a>` 
-                            : ''}
-                        ${hasMp3 ? 
-                            `<a href="${resource.mp3_url}" target="_blank" class="action-btn btn-mp3">
-                                🎧 MP3
-                            </a>` 
-                            : `<span class="action-btn btn-mp3 disabled">🔇 Pas de MP3</span>`}
+                    <div class="result-actions">
+                        <button class="action-btn primary" onclick="event.stopPropagation(); openResource('${resource.url}')">
+                            🔗 Ouvrir
+                        </button>
+                        <button class="action-btn" onclick="event.stopPropagation(); copyUrl('${resource.url}')">
+                            📋 Copier URL
+                        </button>
                     </div>
                 </div>
             `;
         }
         
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
+        // Helper functions
+        function getTypeIcon(type) {
+            const icons = {
+                'mp3': '🎵',
+                'pdf': '📄',
+                'image': '🖼️',
+                'html': '📝',
+                'data': '📊'
+            };
+            return icons[type] || '📁';
         }
         
-        // ============================================
-        // EVENT LISTENERS
-        // ============================================
+        function getExcerpt(resource) {
+            const text = resource.metadata?.ocr_text || resource.metadata?.description || '';
+            if (!text) return '';
+            
+            const maxLength = 200;
+            if (text.length <= maxLength) return text;
+            return text.substring(0, maxLength) + '...';
+        }
         
-        // Search input
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            currentFilters.search = e.target.value;
-            filterAndDisplay();
-        });
+        function getTags(resource) {
+            const tags = [];
+            
+            if (resource.metadata?.page) tags.push(`Page ${resource.metadata.page}`);
+            if (resource.metadata?.track) tags.push(`Track ${resource.metadata.track}`);
+            if (resource.metadata?.composer) tags.push(resource.metadata.composer);
+            if (resource.metadata?.tempo) tags.push(`♩=${resource.metadata.tempo}`);
+            if (resource.metadata?.key) tags.push(resource.metadata.key);
+            
+            const styles = resource.metadata?.styles || [];
+            const techniques = resource.metadata?.techniques || [];
+            tags.push(...styles, ...techniques);
+            
+            return tags.slice(0, 8); // Max 8 tags
+        }
         
-        // Method filter
-        document.getElementById('filterMethod').addEventListener('change', (e) => {
-            currentFilters.method = e.target.value;
-            filterAndDisplay();
-        });
+        function openResource(url) {
+            window.open(url, '_blank');
+        }
         
-        // Tonalite filter
-        document.getElementById('filterTonalite').addEventListener('change', (e) => {
-            currentFilters.tonalite = e.target.value;
-            filterAndDisplay();
-        });
+        function copyUrl(url) {
+            navigator.clipboard.writeText(url).then(() => {
+                alert('✅ URL copiée : ' + url);
+            });
+        }
         
-        // Type filter buttons
-        document.querySelectorAll('[data-type]').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                // Update active state
-                document.querySelectorAll('[data-type]').forEach(b => 
-                    b.classList.remove('active')
-                );
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', 
+            debounce(performSearch, 300)
+        );
+        
+        // Filtres
+        document.getElementById('filtersBar').addEventListener('click', (e) => {
+            if (e.target.classList.contains('filter-chip')) {
+                const filter = e.target.dataset.filter;
+                const value = e.target.dataset.value;
+                
+                // Toggle active
+                document.querySelectorAll(`[data-filter="${filter}"]`).forEach(chip => {
+                    chip.classList.remove('active');
+                });
                 e.target.classList.add('active');
                 
-                // Update filter
-                currentFilters.type = e.target.dataset.type;
-                filterAndDisplay();
-            });
+                // Update filters
+                if (value === 'all') {
+                    activeFilters[filter] = filter === 'type' ? 'all' : null;
+                } else {
+                    activeFilters[filter] = value;
+                }
+                
+                performSearch();
+            }
         });
         
-        // Sort
-        document.getElementById('sortBy').addEventListener('change', () => {
-            filterAndDisplay();
-        });
+        // Debounce helper
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
         
-        // ============================================
-        // INIT
-        // ============================================
-        
-        // Load data on page load
-        window.addEventListener('DOMContentLoaded', loadData);
+        // Init au chargement
+        init();
     </script>
 </body>
 </html>
