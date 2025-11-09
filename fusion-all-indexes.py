@@ -223,10 +223,11 @@ class MegaIndexFusionV3:
                 pass
         
         # Encoder les espaces et caractères spéciaux pour URL
+        # NOTE: Ne pas encoder ' car GitHub Pages l'accepte tel quel
         parts = path.split("/")
         encoded_parts = []
         for part in parts:
-            encoded_part = part.replace(" ", "%20").replace("&", "%26").replace("'", "%27")
+            encoded_part = part.replace(" ", "%20").replace("&", "%26")
             encoded_parts.append(encoded_part)
         
         path = "/".join(encoded_parts)
