@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-📊 Générateur MEGA SEARCH INDEX
+📊 Générateur MEGA SEARCH INDEX v2.0
 Fusionne tous les résultats du scan en un seul fichier de recherche unifié
+FORMAT COMPATIBLE avec le site Prof-de-basse
 """
 
 import json
@@ -17,7 +18,7 @@ class MegaIndexGenerator:
         
     def generate(self):
         """Génère le mega-search-index.json"""
-        print("📊 Génération du MEGA SEARCH INDEX...")
+        print("📊 Génération du MEGA SEARCH INDEX v2.0...")
         
         # Charger le scan report
         if not self.scan_report_file.exists():
@@ -39,19 +40,24 @@ class MegaIndexGenerator:
                 'total_mp3': scan_data['total_mp3'],
                 'scan_date': scan_data['scan_date']
             },
+            'all_resources': self.build_resources(scan_data),  # ← NOM CHANGÉ !
             'categories': self.build_categories(scan_data),
-            'resources': self.build_resources(scan_data),
-            'search_index': self.build_search_index(scan_data)
+            'search_index': self.build_search_index(scan_data),
+            'total_resources': 0,  # Sera calculé après
+            'version': '3.0.0'
         }
         
-        search_index['metadata']['total_resources'] = len(search_index['resources'])
+        search_index['total_resources'] = len(search_index['all_resources'])
+        search_index['metadata']['total_resources'] = len(search_index['all_resources'])
         
         # Sauvegarder
         with open(self.output_file, 'w', encoding='utf-8') as f:
             json.dump(search_index, f, indent=2, ensure_ascii=False)
         
         print(f"✅ {self.output_file} généré avec succès!")
-        print(f"   📦 {search_index['metadata']['total_resources']} ressources indexées")
+        print(f"   📦 {search_index['total_resources']} ressources indexées")
+        print(f"   📂 {len(search_index['categories'])} catégories")
+        print(f"   🔍 Format compatible site: all_resources ✓")
     
     def build_categories(self, scan_data):
         """Construit la liste des catégories"""
@@ -90,6 +96,10 @@ class MegaIndexGenerator:
             
             # Ajouter chaque morceau comme ressource
             for song in method_data['songs']:
+                # Construire les URLs
+                page_url = self.build_url(base_path, song.get('page_url'))
+                mp3_url = self.build_mp3_url(base_path, song.get('mp3_url'))
+                
                 resource = {
                     'id': resource_id,
                     'type': 'song',
@@ -102,8 +112,8 @@ class MegaIndexGenerator:
                     'track_number': song.get('track_number'),
                     'techniques': song.get('techniques', []),
                     'composer': song.get('composer'),
-                    'page_url': self.build_url(base_path, song.get('page_url')),
-                    'mp3_url': self.build_mp3_url(base_path, song.get('mp3_url')),
+                    'page_url': page_url,
+                    'mp3_url': mp3_url,
                     'index_url': f"https://11drumboy11.github.io/Prof-de-basse/{base_path}/index.html",
                     'searchable_text': self.build_searchable_text(song, method_name)
                 }
