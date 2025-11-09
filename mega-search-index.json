@@ -9,98 +9,7 @@
     "total_mp3": 363,
     "scan_date": "2025-11-09T17:06:38.205636"
   },
-  "categories": {
-    "Methodes": {
-      "name": "Methodes",
-      "count": 7,
-      "methods": [
-        {
-          "id": "paul-westwood-mp3",
-          "name": "Paul westwood MP3",
-          "path": "Methodes/Paul westwood MP3",
-          "songs_count": 0,
-          "has_mp3": true
-        },
-        {
-          "id": "aebersold-french-converted",
-          "name": "aebersold-FRENCH_converted",
-          "path": "Methodes/aebersold-FRENCH_converted",
-          "songs_count": 49,
-          "has_mp3": false
-        },
-        {
-          "id": "reabook",
-          "name": "Reabook",
-          "path": "Methodes/Reabook",
-          "songs_count": 0,
-          "has_mp3": false
-        },
-        {
-          "id": "70-funk-disco-bass-mp3",
-          "name": "70 Funk & Disco bass MP3",
-          "path": "Methodes/70 Funk & Disco bass MP3",
-          "songs_count": 0,
-          "has_mp3": true
-        },
-        {
-          "id": "jon-liebman-funk-fusion-bass-converted",
-          "name": "Jon Liebman - Funk Fusion Bass_converted",
-          "path": "Methodes/Jon Liebman - Funk Fusion Bass_converted",
-          "songs_count": 96,
-          "has_mp3": false
-        },
-        {
-          "id": "70s-funk-disco-bass-with-index",
-          "name": "'70s Funk & Disco Bass_with_index",
-          "path": "Methodes/'70s Funk & Disco Bass_with_index",
-          "songs_count": 47,
-          "has_mp3": false
-        },
-        {
-          "id": "john-liebman-funk-fusion-mp3",
-          "name": "John Liebman Funk Fusion Mp3",
-          "path": "Methodes/John Liebman Funk Fusion Mp3",
-          "songs_count": 0,
-          "has_mp3": true
-        }
-      ]
-    },
-    "Theorie": {
-      "name": "Theorie",
-      "count": 4,
-      "methods": [
-        {
-          "id": "harmonie",
-          "name": "Harmonie",
-          "path": "Theorie/Harmonie",
-          "songs_count": 235,
-          "has_mp3": false
-        },
-        {
-          "id": "pratique",
-          "name": "Pratique",
-          "path": "Theorie/Pratique",
-          "songs_count": 414,
-          "has_mp3": false
-        },
-        {
-          "id": "theorie",
-          "name": "Theorie",
-          "path": "Theorie/Theorie",
-          "songs_count": 418,
-          "has_mp3": false
-        },
-        {
-          "id": "arpeges",
-          "name": "Arpeges",
-          "path": "Theorie/Arpeges",
-          "songs_count": 108,
-          "has_mp3": false
-        }
-      ]
-    }
-  },
-  "resources": [
+  "all_resources": [
     {
       "id": 1,
       "type": "song",
@@ -23420,6 +23329,97 @@
       "searchable_text": "conclusion arpeges"
     }
   ],
+  "categories": {
+    "Methodes": {
+      "name": "Methodes",
+      "count": 7,
+      "methods": [
+        {
+          "id": "paul-westwood-mp3",
+          "name": "Paul westwood MP3",
+          "path": "Methodes/Paul westwood MP3",
+          "songs_count": 0,
+          "has_mp3": true
+        },
+        {
+          "id": "aebersold-french-converted",
+          "name": "aebersold-FRENCH_converted",
+          "path": "Methodes/aebersold-FRENCH_converted",
+          "songs_count": 49,
+          "has_mp3": false
+        },
+        {
+          "id": "reabook",
+          "name": "Reabook",
+          "path": "Methodes/Reabook",
+          "songs_count": 0,
+          "has_mp3": false
+        },
+        {
+          "id": "70-funk-disco-bass-mp3",
+          "name": "70 Funk & Disco bass MP3",
+          "path": "Methodes/70 Funk & Disco bass MP3",
+          "songs_count": 0,
+          "has_mp3": true
+        },
+        {
+          "id": "jon-liebman-funk-fusion-bass-converted",
+          "name": "Jon Liebman - Funk Fusion Bass_converted",
+          "path": "Methodes/Jon Liebman - Funk Fusion Bass_converted",
+          "songs_count": 96,
+          "has_mp3": false
+        },
+        {
+          "id": "70s-funk-disco-bass-with-index",
+          "name": "'70s Funk & Disco Bass_with_index",
+          "path": "Methodes/'70s Funk & Disco Bass_with_index",
+          "songs_count": 47,
+          "has_mp3": false
+        },
+        {
+          "id": "john-liebman-funk-fusion-mp3",
+          "name": "John Liebman Funk Fusion Mp3",
+          "path": "Methodes/John Liebman Funk Fusion Mp3",
+          "songs_count": 0,
+          "has_mp3": true
+        }
+      ]
+    },
+    "Theorie": {
+      "name": "Theorie",
+      "count": 4,
+      "methods": [
+        {
+          "id": "harmonie",
+          "name": "Harmonie",
+          "path": "Theorie/Harmonie",
+          "songs_count": 235,
+          "has_mp3": false
+        },
+        {
+          "id": "pratique",
+          "name": "Pratique",
+          "path": "Theorie/Pratique",
+          "songs_count": 414,
+          "has_mp3": false
+        },
+        {
+          "id": "theorie",
+          "name": "Theorie",
+          "path": "Theorie/Theorie",
+          "songs_count": 418,
+          "has_mp3": false
+        },
+        {
+          "id": "arpeges",
+          "name": "Arpeges",
+          "path": "Theorie/Arpeges",
+          "songs_count": 108,
+          "has_mp3": false
+        }
+      ]
+    }
+  },
   "search_index": {
     "by_title": {
       "sommaire": [
@@ -68245,5 +68245,7 @@
         }
       ]
     }
-  }
+  },
+  "total_resources": 1367,
+  "version": "3.0.0"
 }
