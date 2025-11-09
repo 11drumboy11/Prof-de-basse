@@ -257,6 +257,32 @@ class MegaIndexFusionV3:
                 # Si c'est un dict, le convertir en liste
                 if isinstance(resources, dict):
                     resources = list(resources.values())
+            elif "songs" in data:
+                # Format du convertisseur V4 (songs_index.json)
+                self.log(f"   🎵 Format convertisseur V4 détecté", "INFO")
+                for song in data.get("songs", []):
+                    # Convertir le format V4 vers format standard
+                    normalized_song = {
+                        "id": song.get("page_url", "").split("/")[-1],  # Extraire nom fichier
+                        "file": song.get("page_url", ""),
+                        "title": song.get("title", ""),
+                        "type": "image",
+                        "metadata": {
+                            "key": song.get("tonalite"),
+                            "composer": song.get("composer"),
+                            "track": song.get("track_number"),
+                            "page": song.get("page_number"),
+                            "techniques": song.get("techniques", []),
+                            "ocr_text": song.get("ocr_raw", ""),
+                            "ocr_confidence": song.get("confidence"),
+                            "zones": song.get("zones", {})
+                        }
+                    }
+                    # Ajouter URL MP3 si présent
+                    if song.get("mp3_url"):
+                        normalized_song["metadata"]["mp3_url"] = song.get("mp3_url")
+                    
+                    resources.append(normalized_song)
             elif isinstance(data, list):
                 resources = data
             elif isinstance(data, dict):
