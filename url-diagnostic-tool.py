@@ -67,8 +67,8 @@ class URLDiagnosticTool:
         parts = path.split("/")
         encoded_parts = []
         for part in parts:
-            # Encoder les espaces et caractères spéciaux
-            encoded = part.replace(" ", "%20").replace("&", "%26").replace("'", "%27")
+            # Encoder les espaces et & mais PAS les apostrophes
+            encoded = part.replace(" ", "%20").replace("&", "%26")
             encoded_parts.append(encoded)
         
         encoded_path = "/".join(encoded_parts)
