@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-09T10:41:05.623244",
+  "generated_at": "2025-11-09T10:50:44.573301",
   "total_resources": 1162,
   "total_methods": 5,
   "resources": [
@@ -569,7 +569,7 @@
     {
       "type": "image",
       "title": "Les Arpeges, L'arpege Majeur",
-      "url": "Arpeges/assets/page_001.png",
+      "url": "Methodes/Arpeges/assets/page_001.png",
       "metadata": {
         "method": "Arpeges",
         "page": 1,
@@ -580,7 +580,7 @@
     {
       "type": "image",
       "title": "Introduction",
-      "url": "Arpeges/assets/page_002.png",
+      "url": "Methodes/Arpeges/assets/page_002.png",
       "metadata": {
         "method": "Arpeges",
         "page": 2,
@@ -591,7 +591,7 @@
     {
       "type": "image",
       "title": "Definition D'un Arpege",
-      "url": "Arpeges/assets/page_003.png",
+      "url": "Methodes/Arpeges/assets/page_003.png",
       "metadata": {
         "method": "Arpeges",
         "page": 3,
@@ -602,7 +602,7 @@
     {
       "type": "image",
       "title": "Les Arpeges majeurs joués en se servant des cordes à vide :",
-      "url": "Arpeges/assets/page_004.png",
+      "url": "Methodes/Arpeges/assets/page_004.png",
       "metadata": {
         "method": "Arpeges",
         "page": 4,
@@ -613,7 +613,7 @@
     {
       "type": "image",
       "title": "Les Differentes possibilites pour jouer Les Arpeges Majeurs Sur Chaque Corde",
-      "url": "Arpeges/assets/page_005.png",
+      "url": "Methodes/Arpeges/assets/page_005.png",
       "metadata": {
         "method": "Arpeges",
         "page": 5,
@@ -624,7 +624,7 @@
     {
       "type": "image",
       "title": "Analvse Des 17 Tonalites Etudiees Dans Ce Dossier",
-      "url": "Arpeges/assets/page_006.png",
+      "url": "Methodes/Arpeges/assets/page_006.png",
       "metadata": {
         "method": "Arpeges",
         "page": 6,
@@ -635,7 +635,7 @@
     {
       "type": "image",
       "title": "L'Arpege Mi Sol# Si Mi",
-      "url": "Arpeges/assets/page_007.png",
+      "url": "Methodes/Arpeges/assets/page_007.png",
       "metadata": {
         "method": "Arpeges",
         "page": 7,
@@ -646,7 +646,7 @@
     {
       "type": "image",
       "title": "L'arpège Fa / La / Do / Fa:",
-      "url": "Arpeges/assets/page_008.png",
+      "url": "Methodes/Arpeges/assets/page_008.png",
       "metadata": {
         "method": "Arpeges",
         "page": 8,
@@ -657,7 +657,7 @@
     {
       "type": "image",
       "title": "L'arpège Fa# / La# / Do# / Fa#:",
-      "url": "Arpeges/assets/page_009.png",
+      "url": "Methodes/Arpeges/assets/page_009.png",
       "metadata": {
         "method": "Arpeges",
         "page": 9,
@@ -668,7 +668,7 @@
     {
       "type": "image",
       "title": "L'arpège Solb / Sib / Reb / Solb:",
-      "url": "Arpeges/assets/page_010.png",
+      "url": "Methodes/Arpeges/assets/page_010.png",
       "metadata": {
         "method": "Arpeges",
         "page": 10,
@@ -679,7 +679,7 @@
     {
       "type": "image",
       "title": "L'arpège Sol / Si / Re / Sol:",
-      "url": "Arpeges/assets/page_011.png",
+      "url": "Methodes/Arpeges/assets/page_011.png",
       "metadata": {
         "method": "Arpeges",
         "page": 11,
@@ -690,7 +690,7 @@
     {
       "type": "image",
       "title": "L'arpège Sol# / Si# / Re# / Sol#:",
-      "url": "Arpeges/assets/page_012.png",
+      "url": "Methodes/Arpeges/assets/page_012.png",
       "metadata": {
         "method": "Arpeges",
         "page": 12,
@@ -701,7 +701,7 @@
     {
       "type": "image",
       "title": "L'arpège Lab / Do / Mib / Lab:",
-      "url": "Arpeges/assets/page_013.png",
+      "url": "Methodes/Arpeges/assets/page_013.png",
       "metadata": {
         "method": "Arpeges",
         "page": 13,
@@ -712,7 +712,7 @@
     {
       "type": "image",
       "title": "L'arpège La / Do# / Mi / La:",
-      "url": "Arpeges/assets/page_014.png",
+      "url": "Methodes/Arpeges/assets/page_014.png",
       "metadata": {
         "method": "Arpeges",
         "page": 14,
@@ -723,7 +723,7 @@
     {
       "type": "image",
       "title": "L'arpège La# / Do## / Mi# / La#:",
-      "url": "Arpeges/assets/page_015.png",
+      "url": "Methodes/Arpeges/assets/page_015.png",
       "metadata": {
         "method": "Arpeges",
         "page": 15,
@@ -734,7 +734,7 @@
     {
       "type": "image",
       "title": "L'arpège Sib / Re / Fa / Sib:",
-      "url": "Arpeges/assets/page_016.png",
+      "url": "Methodes/Arpeges/assets/page_016.png",
       "metadata": {
         "method": "Arpeges",
         "page": 16,
@@ -745,7 +745,7 @@
     {
       "type": "image",
       "title": "L'arnece Si Re Fa Si",
-      "url": "Arpeges/assets/page_017.png",
+      "url": "Methodes/Arpeges/assets/page_017.png",
       "metadata": {
         "method": "Arpeges",
         "page": 17,
@@ -756,7 +756,7 @@
     {
       "type": "image",
       "title": "L'arpège Do / Mi / Sol / Do:",
-      "url": "Arpeges/assets/page_018.png",
+      "url": "Methodes/Arpeges/assets/page_018.png",
       "metadata": {
         "method": "Arpeges",
         "page": 18,
@@ -767,7 +767,7 @@
     {
       "type": "image",
       "title": "L'arpège Do# / Mi# / Sol# / Do#:",
-      "url": "Arpeges/assets/page_019.png",
+      "url": "Methodes/Arpeges/assets/page_019.png",
       "metadata": {
         "method": "Arpeges",
         "page": 19,
@@ -778,7 +778,7 @@
     {
       "type": "image",
       "title": "L'arpège Reb / Fa / Lab / Reb:",
-      "url": "Arpeges/assets/page_020.png",
+      "url": "Methodes/Arpeges/assets/page_020.png",
       "metadata": {
         "method": "Arpeges",
         "page": 20,
@@ -789,7 +789,7 @@
     {
       "type": "image",
       "title": "L'arpège Re / Fa# / La / Re:",
-      "url": "Arpeges/assets/page_021.png",
+      "url": "Methodes/Arpeges/assets/page_021.png",
       "metadata": {
         "method": "Arpeges",
         "page": 21,
@@ -800,7 +800,7 @@
     {
       "type": "image",
       "title": "L'arpège Re# / Fa## / La# / Re#:",
-      "url": "Arpeges/assets/page_022.png",
+      "url": "Methodes/Arpeges/assets/page_022.png",
       "metadata": {
         "method": "Arpeges",
         "page": 22,
@@ -811,7 +811,7 @@
     {
       "type": "image",
       "title": "L'arpège Mib / Sol / Sib / Mib:",
-      "url": "Arpeges/assets/page_023.png",
+      "url": "Methodes/Arpeges/assets/page_023.png",
       "metadata": {
         "method": "Arpeges",
         "page": 23,
@@ -822,7 +822,7 @@
     {
       "type": "image",
       "title": "Autres possibilites",
-      "url": "Arpeges/assets/page_024.png",
+      "url": "Methodes/Arpeges/assets/page_024.png",
       "metadata": {
         "method": "Arpeges",
         "page": 24,
@@ -833,7 +833,7 @@
     {
       "type": "image",
       "title": "Conclusion",
-      "url": "Arpeges/assets/page_025.png",
+      "url": "Methodes/Arpeges/assets/page_025.png",
       "metadata": {
         "method": "Arpeges",
         "page": 25,
@@ -844,7 +844,7 @@
     {
       "type": "image",
       "title": "Les Arpeges, L'arpege Mineur",
-      "url": "Arpeges/assets/page_026.png",
+      "url": "Methodes/Arpeges/assets/page_026.png",
       "metadata": {
         "method": "Arpeges",
         "page": 26,
@@ -855,7 +855,7 @@
     {
       "type": "image",
       "title": "Introduction",
-      "url": "Arpeges/assets/page_027.png",
+      "url": "Methodes/Arpeges/assets/page_027.png",
       "metadata": {
         "method": "Arpeges",
         "page": 27,
@@ -866,7 +866,7 @@
     {
       "type": "image",
       "title": "Definition D'un Arpege",
-      "url": "Arpeges/assets/page_028.png",
+      "url": "Methodes/Arpeges/assets/page_028.png",
       "metadata": {
         "method": "Arpeges",
         "page": 28,
@@ -877,7 +877,7 @@
     {
       "type": "image",
       "title": "les arpèges mineurs joués en se servant des cordes à vide:",
-      "url": "Arpeges/assets/page_029.png",
+      "url": "Methodes/Arpeges/assets/page_029.png",
       "metadata": {
         "method": "Arpeges",
         "page": 29,
@@ -888,7 +888,7 @@
     {
       "type": "image",
       "title": "Les différentes possibilités pour jouer les arpèges mineurs sur chaque corde:",
-      "url": "Arpeges/assets/page_030.png",
+      "url": "Methodes/Arpeges/assets/page_030.png",
       "metadata": {
         "method": "Arpeges",
         "page": 30,
@@ -899,7 +899,7 @@
     {
       "type": "image",
       "title": "Analyse des 17 tonalités étudiées dans ce dossier:",
-      "url": "Arpeges/assets/page_031.png",
+      "url": "Methodes/Arpeges/assets/page_031.png",
       "metadata": {
         "method": "Arpeges",
         "page": 31,
@@ -910,7 +910,7 @@
     {
       "type": "image",
       "title": "L'arpège Mi / Sol / Si / Mi:",
-      "url": "Arpeges/assets/page_032.png",
+      "url": "Methodes/Arpeges/assets/page_032.png",
       "metadata": {
         "method": "Arpeges",
         "page": 32,
@@ -921,7 +921,7 @@
     {
       "type": "image",
       "title": "L'arpège Fa / Lab / Do / Fa:",
-      "url": "Arpeges/assets/page_033.png",
+      "url": "Methodes/Arpeges/assets/page_033.png",
       "metadata": {
         "method": "Arpeges",
         "page": 33,
@@ -932,7 +932,7 @@
     {
       "type": "image",
       "title": "L'arpège Fa# / La / Do# / Fa#:",
-      "url": "Arpeges/assets/page_034.png",
+      "url": "Methodes/Arpeges/assets/page_034.png",
       "metadata": {
         "method": "Arpeges",
         "page": 34,
@@ -943,7 +943,7 @@
     {
       "type": "image",
       "title": "L'arpège Solb / Sibb / Reb / Solb:",
-      "url": "Arpeges/assets/page_036.png",
+      "url": "Methodes/Arpeges/assets/page_036.png",
       "metadata": {
         "method": "Arpeges",
         "page": 36,
@@ -954,7 +954,7 @@
     {
       "type": "image",
       "title": "L'arpège Sol / Sib / Re / Sol:",
-      "url": "Arpeges/assets/page_037.png",
+      "url": "Methodes/Arpeges/assets/page_037.png",
       "metadata": {
         "method": "Arpeges",
         "page": 37,
@@ -965,7 +965,7 @@
     {
       "type": "image",
       "title": "L'arpège Sol# / Si / Re# / Sol#:",
-      "url": "Arpeges/assets/page_038.png",
+      "url": "Methodes/Arpeges/assets/page_038.png",
       "metadata": {
         "method": "Arpeges",
         "page": 38,
@@ -976,7 +976,7 @@
     {
       "type": "image",
       "title": "L'arpège Lab / Dob / Mib / Lab:",
-      "url": "Arpeges/assets/page_039.png",
+      "url": "Methodes/Arpeges/assets/page_039.png",
       "metadata": {
         "method": "Arpeges",
         "page": 39,
@@ -987,7 +987,7 @@
     {
       "type": "image",
       "title": "L'arpège La / Do / Mi / La:",
-      "url": "Arpeges/assets/page_040.png",
+      "url": "Methodes/Arpeges/assets/page_040.png",
       "metadata": {
         "method": "Arpeges",
         "page": 40,
@@ -998,7 +998,7 @@
     {
       "type": "image",
       "title": "L'arpège La# / Do# / Mi# / La#:",
-      "url": "Arpeges/assets/page_041.png",
+      "url": "Methodes/Arpeges/assets/page_041.png",
       "metadata": {
         "method": "Arpeges",
         "page": 41,
@@ -1009,7 +1009,7 @@
     {
       "type": "image",
       "title": "L'arpège Sib / Reb / Fa / Sib:",
-      "url": "Arpeges/assets/page_042.png",
+      "url": "Methodes/Arpeges/assets/page_042.png",
       "metadata": {
         "method": "Arpeges",
         "page": 42,
@@ -1020,7 +1020,7 @@
     {
       "type": "image",
       "title": "L'arpège Si / Re / Fa# / Si:",
-      "url": "Arpeges/assets/page_043.png",
+      "url": "Methodes/Arpeges/assets/page_043.png",
       "metadata": {
         "method": "Arpeges",
         "page": 43,
@@ -1031,7 +1031,7 @@
     {
       "type": "image",
       "title": "L'arpège Do / Mib / Sol / Do:",
-      "url": "Arpeges/assets/page_044.png",
+      "url": "Methodes/Arpeges/assets/page_044.png",
       "metadata": {
         "method": "Arpeges",
         "page": 44,
@@ -1042,7 +1042,7 @@
     {
       "type": "image",
       "title": "L'arpège Do# / Mi / Sol# / Do#:",
-      "url": "Arpeges/assets/page_045.png",
+      "url": "Methodes/Arpeges/assets/page_045.png",
       "metadata": {
         "method": "Arpeges",
         "page": 45,
@@ -1053,7 +1053,7 @@
     {
       "type": "image",
       "title": "L'arpège Reb / Fab / Lab / Reb:",
-      "url": "Arpeges/assets/page_046.png",
+      "url": "Methodes/Arpeges/assets/page_046.png",
       "metadata": {
         "method": "Arpeges",
         "page": 46,
@@ -1064,7 +1064,7 @@
     {
       "type": "image",
       "title": "Les arpèges, l'arpège mineur",
-      "url": "Arpeges/assets/page_047.png",
+      "url": "Methodes/Arpeges/assets/page_047.png",
       "metadata": {
         "method": "Arpeges",
         "page": 47,
@@ -1075,7 +1075,7 @@
     {
       "type": "image",
       "title": "L'arpège Re / Fa / La / Re:",
-      "url": "Arpeges/assets/page_048.png",
+      "url": "Methodes/Arpeges/assets/page_048.png",
       "metadata": {
         "method": "Arpeges",
         "page": 48,
@@ -1086,7 +1086,7 @@
     {
       "type": "image",
       "title": "L'arpège Re# / Fa# / La# / Re#:",
-      "url": "Arpeges/assets/page_049.png",
+      "url": "Methodes/Arpeges/assets/page_049.png",
       "metadata": {
         "method": "Arpeges",
         "page": 49,
@@ -1097,7 +1097,7 @@
     {
       "type": "image",
       "title": "L'arpège Mib / Solb / Sib / Mib:",
-      "url": "Arpeges/assets/page_050.png",
+      "url": "Methodes/Arpeges/assets/page_050.png",
       "metadata": {
         "method": "Arpeges",
         "page": 50,
@@ -1108,7 +1108,7 @@
     {
       "type": "image",
       "title": "Autres possibilités:",
-      "url": "Arpeges/assets/page_051.png",
+      "url": "Methodes/Arpeges/assets/page_051.png",
       "metadata": {
         "method": "Arpeges",
         "page": 51,
@@ -1119,7 +1119,7 @@
     {
       "type": "image",
       "title": "Conclusion",
-      "url": "Arpeges/assets/page_052.png",
+      "url": "Methodes/Arpeges/assets/page_052.png",
       "metadata": {
         "method": "Arpeges",
         "page": 52,
@@ -1130,7 +1130,7 @@
     {
       "type": "image",
       "title": "La bible des arpèges à 3 notes pour les bassistes:",
-      "url": "Arpeges/assets/page_053.png",
+      "url": "Methodes/Arpeges/assets/page_053.png",
       "metadata": {
         "method": "Arpeges",
         "page": 53,
@@ -1141,7 +1141,7 @@
     {
       "type": "image",
       "title": "Introduction",
-      "url": "Arpeges/assets/page_054.png",
+      "url": "Methodes/Arpeges/assets/page_054.png",
       "metadata": {
         "method": "Arpeges",
         "page": 54,
@@ -1152,7 +1152,7 @@
     {
       "type": "image",
       "title": "Liste Des Arpeges A 3 Notes Existants",
-      "url": "Arpeges/assets/page_055.png",
+      "url": "Methodes/Arpeges/assets/page_055.png",
       "metadata": {
         "method": "Arpeges",
         "page": 55,
@@ -1163,7 +1163,7 @@
     {
       "type": "image",
       "title": "Les Arpeges A 3 Notes Que L'on Peut Jouer Sur 2 Cordes",
-      "url": "Arpeges/assets/page_056.png",
+      "url": "Methodes/Arpeges/assets/page_056.png",
       "metadata": {
         "method": "Arpeges",
         "page": 56,
@@ -1174,7 +1174,7 @@
     {
       "type": "image",
       "title": "L'arpège suspendu 4 (sus4) (indispensable):",
-      "url": "Arpeges/assets/page_057.png",
+      "url": "Methodes/Arpeges/assets/page_057.png",
       "metadata": {
         "method": "Arpeges",
         "page": 57,
@@ -1185,7 +1185,7 @@
     {
       "type": "image",
       "title": "L'arpège quarte / sixte (4/6) (facultatif):",
-      "url": "Arpeges/assets/page_058.png",
+      "url": "Methodes/Arpeges/assets/page_058.png",
       "metadata": {
         "method": "Arpeges",
         "page": 58,
@@ -1196,7 +1196,7 @@
     {
       "type": "image",
       "title": "Les arpèges à 3 notes que l'on peut jouer sur 4 cordes:",
-      "url": "Arpeges/assets/page_059.png",
+      "url": "Methodes/Arpeges/assets/page_059.png",
       "metadata": {
         "method": "Arpeges",
         "page": 59,
@@ -1207,7 +1207,7 @@
     {
       "type": "image",
       "title": "Conclusion",
-      "url": "Arpeges/assets/page_060.png",
+      "url": "Methodes/Arpeges/assets/page_060.png",
       "metadata": {
         "method": "Arpeges",
         "page": 60,
@@ -1218,7 +1218,7 @@
     {
       "type": "image",
       "title": "La bible des arpèges à 4 notes avec une septième:",
-      "url": "Arpeges/assets/page_061.png",
+      "url": "Methodes/Arpeges/assets/page_061.png",
       "metadata": {
         "method": "Arpeges",
         "page": 61,
@@ -1229,7 +1229,7 @@
     {
       "type": "image",
       "title": "Introduction",
-      "url": "Arpeges/assets/page_062.png",
+      "url": "Methodes/Arpeges/assets/page_062.png",
       "metadata": {
         "method": "Arpeges",
         "page": 62,
@@ -1240,7 +1240,7 @@
     {
       "type": "image",
       "title": "Liste des arpèges à 4 notes avec une septième existants:",
-      "url": "Arpeges/assets/page_063.png",
+      "url": "Methodes/Arpeges/assets/page_063.png",
       "metadata": {
         "method": "Arpeges",
         "page": 63,
@@ -1251,7 +1251,7 @@
     {
       "type": "image",
       "title": "L'arpege Majeur 7 Maj7 Indispensable",
-      "url": "Arpeges/assets/page_064.png",
+      "url": "Methodes/Arpeges/assets/page_064.png",
       "metadata": {
         "method": "Arpeges",
         "page": 64,
@@ -1262,7 +1262,7 @@
     {
       "type": "image",
       "title": "L'arpège mineur 7 quinte diminuée (m7b5) (indispensable):",
-      "url": "Arpeges/assets/page_065.png",
+      "url": "Methodes/Arpeges/assets/page_065.png",
       "metadata": {
         "method": "Arpeges",
         "page": 65,
@@ -1273,7 +1273,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 quinte augmentée (7#5) (facultatif):",
-      "url": "Arpeges/assets/page_066.png",
+      "url": "Methodes/Arpeges/assets/page_066.png",
       "metadata": {
         "method": "Arpeges",
         "page": 66,
@@ -1284,7 +1284,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 suspendu 2 (7sus2) (facultatif):",
-      "url": "Arpeges/assets/page_067.png",
+      "url": "Methodes/Arpeges/assets/page_067.png",
       "metadata": {
         "method": "Arpeges",
         "page": 67,
@@ -1295,7 +1295,7 @@
     {
       "type": "image",
       "title": "Conclusion",
-      "url": "Arpeges/assets/page_068.png",
+      "url": "Methodes/Arpeges/assets/page_068.png",
       "metadata": {
         "method": "Arpeges",
         "page": 68,
@@ -1306,7 +1306,7 @@
     {
       "type": "image",
       "title": "La bible des arpèges à 4 notes sans septième:",
-      "url": "Arpeges/assets/page_069.png",
+      "url": "Methodes/Arpeges/assets/page_069.png",
       "metadata": {
         "method": "Arpeges",
         "page": 69,
@@ -1317,7 +1317,7 @@
     {
       "type": "image",
       "title": "Introduction",
-      "url": "Arpeges/assets/page_070.png",
+      "url": "Methodes/Arpeges/assets/page_070.png",
       "metadata": {
         "method": "Arpeges",
         "page": 70,
@@ -1328,7 +1328,7 @@
     {
       "type": "image",
       "title": "Liste des arpèges à 4 notes sans septième existants:",
-      "url": "Arpeges/assets/page_071.png",
+      "url": "Methodes/Arpeges/assets/page_071.png",
       "metadata": {
         "method": "Arpeges",
         "page": 71,
@@ -1339,7 +1339,7 @@
     {
       "type": "image",
       "title": "Les arpèges à 4 notes que l'on peut jouer sur 2 cordes:",
-      "url": "Arpeges/assets/page_072.png",
+      "url": "Methodes/Arpeges/assets/page_072.png",
       "metadata": {
         "method": "Arpeges",
         "page": 72,
@@ -1350,7 +1350,7 @@
     {
       "type": "image",
       "title": "Les arpèges à 4 notes que l'on peut jouer sur 3 cordes:",
-      "url": "Arpeges/assets/page_073.png",
+      "url": "Methodes/Arpeges/assets/page_073.png",
       "metadata": {
         "method": "Arpeges",
         "page": 73,
@@ -1361,7 +1361,7 @@
     {
       "type": "image",
       "title": "Les arpèges à 4 notes que l'on peut jouer sur 4 cordes:",
-      "url": "Arpeges/assets/page_074.png",
+      "url": "Methodes/Arpeges/assets/page_074.png",
       "metadata": {
         "method": "Arpeges",
         "page": 74,
@@ -1372,7 +1372,7 @@
     {
       "type": "image",
       "title": "Conclusion",
-      "url": "Arpeges/assets/page_075.png",
+      "url": "Methodes/Arpeges/assets/page_075.png",
       "metadata": {
         "method": "Arpeges",
         "page": 75,
@@ -1383,7 +1383,7 @@
     {
       "type": "image",
       "title": "La bible des arpèges à 5 notes avec une neuvième:",
-      "url": "Arpeges/assets/page_076.png",
+      "url": "Methodes/Arpeges/assets/page_076.png",
       "metadata": {
         "method": "Arpeges",
         "page": 76,
@@ -1394,7 +1394,7 @@
     {
       "type": "image",
       "title": "Introduction",
-      "url": "Arpeges/assets/page_077.png",
+      "url": "Methodes/Arpeges/assets/page_077.png",
       "metadata": {
         "method": "Arpeges",
         "page": 77,
@@ -1405,7 +1405,7 @@
     {
       "type": "image",
       "title": "Liste des arpèges à 5 notes avec une neuvième existants:",
-      "url": "Arpeges/assets/page_078.png",
+      "url": "Methodes/Arpeges/assets/page_078.png",
       "metadata": {
         "method": "Arpeges",
         "page": 78,
@@ -1416,7 +1416,7 @@
     {
       "type": "image",
       "title": "Liste des arpèges à 5 notes avec une neuvième existants:",
-      "url": "Arpeges/assets/page_079.png",
+      "url": "Methodes/Arpeges/assets/page_079.png",
       "metadata": {
         "method": "Arpeges",
         "page": 79,
@@ -1427,7 +1427,7 @@
     {
       "type": "image",
       "title": "Liste des arpèges à 5 notes avec une neuvième existants:",
-      "url": "Arpeges/assets/page_080.png",
+      "url": "Methodes/Arpeges/assets/page_080.png",
       "metadata": {
         "method": "Arpeges",
         "page": 80,
@@ -1438,7 +1438,7 @@
     {
       "type": "image",
       "title": "L'arpège 9 (9):",
-      "url": "Arpeges/assets/page_081.png",
+      "url": "Methodes/Arpeges/assets/page_081.png",
       "metadata": {
         "method": "Arpeges",
         "page": 81,
@@ -1449,7 +1449,7 @@
     {
       "type": "image",
       "title": "L'arpège 9 suspendu 4 (9sus4):",
-      "url": "Arpeges/assets/page_082.png",
+      "url": "Methodes/Arpeges/assets/page_082.png",
       "metadata": {
         "method": "Arpeges",
         "page": 82,
@@ -1460,7 +1460,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 suspendu 4 # 9 (7sus4#9):",
-      "url": "Arpeges/assets/page_083.png",
+      "url": "Methodes/Arpeges/assets/page_083.png",
       "metadata": {
         "method": "Arpeges",
         "page": 83,
@@ -1471,7 +1471,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 suspendu 4 # 5 # 9 (7sus4#5#9):",
-      "url": "Arpeges/assets/page_084.png",
+      "url": "Methodes/Arpeges/assets/page_084.png",
       "metadata": {
         "method": "Arpeges",
         "page": 84,
@@ -1482,7 +1482,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 # 5 # 9 (7#5#9):",
-      "url": "Arpeges/assets/page_085.png",
+      "url": "Methodes/Arpeges/assets/page_085.png",
       "metadata": {
         "method": "Arpeges",
         "page": 85,
@@ -1493,7 +1493,7 @@
     {
       "type": "image",
       "title": "L'arpège mineur majeur 9 (minmaj9):",
-      "url": "Arpeges/assets/page_086.png",
+      "url": "Methodes/Arpeges/assets/page_086.png",
       "metadata": {
         "method": "Arpeges",
         "page": 86,
@@ -1504,7 +1504,7 @@
     {
       "type": "image",
       "title": "Conclusion",
-      "url": "Arpeges/assets/page_087.png",
+      "url": "Methodes/Arpeges/assets/page_087.png",
       "metadata": {
         "method": "Arpeges",
         "page": 87,
@@ -1515,7 +1515,7 @@
     {
       "type": "image",
       "title": "La bible des arpèges à 5 notes sans neuvième:",
-      "url": "Arpeges/assets/page_088.png",
+      "url": "Methodes/Arpeges/assets/page_088.png",
       "metadata": {
         "method": "Arpeges",
         "page": 88,
@@ -1526,7 +1526,7 @@
     {
       "type": "image",
       "title": "Introduction",
-      "url": "Arpeges/assets/page_089.png",
+      "url": "Methodes/Arpeges/assets/page_089.png",
       "metadata": {
         "method": "Arpeges",
         "page": 89,
@@ -1537,7 +1537,7 @@
     {
       "type": "image",
       "title": "Liste des arpèges à 5 notes sans neuvième existants:",
-      "url": "Arpeges/assets/page_090.png",
+      "url": "Methodes/Arpeges/assets/page_090.png",
       "metadata": {
         "method": "Arpeges",
         "page": 90,
@@ -1548,7 +1548,7 @@
     {
       "type": "image",
       "title": "L'arpège add 2 add 4 (add2add4):",
-      "url": "Arpeges/assets/page_091.png",
+      "url": "Methodes/Arpeges/assets/page_091.png",
       "metadata": {
         "method": "Arpeges",
         "page": 91,
@@ -1559,7 +1559,7 @@
     {
       "type": "image",
       "title": "L'arpège 7/6 (7/6):",
-      "url": "Arpeges/assets/page_092.png",
+      "url": "Methodes/Arpeges/assets/page_092.png",
       "metadata": {
         "method": "Arpeges",
         "page": 92,
@@ -1570,7 +1570,7 @@
     {
       "type": "image",
       "title": "L'arpège majeur 7 # 11 (maj7#11):",
-      "url": "Arpeges/assets/page_093.png",
+      "url": "Methodes/Arpeges/assets/page_093.png",
       "metadata": {
         "method": "Arpeges",
         "page": 93,
@@ -1581,7 +1581,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 # 5 # 11 (7#5#11):",
-      "url": "Arpeges/assets/page_094.png",
+      "url": "Methodes/Arpeges/assets/page_094.png",
       "metadata": {
         "method": "Arpeges",
         "page": 94,
@@ -1592,7 +1592,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 b 13 (7b13):",
-      "url": "Arpeges/assets/page_095.png",
+      "url": "Methodes/Arpeges/assets/page_095.png",
       "metadata": {
         "method": "Arpeges",
         "page": 95,
@@ -1603,7 +1603,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 b 5 b 13 (7b5b13):",
-      "url": "Arpeges/assets/page_096.png",
+      "url": "Methodes/Arpeges/assets/page_096.png",
       "metadata": {
         "method": "Arpeges",
         "page": 96,
@@ -1614,7 +1614,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 sus 4 b 13 (7sus4b13):",
-      "url": "Arpeges/assets/page_097.png",
+      "url": "Methodes/Arpeges/assets/page_097.png",
       "metadata": {
         "method": "Arpeges",
         "page": 97,
@@ -1625,7 +1625,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 sus 4 b 5 b 13 (7sus4b5b13):",
-      "url": "Arpeges/assets/page_098.png",
+      "url": "Methodes/Arpeges/assets/page_098.png",
       "metadata": {
         "method": "Arpeges",
         "page": 98,
@@ -1636,7 +1636,7 @@
     {
       "type": "image",
       "title": "Conclusion",
-      "url": "Arpeges/assets/page_099.png",
+      "url": "Methodes/Arpeges/assets/page_099.png",
       "metadata": {
         "method": "Arpeges",
         "page": 99,
@@ -1647,7 +1647,7 @@
     {
       "type": "image",
       "title": "La bible des arpèges à 6 notes avec une onzième:",
-      "url": "Arpeges/assets/page_100.png",
+      "url": "Methodes/Arpeges/assets/page_100.png",
       "metadata": {
         "method": "Arpeges",
         "page": 100,
@@ -1658,7 +1658,7 @@
     {
       "type": "image",
       "title": "Introduction",
-      "url": "Arpeges/assets/page_101.png",
+      "url": "Methodes/Arpeges/assets/page_101.png",
       "metadata": {
         "method": "Arpeges",
         "page": 101,
@@ -1669,7 +1669,7 @@
     {
       "type": "image",
       "title": "Liste des arpèges à 6 notes avec une onzième existants:",
-      "url": "Arpeges/assets/page_102.png",
+      "url": "Methodes/Arpeges/assets/page_102.png",
       "metadata": {
         "method": "Arpeges",
         "page": 102,
@@ -1680,7 +1680,7 @@
     {
       "type": "image",
       "title": "L'arpège 6/9 #11 (6/9#11):",
-      "url": "Arpeges/assets/page_103.png",
+      "url": "Methodes/Arpeges/assets/page_103.png",
       "metadata": {
         "method": "Arpeges",
         "page": 103,
@@ -1691,7 +1691,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 #5 b9 #11 (7#5b9#11):",
-      "url": "Arpeges/assets/page_104.png",
+      "url": "Methodes/Arpeges/assets/page_104.png",
       "metadata": {
         "method": "Arpeges",
         "page": 104,
@@ -1702,7 +1702,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 suspendu b9 #11 (7susb9#11):",
-      "url": "Arpeges/assets/page_105.png",
+      "url": "Methodes/Arpeges/assets/page_105.png",
       "metadata": {
         "method": "Arpeges",
         "page": 105,
@@ -1713,7 +1713,7 @@
     {
       "type": "image",
       "title": "L'arpège 7 suspendu #11 b13 (7sus#11b13):",
-      "url": "Arpeges/assets/page_106.png",
+      "url": "Methodes/Arpeges/assets/page_106.png",
       "metadata": {
         "method": "Arpeges",
         "page": 106,
@@ -1724,7 +1724,7 @@
     {
       "type": "image",
       "title": "L'arpège 9 suspendu #11 (9sus#11):",
-      "url": "Arpeges/assets/page_107.png",
+      "url": "Methodes/Arpeges/assets/page_107.png",
       "metadata": {
         "method": "Arpeges",
         "page": 107,
@@ -1735,7 +1735,7 @@
     {
       "type": "image",
       "title": "L'arpège mineur 11 b5 (min11b5):",
-      "url": "Arpeges/assets/page_108.png",
+      "url": "Methodes/Arpeges/assets/page_108.png",
       "metadata": {
         "method": "Arpeges",
         "page": 108,
@@ -1746,7 +1746,7 @@
     {
       "type": "image",
       "title": "Conclusion",
-      "url": "Arpeges/assets/page_109.png",
+      "url": "Methodes/Arpeges/assets/page_109.png",
       "metadata": {
         "method": "Arpeges",
         "page": 109,
