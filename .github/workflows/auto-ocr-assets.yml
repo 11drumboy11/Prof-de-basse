@@ -52,7 +52,7 @@ jobs:
           echo "📊 Scan results:"
           if [ -f assets_ocr_index.json ]; then
             echo "✅ assets_ocr_index.json created"
-            cat assets_ocr_index.json | python3 -c "import sys, json; data=json.load(sys.stdin); print(f\"   Total: {data.get('total_scanned', 0)} resources\")"
+            python3 -c "import sys, json; data=json.load(open('assets_ocr_index.json')); print(f'   Total: {data.get(\"total_scanned\", 0)} resources')"
           else
             echo "❌ assets_ocr_index.json not found!"
             exit 1
@@ -105,16 +105,16 @@ jobs:
           echo ""
           echo "📊 ===== OCR SCAN STATISTICS ====="
           if [ -f assets_ocr_index.json ]; then
-            python3 << 'EOF'
+            python3 -c "
 import json
 
 with open('assets_ocr_index.json', 'r') as f:
     data = json.load(f)
 
-print(f"📚 Total scanned: {data.get('total_scanned', 0)}")
-print(f"🆕 New scans: {data.get('new_scans', 0)}")
-print(f"✅ Successful: {data.get('successful', 0)}")
-print(f"❌ Failed: {data.get('failed', 0)}")
+print(f'📚 Total scanned: {data.get(\"total_scanned\", 0)}')
+print(f'🆕 New scans: {data.get(\"new_scans\", 0)}')
+print(f'✅ Successful: {data.get(\"successful\", 0)}')
+print(f'❌ Failed: {data.get(\"failed\", 0)}')
 
 # Compter par type de métadonnée
 stats = {
@@ -124,9 +124,11 @@ stats = {
     'with_techniques': 0
 }
 
-for resource_id, resource in data.get('resources', {}).items():
+resources = data.get('resources', {})
+for resource_id, resource in resources.items():
     metadata = resource.get('metadata', {})
-    if resource.get('title') and resource['title'] != resource_id:
+    title = resource.get('title', '')
+    if title and title != 'Sans titre' and not title.startswith('Page'):
         stats['with_title'] += 1
     if metadata.get('composer'):
         stats['with_composer'] += 1
@@ -135,12 +137,12 @@ for resource_id, resource in data.get('resources', {}).items():
     if metadata.get('techniques'):
         stats['with_techniques'] += 1
 
-print(f"\n🎵 Metadata found:")
-print(f"   Titles: {stats['with_title']}")
-print(f"   Composers: {stats['with_composer']}")
-print(f"   Keys: {stats['with_key']}")
-print(f"   Techniques: {stats['with_techniques']}")
-EOF
+print(f'\n🎵 Metadata found:')
+print(f'   Titles: {stats[\"with_title\"]}')
+print(f'   Composers: {stats[\"with_composer\"]}')
+print(f'   Keys: {stats[\"with_key\"]}')
+print(f'   Techniques: {stats[\"with_techniques\"]}')
+"
           else
             echo "❌ No OCR index found"
           fi
