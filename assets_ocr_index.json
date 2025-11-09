@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "generated_at": "2025-11-09T20:52:27.635834",
+  "generated_at": "2025-11-09T20:11:38.249614",
   "total_scanned": 786,
-  "successful": 786,
+  "successful": 0,
   "failed": 0,
   "resources": {
     "Theorie/Arpeges/assets/page_056.png": {
@@ -10688,5 +10688,5 @@
       }
     }
   },
-  "new_scans": 786
+  "new_scans": 0
 }
