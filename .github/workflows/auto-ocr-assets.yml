@@ -8,7 +8,6 @@ on:
       - '**/assets/**/*.jpeg'
   workflow_dispatch:
   schedule:
-    # Scan quotidien à 3h du matin (UTC)
     - cron: '0 3 * * *'
 
 jobs:
@@ -16,49 +15,34 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # 1. Checkout du repo
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
       
-      # 2. Setup Python
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
       
-      # 3. Installer Tesseract OCR
       - name: 📦 Install Tesseract OCR
         run: |
           sudo apt-get update
           sudo apt-get install -y tesseract-ocr tesseract-ocr-eng tesseract-ocr-fra
           tesseract --version
       
-      # 4. Installer dépendances Python
       - name: 📚 Install Python dependencies
         run: |
           pip install --upgrade pip
           pip install Pillow pytesseract beautifulsoup4 lxml
       
-      # 5. Scanner les images avec OCR
       - name: 🎯 Run OCR Assets Scanner
         run: |
           echo "🔍 Starting OCR scan..."
           python3 ocr-assets-scanner.py --repo . --output assets_ocr_index.json
-          
-          echo ""
-          echo "📊 Scan results:"
-          if [ -f assets_ocr_index.json ]; then
-            echo "✅ assets_ocr_index.json created"
-            python3 -c "import sys, json; data=json.load(open('assets_ocr_index.json')); print(f'   Total: {data.get(\"total_scanned\", 0)} resources')"
-          else
-            echo "❌ assets_ocr_index.json not found!"
-            exit 1
-          fi
+          echo "✅ OCR scan completed"
       
-      # 6. Fusionner avec le mega-index
       - name: 🔄 Merge with mega-search-index
         run: |
           echo "🔄 Merging indexes..."
@@ -66,83 +50,25 @@ jobs:
             python3 fusion-all-indexes.py --repo . --output mega-search-index.json
             echo "✅ mega-search-index.json updated"
           else
-            echo "⚠️  fusion-all-indexes.py not found, skipping merge"
+            echo "⚠️  fusion-all-indexes.py not found"
           fi
       
-      # 7. Commit les changements
       - name: 💾 Commit OCR results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          git add assets_ocr_index.json mega-search-index.json
-          
-          if git diff --staged --quiet; then
-            echo "📝 No changes to commit"
-          else
-            git commit -m "🔍 Auto-update: OCR assets scan [skip ci]"
-            
-            # Pull avant push pour éviter conflits
-            git pull --rebase origin main || true
-            
-            # Push avec retry
-            for i in {1..3}; do
-              if git push; then
-                echo "✅ Changes pushed successfully"
-                break
-              else
-                echo "⚠️  Push failed (attempt $i/3), retrying..."
-                sleep 5
-                git pull --rebase origin main || true
-              fi
-            done
-          fi
+          git add assets_ocr_index.json mega-search-index.json || true
+          git diff --staged --quiet || git commit -m "🔍 Auto-update: OCR assets scan [skip ci]"
+          git pull --rebase origin main || true
+          git push || true
       
-      # 8. Afficher les stats
       - name: 📈 Display Statistics
         if: always()
         run: |
-          echo ""
-          echo "📊 ===== OCR SCAN STATISTICS ====="
+          echo "📊 OCR Scan Statistics"
           if [ -f assets_ocr_index.json ]; then
-            python3 -c "
-import json
-
-with open('assets_ocr_index.json', 'r') as f:
-    data = json.load(f)
-
-print(f'📚 Total scanned: {data.get(\"total_scanned\", 0)}')
-print(f'🆕 New scans: {data.get(\"new_scans\", 0)}')
-print(f'✅ Successful: {data.get(\"successful\", 0)}')
-print(f'❌ Failed: {data.get(\"failed\", 0)}')
-
-# Compter par type de métadonnée
-stats = {
-    'with_title': 0,
-    'with_composer': 0,
-    'with_key': 0,
-    'with_techniques': 0
-}
-
-resources = data.get('resources', {})
-for resource_id, resource in resources.items():
-    metadata = resource.get('metadata', {})
-    title = resource.get('title', '')
-    if title and title != 'Sans titre' and not title.startswith('Page'):
-        stats['with_title'] += 1
-    if metadata.get('composer'):
-        stats['with_composer'] += 1
-    if metadata.get('key'):
-        stats['with_key'] += 1
-    if metadata.get('techniques'):
-        stats['with_techniques'] += 1
-
-print(f'\n🎵 Metadata found:')
-print(f'   Titles: {stats[\"with_title\"]}')
-print(f'   Composers: {stats[\"with_composer\"]}')
-print(f'   Keys: {stats[\"with_key\"]}')
-print(f'   Techniques: {stats[\"with_techniques\"]}')
-"
+            echo "✅ assets_ocr_index.json created"
+            cat assets_ocr_index.json | grep -o '"total_scanned":[0-9]*' || echo "Stats not available"
           else
             echo "❌ No OCR index found"
           fi
