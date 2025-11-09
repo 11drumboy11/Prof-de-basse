@@ -54,3 +54,17 @@ test_output/
 # NE PAS ignorer les index.html générés (on veut les tracker)
 # !index.html
 Prof-de-basse-OCR/leptonica-*.txt
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Fichiers générés automatiquement (ne pas commiter)
+scan-report.json
+
+# Backups
+BACKUP-*/
