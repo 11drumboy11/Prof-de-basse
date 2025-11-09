@@ -196,14 +196,14 @@ jobs:
         echo "========================================================================"
         
         if [ -f "unified_index.json" ]; then
-          python3 -c "
-import json
-with open('unified_index.json', 'r', encoding='utf-8') as f:
-    data = json.load(f)
-    print(f'✅ Total resources: {data[\"total_resources\"]}')
-    print(f'📚 Total methods: {data[\"total_methods\"]}')
-    print(f'📅 Generated at: {data[\"generated_at\"]}')
-"
+          python3 << 'EOF'
+        import json
+        with open('unified_index.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            print(f'✅ Total resources: {data["total_resources"]}')
+            print(f'📚 Total methods: {data["total_methods"]}')
+            print(f'📅 Generated at: {data["generated_at"]}')
+        EOF
         else
           echo "⚠️  unified_index.json not found"
         fi
@@ -225,7 +225,7 @@ with open('unified_index.json', 'r', encoding='utf-8') as f:
           echo "ℹ️  No changes to commit"
           echo "has_changes=false" >> $GITHUB_OUTPUT
         else
-          git commit -m "🤖 Auto-update: Generated all indexes [$(date +'%Y-%m-%d %H:%M')]"
+          git commit -m "🤖 Auto-update: Generated all indexes"
           echo "has_changes=true" >> $GITHUB_OUTPUT
           echo "✅ Changes committed"
         fi
@@ -253,35 +253,3 @@ with open('unified_index.json', 'r', encoding='utf-8') as f:
         
         echo "❌ Push failed after $MAX_RETRIES attempts"
         exit 1
-    
-    - name: 📝 Create summary
-      if: always()
-      run: |
-        echo "# 🎸 Prof de Basse - Auto-Update Summary" >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
-        
-        if [ -f "unified_index.json" ]; then
-          echo "## ✅ Update successful!" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### 📊 Statistics" >> $GITHUB_STEP_SUMMARY
-          echo '```json' >> $GITHUB_STEP_SUMMARY
-          python3 -c "
-import json
-with open('unified_index.json', 'r') as f:
-    data = json.load(f)
-    print(json.dumps({
-        'total_resources': data['total_resources'],
-        'total_methods': data['total_methods'],
-        'generated_at': data['generated_at']
-    }, indent=2))
-" >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
-        fi
-        
-        if [ "${{ steps.commit.outputs.has_changes }}" == "true" ]; then
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "✅ Changes committed and pushed" >> $GITHUB_STEP_SUMMARY
-        else
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "ℹ️  No changes detected" >> $GITHUB_STEP_SUMMARY
-        fi
