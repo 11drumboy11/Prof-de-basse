@@ -1,987 +1,20 @@
 {
   "version": "3.0.0-MEGA-V3-OCR",
-  "generated_at": "2025-11-10T08:03:51.624200",
+  "generated_at": "2025-11-10T16:07:08.409641",
   "total_resources": 1881,
   "sources": [
-    "Methodes/70s Funk & Disco Bass_with_index/songs_index.json",
-    "Methodes/aebersold-FRENCH_converted/songs_index.json",
-    "Theorie/Pratique/songs_index.json",
-    "assets_ocr_index.json",
-    "Theorie/Harmonie/songs_index.json",
     "Theorie/Theorie/songs_index.json",
+    "Theorie/Pratique/songs_index.json",
+    "Methodes/aebersold-FRENCH_converted/songs_index.json",
     "Methodes/Jon Liebman - Funk Fusion Bass_converted/songs_index.json",
+    "Theorie/Harmonie/songs_index.json",
+    "assets_ocr_index.json",
     "resources/complete-resource-map.json",
     "Methodes/Reabook/Realbook Bass F_with_index/songs_index.json",
-    "Theorie/Arpeges/songs_index.json"
+    "Theorie/Arpeges/songs_index.json",
+    "Methodes/70s Funk & Disco Bass_with_index/songs_index.json"
   ],
   "resources": [
-    {
-      "id": "page_0001.jpg",
-      "title": "m 'M D INCLUDES 99 DEMO TRACKS",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0001.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "key": "D",
-        "page": 1,
-        "ocr_text": "m 'M’ €D INCLUDES 99 DEMO TRACKS\n",
-        "ocr_confidence": 0.7420262145996094
-      },
-      "search_text": "m 'm d includes 99 demo tracks m 'm’ €d includes 99 demo tracks\n"
-    },
-    {
-      "id": "page_0002.jpg",
-      "title": "Pattern 1 Pattern 2 Pattern 3 Pattern 4",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0002.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 2,
-        "track": 1,
-        "ocr_text": "bl “ —\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 1 pattern 2 pattern 3 pattern 4 bl “ —\n pattern"
-    },
-    {
-      "id": "page_0003.jpg",
-      "title": "Pattern 5 Pattern 6 Pattern 7 Pattern 8",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0003.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 3,
-        "track": 5,
-        "ocr_text": "rans @ .\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 5 pattern 6 pattern 7 pattern 8 rans @ .\n pattern"
-    },
-    {
-      "id": "page_0004.jpg",
-      "title": "Pattern 9 Pattern 10 Pattern 11 Pattern 12",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0004.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 4,
-        "track": 9,
-        "ocr_text": "Pattern 9 9 -\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 9 pattern 10 pattern 11 pattern 12 pattern 9 9 -\n pattern"
-    },
-    {
-      "id": "page_0005.jpg",
-      "title": "Page 5",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0005.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 5
-      },
-      "search_text": "page 5"
-    },
-    {
-      "id": "page_0006.jpg",
-      "title": "Pattern 17 Pattern 18 Pattern 19 Pattern 20",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0006.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 6,
-        "track": 17,
-        "ocr_text": "i 4 .\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 17 pattern 18 pattern 19 pattern 20 i 4 .\n pattern"
-    },
-    {
-      "id": "page_0007.jpg",
-      "title": "Page 7",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0007.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 7
-      },
-      "search_text": "page 7"
-    },
-    {
-      "id": "page_0008.jpg",
-      "title": "Pattern 25 Pattern 26 Pattern 27",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0008.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 8,
-        "track": 25,
-        "ocr_text": "s @ e\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 25 pattern 26 pattern 27 s @ e\n pattern"
-    },
-    {
-      "id": "page_0009.jpg",
-      "title": "Pattern 28 Pattern 29 Pattern 30",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0009.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 9,
-        "track": 28,
-        "ocr_text": "D =T\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 28 pattern 29 pattern 30 d =t\n pattern"
-    },
-    {
-      "id": "page_0010.jpg",
-      "title": "ru ®\n\n=e\n\nD\n\n==",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0010.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "key": "e",
-        "page": 10,
-        "ocr_text": "ru ®\n\n=e\n\nD\n\n=="
-      },
-      "search_text": "ru ®\n\n=e\n\nd\n\n== ru ®\n\n=e\n\nd\n\n=="
-    },
-    {
-      "id": "page_0011.jpg",
-      "title": "Page 11",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0011.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 11
-      },
-      "search_text": "page 11"
-    },
-    {
-      "id": "page_0012.jpg",
-      "title": "Page 12",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0012.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 12
-      },
-      "search_text": "page 12"
-    },
-    {
-      "id": "page_0013.jpg",
-      "title": "Pattern 37 Pattern 38",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0013.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 13,
-        "track": 37,
-        "ocr_text": "en & ‘\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 37 pattern 38 en & ‘\n pattern"
-    },
-    {
-      "id": "page_0014.jpg",
-      "title": "Pattern 39 Pattern 40 Pattern 41",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0014.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 14,
-        "track": 39,
-        "ocr_text": "| saniSeleies\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 39 pattern 40 pattern 41 | saniseleies\n pattern"
-    },
-    {
-      "id": "page_0015.jpg",
-      "title": "Pattern 42 Pattern 43 Pattern 44 Pattern 45 Pattern 46",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0015.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 15,
-        "track": 42,
-        "ocr_text": "fv s ——~\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 42 pattern 43 pattern 44 pattern 45 pattern 46 fv s ——~\n pattern"
-    },
-    {
-      "id": "page_0016.jpg",
-      "title": "Pattern 47 Pattern 48 Pattern 49 Pattern 50 Pattern 51",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0016.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 16,
-        "track": 47,
-        "ocr_text": "l g = -\n\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 47 pattern 48 pattern 49 pattern 50 pattern 51 l g = -\n\n pattern"
-    },
-    {
-      "id": "page_0017.jpg",
-      "title": "—\n\ne",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0017.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "key": "e",
-        "page": 17,
-        "ocr_text": "—\n\ne"
-      },
-      "search_text": "—\n\ne —\n\ne"
-    },
-    {
-      "id": "page_0018.jpg",
-      "title": "Page 18",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0018.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 18
-      },
-      "search_text": "page 18"
-    },
-    {
-      "id": "page_0019.jpg",
-      "title": "Pattern 58 Pattern 59 Pattern 60",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0019.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 19,
-        "track": 58,
-        "ocr_text": "paernss o\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 58 pattern 59 pattern 60 paernss o\n pattern"
-    },
-    {
-      "id": "page_0020.jpg",
-      "title": "Pattern 61 Pattern 62 Pattern 63",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0020.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 20,
-        "track": 61,
-        "ocr_text": "e @ -\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 61 pattern 62 pattern 63 e @ -\n pattern"
-    },
-    {
-      "id": "page_0021.jpg",
-      "title": "Pattern 64 Pattern 65 Pattern 66",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0021.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 21,
-        "track": 64,
-        "ocr_text": "m..nu@\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 64 pattern 65 pattern 66 m..nu@\n pattern"
-    },
-    {
-      "id": "page_0022.jpg",
-      "title": "Pattern 67 Pattern 68 Pattern 69 Pattern 70",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0022.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 22,
-        "track": 67,
-        "ocr_text": ",';Efﬁ:Lg{EEE_—iﬂ\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 67 pattern 68 pattern 69 pattern 70 ,';efﬁ:lg{eee_—iﬂ\n pattern"
-    },
-    {
-      "id": "page_0023.jpg",
-      "title": "Page 23",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0023.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 23
-      },
-      "search_text": "page 23"
-    },
-    {
-      "id": "page_0024.jpg",
-      "title": "Pattern 75 Pattern 76 Pattern 77",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0024.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 24,
-        "track": 75,
-        "ocr_text": "L*'_’:;—H\"i—’;h‘;,*?’——‘j\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 75 pattern 76 pattern 77 l*'_’:;—h\"i—’;h‘;,*?’——‘j\n pattern"
-    },
-    {
-      "id": "page_0025.jpg",
-      "title": "Pattern 78 Pattern 79 Pattern 80",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0025.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 25,
-        "track": 78,
-        "ocr_text": "purns @)\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 78 pattern 79 pattern 80 purns @)\n pattern"
-    },
-    {
-      "id": "page_0026.jpg",
-      "title": "Page 26",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0026.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 26
-      },
-      "search_text": "page 26"
-    },
-    {
-      "id": "page_0027.jpg",
-      "title": "Pattern 85 Pattern 86 Pattern 87 Pattern 88",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0027.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "techniques": [
-          "Pattern"
-        ],
-        "page": 27,
-        "track": 85,
-        "ocr_text": "eutense @\n",
-        "ocr_confidence": 1
-      },
-      "search_text": "pattern 85 pattern 86 pattern 87 pattern 88 eutense @\n pattern"
-    },
-    {
-      "id": "page_0028.jpg",
-      "title": "Page 28",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0028.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 28
-      },
-      "search_text": "page 28"
-    },
-    {
-      "id": "page_0029.jpg",
-      "title": "Page 29",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0029.jpg",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 29
-      },
-      "search_text": "page 29"
-    },
-    {
-      "id": "sommaire_p2",
-      "title": "Sommaire",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_002.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 2
-      },
-      "search_text": "sommaire"
-    },
-    {
-      "id": "information-utile-de-jazz_p4",
-      "title": "Information utile de jazz",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_004.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 4
-      },
-      "search_text": "information utile de jazz"
-    },
-    {
-      "id": "informations-generales_p3",
-      "title": "Informations generales",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_003.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 3
-      },
-      "search_text": "informations generales"
-    },
-    {
-      "id": "jazzhandbook_p1",
-      "title": "JazzHandbook",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_001.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 1
-      },
-      "search_text": "jazzhandbook"
-    },
-    {
-      "id": "solos_p6",
-      "title": "Solos",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_006.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 6
-      },
-      "search_text": "solos"
-    },
-    {
-      "id": "jazz-la-musique-naturelle_p7",
-      "title": "Jazz la musique naturelle",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_007.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 7
-      },
-      "search_text": "jazz la musique naturelle"
-    },
-    {
-      "id": "tradition-jazz_p5",
-      "title": "Tradition jazz",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_005.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 5
-      },
-      "search_text": "tradition jazz"
-    },
-    {
-      "id": "voici-plusieurs-exercices-que-chaque-musicien-de-jazz-professionnel-a-probablement-joues-a-un-moment-ou-un-autre-jouer-ces-sur-les-harmonies-changements-gammed-accord-de-tout-le-morceau-sur-lequel-vous-travaillez-pour-ce-faire-avant-d-essayer-d-improviser-1-jouer-les-cinq-premieres-notes-de-chaque-gammed-accord-2-jouer-la-triade-note-de-1-3-et-5-de-la-gamme-3-jouez-toute-la-gamme-de-la-fondamentale-premiere-note-a-la-9e-et-la-redescendre-4-jouez-l-accord-de-7e-en-montant-et-descendant-1-3-5-7-5-3-1-5-jouez-laccord-de-9e-en-montant-et-descendant-1-3-5-7-9-7-5-3-1-6-jouer-la-gamme-jusqu-a-la-9e-puis-redescendre-l-accord-9-7-5-3-1-7-v-w-t-a-de-c-ton-a-e-e-a_p8",
-      "title": "Voici Plusieurs Exercices Que Chaque Musicien De Jazz Professionnel A Probablement Joues A Un Moment Ou Un Autre. Jouer Ces Sur Les Harmonies Changements, Gammed'accord De Tout Le Morceau Sur Lequel Vous Travaillez. Pour Ce Faire, Avant D'essayer D'improviser. 1. Jouer Les Cinq Premieres Notes De Chaque Gammed'accord. 2. Jouer La Triade Note De 1,3, Et 5 De La Gamme. 3. Jouez Toute La Gamme De La Fondamentale Premiere Note A La 9e Et La Redescendre. 4. Jouez L'accord De 7e En Montant Et Descendant 1, 3, 5, 7, 5, 3, 1. 5. Jouez Laccord De 9e En Montant Et Descendant 1, 3, 5, 7, 9, 7, 5, 3, 1. 6. Jouer La Gamme Jusqu'a La 9e Puis Redescendre L'accord 9, 7, 5, 3, 1. 7 V W T A De C Ton A E E A",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_008.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 8
-      },
-      "search_text": "voici plusieurs exercices que chaque musicien de jazz professionnel a probablement joues a un moment ou un autre. jouer ces sur les harmonies changements, gammed'accord de tout le morceau sur lequel vous travaillez. pour ce faire, avant d'essayer d'improviser. 1. jouer les cinq premieres notes de chaque gammed'accord. 2. jouer la triade note de 1,3, et 5 de la gamme. 3. jouez toute la gamme de la fondamentale premiere note a la 9e et la redescendre. 4. jouez l'accord de 7e en montant et descendant 1, 3, 5, 7, 5, 3, 1. 5. jouez laccord de 9e en montant et descendant 1, 3, 5, 7, 9, 7, 5, 3, 1. 6. jouer la gamme jusqu'a la 9e puis redescendre l'accord 9, 7, 5, 3, 1. 7 v w t a de c ton a e e a"
-    },
-    {
-      "id": "transcrire-des-solos-ou-des-parties-de-solos-a-partir-d-enregistrements-est-l-une-des-meilleures-faons-de-decouvrir-ce-que-le-professionnel-fait-pour-avoir-un-si-bon-son-en-analysant-un-solo-vous-pouvez-trouver-des-faits-importants-1-par-quelle-note-de-la-gamme-ils-commencent-ces-phrases-2-avec-quelle-note-de-la-gamme-ils-finissent-leurs-phrases-3-utilisent-ils-une-gamme-large-ou-etroite-tessiture-4-utilisent-ils-des-notes-de-l-accord-dans-leurs-phrases-5-utilisent-ils-des-gammes-ou-des-elements-de-la-gamme-6-ont-ils-des-phrases-favorites-qui-apparaissent-a-plusieurs-reprises-me-a-ai-la-a-a-ete-a-a-a-a-ai-a-a-a-a-s_p9",
-      "title": "Transcrire Des Solos, Ou Des Parties De Solos, A Partir D'enregistrements Est L'une Des Meilleures Faons De Decouvrir Ce Que Le Professionnel Fait Pour Avoir Un Si Bon Son. En Analysant Un Solo Vous Pouvez Trouver Des Faits Importants 1. Par Quelle Note De La Gamme Ils Commencent Ces Phrases 2. Avec Quelle Note De La Gamme Ils Finissent Leurs Phrases 3. Utilisent-ils Une Gamme Large Ou Etroite, Tessiture 4. Utilisent-ils Des Notes De L'accord Dans Leurs Phrases 5. Utilisent-ils Des Gammes Ou Des Elements De La Gamme 6. Ont-ils Des Phrases Favorites Qui Apparaissent A Plusieurs Reprises Me A Ai La A A Ete A A A A Ai A A A A S",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_009.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 9
-      },
-      "search_text": "transcrire des solos, ou des parties de solos, a partir d'enregistrements est l'une des meilleures faons de decouvrir ce que le professionnel fait pour avoir un si bon son. en analysant un solo vous pouvez trouver des faits importants 1. par quelle note de la gamme ils commencent ces phrases 2. avec quelle note de la gamme ils finissent leurs phrases 3. utilisent-ils une gamme large ou etroite, tessiture 4. utilisent-ils des notes de l'accord dans leurs phrases 5. utilisent-ils des gammes ou des elements de la gamme 6. ont-ils des phrases favorites qui apparaissent a plusieurs reprises me a ai la a a ete a a a a ai a a a a s"
-    },
-    {
-      "id": "conseils-pour-apprendre-un-nouveau-morceau_p12",
-      "title": "Conseils pour apprendre un nouveau morceau",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_012.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 12
-      },
-      "search_text": "conseils pour apprendre un nouveau morceau"
-    },
-    {
-      "id": "ecoute-sugeree-d-artistes-de-jazz_p10",
-      "title": "Ecoute sugeree d'artistes de jazz",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_010.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 10
-      },
-      "search_text": "ecoute sugeree d'artistes de jazz"
-    },
-    {
-      "id": "enregistrement-d-importance-historique_p11",
-      "title": "Enregistrement d'importance historique",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_011.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 11
-      },
-      "search_text": "enregistrement d'importance historique"
-    },
-    {
-      "id": "les-gammes-majeure-aa-12345678-dom-7eme-7-123456b78-mineure-1-2b34-5-6b78-nariann_p15",
-      "title": "Les Gammes Majeure Aa 12345678 Dom.7eme 7 123456b78 Mineure - 1 2b34 5 6b78 Nariann",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_015.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 15
-      },
-      "search_text": "les gammes majeure aa 12345678 dom.7eme 7 123456b78 mineure - 1 2b34 5 6b78 nariann"
-    },
-    {
-      "id": "liste-de-standards-pour-debutant-voici-la-liste-de-morceaux-que-tout-le-monde-devrait-connaitre-j-enumere-les-tonalites-qui-sont-le-plus-souvent-jouees-et-les-volumes-play-a-long-sur-lesquels-vous-pouvez-les-trouver-la-plupart-des-titres-pour-debutant-se-trouve-dans-le-volume-54-maiden-voyage-livre-et-cd-standards-pour-debutants-standards-intermediaires_p14",
-      "title": "Liste De Standards Pour Debutant Voici La Liste De Morceaux Que Tout Le Monde Devrait Connaitre. J'enumere Les Tonalites Qui Sont Le Plus Souvent Jouees Et Les Volumes Play-a-long Sur Lesquels Vous Pouvez Les Trouver. La Plupart Des Titres Pour Debutant Se Trouve Dans Le Volume 54 Maiden Voyage Livre Et Cd. Standards Pour Debutants Standards Intermediaires",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_014.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 14
-      },
-      "search_text": "liste de standards pour debutant voici la liste de morceaux que tout le monde devrait connaitre. j'enumere les tonalites qui sont le plus souvent jouees et les volumes play-a-long sur lesquels vous pouvez les trouver. la plupart des titres pour debutant se trouve dans le volume 54 maiden voyage livre et cd. standards pour debutants standards intermediaires"
-    },
-    {
-      "id": "introduction-aux-repertoires-des-gammes-le-symbole-de-chaque-accord-c7-c-ci14-etc-represente-une-serie-de-notes-que-le-musicien-peut-utiliser-pour-improviser-on-appelle-traditionnellement-des-series-de-notes-des-gammes-les-gammes-repertoriees-ici-sont-celles-que-j-entends-le-plus-souvent-jouer-tous-les-exemples-sont-ecrits-en-do-afin-que-vous-puissiez-comparer-la-construction-des-gammes-et-leurs-similitudes-ce-repertoire-des-gammes-est-conu-pour-donner-a-l-improvisateur-un-choix-varie-de-gammes-qui-peuvent-etre-employees-sur-n-importe-quel-accord-majeur-mineur-7eme-de-dominante-semi-diminue-et-diminue-la-musique-occidentale-particulierement-le-jazz-et-la-pop-utilise-les-gammes-et-les-accords-majeurs-7eme-de_p16",
-      "title": "Introduction Aux Repertoires Des Gammes Le Symbole De Chaque Accord C7, C-, Ci14, Etc. Represente Une Serie De Notes Que Le Musicien Peut Utiliser Pour Improviser. On Appelle Traditionnellement Des Series De Notes Des Gammes. Les Gammes Repertoriees Ici Sont Celles Que J'entends Le Plus Souvent Jouer. Tous Les Exemples Sont Ecrits En Do, Afin Que Vous Puissiez Comparer La Construction Des Gammes Et Leurs Similitudes. Ce Repertoire Des Gammes Est Conu Pour Donner A L'improvisateur Un Choix Varie De Gammes Qui Peuvent Etre Employees Sur N'importe Quel Accord Majeur, Mineur, 7eme De Dominante, Semi-diminue Et Diminue. La Musique Occidentale, Particulierement Le Jazz Et La Pop, Utilise Les Gammes Et Les Accords Majeurs, 7eme De",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_016.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 16
-      },
-      "search_text": "introduction aux repertoires des gammes le symbole de chaque accord c7, c-, ci14, etc. represente une serie de notes que le musicien peut utiliser pour improviser. on appelle traditionnellement des series de notes des gammes. les gammes repertoriees ici sont celles que j'entends le plus souvent jouer. tous les exemples sont ecrits en do, afin que vous puissiez comparer la construction des gammes et leurs similitudes. ce repertoire des gammes est conu pour donner a l'improvisateur un choix varie de gammes qui peuvent etre employees sur n'importe quel accord majeur, mineur, 7eme de dominante, semi-diminue et diminue. la musique occidentale, particulierement le jazz et la pop, utilise les gammes et les accords majeurs, 7eme de"
-    },
-    {
-      "id": "tableau-des-gammes-d-accord-ou-modes-d-demi-ton-t-ton-entier-3-3-demi-tons-tierce-mineure-accord-gamme-nom-usuel-de-la-gamme-associee-construction-symbole-usuel-aebersold-de-la-gamme-accord-en-c-cinq1-categories-de-base-c-ou-ca-imajeure-ionienne-ttdtttd-cdefgab-icm7-9-11-13-c7-dominante-7eme-myxolydienne-gamme-de-fa-ittdttdt-icdefgabbc-c7-9-11-13-c-7-mineure-dorienne-bba-tdtttdt-icdebfgabb-cm7-9-11-13-co-demi-diminuee-locrienne-dba-dttdttt-icdbebfgbabbb-ico-co-idiminuee-commence-par-un-un-ton-entier-t-itdtdtdtd-icdebfgbalab-ico_p17",
-      "title": "Tableau Des Gammes D'accord Ou Modes D Demi-ton T Ton Entier -3 3 Demi-tons Tierce Mineure Accord-gamme Nom Usuel De La Gamme Associee Construction Symbole Usuel Aebersold De La Gamme Accord En C Cinq1 Categories De Base C Ou Ca Imajeure Ionienne Ttdtttd Cdefgab Icm7 9 11 13 C7 Dominante 7eme Myxolydienne Gamme De Fa Ittdttdt Icdefgabbc C7 9 11 13 C-7 Mineure Dorienne Bba Tdtttdt Icdebfgabb Cm7 9 11 13 Co Demi-diminuee Locrienne Dba Dttdttt Icdbebfgbabbb Ico Co Idiminuee Commence Par Un Un Ton Entier, T Itdtdtdtd Icdebfgbalab Ico",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_017.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 17
-      },
-      "search_text": "tableau des gammes d'accord ou modes d demi-ton t ton entier -3 3 demi-tons tierce mineure accord-gamme nom usuel de la gamme associee construction symbole usuel aebersold de la gamme accord en c cinq1 categories de base c ou ca imajeure ionienne ttdtttd cdefgab icm7 9 11 13 c7 dominante 7eme myxolydienne gamme de fa ittdttdt icdefgabbc c7 9 11 13 c-7 mineure dorienne bba tdtttdt icdebfgabb cm7 9 11 13 co demi-diminuee locrienne dba dttdttt icdbebfgbabbb ico co idiminuee commence par un un ton entier, t itdtdtdtd icdebfgbalab ico"
-    },
-    {
-      "id": "legende-ou-monter-d-un-demi-ton-ou-b-descendre-d-un-demi-ton-d-un-demi-ton-t-un-ton-pourquoi-les-jazzmen-les-auteurs-compositeurs-et-professeurs-ont-du-mal-a-se-mettre-d-accord-sur-une-terminologie-commune-concernant-l-ecriture-des-accords-et-des-gammes-ce-qui-oblige-le-debutant-a-se-familiariser-avec-les-differentes-manieres-d-ecrire-ces-derniers-ci-dessous-dans-la-liste-de-droite-sont-ecrits-les-symboles-des-accords-en-fonction-de-leurs-frequences-d-utilisation-les-encadres-sont-ceux-que-j-utilise-le-plus-souvent-notez-que-tout-au-long-de-ce-volume-vous-verrez-ca-et-c-pour-designer-un-accord-majeur-et-sa-gamme-correspondante-je-procede-ainsi-afin-que-vous-puissiez-commencer-a-vous-familiariser-avec-les-differentes-nomenclatures-a-z-aammafareneel-matonw-res-fima-motouwe-fa-la-chiff-e-f-anvhe-ue-loitre-imalieue-ahalecar-ia-tema-nabe-ma-namme-matosme-dn_p18",
-      "title": "Legende Ou Monter D'un Demi-ton - Ou B Descendre D'un Demi-ton, D Un Demi-ton T Un Ton Pourquoi Les Jazzmen, Les Auteurs, Compositeurs Et Professeurs Ont Du Mal A Se Mettre D'accord Sur Une Terminologie Commune Concernant L'ecriture Des Accords Et Des Gammes, Ce Qui Oblige Le Debutant A Se Familiariser Avec Les Differentes Manieres D'ecrire Ces Derniers. Ci-dessous, Dans La Liste De Droite, Sont Ecrits Les Symboles Des Accords En Fonction De Leurs Frequences D'utilisation. Les Encadres Sont Ceux Que J'utilise Le Plus Souvent. Notez Que Tout Au Long De Ce Volume, Vous Verrez Ca Et C Pour Designer Un Accord Majeur Et Sa Gamme Correspondante. Je Procede Ainsi Afin Que Vous Puissiez Commencer A Vous Familiariser Avec Les Differentes Nomenclatures. A Z Aammafareneel Matonw Res Fima Motouwe Fa La Chiff-e F Anvhe Ue Loitre Imalieue Ahalecar Ia Tema Nabe Ma Namme Matosme Dn",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_018.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 18
-      },
-      "search_text": "legende ou monter d'un demi-ton - ou b descendre d'un demi-ton, d un demi-ton t un ton pourquoi les jazzmen, les auteurs, compositeurs et professeurs ont du mal a se mettre d'accord sur une terminologie commune concernant l'ecriture des accords et des gammes, ce qui oblige le debutant a se familiariser avec les differentes manieres d'ecrire ces derniers. ci-dessous, dans la liste de droite, sont ecrits les symboles des accords en fonction de leurs frequences d'utilisation. les encadres sont ceux que j'utilise le plus souvent. notez que tout au long de ce volume, vous verrez ca et c pour designer un accord majeur et sa gamme correspondante. je procede ainsi afin que vous puissiez commencer a vous familiariser avec les differentes nomenclatures. a z aammafareneel matonw res fima motouwe fa la chiff-e f anvhe ue loitre imalieue ahalecar ia tema nabe ma namme matosme dn"
-    },
-    {
-      "id": "la-7e-de-dominante-dans-le-choix-des-gammes-les-deux-notes-les-plus-importantes-dans-toutes-les-gammes-ou-accords-sont-les-3ce-et-7e-elles-guident-ce-que-l-auditeur-peroit-et-indiquent-le-mouvement-harmonique-la-3ce-nous-indique-si-c-est-majeur-ou-mineur-le-7e-indique-si-laccord-est-stable-ne-peut-pas-passer-a-un-autre-accord-ou-si-on-veut-passer-a-un-accord-de-resolution-les-dominantes-generalement-se-resolvent-a-un-accord-montant-jusqu-a-la-4te-parfaite-c7-veut-resoudre-a-f-f-f7-etc-la-tonale-ou-tonique-est-prise-pour-acquise-si-ce-n-etait-pas-le-cas-nous-ne-serions-pas-en-mesure-d-identifier-la-gamme-ou-laccord-chacune-de-ces-gammes-qualites-sons-sonorites-peuvent-etre-jouees-avec-une-7e-de-dominante_p19",
-      "title": "La 7e De Dominante Dans Le Choix Des Gammes Les Deux Notes Les Plus Importantes Dans Toutes Les Gammes Ou Accords, Sont Les 3ce Et 7e. Elles Guident Ce Que L'auditeur Peroit Et Indiquent Le Mouvement Harmonique. La 3ce Nous Indique Si C'est Majeur Ou Mineur. Le 7e Indique Si Laccord Est Stable Ne Peut Pas Passer A Un Autre Accord Ou Si On Veut Passer A Un Accord De Resolution. Les Dominantes Generalement Se Resolvent A Un Accord Montant Jusqu'a La 4te Parfaite C7 Veut Resoudre A F, F, F7, Etc. La Tonale Ou Tonique Est Prise Pour Acquise. Si Ce N'etait Pas Le Cas, Nous Ne Serions Pas En Mesure D'identifier La Gamme Ou Laccord. Chacune De Ces Gammes Qualites Sons Sonorites Peuvent Etre Jouees Avec Une 7e De Dominante",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_019.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 19
-      },
-      "search_text": "la 7e de dominante dans le choix des gammes les deux notes les plus importantes dans toutes les gammes ou accords, sont les 3ce et 7e. elles guident ce que l'auditeur peroit et indiquent le mouvement harmonique. la 3ce nous indique si c'est majeur ou mineur. le 7e indique si laccord est stable ne peut pas passer a un autre accord ou si on veut passer a un accord de resolution. les dominantes generalement se resolvent a un accord montant jusqu'a la 4te parfaite c7 veut resoudre a f, f, f7, etc. la tonale ou tonique est prise pour acquise. si ce n'etait pas le cas, nous ne serions pas en mesure d'identifier la gamme ou laccord. chacune de ces gammes qualites sons sonorites peuvent etre jouees avec une 7e de dominante"
-    },
-    {
-      "id": "entrainement-de-l-oreille-quand-une-personne-tente-de-developper-sa-capacite-a-mieux-entendre-les-sons-qui-se-propagent-autour-de-lui-il-est-confronte-a-plusieurs-problemes-qui-ne-sont-pas-necessairement-presents-lors-de-la-lecture-de-la-musique-ou-des-symboles-d-accord-sur-des-partitions-avoir-une-bonne-oreille-signifie-avoir-la-capacite-a-entendre-la-tonique-pour-les-accords-ou-les-differentes-gammes-qui-sont-jouees-avoir-la-capacite-d-entendre-la-tonalite-de-l-accord-ou-de-la-gamme-majeur-mineur-quel-genre-de-mineur-pentatonique-dim-ton-entier-etc-cela-signifie-avoir-la-capacite-de-dire-ce-quel-est-la-tonalite-de-la-gamme-ou-de-l-accord-qui-est-joue-a-n-importe-quel-endroit-dans-le-solo-ah-cette-note-a-ete-la-resolution-quarte-de-la-6-de-la-quinte-cela-signifie-entendre-le-piano-la-basse-le-soliste-la-batterie-etc-individuellement-aussi-bien-que-collectivement_p24",
-      "title": "Entrainement De L'oreille Quand Une Personne Tente De Developper Sa Capacite A Mieux Entendre Les Sons Qui Se Propagent Autour De Lui, Il Est Confronte A Plusieurs Problemes Qui Ne Sont Pas Necessairement Presents Lors De La Lecture De La Musique Ou Des Symboles D'accord Sur Des Partitions. Avoir Une Bonne Oreille Signifie Avoir La Capacite A Entendre La Tonique Pour Les Accords Ou Les Differentes Gammes Qui Sont Jouees Avoir La Capacite D'entendre La Tonalite De L'accord Ou De La Gamme . Majeur, Mineur Quel Genre De Mineur, Pentatonique, Dim., Ton Entier, Etc. Cela Signifie Avoir La Capacite De Dire Ce Quel Est La Tonalite De La Gamme Ou De L'accord Qui Est Joue A N'importe Quel Endroit Dans Le Solo Ah, Cette Note A Ete La Resolution Quarte, De La 6, De La Quinte, Cela Signifie Entendre Le Piano, La Basse, Le Soliste, La Batterie, Etc. Individuellement Aussi Bien Que Collectivement.",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_024.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 24
-      },
-      "search_text": "entrainement de l'oreille quand une personne tente de developper sa capacite a mieux entendre les sons qui se propagent autour de lui, il est confronte a plusieurs problemes qui ne sont pas necessairement presents lors de la lecture de la musique ou des symboles d'accord sur des partitions. avoir une bonne oreille signifie avoir la capacite a entendre la tonique pour les accords ou les differentes gammes qui sont jouees avoir la capacite d'entendre la tonalite de l'accord ou de la gamme . majeur, mineur quel genre de mineur, pentatonique, dim., ton entier, etc. cela signifie avoir la capacite de dire ce quel est la tonalite de la gamme ou de l'accord qui est joue a n'importe quel endroit dans le solo ah, cette note a ete la resolution quarte, de la 6, de la quinte, cela signifie entendre le piano, la basse, le soliste, la batterie, etc. individuellement aussi bien que collectivement."
-    },
-    {
-      "id": "comment-pratiquer-l-improvisation-par-coker-jerry-voici-un-exemple-qui-peut-vous-aider-a-organiser-votre-temps-de-pratique-ce-calendrier-est-base-sur-une-periode-de-soixante-quinze-minute-1h-15-min-mais-il-peut-etre-modifie-soit-pour-s-adapter-a-votre-emploi-du-temps-ou-de-permettre-d-entreprendre-des-etudes-instrumentales-note-longues-des-exercices-de-dexterite-des-doigts-des-etudes-de-gammes-la-lecture-etc-lln-avamnia-de-nraticona-iniivnaliara_p28",
-      "title": "Comment Pratiquer L'improvisation Par Coker Jerry Voici Un Exemple Qui Peut Vous Aider A Organiser Votre Temps De Pratique. Ce Calendrier Est Base Sur Une Periode De Soixante-quinze Minute 1h.15 Min., Mais Il Peut Etre Modifie Soit Pour S'adapter A Votre Emploi Du Temps Ou De Permettre D'entreprendre Des Etudes Instrumentales Note Longues, Des Exercices De Dexterite Des Doigts, Des Etudes De Gammes, La Lecture, Etc. Lln Avamnia De Nraticona Iniivnaliara.",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_028.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 28
-      },
-      "search_text": "comment pratiquer l'improvisation par coker jerry voici un exemple qui peut vous aider a organiser votre temps de pratique. ce calendrier est base sur une periode de soixante-quinze minute 1h.15 min., mais il peut etre modifie soit pour s'adapter a votre emploi du temps ou de permettre d'entreprendre des etudes instrumentales note longues, des exercices de dexterite des doigts, des etudes de gammes, la lecture, etc. lln avamnia de nraticona iniivnaliara."
-    },
-    {
-      "id": "clavier-basic-et-gamme-chromatique-1-notes-ascendants-partir-de-la-gauche-du-clavier-et-monter-les-notes-2-notes-descendantes-partr-de-la-droite-du-clavier-et-descendre-les-notes-3-intervalle-distance-en-deux-notes-4-demi-ton-et-ton-utilises-pour-mesure-les-intervalles-5-l-intervalle-entre-les-touches-du-clavier-est-un-demi-ton-deux-demi-tons-equivaut-un-a-ton-6-la-tierce-mineure-a-3-est-egale-a-3-demi-tons-et-la-tierce-majeure-a-m3-est-egal-a-quatre-demi-tons-7-ou-signifie-que-la-note-est-montee-d-un-demi-ton-8-b-ou-signifie-que-la-note-est-descendue-d-un-demi-ton-9-h-unton-w-un-demi-ton_p26",
-      "title": "Clavier Basic Et Gamme Chromatique 1. Notes Ascendants Partir De La Gauche Du Clavier Et Monter Les Notes 2. Notes Descendantes Partr De La Droite Du Clavier Et Descendre Les Notes 3. Intervalle Distance En Deux Notes 4. Demi-ton Et Ton Utilises Pour Mesure Les Intervalles. 5. _ L'intervalle Entre Les Touches Du Clavier Est Un Demi-ton. Deux Demi Tons Equivaut Un A Ton. 6. La Tierce Mineure A-3 Est Egale A 3 Demi-tons Et La Tierce Majeure A M3 Est Egal A Quatre Demi Tons. 7. Ou Signifie Que La Note Est Montee D'un Demi Ton. 8. B Ou- Signifie Que La Note Est Descendue D'un Demi Ton. 9. H Unton, W Un Demi-ton.",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_026.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 26
-      },
-      "search_text": "clavier basic et gamme chromatique 1. notes ascendants partir de la gauche du clavier et monter les notes 2. notes descendantes partr de la droite du clavier et descendre les notes 3. intervalle distance en deux notes 4. demi-ton et ton utilises pour mesure les intervalles. 5. _ l'intervalle entre les touches du clavier est un demi-ton. deux demi tons equivaut un a ton. 6. la tierce mineure a-3 est egale a 3 demi-tons et la tierce majeure a m3 est egal a quatre demi tons. 7. ou signifie que la note est montee d'un demi ton. 8. b ou- signifie que la note est descendue d'un demi ton. 9. h unton, w un demi-ton."
-    },
-    {
-      "id": "tableau-d-intervalle-j-aime-utiliser-le-tableau-ci-dessous-comme-guide-pour-identifier-correctement-les-intervalles-joues-je-vais-enumerer-les-intervalles-et-quelques-chansons-qui-commencent-par-cet-intervalle-particulier-rappelez-vous-les-intervalles-en-montant-et-descendant-j-aime-utiliser-le-tableau-suivant-comme-guide-pour-chacun-des-morceaux-commence-par-un-intervalle-identifier-correctement-quelle-que-soit-l-intervalle-qui-est-repertorie-a-gauche-joue-intervalles-ascendants-intervalles-descendants_p25",
-      "title": "Tableau D'intervalle J'aime Utiliser Le Tableau Ci Dessous Comme Guide Pour Identifier Correctement Les Intervalles Joues. Je Vais Enumerer Les Intervalles Et Quelques Chansons Qui Commencent Par Cet Intervalle Particulier. Rappelez-vous, Les Intervalles En Montant Et Descendant. - J'aime Utiliser Le Tableau Suivant Comme Guide Pour Chacun Des Morceaux Commence Par Un Intervalle Identifier Correctement Quelle Que Soit L'intervalle Qui Est Repertorie A Gauche. Joue Intervalles Ascendants Intervalles Descendants",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_025.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 25
-      },
-      "search_text": "tableau d'intervalle j'aime utiliser le tableau ci dessous comme guide pour identifier correctement les intervalles joues. je vais enumerer les intervalles et quelques chansons qui commencent par cet intervalle particulier. rappelez-vous, les intervalles en montant et descendant. - j'aime utiliser le tableau suivant comme guide pour chacun des morceaux commence par un intervalle identifier correctement quelle que soit l'intervalle qui est repertorie a gauche. joue intervalles ascendants intervalles descendants"
-    },
-    {
-      "id": "le-cycles-des-quartes-le-cercle-de-quartes-peut-etre-appele-aussi-cycles-des-quartes-certains-le-nomment-le-cercle-ou-cycle-des-quintes-le-cycle-ou-simplement-le-cercle-ii-fait-basiquement-reference-au-mouvement-que-fait-la-tonique-de-tous-les-gammes-accords-dans-une-progression-si-vous-montez-de-la-note-c-vers-la-note-f-c-est-une-quarte-5-demi-tons-si-vous-descendez-de-la-note-c-vers-la-note-f-cest-une-quinte-7-demi-tons-beaucoup-de-gens-aiment-pratiquer-leurs-gammes-accords-motifs-et-plans-sur-un-cycle-de-quartes-afin-d-etre-sur-de-bien-les-travailler-dans-les-12-tons-le-standard-de-jazz-ail-the-things-you-are-utilise-la-progression-en-cycle-sur-les-cinq-premieres-mesures-f-bb-eb7abdb-le-blues-utilise-le-cycle-sur-les-quatre-dernieres-mesures-c-f7bb7f7-le-titre-tune_p27",
-      "title": "Le Cycles Des Quartes Le Cercle De Quartes Peut-etre Appele Aussi Cycles Des Quartes. Certains Le Nomment Le Cercle, Ou Cycle Des Quintes, Le Cycle Ou Simplement Le Cercle. Ii Fait Basiquement Reference Au Mouvement Que Fait La Tonique De Tous Les Gammes Accords Dans Une Progression. Si Vous Montez De La Note C Vers La Note F, C'est Une Quarte 5 Demi- Tons. Si Vous Descendez De La Note C Vers La Note F Cest Une Quinte 7 Demi-tons. Beaucoup De Gens Aiment Pratiquer Leurs Gammes, Accords, Motifs Et Plans Sur Un Cycle De Quartes Afin D'etre Sur De Bien Les Travailler Dans Les 12 Tons. Le Standard De Jazz Ail The Things You Are Utilise La Progression En Cycle Sur Les Cinq Premieres Mesures F- Bb-eb7abdb. Le Blues Utilise Le Cycle Sur Les Quatre Dernieres Mesures C-f7bb7f7. Le Titre Tune",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_027.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 27
-      },
-      "search_text": "le cycles des quartes le cercle de quartes peut-etre appele aussi cycles des quartes. certains le nomment le cercle, ou cycle des quintes, le cycle ou simplement le cercle. ii fait basiquement reference au mouvement que fait la tonique de tous les gammes accords dans une progression. si vous montez de la note c vers la note f, c'est une quarte 5 demi- tons. si vous descendez de la note c vers la note f cest une quinte 7 demi-tons. beaucoup de gens aiment pratiquer leurs gammes, accords, motifs et plans sur un cycle de quartes afin d'etre sur de bien les travailler dans les 12 tons. le standard de jazz ail the things you are utilise la progression en cycle sur les cinq premieres mesures f- bb-eb7abdb. le blues utilise le cycle sur les quatre dernieres mesures c-f7bb7f7. le titre tune"
-    },
-    {
-      "id": "la-gamme-de-blues-et-son-utilisation-la-gamme-de-blues-est-constituee-tonique-3teb-4te-4te-5te-et-7-b-exemple-gamme-de-blues-en-f-f-ab-bb-b-c-eb-f-lorsque-vous-jouez-les-douze-mesures-dun-blues-en-bb-utilisez-la-gamme-blues-de-bb-bb-db-eb-e-f-ab-bb-la-gamme-de-blues-peut-aussi-etre-utilisee-sur-des-accords-mineurs-lorsque-l-accord-mineur-est-joue-dans-les-mesures-2-4-8-ou-16-ou-plus-exemple-si-d-mineur-est-joue-pendant-huit-mesures-vous-pouvez-utiliser-la-gamme-de-blues-en-d-d-f-g-ab-a-c-d_p32",
-      "title": "La Gamme De Blues Et Son Utilisation La Gamme De Blues Est Constituee Tonique, 3teb, 4te, 4te,5te Et 7 B Exemple Gamme De Blues En F F, Ab, Bb, B, C, Eb, F. Lorsque Vous Jouez Les Douze Mesures Dun Blues En Bb, Utilisez La Gamme Blues De Bb Bb, Db Eb, E, F, Ab, Bb La Gamme De Blues Peut Aussi Etre Utilisee Sur Des Accords Mineurs Lorsque L'accord Mineur Est Joue Dans Les Mesures 2, 4, 8 Ou 16 Ou Plus. Exemple Si D Mineur Est Joue Pendant Huit Mesures, Vous Pouvez Utiliser La Gamme De Blues En D D, F, G, Ab, A, C, D.",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_032.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 32
-      },
-      "search_text": "la gamme de blues et son utilisation la gamme de blues est constituee tonique, 3teb, 4te, 4te,5te et 7 b exemple gamme de blues en f f, ab, bb, b, c, eb, f. lorsque vous jouez les douze mesures dun blues en bb, utilisez la gamme blues de bb bb, db eb, e, f, ab, bb la gamme de blues peut aussi etre utilisee sur des accords mineurs lorsque l'accord mineur est joue dans les mesures 2, 4, 8 ou 16 ou plus. exemple si d mineur est joue pendant huit mesures, vous pouvez utiliser la gamme de blues en d d, f, g, ab, a, c, d."
-    },
-    {
-      "id": "les-choses-qui-creer-l-interet-dans-les-solos-les-repetitions-utiliser-les-gammes-de-blues-les-sequences-les-tensions-et-relachements-la-dynamique-fort-et-doux-les-motifs-les-gammes-tessiture-haut-bas-registre-moyen-savoir-ou-est-placees-les-tonalites-1-2-5-et-7-les-accents-pour-les-instrumentistes-a-vent-appuyer-les-notes-les-notes-tenues-les-gammes-et-accords-de-passage_p29",
-      "title": "Les Choses Qui Creer L'interet Dans Les Solos Les Repetitions Utiliser Les Gammes De Blues Les Sequences Les Tensions Et Relachements La Dynamique- Fort Et Doux Les Motifs Les Gammes Tessiture - Haut, Bas, Registre Moyen Savoir Ou Est Placees Les Tonalites 1, 2, 5 Et 7 Les Accents Pour Les Instrumentistes A Vent Appuyer Les Notes Les Notes Tenues Les Gammes Et Accords De Passage",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_029.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 29
-      },
-      "search_text": "les choses qui creer l'interet dans les solos les repetitions utiliser les gammes de blues les sequences les tensions et relachements la dynamique- fort et doux les motifs les gammes tessiture - haut, bas, registre moyen savoir ou est placees les tonalites 1, 2, 5 et 7 les accents pour les instrumentistes a vent appuyer les notes les notes tenues les gammes et accords de passage"
-    },
-    {
-      "id": "vous-devez-arriver-au-point-ou-vous-pouvez-instantanement-trouvez-l-accent-appuye-moyen-leger-staccato-legato-etc-de-toute-note-ou-groupe-de-notes-a-tout-moment-que-vous-choisissez-sans-perturber-le-flux-et-la-sensation-de-vos-lignes-melodiques-tres-important-ne-pas-se-contenter-de-la-pratique-de-la-gamme-g-majeur-ou-la-gamme-chromatique-utilisez-ces-exercices-d-articulation-pour-toutes-les-gammes-et-les-accords-et-dans-tous-les-tonalites-rappelez-vous-vous-improvisez-dans-tous-les-tonalites-et-pas-seulement-les-plus-faciles-cest-bien-compris-sonny-rollins-un-maitre-de-l-articulation-utilise-des-exercices-similaires-pour-developper-son-style-jazz-personnel_p31",
-      "title": "Vous Devez Arriver Au Point Ou Vous Pouvez Instantanement Trouvez L'accent Appuye, Moyen, Leger, Staccato, Legato, Etc. De Toute Note Ou Groupe De Notes A Tout Moment Que Vous Choisissez, Sans Perturber Le Flux Et La Sensation De Vos Lignes Melodiques. Tres Important Ne Pas Se Contenter De La Pratique De La Gamme G Majeur Ou La Gamme Chromatique Utilisez Ces Exercices D'articulation Pour Toutes Les Gammes Et Les Accords Et Dans Tous Les Tonalites Rappelez-vous, Vous Improvisez Dans Tous Les Tonalites, Et Pas Seulement Les Plus Faciles. Cest Bien Compris Sonny Rollins, Un Maitre De L'articulation, Utilise Des Exercices Similaires Pour Developper Son Style Jazz Personnel",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_031.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 31
-      },
-      "search_text": "vous devez arriver au point ou vous pouvez instantanement trouvez l'accent appuye, moyen, leger, staccato, legato, etc. de toute note ou groupe de notes a tout moment que vous choisissez, sans perturber le flux et la sensation de vos lignes melodiques. tres important ne pas se contenter de la pratique de la gamme g majeur ou la gamme chromatique utilisez ces exercices d'articulation pour toutes les gammes et les accords et dans tous les tonalites rappelez-vous, vous improvisez dans tous les tonalites, et pas seulement les plus faciles. cest bien compris sonny rollins, un maitre de l'articulation, utilise des exercices similaires pour developper son style jazz personnel"
-    },
-    {
-      "id": "articulations-comment-mieux-partager-son-experience-une-des-particularites-de-la-musique-de-jazz-est-l-articulation-que-les-differents-acteurs-utilisent-pour-s-exprimer-a-travers-leur-musique-certains-joueurs-aiment-utiliser-des-articulations-de-style-standard-tres-courant-a-lepoque-du-swing-et-du-be-bop-d-autres-utilisent-des-articulations-s-appuyant-sur-des-legato-ou-des-courtes-phrases-certains-utilise-des-staccato-dans-leurs-jeu-pour-ajouter-de-l-interet-ou-souligner-certaines-notes-ou-certaines-phrases-le-but-final-est-d-arriver-a-un-style-d-articulation-qui-est-approprie-votre-expression-les-jeunes-joueurs-sont-souvent-confrontes-a-la-reaction-au-moment-precis-des-doiats-sur-les-touches-que-ce-soit-au-saxophone-a-la_p30",
-      "title": "Articulations Comment Mieux Partager Son Experience Une Des Particularites De La Musique De Jazz Est L'articulation Que Les Differents Acteurs Utilisent Pour S'exprimer A Travers Leur Musique. Certains Joueurs Aiment Utiliser Des Articulations De Style Standard Tres Courant A Lepoque Du Swing Et Du Be-bop, D'autres Utilisent Des Articulations S'appuyant Sur Des Legato Ou Des Courtes Phrases, Certains Utilise Des Staccato Dans Leurs Jeu Pour Ajouter De L'interet Ou Souligner Certaines Notes Ou Certaines Phrases. Le But Final Est D'arriver A Un Style D'articulation Qui Est Approprie Votre Expression. Les Jeunes Joueurs Sont Souvent Confrontes A La Reaction Au Moment Precis Des Doiats Sur Les Touches, Que Ce Soit Au Saxophone, A La",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_030.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 30
-      },
-      "search_text": "articulations comment mieux partager son experience une des particularites de la musique de jazz est l'articulation que les differents acteurs utilisent pour s'exprimer a travers leur musique. certains joueurs aiment utiliser des articulations de style standard tres courant a lepoque du swing et du be-bop, d'autres utilisent des articulations s'appuyant sur des legato ou des courtes phrases, certains utilise des staccato dans leurs jeu pour ajouter de l'interet ou souligner certaines notes ou certaines phrases. le but final est d'arriver a un style d'articulation qui est approprie votre expression. les jeunes joueurs sont souvent confrontes a la reaction au moment precis des doiats sur les touches, que ce soit au saxophone, a la"
-    },
-    {
-      "id": "n-05-tetlie-e-s-e-p-p-n-n-on-n-g-ilre-e-5-1l-pourrait-etre-bon-d-improviser-sur-la-3ce-ou-7e-de-chaque-accord-en-vue-d-obtenir-le-son-et-la-sensation-de-l-harmonie-de-votre-esprit-en-utilisant-seulement-la-3ce-et-7e-sonnera-comme-ceci-avis-du-demi-temps-melodique-du-premier-accord-au-second_p35",
-      "title": "N 05 Tetlie E S E P P N N On N G Ilre E 5 1l Pourrait Etre Bon D'improviser Sur La 3ce Ou 7e De Chaque Accord En Vue D'obtenir Le Son Et La Sensation De L'harmonie De Votre Esprit. En Utilisant Seulement La 3ce Et 7e Sonnera Comme Ceci Avis Du Demi-temps Melodique Du Premier Accord Au Second",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_035.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 35
-      },
-      "search_text": "n 05 tetlie e s e p p n n on n g ilre e 5 1l pourrait etre bon d'improviser sur la 3ce ou 7e de chaque accord en vue d'obtenir le son et la sensation de l'harmonie de votre esprit. en utilisant seulement la 3ce et 7e sonnera comme ceci avis du demi-temps melodique du premier accord au second"
-    },
-    {
-      "id": "improvisation-par-jamey-aebersold-variation-du-blues-mon-dernier-article-traitait-du-blues-12-mesures-ou-je-voulais-faire-un-suivi-avec-les-variations-sur-les-progressions-de-blues-qui-ont-ete-utilisees-le-plus-couramment-dans-l-idiome-jazz-le-terme-de-morceau-a-trois-accords-fait-generalement-reference-a-la-plus-simple-des-progressions-de-blues-si-vous-etes-dans-en-cle-de-f-les-trois-accords-qui-forment-la-base-du-blues-dans-cette-cle-sont-f7-bb7-et-c7-f7-est-appele-un-chiffre-romain-accord-i-un-le-bb7-est-appele-le-iv-quatre-car-il-est-construit_p36",
-      "title": "Improvisation Par Jamey Aebersold Variation Du Blues Mon Dernier Article Traitait Du Blues 12 Mesures, Ou Je Voulais Faire Un Suivi Avec Les Variations Sur Les Progressions De Blues Qui Ont Ete Utilisees Le Plus Couramment Dans L'idiome Jazz. Le Terme De Morceau A Trois Accords Fait Generalement Reference A La Plus Simple Des Progressions De Blues. Si Vous Etes Dans En Cle De F, Les Trois Accords Qui Forment La Base Du Blues Dans Cette Cle Sont F7, Bb7 Et C7. F7 Est Appele Un Chiffre Romain Accord I Un.le Bb7 Est Appele Le Iv Quatre, Car Il Est Construit",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_036.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 36
-      },
-      "search_text": "improvisation par jamey aebersold variation du blues mon dernier article traitait du blues 12 mesures, ou je voulais faire un suivi avec les variations sur les progressions de blues qui ont ete utilisees le plus couramment dans l'idiome jazz. le terme de morceau a trois accords fait generalement reference a la plus simple des progressions de blues. si vous etes dans en cle de f, les trois accords qui forment la base du blues dans cette cle sont f7, bb7 et c7. f7 est appele un chiffre romain accord i un.le bb7 est appele le iv quatre, car il est construit"
-    },
-    {
-      "id": "l-improvisation-jouer-le-blues-le-blues-est-une-forme-musicale-que-les-musiciens-de-jazz-ont-toujours-embrassee-car-cela-leur-permet-d-exprimer-leur-emotion-et-leur-sentiment-du-quotidien-et-des-concepts-intellectuels-qui-sont-souvent-appris-aux-etudiants-autre-style-de-jeux-et-une-autre-conception-la-plupart-des-improvisateurs-ont-commence-a-utiliser-les-blues-comme-un-tremplin-pour-d-autres-formes-de-jazz-beaucoup-de-chefs-d-orchestre-et-d-enseignants-ne-sentent-pas-le-blues-pour-jouer-un-solo-decent-iis-estiment-que-d-apprendre-les-gammes-de-blues-dans-les-differentes-tonalites-est-juste-necessaire-pour-improviser-ce-que-tu-ressens-dans-une-gamme-de-blues-iis-pensent-probablement-que-c-est-ce-qu-ils-ont-entendu-quand-ils-ecoutent-des-musiciens-de-jazz-a-la-radio-ou-sur-disque-je-l-avoue-ils-entendent-certainement-mais-si-vous-consultez-les-influences-majeures-du-jazz-vous-commencerez-par-entendre-beaucoup-plus-que-juste-une-gamme-de-blues-dans-cet-article-je-voudrais-faire-remarquer-quelques-points-a-surveiller-dans-le-blues-qui-feront-que-votre-jeu-sera-plus-convaincant-et-plus-musical-nous-devrions-commencer-par-vous-demander-de-chanter-avec-votre-voix-plusieurs-chorus-de-blues-avec-un-enregistrement-un-morceau-de-blues-dans-la-serie-play-a-long-serait-excellent-parce-que-vous-n-avez-pas-a-ecouter-un-solo-vous-etes-le-soliste-je-suggere_p34",
-      "title": "L'improvisation Jouer Le Blues Le Blues Est Une Forme Musicale Que Les Musiciens De Jazz Ont Toujours Embrassee Car Cela Leur Permet D'exprimer Leur Emotion Et Leur Sentiment Du Quotidien Et Des Concepts Intellectuels, Qui Sont Souvent Appris Aux Etudiants, Autre Style De Jeux Et Une Autre Conception. La Plupart Des Improvisateurs Ont Commence A Utiliser Les Blues Comme Un Tremplin Pour D'autres Formes De Jazz. Beaucoup De Chefs D'orchestre Et D'enseignants Ne Sentent Pas Le Blues Pour Jouer Un Solo Decent. Iis Estiment Que D'apprendre Les Gammes De Blues Dans Les Differentes Tonalites Est Juste Necessaire Pour Improviser Ce Que Tu Ressens Dans Une Gamme De Blues. Iis Pensent Probablement Que C'est Ce Qu'ils Ont Entendu Quand Ils Ecoutent Des Musiciens De Jazz A La Radio Ou Sur Disque. Je L'avoue, Ils Entendent Certainement, Mais, Si Vous Consultez Les Influences Majeures Du Jazz, Vous Commencerez Par Entendre Beaucoup Plus Que Juste Une Gamme De Blues. Dans Cet Article Je Voudrais Faire Remarquer Quelques Points A Surveiller Dans Le Blues, Qui Feront Que Votre Jeu Sera Plus Convaincant Et Plus Musical. Nous Devrions Commencer Par Vous Demander De Chanter Avec Votre Voix Plusieurs Chorus De Blues Avec Un Enregistrement. Un Morceau De Blues Dans La Serie Play-a-long Serait Excellent, Parce Que Vous N'avez Pas A Ecouter Un Solo - Vous Etes Le Soliste. Je Suggere",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_034.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 34
-      },
-      "search_text": "l'improvisation jouer le blues le blues est une forme musicale que les musiciens de jazz ont toujours embrassee car cela leur permet d'exprimer leur emotion et leur sentiment du quotidien et des concepts intellectuels, qui sont souvent appris aux etudiants, autre style de jeux et une autre conception. la plupart des improvisateurs ont commence a utiliser les blues comme un tremplin pour d'autres formes de jazz. beaucoup de chefs d'orchestre et d'enseignants ne sentent pas le blues pour jouer un solo decent. iis estiment que d'apprendre les gammes de blues dans les differentes tonalites est juste necessaire pour improviser ce que tu ressens dans une gamme de blues. iis pensent probablement que c'est ce qu'ils ont entendu quand ils ecoutent des musiciens de jazz a la radio ou sur disque. je l'avoue, ils entendent certainement, mais, si vous consultez les influences majeures du jazz, vous commencerez par entendre beaucoup plus que juste une gamme de blues. dans cet article je voudrais faire remarquer quelques points a surveiller dans le blues, qui feront que votre jeu sera plus convaincant et plus musical. nous devrions commencer par vous demander de chanter avec votre voix plusieurs chorus de blues avec un enregistrement. un morceau de blues dans la serie play-a-long serait excellent, parce que vous n'avez pas a ecouter un solo - vous etes le soliste. je suggere"
-    },
-    {
-      "id": "transpositions_p40",
-      "title": "Transpositions",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_040.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 40
-      },
-      "search_text": "transpositions"
-    },
-    {
-      "id": "une-courte-liste-des-interpretes-du-be-bop-charlie-parker-alto-sax-dexter-gordon-tenor-sax-dizzy-gillespie-trumpet-mitt-jackson-vibes-bud-powell-piano-wynton-kelly-piano-charlie-mingus-bass-horace-silver-piano-max-roach-drums-art-blakey-drums_p39",
-      "title": "Une Courte Liste Des Interpretes Du Be-bop Charlie Parker, Alto Sax Dexter Gordon, Tenor Sax Dizzy Gillespie, Trumpet Mitt Jackson, Vibes Bud Powell, Piano Wynton Kelly, Piano Charlie Mingus, Bass Horace Silver, Piano Max Roach, Drums Art Blakey, Drums",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_039.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 39
-      },
-      "search_text": "une courte liste des interpretes du be-bop charlie parker, alto sax dexter gordon, tenor sax dizzy gillespie, trumpet mitt jackson, vibes bud powell, piano wynton kelly, piano charlie mingus, bass horace silver, piano max roach, drums art blakey, drums"
-    },
-    {
-      "id": "concepts-repris-de-jim-pierce-s-dans-big-golden-trumpet-encyclopedia-publier-par-charles-hansen-music-books-le-principal-handicap-l-oreille-le-meilleur-jour-aujourd-hui-la-meilleure-chose-a-faire-trouve-redire-le-plus-inutiles-la-fierte-la-plus-grande-erreur-renonce_p37",
-      "title": "Concepts Repris De Jim Pierce's Dans Big Golden Trumpet Encyclopedia Publier Par Charles Hansen Music Books Le Principal Handicap --- L'oreille Le Meilleur Jour --- Aujourd'hui _ La Meilleure Chose A Faire ---trouve Redire Le Plus Inutiles --- La Fierte La Plus Grande Erreur --- Renonce",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_037.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 37
-      },
-      "search_text": "concepts repris de jim pierce's dans big golden trumpet encyclopedia publier par charles hansen music books le principal handicap --- l'oreille le meilleur jour --- aujourd'hui _ la meilleure chose a faire ---trouve redire le plus inutiles --- la fierte la plus grande erreur --- renonce"
-    },
-    {
-      "id": "les-caracteristiques-du-be-bop-compiler-par-davis-baker-1-des-idees-harmoniques-complexes-2-des-phrases-melodiques-plus-longues-utilisant-des-intervalles-construits-sur-l-extension-de-laccord-oths-11ths-13ths-etc-3-l-harmonie-avec-pied-d-egalite-avec-le-rythme-et-la-melodie-influence-occidentale-4-1ine-hanne-technique-instriumentale-etait-ahliaatoire_p38",
-      "title": "Les Caracteristiques Du Be-bop Compiler Par Davis Baker 1. Des Idees Harmoniques Complexes 2. Des Phrases Melodiques Plus Longues Utilisant Des Intervalles Construits Sur L'extension De Laccord Oths, 11ths, 13ths, Etc. 3. L'harmonie Avec Pied D'egalite Avec Le Rythme Et La Melodie Influence Occidentale. 4 1ine Hanne Technique Instriumentale Etait Ahliaatoire",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_038.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 38
-      },
-      "search_text": "les caracteristiques du be-bop compiler par davis baker 1. des idees harmoniques complexes 2. des phrases melodiques plus longues utilisant des intervalles construits sur l'extension de laccord oths, 11ths, 13ths, etc. 3. l'harmonie avec pied d'egalite avec le rythme et la melodie influence occidentale. 4 1ine hanne technique instriumentale etait ahliaatoire"
-    },
-    {
-      "id": "cessions-theorique-2-crire-les-notes-qui-compose-les-accords-suivants-ecrivez-egalement-le-nom-de-la-gamme-1-a74_p43",
-      "title": "Cessions Theorique-2 Crire Les Notes Qui Compose Les Accords Suivants Ecrivez Egalement, Le Nom De La Gamme 1. A74",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_043.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 43
-      },
-      "search_text": "cessions theorique-2 crire les notes qui compose les accords suivants ecrivez egalement, le nom de la gamme 1. a74"
-    },
-    {
-      "id": "cessions-theorique-3-1-la-3ce-de-la-gamme-majeur-eb-est-2-la-4te-de-la-gamme-a-est-3-la-6te-de-la-gamme-bb7-est-4-la-5te-de-la-gamme-ab-7-est_p44",
-      "title": "Cessions Theorique-3 1. La 3ce De La Gamme Majeur Eb Est ... 2. La 4te De La Gamme A- Est 3. La 6te De La Gamme Bb7 Est 4. La 5te De La Gamme Ab-7 Est",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_044.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 44
-      },
-      "search_text": "cessions theorique-3 1. la 3ce de la gamme majeur eb est ... 2. la 4te de la gamme a- est 3. la 6te de la gamme bb7 est 4. la 5te de la gamme ab-7 est"
-    },
-    {
-      "id": "consultez-scale-syllabus-ou-cessions-theorique-1-pages-de-nomenclature-des-gammes-pour-plus-d-infos-sur-la-construction-les-quelques-pages-suivantes-sont-utilisees-pour-l-etude-et-la-pratique-dans-les-ateliers-d-etes-du-jazz-laissez-moi-vous-encourager-a-les-remplir-vous-meme-si-vous-n-avez-pas-un-enseignant-ou-un-musicien-qui-peuvent-vous-aider-a-corriger-vos-exercices-quand-vous-avez-termine-n-hesitez-pas-a-nous-les-envoyer-nous-les-corrigerons-et-vous-les-renverrons-par-la-postel-jamey-aebersold-d-demi-ton-tton-entier-33demi-tons-tierce-mineure-maieure-ttdtttd-ton-entier-enotes-ctttttt_p42",
-      "title": "Consultez Scale Syllabus Ou Cessions Theorique - 1 Pages De Nomenclature Des Gammes Pour Plus D'infos Sur La Construction Les Quelques Pages Suivantes Sont Utilisees Pour L'etude Et La Pratique Dans Les Ateliers D'etes Du Jazz. Laissez-moi Vous Encourager A Les Remplir Vous Meme. Si Vous N'avez Pas Un Enseignant Ou Un Musicien Qui Peuvent Vous Aider A Corriger Vos Exercices Quand Vous Avez Termine, N'hesitez Pas A Nous Les Envoyer, Nous Les Corrigerons Et Vous Les Renverrons Par La Postel Jamey Aebersold D Demi-ton Tton Entier -33demi-tons Tierce Mineure Maieure -ttdtttd Ton Entier Enotes -ctttttt",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_042.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 42
-      },
-      "search_text": "consultez scale syllabus ou cessions theorique - 1 pages de nomenclature des gammes pour plus d'infos sur la construction les quelques pages suivantes sont utilisees pour l'etude et la pratique dans les ateliers d'etes du jazz. laissez-moi vous encourager a les remplir vous meme. si vous n'avez pas un enseignant ou un musicien qui peuvent vous aider a corriger vos exercices quand vous avez termine, n'hesitez pas a nous les envoyer, nous les corrigerons et vous les renverrons par la postel jamey aebersold d demi-ton tton entier -33demi-tons tierce mineure maieure -ttdtttd ton entier enotes -ctttttt"
-    },
-    {
-      "id": "john-welch-j-avais-dix-huit-ans-et-etais-tres-naif-j-avais-etudie-l-arrangement-avec-bill-russo-je-devais-aller-dans-le-dakota-du-sud-a-l-universite-pour-y-etudier-la-musique-et-je-me-trouvais-dans-une-situation-vraiment-malheureuse-j-ai-ecrit-a-bill-russo-et-il-m-avait-recommande-lennie-tristano-a-new-york-pour-prendre-des-leons-alors-j-ai-pris-le-bus-pour-new-york-c-etait-mon-premier-week-end-a-new-york-je-suis-descendu-au-village-avec-mon-trombone-dans-un-club-qui-faisait-porte-ouverte-il-y-avait-un-grand-panneau-sur-la-fenetre-qui-disant-jam-session-dimanche-apres-midi-le-dimanche-apres-midi-je-suis-alle-avec-mon-instrument-et-un-groupe-jouait-un-blues-en-f-donc-j-ai-pense-eh-super-j-aime-jouer-le-blues-en-f-j-ai-mis-mon-etui-sur-la-table-je-pris-mon-trombone-et-en-passant-par-la-droite-je-me-suis-assit-avec-eux-mon-jeu-a-ce-moment-dans-ma-vie-etait-influence-par-george-brunies-un-tromboniste-dixieland-alors-j-ai-commence-a-jouer-du-trombone-avec-ce-groupe-apres-quelques-mesures-ils-ont-arrete-brutalement-le-blues-f-et-le-pianiste-a-declare-cherokee-en-e-et-sont-parties-e-e-a-e-e-a-a-a-n-e-a-e-e-s-o-l-a-rs_p41",
-      "title": "John Welch J'avais Dix-huit Ans Et Etais Tres Naif. J'avais Etudie L'arrangement Avec Bill Russo. Je Devais Aller Dans Le Dakota Du Sud A L'universite Pour Y Etudier La Musique Et Je Me Trouvais Dans Une Situation Vraiment Malheureuse. J'ai Ecrit A Bill Russo Et Il M'avait Recommande Lennie Tristano, A New York Pour Prendre Des Leons. Alors, J'ai Pris Le Bus Pour New York. C'etait Mon Premier Week-end A New York. Je Suis Descendu Au Village Avec Mon Trombone Dans Un Club Qui Faisait Porte Ouverte. Il Y Avait Un Grand Panneau Sur La Fenetre Qui Disant Jam Session - Dimanche Apres-midi. Le Dimanche Apres-midi Je Suis Alle Avec Mon Instrument Et Un Groupe Jouait Un Blues En F. Donc J'ai Pense, Eh Super, J'aime Jouer Le Blues En F. J'ai Mis Mon Etui Sur La Table, Je Pris Mon Trombone Et En Passant Par La Droite Je Me Suis Assit Avec Eux. Mon Jeu, A Ce Moment Dans Ma Vie, Etait Influence Par George Brunies, Un Tromboniste Dixieland, Alors J'ai Commence A Jouer Du Trombone Avec Ce Groupe. Apres Quelques Mesures, Ils Ont Arrete Brutalement Le Blues F Et Le Pianiste A Declare, Cherokee En E Et Sont Parties E E A E E A A A N E A E E S O L A Rs",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_041.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 41
-      },
-      "search_text": "john welch j'avais dix-huit ans et etais tres naif. j'avais etudie l'arrangement avec bill russo. je devais aller dans le dakota du sud a l'universite pour y etudier la musique et je me trouvais dans une situation vraiment malheureuse. j'ai ecrit a bill russo et il m'avait recommande lennie tristano, a new york pour prendre des leons. alors, j'ai pris le bus pour new york. c'etait mon premier week-end a new york. je suis descendu au village avec mon trombone dans un club qui faisait porte ouverte. il y avait un grand panneau sur la fenetre qui disant jam session - dimanche apres-midi. le dimanche apres-midi je suis alle avec mon instrument et un groupe jouait un blues en f. donc j'ai pense, eh super, j'aime jouer le blues en f. j'ai mis mon etui sur la table, je pris mon trombone et en passant par la droite je me suis assit avec eux. mon jeu, a ce moment dans ma vie, etait influence par george brunies, un tromboniste dixieland, alors j'ai commence a jouer du trombone avec ce groupe. apres quelques mesures, ils ont arrete brutalement le blues f et le pianiste a declare, cherokee en e et sont parties e e a e e a a a n e a e e s o l a rs"
-    },
-    {
-      "id": "cessions-theorique-5-essayer-de-repondre-le-rapidement-possible-1-le9dub79b7est-2-la-gamme-diminuee-a-combien-de-tonalites-differentes-3-combien-il-y-a-de-notes-dans-une-gamme-tonique_p46",
-      "title": "Cessions Theorique-5 Essayer De Repondre Le Rapidement Possible 1. Le9dub79b7est 2. La Gamme Diminuee A Combien De Tonalites Differentes __ 3. Combien Il Y A De Notes Dans Une Gamme Tonique __",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_046.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 46
-      },
-      "search_text": "cessions theorique-5 essayer de repondre le rapidement possible 1. le9dub79b7est 2. la gamme diminuee a combien de tonalites differentes __ 3. combien il y a de notes dans une gamme tonique __"
-    },
-    {
-      "id": "iiv71-progression-avec-l-accent-sur-la-7e-resolus-a-la-3e-1j-g7-c-d-7-g7-1-t-5-t-st8-2-d-g7-c-lp-7-g7-p_p47",
-      "title": "Iiv71 -progression Avec L'accent Sur La 7e Resolus A La 3e 1j - G7 C D-7 G7 1 - T 5 T St8 2 D- G7 C Lp-7 G7 P",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_047.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 47
-      },
-      "search_text": "iiv71 -progression avec l'accent sur la 7e resolus a la 3e 1j - g7 c d-7 g7 1 - t 5 t st8 2 d- g7 c lp-7 g7 p"
-    },
-    {
-      "id": "cessions-theorique-4-ii-v7-i-ii-v7-i-sequences-dans-les-modes-majeures-ii-v7-i-sequences-dans-les-modes-mineures-j-ai-ecrit-lun-des-trois-symboles-d-accord-et-vous-devez-remplir-les-deux-autres-symboles-d-accord-l-exercice-se-lit-de-gauche-a-droite-en-mode-mineur-l-accord-ii-devient-demi-diminue-et-l-accord-v7-est-generalement-modifie-avec-b9-et-9_p45",
-      "title": "Cessions Theorique-4 - Ii V7 I Ii - V7 - I Sequences Dans Les Modes Majeures Ii - V7 - I Sequences Dans Les Modes Mineures J'ai Ecrit Lun Des Trois Symboles D'accord Et Vous Devez Remplir Les Deux Autres Symboles D'accord. L'exercice Se Lit De Gauche A Droite. En Mode Mineur, L'accord Ii Devient Demi Diminue, Et L'accord V7 Est Generalement Modifie Avec B9 Et 9.",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_045.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 45
-      },
-      "search_text": "cessions theorique-4 - ii v7 i ii - v7 - i sequences dans les modes majeures ii - v7 - i sequences dans les modes mineures j'ai ecrit lun des trois symboles d'accord et vous devez remplir les deux autres symboles d'accord. l'exercice se lit de gauche a droite. en mode mineur, l'accord ii devient demi diminue, et l'accord v7 est generalement modifie avec b9 et 9."
-    },
-    {
-      "id": "blues-o-bluesenf-2notes-bluesenf-2notes-blues-en-f-3-notes-blues-en-bb-2notes-blues-en-bb-2-notes-blues-en-bb-3-notes-blues-en-bb-4-notes-jouer-la-tonique-de-la-main-gauche-pour-vous-aider-a-obtenir-le-son-du-blues-vous-finirez-par-jouer-ces-notes-de-ln-main-nattrhe-nfin-imnraviser-de-in-main-draite-en-nratinuant-les-nammes-lee-rharniie-los-erhemne-or_p48",
-      "title": "Blues O Bluesenf-2notes Bluesenf -2notes Blues En F - 3 Notes Blues En Bb -2notes Blues En Bb -2 Notes Blues En Bb - 3 Notes Blues En Bb - 4 Notes Jouer La Tonique De La Main Gauche Pour Vous Aider A Obtenir Le Son Du Blues. Vous Finirez Par Jouer Ces Notes De Ln Main Nattrhe Nfin Imnraviser De In Main Draite En Nratinuant Les Nammes Lee Rharniie Los Erhemne Or",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_048.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 48
-      },
-      "search_text": "blues o bluesenf-2notes bluesenf -2notes blues en f - 3 notes blues en bb -2notes blues en bb -2 notes blues en bb - 3 notes blues en bb - 4 notes jouer la tonique de la main gauche pour vous aider a obtenir le son du blues. vous finirez par jouer ces notes de ln main nattrhe nfin imnraviser de in main draite en nratinuant les nammes lee rharniie los erhemne or"
-    },
-    {
-      "id": "piano-voicing-ila71-tonalites-majeures-v-s-m-e-x-5-l-bibenehennencenpencnennahrnnnmnl-ws-jor-jes-ica-i-cz-i-iwn-i-i-w7-iwo-is-i-h_p51",
-      "title": "Piano Voicing Ila71 - Tonalites Majeures V S M E X 5 L Bibenehennencenpencnennahrnnnmnl Ws Jor Jes Ica I Cz I Iwn I I W7 Iwo Is I H--,",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_051.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 51
-      },
-      "search_text": "piano voicing ila71 - tonalites majeures v s m e x 5 l bibenehennencenpencnennahrnnnmnl ws jor jes ica i cz i iwn i i w7 iwo is i h--,"
-    },
-    {
-      "id": "oii-v7-i-qii-v7-i-majeur-7e-dbom-ii-v7i-c-7f7-bbabi6-b-7e7-aa-a6-bb-7e7-aa-a6-a-7-d7-ga-g6-pestsssssssssssses-sss-ss-ss-og-3-13-q-e-ds-d-e-dn-d-d-a-7di7-gag6-g-7c7-fa-f6-f-7b7-ea-e6-f7b7-ea-e-p-e-rr-e-e-ce-r-cr-r-v-v-e-r-7-m_p50",
-      "title": "Oii-v7-i Qii-v7-i Majeur, 7e Dbom, Ii-v7i C-7f7 Bbabi6 B-7e7 - Aa A6 Bb-7e7 Aa A6 A-7 D7 Ga G6 Pestsssssssssssses Sss Ss Ss Og 3 13 Q E Ds D E Dn D D A-7di7 Gag6 G-7c7 Fa F6 F-7b7 Ea E6 F7b7 Ea E P E Rr E E Ce R Cr R V V E R 7 M",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_050.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 50
-      },
-      "search_text": "oii-v7-i qii-v7-i majeur, 7e dbom, ii-v7i c-7f7 bbabi6 b-7e7 - aa a6 bb-7e7 aa a6 a-7 d7 ga g6 pestsssssssssssses sss ss ss og 3 13 q e ds d e dn d d a-7di7 gag6 g-7c7 fa f6 f-7b7 ea e6 f7b7 ea e p e rr e e ce r cr r v v e r 7 m"
-    },
-    {
-      "id": "majeur-et-7e-de-dominante-majeur-cycle-complet-3e-et-7e-a-ca-fa-bba-eba-aba-dba-gba-baa-ea-aa-da-ga-ca-f-e-s-e-v-o-a-gts-imruiaariaai-6-grb-eemmece-n-se-en-d-a-ca-fa-bba-em-aa-dba-gh-ba-ea-aa-da-ga-ca_p49",
-      "title": "Majeur Et 7e De Dominante Majeur - Cycle Complet -3e Et 7e A Ca Fa Bba Eba Aba Dba Gba Baa Ea Aa Da Ga Ca F E S E V - O A Gts Imruiaariaai 6 Grb---eemmece N Se En D A Ca Fa Bba Em Aa Dba Gh Ba Ea Aa Da Ga Ca",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_049.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 49
-      },
-      "search_text": "majeur et 7e de dominante majeur - cycle complet -3e et 7e a ca fa bba eba aba dba gba baa ea aa da ga ca f e s e v - o a gts imruiaariaai 6 grb---eemmece n se en d a ca fa bba em aa dba gh ba ea aa da ga ca"
-    },
-    {
-      "id": "o-v79-i-toutes-les-tonalitees-mineures-b-vs-1-ec-eness-en-es-se-pe-e-e-p-i-i-n-pr-se-e-e-t-hc-i-no-67-cr-i-s-co-b7-i-u7-i-we-ent-in-ail-h-f-17e-f-3-be-2-h-v5-2-e-a-p-c-e-e_p52",
-      "title": "O V79 I Toutes Les Tonalitees Mineures B Vs 1 Ec Eness En Es Se Pe E E P I I N Pr Se E E T Hc I No 67 Cr I S Co B7 I U7 I We Ent In Ail H -f 17e F 3 Be - 2 H V5 2 E A P C E E",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_052.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 52
-      },
-      "search_text": "o v79 i toutes les tonalitees mineures b vs 1 ec eness en es se pe e e p i i n pr se e e t hc i no 67 cr i s co b7 i u7 i we ent in ail h -f 17e f 3 be - 2 h v5 2 e a p c e e"
-    },
-    {
-      "id": "points-a-retenir-de-jamey-aebersolds-tire-du-seminaire-n-importe-qui-peut-improviser-les-deux-facteurs-qui-empechent-les-gens-d-improviser-sont-la-peur-de-se-perdre-et-la-peur-de-jouer-une-fausse-note-enregistrez-votre-propre-jeu-et-ecoutez-vous-ne-soyez-pas-critique-simplement-ecoutez-l-humour-est-une-partie-importante-de-la-creativite-la-tvtue-l-imagination-l-ignorance-tue-comme-le-tabac_p53",
-      "title": "Points A Retenir De Jamey Aebersolds Tire Du Seminaire N'importe Qui Peut Improviser Les Deux Facteurs Qui Empechent Les Gens D'improviser Sont La Peur De Se Perdre Et La Peur De Jouer Une Fausse Note. - Enregistrez Votre Propre Jeu Et Ecoutez-vous. Ne Soyez Pas Critique. Simplement, Ecoutez. L'humour Est Une Partie Importante De La Creativite. La Tvtue L'imagination. L'ignorance Tue, Comme Le Tabac.",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_053.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 53
-      },
-      "search_text": "points a retenir de jamey aebersolds tire du seminaire n'importe qui peut improviser les deux facteurs qui empechent les gens d'improviser sont la peur de se perdre et la peur de jouer une fausse note. - enregistrez votre propre jeu et ecoutez-vous. ne soyez pas critique. simplement, ecoutez. l'humour est une partie importante de la creativite. la tvtue l'imagination. l'ignorance tue, comme le tabac."
-    },
-    {
-      "id": "lorsque-vous-faites-un-solo-utilisez-la-repetition-et-la-sequence-ne-pas-radoter-cela-permet-a-l-auditeur-d-anticiper-ce-que-vous-faites-ceci-est-connu-comme-l-improvisation-thematique-les-solos-de-sonny-rollins-sont-de-bons-exemples-pour-cela-l-intervalle-entre-b-bemol-et-e-contient-trois-tons-sib-c-d-e-d-ou-le-nom-de-triton-les-adultes-ne-prennent-pas-le-temps-necessaire-pour-apprendre-a-jouer-du-jazz-ou-meme-simplement-de-l-ecouter-si-vous-souhaitez-conserver-l-harmonie-du-morceau-jouez-la-tonique-de-laccord-sur-des-temps-un-et-trois-latierce-la-quinte-et-la-septieme-donnent-un-aperu-de-l-harmonie-une-caracteristique-des-solos-en-be-bop-est-qu-ils-utilisent-explicitement-une-harmonie-avez-vous-memorises-une-douzaine-de-morceaux-savoir-la-melodie-et-la-forme-etre-en-mesure-d-ecrire-les-progressions-d-accords-jamey-a-memorises-1000-morceaux-apprenez-quelques-airs-et-les-ecouter-toute-la-journee-pour-les-garder-dans-votre-tete-mettez-votre-repertoire-sur-un-ordinateur-portable-afin-que-vous-puissiez-l-examiner-fn-auiise-d-evercire-mie-vs-calnc-reccemblent-ce-qe-vaue-aentendez-dans-vatre-tete-caiter-un-n-plav-a-lana-et_p55",
-      "title": "Lorsque Vous Faites Un Solo, Utilisez La Repetition Et La Sequence, Ne Pas Radoter. Cela Permet A L'auditeur D'anticiper Ce Que Vous Faites. Ceci Est Connu Comme L'improvisation Thematique. Les Solos De Sonny Rollins Sont De Bons Exemples Pour Cela. L'intervalle Entre B Bemol Et E Contient Trois Tons Sib, C, D, E D'ou Le Nom De Triton. Les Adultes, Ne Prennent Pas Le Temps Necessaire Pour Apprendre A Jouer Du Jazz Ou Meme Simplement De L'ecouter Si Vous Souhaitez Conserver L'harmonie Du Morceau, Jouez La Tonique De Laccord Sur Des Temps Un Et Trois. Latierce, La Quinte Et La Septieme Donnent Un Aperu De L'harmonie. Une Caracteristique Des Solos En Be-bop Est Qu'ils Utilisent Explicitement Une Harmonie. Avez-vous Memorises Une Douzaine De Morceaux Savoir La Melodie Et La Forme, Etre En Mesure D'ecrire Les Progressions D'accords Jamey A Memorises 1000 Morceaux Apprenez Quelques Airs, Et Les Ecouter Toute La Journee Pour Les Garder Dans Votre Tete. Mettez Votre Repertoire Sur Un Ordinateur Portable Afin Que Vous Puissiez L'examiner. Fn Auiise D'evercire Mie Vs Calnc Reccemblent Ce Qe Vaue Aentendez Dans Vatre Tete Caiter Un N Plav-a-lana Et",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_055.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 55
-      },
-      "search_text": "lorsque vous faites un solo, utilisez la repetition et la sequence, ne pas radoter. cela permet a l'auditeur d'anticiper ce que vous faites. ceci est connu comme l'improvisation thematique. les solos de sonny rollins sont de bons exemples pour cela. l'intervalle entre b bemol et e contient trois tons sib, c, d, e d'ou le nom de triton. les adultes, ne prennent pas le temps necessaire pour apprendre a jouer du jazz ou meme simplement de l'ecouter si vous souhaitez conserver l'harmonie du morceau, jouez la tonique de laccord sur des temps un et trois. latierce, la quinte et la septieme donnent un aperu de l'harmonie. une caracteristique des solos en be-bop est qu'ils utilisent explicitement une harmonie. avez-vous memorises une douzaine de morceaux savoir la melodie et la forme, etre en mesure d'ecrire les progressions d'accords jamey a memorises 1000 morceaux apprenez quelques airs, et les ecouter toute la journee pour les garder dans votre tete. mettez votre repertoire sur un ordinateur portable afin que vous puissiez l'examiner. fn auiise d'evercire mie vs calnc reccemblent ce qe vaue aentendez dans vatre tete caiter un n plav-a-lana et"
-    },
-    {
-      "id": "un-clavier-est-tres-important-pour-l-apprentissage-d-harmonie-et-une-audition-des-accords-de-qualite-sur-un-clavier-tout-est-presente-simplement-pour-vous-vous-pouvez-obtenir-un-clavier-electrique-pour-moins-de-100-iis-sont-tres-visuels-jouez-au-clair-de-la-lune-joyeux-anniversaire-ou-freres-jacques-dans-les-douze-tonalites-vous-permet-d-obtenir-une-communion-entre-votre-esprit-et-votre-instrument-si-vous-commencez-ou-terminez-une-phrase-sur-un-ton-de-laccord-tonal-3e-ou-5e-vous-ne-pouvez-pas-vous-trompez-pratiquez-les-gammes-pendant-deux-minutes-intensivement-rapides-sur-8-notes-jusqu-a-ce-qu-elles-deviennent-automatiques-les-yeux-fermes-c-est-mieux-j-ai-l-idee-que-les-gens-apprennent-l-instrument-comme-un-exercice-de-patience-au-lieu-d-apprendre-a-le-connaitre-deplacement-d-un-demi-ton-est-facile-a-faire-avec-votre-voix-mais-plus-difficile-sur-votre-instrument-moi-jamey-en-sait-beaucoup-et-je-peux-faire-beaucoup-mais-je-ne-peux-pas-le-faire-a-votre-place-si-vous-reflechissez-a-ce-que-vous-faites-vous-vous-en-souviendrez-paur-annrendre-uine-meladie-memaricez-lec-chhannemeante-meeure-nar-mesure-tnuer-lec-nammes-de-chanuie-accard-ruiis_p54",
-      "title": "Un Clavier Est Tres Important Pour L'apprentissage D'harmonie Et Une Audition Des Accords De Qualite. Sur Un Clavier Tout Est Presente Simplement Pour Vous. Vous Pouvez Obtenir Un Clavier Electrique Pour Moins De 100 . Iis Sont Tres Visuels. - Jouez Au Clair De La Lune, Joyeux Anniversaire Ou Freres Jacques Dans Les Douze Tonalites Vous Permet D'obtenir Une Communion Entre Votre Esprit Et Votre Instrument. Si Vous Commencez Ou Terminez Une Phrase Sur Un Ton De Laccord Tonal, 3e Ou 5e Vous Ne Pouvez Pas Vous Trompez. Pratiquez Les Gammes Pendant Deux Minutes Intensivement, Rapides Sur 8 Notes, Jusqu'a Ce Qu'elles Deviennent Automatiques. Les Yeux Fermes C'est Mieux. J'ai L'idee Que Les Gens Apprennent L'instrument Comme Un Exercice De Patience, Au Lieu D'apprendre A Le Connaitre. Deplacement D'un Demi-ton Est Facile A Faire Avec Votre Voix, Mais Plus Difficile Sur Votre Instrument. Moi, Jamey, En Sait Beaucoup, Et Je Peux Faire Beaucoup, Mais Je Ne Peux Pas Le Faire A Votre Place Si Vous Reflechissez A Ce Que Vous Faites, Vous Vous En Souviendrez. Paur Annrendre Uine Meladie Memaricez Lec Chhannemeante Meeure Nar Mesure Tnuer Lec Nammes De Chanuie Accard. Ruiis",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_054.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 54
-      },
-      "search_text": "un clavier est tres important pour l'apprentissage d'harmonie et une audition des accords de qualite. sur un clavier tout est presente simplement pour vous. vous pouvez obtenir un clavier electrique pour moins de 100 . iis sont tres visuels. - jouez au clair de la lune, joyeux anniversaire ou freres jacques dans les douze tonalites vous permet d'obtenir une communion entre votre esprit et votre instrument. si vous commencez ou terminez une phrase sur un ton de laccord tonal, 3e ou 5e vous ne pouvez pas vous trompez. pratiquez les gammes pendant deux minutes intensivement, rapides sur 8 notes, jusqu'a ce qu'elles deviennent automatiques. les yeux fermes c'est mieux. j'ai l'idee que les gens apprennent l'instrument comme un exercice de patience, au lieu d'apprendre a le connaitre. deplacement d'un demi-ton est facile a faire avec votre voix, mais plus difficile sur votre instrument. moi, jamey, en sait beaucoup, et je peux faire beaucoup, mais je ne peux pas le faire a votre place si vous reflechissez a ce que vous faites, vous vous en souviendrez. paur annrendre uine meladie memaricez lec chhannemeante meeure nar mesure tnuer lec nammes de chanuie accard. ruiis"
-    },
     {
       "id": "page_001.png",
       "title": "Page 1",
@@ -5535,6 +4568,589 @@
         "page": 414
       },
       "search_text": "page 414"
+    },
+    {
+      "id": "page_415.png",
+      "title": "Page 415",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_415.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 415
+      },
+      "search_text": "page 415"
+    },
+    {
+      "id": "page_416.png",
+      "title": "Page 416",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_416.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 416
+      },
+      "search_text": "page 416"
+    },
+    {
+      "id": "page_417.png",
+      "title": "Page 417",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_417.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 417
+      },
+      "search_text": "page 417"
+    },
+    {
+      "id": "page_418.png",
+      "title": "Page 418",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_418.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 418
+      },
+      "search_text": "page 418"
+    },
+    {
+      "id": "sommaire_p2",
+      "title": "Sommaire",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_002.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 2
+      },
+      "search_text": "sommaire"
+    },
+    {
+      "id": "information-utile-de-jazz_p4",
+      "title": "Information utile de jazz",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_004.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 4
+      },
+      "search_text": "information utile de jazz"
+    },
+    {
+      "id": "informations-generales_p3",
+      "title": "Informations generales",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_003.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 3
+      },
+      "search_text": "informations generales"
+    },
+    {
+      "id": "jazzhandbook_p1",
+      "title": "JazzHandbook",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_001.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 1
+      },
+      "search_text": "jazzhandbook"
+    },
+    {
+      "id": "solos_p6",
+      "title": "Solos",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_006.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 6
+      },
+      "search_text": "solos"
+    },
+    {
+      "id": "jazz-la-musique-naturelle_p7",
+      "title": "Jazz la musique naturelle",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_007.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 7
+      },
+      "search_text": "jazz la musique naturelle"
+    },
+    {
+      "id": "tradition-jazz_p5",
+      "title": "Tradition jazz",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_005.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 5
+      },
+      "search_text": "tradition jazz"
+    },
+    {
+      "id": "voici-plusieurs-exercices-que-chaque-musicien-de-jazz-professionnel-a-probablement-joues-a-un-moment-ou-un-autre-jouer-ces-sur-les-harmonies-changements-gammed-accord-de-tout-le-morceau-sur-lequel-vous-travaillez-pour-ce-faire-avant-d-essayer-d-improviser-1-jouer-les-cinq-premieres-notes-de-chaque-gammed-accord-2-jouer-la-triade-note-de-1-3-et-5-de-la-gamme-3-jouez-toute-la-gamme-de-la-fondamentale-premiere-note-a-la-9e-et-la-redescendre-4-jouez-l-accord-de-7e-en-montant-et-descendant-1-3-5-7-5-3-1-5-jouez-laccord-de-9e-en-montant-et-descendant-1-3-5-7-9-7-5-3-1-6-jouer-la-gamme-jusqu-a-la-9e-puis-redescendre-l-accord-9-7-5-3-1-7-v-w-t-a-de-c-ton-a-e-e-a_p8",
+      "title": "Voici Plusieurs Exercices Que Chaque Musicien De Jazz Professionnel A Probablement Joues A Un Moment Ou Un Autre. Jouer Ces Sur Les Harmonies Changements, Gammed'accord De Tout Le Morceau Sur Lequel Vous Travaillez. Pour Ce Faire, Avant D'essayer D'improviser. 1. Jouer Les Cinq Premieres Notes De Chaque Gammed'accord. 2. Jouer La Triade Note De 1,3, Et 5 De La Gamme. 3. Jouez Toute La Gamme De La Fondamentale Premiere Note A La 9e Et La Redescendre. 4. Jouez L'accord De 7e En Montant Et Descendant 1, 3, 5, 7, 5, 3, 1. 5. Jouez Laccord De 9e En Montant Et Descendant 1, 3, 5, 7, 9, 7, 5, 3, 1. 6. Jouer La Gamme Jusqu'a La 9e Puis Redescendre L'accord 9, 7, 5, 3, 1. 7 V W T A De C Ton A E E A",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_008.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 8
+      },
+      "search_text": "voici plusieurs exercices que chaque musicien de jazz professionnel a probablement joues a un moment ou un autre. jouer ces sur les harmonies changements, gammed'accord de tout le morceau sur lequel vous travaillez. pour ce faire, avant d'essayer d'improviser. 1. jouer les cinq premieres notes de chaque gammed'accord. 2. jouer la triade note de 1,3, et 5 de la gamme. 3. jouez toute la gamme de la fondamentale premiere note a la 9e et la redescendre. 4. jouez l'accord de 7e en montant et descendant 1, 3, 5, 7, 5, 3, 1. 5. jouez laccord de 9e en montant et descendant 1, 3, 5, 7, 9, 7, 5, 3, 1. 6. jouer la gamme jusqu'a la 9e puis redescendre l'accord 9, 7, 5, 3, 1. 7 v w t a de c ton a e e a"
+    },
+    {
+      "id": "transcrire-des-solos-ou-des-parties-de-solos-a-partir-d-enregistrements-est-l-une-des-meilleures-faons-de-decouvrir-ce-que-le-professionnel-fait-pour-avoir-un-si-bon-son-en-analysant-un-solo-vous-pouvez-trouver-des-faits-importants-1-par-quelle-note-de-la-gamme-ils-commencent-ces-phrases-2-avec-quelle-note-de-la-gamme-ils-finissent-leurs-phrases-3-utilisent-ils-une-gamme-large-ou-etroite-tessiture-4-utilisent-ils-des-notes-de-l-accord-dans-leurs-phrases-5-utilisent-ils-des-gammes-ou-des-elements-de-la-gamme-6-ont-ils-des-phrases-favorites-qui-apparaissent-a-plusieurs-reprises-me-a-ai-la-a-a-ete-a-a-a-a-ai-a-a-a-a-s_p9",
+      "title": "Transcrire Des Solos, Ou Des Parties De Solos, A Partir D'enregistrements Est L'une Des Meilleures Faons De Decouvrir Ce Que Le Professionnel Fait Pour Avoir Un Si Bon Son. En Analysant Un Solo Vous Pouvez Trouver Des Faits Importants 1. Par Quelle Note De La Gamme Ils Commencent Ces Phrases 2. Avec Quelle Note De La Gamme Ils Finissent Leurs Phrases 3. Utilisent-ils Une Gamme Large Ou Etroite, Tessiture 4. Utilisent-ils Des Notes De L'accord Dans Leurs Phrases 5. Utilisent-ils Des Gammes Ou Des Elements De La Gamme 6. Ont-ils Des Phrases Favorites Qui Apparaissent A Plusieurs Reprises Me A Ai La A A Ete A A A A Ai A A A A S",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_009.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 9
+      },
+      "search_text": "transcrire des solos, ou des parties de solos, a partir d'enregistrements est l'une des meilleures faons de decouvrir ce que le professionnel fait pour avoir un si bon son. en analysant un solo vous pouvez trouver des faits importants 1. par quelle note de la gamme ils commencent ces phrases 2. avec quelle note de la gamme ils finissent leurs phrases 3. utilisent-ils une gamme large ou etroite, tessiture 4. utilisent-ils des notes de l'accord dans leurs phrases 5. utilisent-ils des gammes ou des elements de la gamme 6. ont-ils des phrases favorites qui apparaissent a plusieurs reprises me a ai la a a ete a a a a ai a a a a s"
+    },
+    {
+      "id": "conseils-pour-apprendre-un-nouveau-morceau_p12",
+      "title": "Conseils pour apprendre un nouveau morceau",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_012.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 12
+      },
+      "search_text": "conseils pour apprendre un nouveau morceau"
+    },
+    {
+      "id": "ecoute-sugeree-d-artistes-de-jazz_p10",
+      "title": "Ecoute sugeree d'artistes de jazz",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_010.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 10
+      },
+      "search_text": "ecoute sugeree d'artistes de jazz"
+    },
+    {
+      "id": "enregistrement-d-importance-historique_p11",
+      "title": "Enregistrement d'importance historique",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_011.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 11
+      },
+      "search_text": "enregistrement d'importance historique"
+    },
+    {
+      "id": "les-gammes-majeure-aa-12345678-dom-7eme-7-123456b78-mineure-1-2b34-5-6b78-nariann_p15",
+      "title": "Les Gammes Majeure Aa 12345678 Dom.7eme 7 123456b78 Mineure - 1 2b34 5 6b78 Nariann",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_015.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 15
+      },
+      "search_text": "les gammes majeure aa 12345678 dom.7eme 7 123456b78 mineure - 1 2b34 5 6b78 nariann"
+    },
+    {
+      "id": "liste-de-standards-pour-debutant-voici-la-liste-de-morceaux-que-tout-le-monde-devrait-connaitre-j-enumere-les-tonalites-qui-sont-le-plus-souvent-jouees-et-les-volumes-play-a-long-sur-lesquels-vous-pouvez-les-trouver-la-plupart-des-titres-pour-debutant-se-trouve-dans-le-volume-54-maiden-voyage-livre-et-cd-standards-pour-debutants-standards-intermediaires_p14",
+      "title": "Liste De Standards Pour Debutant Voici La Liste De Morceaux Que Tout Le Monde Devrait Connaitre. J'enumere Les Tonalites Qui Sont Le Plus Souvent Jouees Et Les Volumes Play-a-long Sur Lesquels Vous Pouvez Les Trouver. La Plupart Des Titres Pour Debutant Se Trouve Dans Le Volume 54 Maiden Voyage Livre Et Cd. Standards Pour Debutants Standards Intermediaires",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_014.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 14
+      },
+      "search_text": "liste de standards pour debutant voici la liste de morceaux que tout le monde devrait connaitre. j'enumere les tonalites qui sont le plus souvent jouees et les volumes play-a-long sur lesquels vous pouvez les trouver. la plupart des titres pour debutant se trouve dans le volume 54 maiden voyage livre et cd. standards pour debutants standards intermediaires"
+    },
+    {
+      "id": "introduction-aux-repertoires-des-gammes-le-symbole-de-chaque-accord-c7-c-ci14-etc-represente-une-serie-de-notes-que-le-musicien-peut-utiliser-pour-improviser-on-appelle-traditionnellement-des-series-de-notes-des-gammes-les-gammes-repertoriees-ici-sont-celles-que-j-entends-le-plus-souvent-jouer-tous-les-exemples-sont-ecrits-en-do-afin-que-vous-puissiez-comparer-la-construction-des-gammes-et-leurs-similitudes-ce-repertoire-des-gammes-est-conu-pour-donner-a-l-improvisateur-un-choix-varie-de-gammes-qui-peuvent-etre-employees-sur-n-importe-quel-accord-majeur-mineur-7eme-de-dominante-semi-diminue-et-diminue-la-musique-occidentale-particulierement-le-jazz-et-la-pop-utilise-les-gammes-et-les-accords-majeurs-7eme-de_p16",
+      "title": "Introduction Aux Repertoires Des Gammes Le Symbole De Chaque Accord C7, C-, Ci14, Etc. Represente Une Serie De Notes Que Le Musicien Peut Utiliser Pour Improviser. On Appelle Traditionnellement Des Series De Notes Des Gammes. Les Gammes Repertoriees Ici Sont Celles Que J'entends Le Plus Souvent Jouer. Tous Les Exemples Sont Ecrits En Do, Afin Que Vous Puissiez Comparer La Construction Des Gammes Et Leurs Similitudes. Ce Repertoire Des Gammes Est Conu Pour Donner A L'improvisateur Un Choix Varie De Gammes Qui Peuvent Etre Employees Sur N'importe Quel Accord Majeur, Mineur, 7eme De Dominante, Semi-diminue Et Diminue. La Musique Occidentale, Particulierement Le Jazz Et La Pop, Utilise Les Gammes Et Les Accords Majeurs, 7eme De",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_016.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 16
+      },
+      "search_text": "introduction aux repertoires des gammes le symbole de chaque accord c7, c-, ci14, etc. represente une serie de notes que le musicien peut utiliser pour improviser. on appelle traditionnellement des series de notes des gammes. les gammes repertoriees ici sont celles que j'entends le plus souvent jouer. tous les exemples sont ecrits en do, afin que vous puissiez comparer la construction des gammes et leurs similitudes. ce repertoire des gammes est conu pour donner a l'improvisateur un choix varie de gammes qui peuvent etre employees sur n'importe quel accord majeur, mineur, 7eme de dominante, semi-diminue et diminue. la musique occidentale, particulierement le jazz et la pop, utilise les gammes et les accords majeurs, 7eme de"
+    },
+    {
+      "id": "tableau-des-gammes-d-accord-ou-modes-d-demi-ton-t-ton-entier-3-3-demi-tons-tierce-mineure-accord-gamme-nom-usuel-de-la-gamme-associee-construction-symbole-usuel-aebersold-de-la-gamme-accord-en-c-cinq1-categories-de-base-c-ou-ca-imajeure-ionienne-ttdtttd-cdefgab-icm7-9-11-13-c7-dominante-7eme-myxolydienne-gamme-de-fa-ittdttdt-icdefgabbc-c7-9-11-13-c-7-mineure-dorienne-bba-tdtttdt-icdebfgabb-cm7-9-11-13-co-demi-diminuee-locrienne-dba-dttdttt-icdbebfgbabbb-ico-co-idiminuee-commence-par-un-un-ton-entier-t-itdtdtdtd-icdebfgbalab-ico_p17",
+      "title": "Tableau Des Gammes D'accord Ou Modes D Demi-ton T Ton Entier -3 3 Demi-tons Tierce Mineure Accord-gamme Nom Usuel De La Gamme Associee Construction Symbole Usuel Aebersold De La Gamme Accord En C Cinq1 Categories De Base C Ou Ca Imajeure Ionienne Ttdtttd Cdefgab Icm7 9 11 13 C7 Dominante 7eme Myxolydienne Gamme De Fa Ittdttdt Icdefgabbc C7 9 11 13 C-7 Mineure Dorienne Bba Tdtttdt Icdebfgabb Cm7 9 11 13 Co Demi-diminuee Locrienne Dba Dttdttt Icdbebfgbabbb Ico Co Idiminuee Commence Par Un Un Ton Entier, T Itdtdtdtd Icdebfgbalab Ico",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_017.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 17
+      },
+      "search_text": "tableau des gammes d'accord ou modes d demi-ton t ton entier -3 3 demi-tons tierce mineure accord-gamme nom usuel de la gamme associee construction symbole usuel aebersold de la gamme accord en c cinq1 categories de base c ou ca imajeure ionienne ttdtttd cdefgab icm7 9 11 13 c7 dominante 7eme myxolydienne gamme de fa ittdttdt icdefgabbc c7 9 11 13 c-7 mineure dorienne bba tdtttdt icdebfgabb cm7 9 11 13 co demi-diminuee locrienne dba dttdttt icdbebfgbabbb ico co idiminuee commence par un un ton entier, t itdtdtdtd icdebfgbalab ico"
+    },
+    {
+      "id": "legende-ou-monter-d-un-demi-ton-ou-b-descendre-d-un-demi-ton-d-un-demi-ton-t-un-ton-pourquoi-les-jazzmen-les-auteurs-compositeurs-et-professeurs-ont-du-mal-a-se-mettre-d-accord-sur-une-terminologie-commune-concernant-l-ecriture-des-accords-et-des-gammes-ce-qui-oblige-le-debutant-a-se-familiariser-avec-les-differentes-manieres-d-ecrire-ces-derniers-ci-dessous-dans-la-liste-de-droite-sont-ecrits-les-symboles-des-accords-en-fonction-de-leurs-frequences-d-utilisation-les-encadres-sont-ceux-que-j-utilise-le-plus-souvent-notez-que-tout-au-long-de-ce-volume-vous-verrez-ca-et-c-pour-designer-un-accord-majeur-et-sa-gamme-correspondante-je-procede-ainsi-afin-que-vous-puissiez-commencer-a-vous-familiariser-avec-les-differentes-nomenclatures-a-z-aammafareneel-matonw-res-fima-motouwe-fa-la-chiff-e-f-anvhe-ue-loitre-imalieue-ahalecar-ia-tema-nabe-ma-namme-matosme-dn_p18",
+      "title": "Legende Ou Monter D'un Demi-ton - Ou B Descendre D'un Demi-ton, D Un Demi-ton T Un Ton Pourquoi Les Jazzmen, Les Auteurs, Compositeurs Et Professeurs Ont Du Mal A Se Mettre D'accord Sur Une Terminologie Commune Concernant L'ecriture Des Accords Et Des Gammes, Ce Qui Oblige Le Debutant A Se Familiariser Avec Les Differentes Manieres D'ecrire Ces Derniers. Ci-dessous, Dans La Liste De Droite, Sont Ecrits Les Symboles Des Accords En Fonction De Leurs Frequences D'utilisation. Les Encadres Sont Ceux Que J'utilise Le Plus Souvent. Notez Que Tout Au Long De Ce Volume, Vous Verrez Ca Et C Pour Designer Un Accord Majeur Et Sa Gamme Correspondante. Je Procede Ainsi Afin Que Vous Puissiez Commencer A Vous Familiariser Avec Les Differentes Nomenclatures. A Z Aammafareneel Matonw Res Fima Motouwe Fa La Chiff-e F Anvhe Ue Loitre Imalieue Ahalecar Ia Tema Nabe Ma Namme Matosme Dn",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_018.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 18
+      },
+      "search_text": "legende ou monter d'un demi-ton - ou b descendre d'un demi-ton, d un demi-ton t un ton pourquoi les jazzmen, les auteurs, compositeurs et professeurs ont du mal a se mettre d'accord sur une terminologie commune concernant l'ecriture des accords et des gammes, ce qui oblige le debutant a se familiariser avec les differentes manieres d'ecrire ces derniers. ci-dessous, dans la liste de droite, sont ecrits les symboles des accords en fonction de leurs frequences d'utilisation. les encadres sont ceux que j'utilise le plus souvent. notez que tout au long de ce volume, vous verrez ca et c pour designer un accord majeur et sa gamme correspondante. je procede ainsi afin que vous puissiez commencer a vous familiariser avec les differentes nomenclatures. a z aammafareneel matonw res fima motouwe fa la chiff-e f anvhe ue loitre imalieue ahalecar ia tema nabe ma namme matosme dn"
+    },
+    {
+      "id": "la-7e-de-dominante-dans-le-choix-des-gammes-les-deux-notes-les-plus-importantes-dans-toutes-les-gammes-ou-accords-sont-les-3ce-et-7e-elles-guident-ce-que-l-auditeur-peroit-et-indiquent-le-mouvement-harmonique-la-3ce-nous-indique-si-c-est-majeur-ou-mineur-le-7e-indique-si-laccord-est-stable-ne-peut-pas-passer-a-un-autre-accord-ou-si-on-veut-passer-a-un-accord-de-resolution-les-dominantes-generalement-se-resolvent-a-un-accord-montant-jusqu-a-la-4te-parfaite-c7-veut-resoudre-a-f-f-f7-etc-la-tonale-ou-tonique-est-prise-pour-acquise-si-ce-n-etait-pas-le-cas-nous-ne-serions-pas-en-mesure-d-identifier-la-gamme-ou-laccord-chacune-de-ces-gammes-qualites-sons-sonorites-peuvent-etre-jouees-avec-une-7e-de-dominante_p19",
+      "title": "La 7e De Dominante Dans Le Choix Des Gammes Les Deux Notes Les Plus Importantes Dans Toutes Les Gammes Ou Accords, Sont Les 3ce Et 7e. Elles Guident Ce Que L'auditeur Peroit Et Indiquent Le Mouvement Harmonique. La 3ce Nous Indique Si C'est Majeur Ou Mineur. Le 7e Indique Si Laccord Est Stable Ne Peut Pas Passer A Un Autre Accord Ou Si On Veut Passer A Un Accord De Resolution. Les Dominantes Generalement Se Resolvent A Un Accord Montant Jusqu'a La 4te Parfaite C7 Veut Resoudre A F, F, F7, Etc. La Tonale Ou Tonique Est Prise Pour Acquise. Si Ce N'etait Pas Le Cas, Nous Ne Serions Pas En Mesure D'identifier La Gamme Ou Laccord. Chacune De Ces Gammes Qualites Sons Sonorites Peuvent Etre Jouees Avec Une 7e De Dominante",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_019.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 19
+      },
+      "search_text": "la 7e de dominante dans le choix des gammes les deux notes les plus importantes dans toutes les gammes ou accords, sont les 3ce et 7e. elles guident ce que l'auditeur peroit et indiquent le mouvement harmonique. la 3ce nous indique si c'est majeur ou mineur. le 7e indique si laccord est stable ne peut pas passer a un autre accord ou si on veut passer a un accord de resolution. les dominantes generalement se resolvent a un accord montant jusqu'a la 4te parfaite c7 veut resoudre a f, f, f7, etc. la tonale ou tonique est prise pour acquise. si ce n'etait pas le cas, nous ne serions pas en mesure d'identifier la gamme ou laccord. chacune de ces gammes qualites sons sonorites peuvent etre jouees avec une 7e de dominante"
+    },
+    {
+      "id": "entrainement-de-l-oreille-quand-une-personne-tente-de-developper-sa-capacite-a-mieux-entendre-les-sons-qui-se-propagent-autour-de-lui-il-est-confronte-a-plusieurs-problemes-qui-ne-sont-pas-necessairement-presents-lors-de-la-lecture-de-la-musique-ou-des-symboles-d-accord-sur-des-partitions-avoir-une-bonne-oreille-signifie-avoir-la-capacite-a-entendre-la-tonique-pour-les-accords-ou-les-differentes-gammes-qui-sont-jouees-avoir-la-capacite-d-entendre-la-tonalite-de-l-accord-ou-de-la-gamme-majeur-mineur-quel-genre-de-mineur-pentatonique-dim-ton-entier-etc-cela-signifie-avoir-la-capacite-de-dire-ce-quel-est-la-tonalite-de-la-gamme-ou-de-l-accord-qui-est-joue-a-n-importe-quel-endroit-dans-le-solo-ah-cette-note-a-ete-la-resolution-quarte-de-la-6-de-la-quinte-cela-signifie-entendre-le-piano-la-basse-le-soliste-la-batterie-etc-individuellement-aussi-bien-que-collectivement_p24",
+      "title": "Entrainement De L'oreille Quand Une Personne Tente De Developper Sa Capacite A Mieux Entendre Les Sons Qui Se Propagent Autour De Lui, Il Est Confronte A Plusieurs Problemes Qui Ne Sont Pas Necessairement Presents Lors De La Lecture De La Musique Ou Des Symboles D'accord Sur Des Partitions. Avoir Une Bonne Oreille Signifie Avoir La Capacite A Entendre La Tonique Pour Les Accords Ou Les Differentes Gammes Qui Sont Jouees Avoir La Capacite D'entendre La Tonalite De L'accord Ou De La Gamme . Majeur, Mineur Quel Genre De Mineur, Pentatonique, Dim., Ton Entier, Etc. Cela Signifie Avoir La Capacite De Dire Ce Quel Est La Tonalite De La Gamme Ou De L'accord Qui Est Joue A N'importe Quel Endroit Dans Le Solo Ah, Cette Note A Ete La Resolution Quarte, De La 6, De La Quinte, Cela Signifie Entendre Le Piano, La Basse, Le Soliste, La Batterie, Etc. Individuellement Aussi Bien Que Collectivement.",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_024.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 24
+      },
+      "search_text": "entrainement de l'oreille quand une personne tente de developper sa capacite a mieux entendre les sons qui se propagent autour de lui, il est confronte a plusieurs problemes qui ne sont pas necessairement presents lors de la lecture de la musique ou des symboles d'accord sur des partitions. avoir une bonne oreille signifie avoir la capacite a entendre la tonique pour les accords ou les differentes gammes qui sont jouees avoir la capacite d'entendre la tonalite de l'accord ou de la gamme . majeur, mineur quel genre de mineur, pentatonique, dim., ton entier, etc. cela signifie avoir la capacite de dire ce quel est la tonalite de la gamme ou de l'accord qui est joue a n'importe quel endroit dans le solo ah, cette note a ete la resolution quarte, de la 6, de la quinte, cela signifie entendre le piano, la basse, le soliste, la batterie, etc. individuellement aussi bien que collectivement."
+    },
+    {
+      "id": "comment-pratiquer-l-improvisation-par-coker-jerry-voici-un-exemple-qui-peut-vous-aider-a-organiser-votre-temps-de-pratique-ce-calendrier-est-base-sur-une-periode-de-soixante-quinze-minute-1h-15-min-mais-il-peut-etre-modifie-soit-pour-s-adapter-a-votre-emploi-du-temps-ou-de-permettre-d-entreprendre-des-etudes-instrumentales-note-longues-des-exercices-de-dexterite-des-doigts-des-etudes-de-gammes-la-lecture-etc-lln-avamnia-de-nraticona-iniivnaliara_p28",
+      "title": "Comment Pratiquer L'improvisation Par Coker Jerry Voici Un Exemple Qui Peut Vous Aider A Organiser Votre Temps De Pratique. Ce Calendrier Est Base Sur Une Periode De Soixante-quinze Minute 1h.15 Min., Mais Il Peut Etre Modifie Soit Pour S'adapter A Votre Emploi Du Temps Ou De Permettre D'entreprendre Des Etudes Instrumentales Note Longues, Des Exercices De Dexterite Des Doigts, Des Etudes De Gammes, La Lecture, Etc. Lln Avamnia De Nraticona Iniivnaliara.",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_028.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 28
+      },
+      "search_text": "comment pratiquer l'improvisation par coker jerry voici un exemple qui peut vous aider a organiser votre temps de pratique. ce calendrier est base sur une periode de soixante-quinze minute 1h.15 min., mais il peut etre modifie soit pour s'adapter a votre emploi du temps ou de permettre d'entreprendre des etudes instrumentales note longues, des exercices de dexterite des doigts, des etudes de gammes, la lecture, etc. lln avamnia de nraticona iniivnaliara."
+    },
+    {
+      "id": "clavier-basic-et-gamme-chromatique-1-notes-ascendants-partir-de-la-gauche-du-clavier-et-monter-les-notes-2-notes-descendantes-partr-de-la-droite-du-clavier-et-descendre-les-notes-3-intervalle-distance-en-deux-notes-4-demi-ton-et-ton-utilises-pour-mesure-les-intervalles-5-l-intervalle-entre-les-touches-du-clavier-est-un-demi-ton-deux-demi-tons-equivaut-un-a-ton-6-la-tierce-mineure-a-3-est-egale-a-3-demi-tons-et-la-tierce-majeure-a-m3-est-egal-a-quatre-demi-tons-7-ou-signifie-que-la-note-est-montee-d-un-demi-ton-8-b-ou-signifie-que-la-note-est-descendue-d-un-demi-ton-9-h-unton-w-un-demi-ton_p26",
+      "title": "Clavier Basic Et Gamme Chromatique 1. Notes Ascendants Partir De La Gauche Du Clavier Et Monter Les Notes 2. Notes Descendantes Partr De La Droite Du Clavier Et Descendre Les Notes 3. Intervalle Distance En Deux Notes 4. Demi-ton Et Ton Utilises Pour Mesure Les Intervalles. 5. _ L'intervalle Entre Les Touches Du Clavier Est Un Demi-ton. Deux Demi Tons Equivaut Un A Ton. 6. La Tierce Mineure A-3 Est Egale A 3 Demi-tons Et La Tierce Majeure A M3 Est Egal A Quatre Demi Tons. 7. Ou Signifie Que La Note Est Montee D'un Demi Ton. 8. B Ou- Signifie Que La Note Est Descendue D'un Demi Ton. 9. H Unton, W Un Demi-ton.",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_026.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 26
+      },
+      "search_text": "clavier basic et gamme chromatique 1. notes ascendants partir de la gauche du clavier et monter les notes 2. notes descendantes partr de la droite du clavier et descendre les notes 3. intervalle distance en deux notes 4. demi-ton et ton utilises pour mesure les intervalles. 5. _ l'intervalle entre les touches du clavier est un demi-ton. deux demi tons equivaut un a ton. 6. la tierce mineure a-3 est egale a 3 demi-tons et la tierce majeure a m3 est egal a quatre demi tons. 7. ou signifie que la note est montee d'un demi ton. 8. b ou- signifie que la note est descendue d'un demi ton. 9. h unton, w un demi-ton."
+    },
+    {
+      "id": "tableau-d-intervalle-j-aime-utiliser-le-tableau-ci-dessous-comme-guide-pour-identifier-correctement-les-intervalles-joues-je-vais-enumerer-les-intervalles-et-quelques-chansons-qui-commencent-par-cet-intervalle-particulier-rappelez-vous-les-intervalles-en-montant-et-descendant-j-aime-utiliser-le-tableau-suivant-comme-guide-pour-chacun-des-morceaux-commence-par-un-intervalle-identifier-correctement-quelle-que-soit-l-intervalle-qui-est-repertorie-a-gauche-joue-intervalles-ascendants-intervalles-descendants_p25",
+      "title": "Tableau D'intervalle J'aime Utiliser Le Tableau Ci Dessous Comme Guide Pour Identifier Correctement Les Intervalles Joues. Je Vais Enumerer Les Intervalles Et Quelques Chansons Qui Commencent Par Cet Intervalle Particulier. Rappelez-vous, Les Intervalles En Montant Et Descendant. - J'aime Utiliser Le Tableau Suivant Comme Guide Pour Chacun Des Morceaux Commence Par Un Intervalle Identifier Correctement Quelle Que Soit L'intervalle Qui Est Repertorie A Gauche. Joue Intervalles Ascendants Intervalles Descendants",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_025.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 25
+      },
+      "search_text": "tableau d'intervalle j'aime utiliser le tableau ci dessous comme guide pour identifier correctement les intervalles joues. je vais enumerer les intervalles et quelques chansons qui commencent par cet intervalle particulier. rappelez-vous, les intervalles en montant et descendant. - j'aime utiliser le tableau suivant comme guide pour chacun des morceaux commence par un intervalle identifier correctement quelle que soit l'intervalle qui est repertorie a gauche. joue intervalles ascendants intervalles descendants"
+    },
+    {
+      "id": "le-cycles-des-quartes-le-cercle-de-quartes-peut-etre-appele-aussi-cycles-des-quartes-certains-le-nomment-le-cercle-ou-cycle-des-quintes-le-cycle-ou-simplement-le-cercle-ii-fait-basiquement-reference-au-mouvement-que-fait-la-tonique-de-tous-les-gammes-accords-dans-une-progression-si-vous-montez-de-la-note-c-vers-la-note-f-c-est-une-quarte-5-demi-tons-si-vous-descendez-de-la-note-c-vers-la-note-f-cest-une-quinte-7-demi-tons-beaucoup-de-gens-aiment-pratiquer-leurs-gammes-accords-motifs-et-plans-sur-un-cycle-de-quartes-afin-d-etre-sur-de-bien-les-travailler-dans-les-12-tons-le-standard-de-jazz-ail-the-things-you-are-utilise-la-progression-en-cycle-sur-les-cinq-premieres-mesures-f-bb-eb7abdb-le-blues-utilise-le-cycle-sur-les-quatre-dernieres-mesures-c-f7bb7f7-le-titre-tune_p27",
+      "title": "Le Cycles Des Quartes Le Cercle De Quartes Peut-etre Appele Aussi Cycles Des Quartes. Certains Le Nomment Le Cercle, Ou Cycle Des Quintes, Le Cycle Ou Simplement Le Cercle. Ii Fait Basiquement Reference Au Mouvement Que Fait La Tonique De Tous Les Gammes Accords Dans Une Progression. Si Vous Montez De La Note C Vers La Note F, C'est Une Quarte 5 Demi- Tons. Si Vous Descendez De La Note C Vers La Note F Cest Une Quinte 7 Demi-tons. Beaucoup De Gens Aiment Pratiquer Leurs Gammes, Accords, Motifs Et Plans Sur Un Cycle De Quartes Afin D'etre Sur De Bien Les Travailler Dans Les 12 Tons. Le Standard De Jazz Ail The Things You Are Utilise La Progression En Cycle Sur Les Cinq Premieres Mesures F- Bb-eb7abdb. Le Blues Utilise Le Cycle Sur Les Quatre Dernieres Mesures C-f7bb7f7. Le Titre Tune",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_027.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 27
+      },
+      "search_text": "le cycles des quartes le cercle de quartes peut-etre appele aussi cycles des quartes. certains le nomment le cercle, ou cycle des quintes, le cycle ou simplement le cercle. ii fait basiquement reference au mouvement que fait la tonique de tous les gammes accords dans une progression. si vous montez de la note c vers la note f, c'est une quarte 5 demi- tons. si vous descendez de la note c vers la note f cest une quinte 7 demi-tons. beaucoup de gens aiment pratiquer leurs gammes, accords, motifs et plans sur un cycle de quartes afin d'etre sur de bien les travailler dans les 12 tons. le standard de jazz ail the things you are utilise la progression en cycle sur les cinq premieres mesures f- bb-eb7abdb. le blues utilise le cycle sur les quatre dernieres mesures c-f7bb7f7. le titre tune"
+    },
+    {
+      "id": "la-gamme-de-blues-et-son-utilisation-la-gamme-de-blues-est-constituee-tonique-3teb-4te-4te-5te-et-7-b-exemple-gamme-de-blues-en-f-f-ab-bb-b-c-eb-f-lorsque-vous-jouez-les-douze-mesures-dun-blues-en-bb-utilisez-la-gamme-blues-de-bb-bb-db-eb-e-f-ab-bb-la-gamme-de-blues-peut-aussi-etre-utilisee-sur-des-accords-mineurs-lorsque-l-accord-mineur-est-joue-dans-les-mesures-2-4-8-ou-16-ou-plus-exemple-si-d-mineur-est-joue-pendant-huit-mesures-vous-pouvez-utiliser-la-gamme-de-blues-en-d-d-f-g-ab-a-c-d_p32",
+      "title": "La Gamme De Blues Et Son Utilisation La Gamme De Blues Est Constituee Tonique, 3teb, 4te, 4te,5te Et 7 B Exemple Gamme De Blues En F F, Ab, Bb, B, C, Eb, F. Lorsque Vous Jouez Les Douze Mesures Dun Blues En Bb, Utilisez La Gamme Blues De Bb Bb, Db Eb, E, F, Ab, Bb La Gamme De Blues Peut Aussi Etre Utilisee Sur Des Accords Mineurs Lorsque L'accord Mineur Est Joue Dans Les Mesures 2, 4, 8 Ou 16 Ou Plus. Exemple Si D Mineur Est Joue Pendant Huit Mesures, Vous Pouvez Utiliser La Gamme De Blues En D D, F, G, Ab, A, C, D.",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_032.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 32
+      },
+      "search_text": "la gamme de blues et son utilisation la gamme de blues est constituee tonique, 3teb, 4te, 4te,5te et 7 b exemple gamme de blues en f f, ab, bb, b, c, eb, f. lorsque vous jouez les douze mesures dun blues en bb, utilisez la gamme blues de bb bb, db eb, e, f, ab, bb la gamme de blues peut aussi etre utilisee sur des accords mineurs lorsque l'accord mineur est joue dans les mesures 2, 4, 8 ou 16 ou plus. exemple si d mineur est joue pendant huit mesures, vous pouvez utiliser la gamme de blues en d d, f, g, ab, a, c, d."
+    },
+    {
+      "id": "les-choses-qui-creer-l-interet-dans-les-solos-les-repetitions-utiliser-les-gammes-de-blues-les-sequences-les-tensions-et-relachements-la-dynamique-fort-et-doux-les-motifs-les-gammes-tessiture-haut-bas-registre-moyen-savoir-ou-est-placees-les-tonalites-1-2-5-et-7-les-accents-pour-les-instrumentistes-a-vent-appuyer-les-notes-les-notes-tenues-les-gammes-et-accords-de-passage_p29",
+      "title": "Les Choses Qui Creer L'interet Dans Les Solos Les Repetitions Utiliser Les Gammes De Blues Les Sequences Les Tensions Et Relachements La Dynamique- Fort Et Doux Les Motifs Les Gammes Tessiture - Haut, Bas, Registre Moyen Savoir Ou Est Placees Les Tonalites 1, 2, 5 Et 7 Les Accents Pour Les Instrumentistes A Vent Appuyer Les Notes Les Notes Tenues Les Gammes Et Accords De Passage",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_029.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 29
+      },
+      "search_text": "les choses qui creer l'interet dans les solos les repetitions utiliser les gammes de blues les sequences les tensions et relachements la dynamique- fort et doux les motifs les gammes tessiture - haut, bas, registre moyen savoir ou est placees les tonalites 1, 2, 5 et 7 les accents pour les instrumentistes a vent appuyer les notes les notes tenues les gammes et accords de passage"
+    },
+    {
+      "id": "vous-devez-arriver-au-point-ou-vous-pouvez-instantanement-trouvez-l-accent-appuye-moyen-leger-staccato-legato-etc-de-toute-note-ou-groupe-de-notes-a-tout-moment-que-vous-choisissez-sans-perturber-le-flux-et-la-sensation-de-vos-lignes-melodiques-tres-important-ne-pas-se-contenter-de-la-pratique-de-la-gamme-g-majeur-ou-la-gamme-chromatique-utilisez-ces-exercices-d-articulation-pour-toutes-les-gammes-et-les-accords-et-dans-tous-les-tonalites-rappelez-vous-vous-improvisez-dans-tous-les-tonalites-et-pas-seulement-les-plus-faciles-cest-bien-compris-sonny-rollins-un-maitre-de-l-articulation-utilise-des-exercices-similaires-pour-developper-son-style-jazz-personnel_p31",
+      "title": "Vous Devez Arriver Au Point Ou Vous Pouvez Instantanement Trouvez L'accent Appuye, Moyen, Leger, Staccato, Legato, Etc. De Toute Note Ou Groupe De Notes A Tout Moment Que Vous Choisissez, Sans Perturber Le Flux Et La Sensation De Vos Lignes Melodiques. Tres Important Ne Pas Se Contenter De La Pratique De La Gamme G Majeur Ou La Gamme Chromatique Utilisez Ces Exercices D'articulation Pour Toutes Les Gammes Et Les Accords Et Dans Tous Les Tonalites Rappelez-vous, Vous Improvisez Dans Tous Les Tonalites, Et Pas Seulement Les Plus Faciles. Cest Bien Compris Sonny Rollins, Un Maitre De L'articulation, Utilise Des Exercices Similaires Pour Developper Son Style Jazz Personnel",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_031.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 31
+      },
+      "search_text": "vous devez arriver au point ou vous pouvez instantanement trouvez l'accent appuye, moyen, leger, staccato, legato, etc. de toute note ou groupe de notes a tout moment que vous choisissez, sans perturber le flux et la sensation de vos lignes melodiques. tres important ne pas se contenter de la pratique de la gamme g majeur ou la gamme chromatique utilisez ces exercices d'articulation pour toutes les gammes et les accords et dans tous les tonalites rappelez-vous, vous improvisez dans tous les tonalites, et pas seulement les plus faciles. cest bien compris sonny rollins, un maitre de l'articulation, utilise des exercices similaires pour developper son style jazz personnel"
+    },
+    {
+      "id": "articulations-comment-mieux-partager-son-experience-une-des-particularites-de-la-musique-de-jazz-est-l-articulation-que-les-differents-acteurs-utilisent-pour-s-exprimer-a-travers-leur-musique-certains-joueurs-aiment-utiliser-des-articulations-de-style-standard-tres-courant-a-lepoque-du-swing-et-du-be-bop-d-autres-utilisent-des-articulations-s-appuyant-sur-des-legato-ou-des-courtes-phrases-certains-utilise-des-staccato-dans-leurs-jeu-pour-ajouter-de-l-interet-ou-souligner-certaines-notes-ou-certaines-phrases-le-but-final-est-d-arriver-a-un-style-d-articulation-qui-est-approprie-votre-expression-les-jeunes-joueurs-sont-souvent-confrontes-a-la-reaction-au-moment-precis-des-doiats-sur-les-touches-que-ce-soit-au-saxophone-a-la_p30",
+      "title": "Articulations Comment Mieux Partager Son Experience Une Des Particularites De La Musique De Jazz Est L'articulation Que Les Differents Acteurs Utilisent Pour S'exprimer A Travers Leur Musique. Certains Joueurs Aiment Utiliser Des Articulations De Style Standard Tres Courant A Lepoque Du Swing Et Du Be-bop, D'autres Utilisent Des Articulations S'appuyant Sur Des Legato Ou Des Courtes Phrases, Certains Utilise Des Staccato Dans Leurs Jeu Pour Ajouter De L'interet Ou Souligner Certaines Notes Ou Certaines Phrases. Le But Final Est D'arriver A Un Style D'articulation Qui Est Approprie Votre Expression. Les Jeunes Joueurs Sont Souvent Confrontes A La Reaction Au Moment Precis Des Doiats Sur Les Touches, Que Ce Soit Au Saxophone, A La",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_030.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 30
+      },
+      "search_text": "articulations comment mieux partager son experience une des particularites de la musique de jazz est l'articulation que les differents acteurs utilisent pour s'exprimer a travers leur musique. certains joueurs aiment utiliser des articulations de style standard tres courant a lepoque du swing et du be-bop, d'autres utilisent des articulations s'appuyant sur des legato ou des courtes phrases, certains utilise des staccato dans leurs jeu pour ajouter de l'interet ou souligner certaines notes ou certaines phrases. le but final est d'arriver a un style d'articulation qui est approprie votre expression. les jeunes joueurs sont souvent confrontes a la reaction au moment precis des doiats sur les touches, que ce soit au saxophone, a la"
+    },
+    {
+      "id": "n-05-tetlie-e-s-e-p-p-n-n-on-n-g-ilre-e-5-1l-pourrait-etre-bon-d-improviser-sur-la-3ce-ou-7e-de-chaque-accord-en-vue-d-obtenir-le-son-et-la-sensation-de-l-harmonie-de-votre-esprit-en-utilisant-seulement-la-3ce-et-7e-sonnera-comme-ceci-avis-du-demi-temps-melodique-du-premier-accord-au-second_p35",
+      "title": "N 05 Tetlie E S E P P N N On N G Ilre E 5 1l Pourrait Etre Bon D'improviser Sur La 3ce Ou 7e De Chaque Accord En Vue D'obtenir Le Son Et La Sensation De L'harmonie De Votre Esprit. En Utilisant Seulement La 3ce Et 7e Sonnera Comme Ceci Avis Du Demi-temps Melodique Du Premier Accord Au Second",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_035.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 35
+      },
+      "search_text": "n 05 tetlie e s e p p n n on n g ilre e 5 1l pourrait etre bon d'improviser sur la 3ce ou 7e de chaque accord en vue d'obtenir le son et la sensation de l'harmonie de votre esprit. en utilisant seulement la 3ce et 7e sonnera comme ceci avis du demi-temps melodique du premier accord au second"
+    },
+    {
+      "id": "improvisation-par-jamey-aebersold-variation-du-blues-mon-dernier-article-traitait-du-blues-12-mesures-ou-je-voulais-faire-un-suivi-avec-les-variations-sur-les-progressions-de-blues-qui-ont-ete-utilisees-le-plus-couramment-dans-l-idiome-jazz-le-terme-de-morceau-a-trois-accords-fait-generalement-reference-a-la-plus-simple-des-progressions-de-blues-si-vous-etes-dans-en-cle-de-f-les-trois-accords-qui-forment-la-base-du-blues-dans-cette-cle-sont-f7-bb7-et-c7-f7-est-appele-un-chiffre-romain-accord-i-un-le-bb7-est-appele-le-iv-quatre-car-il-est-construit_p36",
+      "title": "Improvisation Par Jamey Aebersold Variation Du Blues Mon Dernier Article Traitait Du Blues 12 Mesures, Ou Je Voulais Faire Un Suivi Avec Les Variations Sur Les Progressions De Blues Qui Ont Ete Utilisees Le Plus Couramment Dans L'idiome Jazz. Le Terme De Morceau A Trois Accords Fait Generalement Reference A La Plus Simple Des Progressions De Blues. Si Vous Etes Dans En Cle De F, Les Trois Accords Qui Forment La Base Du Blues Dans Cette Cle Sont F7, Bb7 Et C7. F7 Est Appele Un Chiffre Romain Accord I Un.le Bb7 Est Appele Le Iv Quatre, Car Il Est Construit",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_036.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 36
+      },
+      "search_text": "improvisation par jamey aebersold variation du blues mon dernier article traitait du blues 12 mesures, ou je voulais faire un suivi avec les variations sur les progressions de blues qui ont ete utilisees le plus couramment dans l'idiome jazz. le terme de morceau a trois accords fait generalement reference a la plus simple des progressions de blues. si vous etes dans en cle de f, les trois accords qui forment la base du blues dans cette cle sont f7, bb7 et c7. f7 est appele un chiffre romain accord i un.le bb7 est appele le iv quatre, car il est construit"
+    },
+    {
+      "id": "l-improvisation-jouer-le-blues-le-blues-est-une-forme-musicale-que-les-musiciens-de-jazz-ont-toujours-embrassee-car-cela-leur-permet-d-exprimer-leur-emotion-et-leur-sentiment-du-quotidien-et-des-concepts-intellectuels-qui-sont-souvent-appris-aux-etudiants-autre-style-de-jeux-et-une-autre-conception-la-plupart-des-improvisateurs-ont-commence-a-utiliser-les-blues-comme-un-tremplin-pour-d-autres-formes-de-jazz-beaucoup-de-chefs-d-orchestre-et-d-enseignants-ne-sentent-pas-le-blues-pour-jouer-un-solo-decent-iis-estiment-que-d-apprendre-les-gammes-de-blues-dans-les-differentes-tonalites-est-juste-necessaire-pour-improviser-ce-que-tu-ressens-dans-une-gamme-de-blues-iis-pensent-probablement-que-c-est-ce-qu-ils-ont-entendu-quand-ils-ecoutent-des-musiciens-de-jazz-a-la-radio-ou-sur-disque-je-l-avoue-ils-entendent-certainement-mais-si-vous-consultez-les-influences-majeures-du-jazz-vous-commencerez-par-entendre-beaucoup-plus-que-juste-une-gamme-de-blues-dans-cet-article-je-voudrais-faire-remarquer-quelques-points-a-surveiller-dans-le-blues-qui-feront-que-votre-jeu-sera-plus-convaincant-et-plus-musical-nous-devrions-commencer-par-vous-demander-de-chanter-avec-votre-voix-plusieurs-chorus-de-blues-avec-un-enregistrement-un-morceau-de-blues-dans-la-serie-play-a-long-serait-excellent-parce-que-vous-n-avez-pas-a-ecouter-un-solo-vous-etes-le-soliste-je-suggere_p34",
+      "title": "L'improvisation Jouer Le Blues Le Blues Est Une Forme Musicale Que Les Musiciens De Jazz Ont Toujours Embrassee Car Cela Leur Permet D'exprimer Leur Emotion Et Leur Sentiment Du Quotidien Et Des Concepts Intellectuels, Qui Sont Souvent Appris Aux Etudiants, Autre Style De Jeux Et Une Autre Conception. La Plupart Des Improvisateurs Ont Commence A Utiliser Les Blues Comme Un Tremplin Pour D'autres Formes De Jazz. Beaucoup De Chefs D'orchestre Et D'enseignants Ne Sentent Pas Le Blues Pour Jouer Un Solo Decent. Iis Estiment Que D'apprendre Les Gammes De Blues Dans Les Differentes Tonalites Est Juste Necessaire Pour Improviser Ce Que Tu Ressens Dans Une Gamme De Blues. Iis Pensent Probablement Que C'est Ce Qu'ils Ont Entendu Quand Ils Ecoutent Des Musiciens De Jazz A La Radio Ou Sur Disque. Je L'avoue, Ils Entendent Certainement, Mais, Si Vous Consultez Les Influences Majeures Du Jazz, Vous Commencerez Par Entendre Beaucoup Plus Que Juste Une Gamme De Blues. Dans Cet Article Je Voudrais Faire Remarquer Quelques Points A Surveiller Dans Le Blues, Qui Feront Que Votre Jeu Sera Plus Convaincant Et Plus Musical. Nous Devrions Commencer Par Vous Demander De Chanter Avec Votre Voix Plusieurs Chorus De Blues Avec Un Enregistrement. Un Morceau De Blues Dans La Serie Play-a-long Serait Excellent, Parce Que Vous N'avez Pas A Ecouter Un Solo - Vous Etes Le Soliste. Je Suggere",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_034.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 34
+      },
+      "search_text": "l'improvisation jouer le blues le blues est une forme musicale que les musiciens de jazz ont toujours embrassee car cela leur permet d'exprimer leur emotion et leur sentiment du quotidien et des concepts intellectuels, qui sont souvent appris aux etudiants, autre style de jeux et une autre conception. la plupart des improvisateurs ont commence a utiliser les blues comme un tremplin pour d'autres formes de jazz. beaucoup de chefs d'orchestre et d'enseignants ne sentent pas le blues pour jouer un solo decent. iis estiment que d'apprendre les gammes de blues dans les differentes tonalites est juste necessaire pour improviser ce que tu ressens dans une gamme de blues. iis pensent probablement que c'est ce qu'ils ont entendu quand ils ecoutent des musiciens de jazz a la radio ou sur disque. je l'avoue, ils entendent certainement, mais, si vous consultez les influences majeures du jazz, vous commencerez par entendre beaucoup plus que juste une gamme de blues. dans cet article je voudrais faire remarquer quelques points a surveiller dans le blues, qui feront que votre jeu sera plus convaincant et plus musical. nous devrions commencer par vous demander de chanter avec votre voix plusieurs chorus de blues avec un enregistrement. un morceau de blues dans la serie play-a-long serait excellent, parce que vous n'avez pas a ecouter un solo - vous etes le soliste. je suggere"
+    },
+    {
+      "id": "transpositions_p40",
+      "title": "Transpositions",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_040.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 40
+      },
+      "search_text": "transpositions"
+    },
+    {
+      "id": "une-courte-liste-des-interpretes-du-be-bop-charlie-parker-alto-sax-dexter-gordon-tenor-sax-dizzy-gillespie-trumpet-mitt-jackson-vibes-bud-powell-piano-wynton-kelly-piano-charlie-mingus-bass-horace-silver-piano-max-roach-drums-art-blakey-drums_p39",
+      "title": "Une Courte Liste Des Interpretes Du Be-bop Charlie Parker, Alto Sax Dexter Gordon, Tenor Sax Dizzy Gillespie, Trumpet Mitt Jackson, Vibes Bud Powell, Piano Wynton Kelly, Piano Charlie Mingus, Bass Horace Silver, Piano Max Roach, Drums Art Blakey, Drums",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_039.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 39
+      },
+      "search_text": "une courte liste des interpretes du be-bop charlie parker, alto sax dexter gordon, tenor sax dizzy gillespie, trumpet mitt jackson, vibes bud powell, piano wynton kelly, piano charlie mingus, bass horace silver, piano max roach, drums art blakey, drums"
+    },
+    {
+      "id": "concepts-repris-de-jim-pierce-s-dans-big-golden-trumpet-encyclopedia-publier-par-charles-hansen-music-books-le-principal-handicap-l-oreille-le-meilleur-jour-aujourd-hui-la-meilleure-chose-a-faire-trouve-redire-le-plus-inutiles-la-fierte-la-plus-grande-erreur-renonce_p37",
+      "title": "Concepts Repris De Jim Pierce's Dans Big Golden Trumpet Encyclopedia Publier Par Charles Hansen Music Books Le Principal Handicap --- L'oreille Le Meilleur Jour --- Aujourd'hui _ La Meilleure Chose A Faire ---trouve Redire Le Plus Inutiles --- La Fierte La Plus Grande Erreur --- Renonce",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_037.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 37
+      },
+      "search_text": "concepts repris de jim pierce's dans big golden trumpet encyclopedia publier par charles hansen music books le principal handicap --- l'oreille le meilleur jour --- aujourd'hui _ la meilleure chose a faire ---trouve redire le plus inutiles --- la fierte la plus grande erreur --- renonce"
+    },
+    {
+      "id": "les-caracteristiques-du-be-bop-compiler-par-davis-baker-1-des-idees-harmoniques-complexes-2-des-phrases-melodiques-plus-longues-utilisant-des-intervalles-construits-sur-l-extension-de-laccord-oths-11ths-13ths-etc-3-l-harmonie-avec-pied-d-egalite-avec-le-rythme-et-la-melodie-influence-occidentale-4-1ine-hanne-technique-instriumentale-etait-ahliaatoire_p38",
+      "title": "Les Caracteristiques Du Be-bop Compiler Par Davis Baker 1. Des Idees Harmoniques Complexes 2. Des Phrases Melodiques Plus Longues Utilisant Des Intervalles Construits Sur L'extension De Laccord Oths, 11ths, 13ths, Etc. 3. L'harmonie Avec Pied D'egalite Avec Le Rythme Et La Melodie Influence Occidentale. 4 1ine Hanne Technique Instriumentale Etait Ahliaatoire",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_038.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 38
+      },
+      "search_text": "les caracteristiques du be-bop compiler par davis baker 1. des idees harmoniques complexes 2. des phrases melodiques plus longues utilisant des intervalles construits sur l'extension de laccord oths, 11ths, 13ths, etc. 3. l'harmonie avec pied d'egalite avec le rythme et la melodie influence occidentale. 4 1ine hanne technique instriumentale etait ahliaatoire"
+    },
+    {
+      "id": "cessions-theorique-2-crire-les-notes-qui-compose-les-accords-suivants-ecrivez-egalement-le-nom-de-la-gamme-1-a74_p43",
+      "title": "Cessions Theorique-2 Crire Les Notes Qui Compose Les Accords Suivants Ecrivez Egalement, Le Nom De La Gamme 1. A74",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_043.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 43
+      },
+      "search_text": "cessions theorique-2 crire les notes qui compose les accords suivants ecrivez egalement, le nom de la gamme 1. a74"
+    },
+    {
+      "id": "cessions-theorique-3-1-la-3ce-de-la-gamme-majeur-eb-est-2-la-4te-de-la-gamme-a-est-3-la-6te-de-la-gamme-bb7-est-4-la-5te-de-la-gamme-ab-7-est_p44",
+      "title": "Cessions Theorique-3 1. La 3ce De La Gamme Majeur Eb Est ... 2. La 4te De La Gamme A- Est 3. La 6te De La Gamme Bb7 Est 4. La 5te De La Gamme Ab-7 Est",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_044.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 44
+      },
+      "search_text": "cessions theorique-3 1. la 3ce de la gamme majeur eb est ... 2. la 4te de la gamme a- est 3. la 6te de la gamme bb7 est 4. la 5te de la gamme ab-7 est"
+    },
+    {
+      "id": "consultez-scale-syllabus-ou-cessions-theorique-1-pages-de-nomenclature-des-gammes-pour-plus-d-infos-sur-la-construction-les-quelques-pages-suivantes-sont-utilisees-pour-l-etude-et-la-pratique-dans-les-ateliers-d-etes-du-jazz-laissez-moi-vous-encourager-a-les-remplir-vous-meme-si-vous-n-avez-pas-un-enseignant-ou-un-musicien-qui-peuvent-vous-aider-a-corriger-vos-exercices-quand-vous-avez-termine-n-hesitez-pas-a-nous-les-envoyer-nous-les-corrigerons-et-vous-les-renverrons-par-la-postel-jamey-aebersold-d-demi-ton-tton-entier-33demi-tons-tierce-mineure-maieure-ttdtttd-ton-entier-enotes-ctttttt_p42",
+      "title": "Consultez Scale Syllabus Ou Cessions Theorique - 1 Pages De Nomenclature Des Gammes Pour Plus D'infos Sur La Construction Les Quelques Pages Suivantes Sont Utilisees Pour L'etude Et La Pratique Dans Les Ateliers D'etes Du Jazz. Laissez-moi Vous Encourager A Les Remplir Vous Meme. Si Vous N'avez Pas Un Enseignant Ou Un Musicien Qui Peuvent Vous Aider A Corriger Vos Exercices Quand Vous Avez Termine, N'hesitez Pas A Nous Les Envoyer, Nous Les Corrigerons Et Vous Les Renverrons Par La Postel Jamey Aebersold D Demi-ton Tton Entier -33demi-tons Tierce Mineure Maieure -ttdtttd Ton Entier Enotes -ctttttt",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_042.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 42
+      },
+      "search_text": "consultez scale syllabus ou cessions theorique - 1 pages de nomenclature des gammes pour plus d'infos sur la construction les quelques pages suivantes sont utilisees pour l'etude et la pratique dans les ateliers d'etes du jazz. laissez-moi vous encourager a les remplir vous meme. si vous n'avez pas un enseignant ou un musicien qui peuvent vous aider a corriger vos exercices quand vous avez termine, n'hesitez pas a nous les envoyer, nous les corrigerons et vous les renverrons par la postel jamey aebersold d demi-ton tton entier -33demi-tons tierce mineure maieure -ttdtttd ton entier enotes -ctttttt"
+    },
+    {
+      "id": "john-welch-j-avais-dix-huit-ans-et-etais-tres-naif-j-avais-etudie-l-arrangement-avec-bill-russo-je-devais-aller-dans-le-dakota-du-sud-a-l-universite-pour-y-etudier-la-musique-et-je-me-trouvais-dans-une-situation-vraiment-malheureuse-j-ai-ecrit-a-bill-russo-et-il-m-avait-recommande-lennie-tristano-a-new-york-pour-prendre-des-leons-alors-j-ai-pris-le-bus-pour-new-york-c-etait-mon-premier-week-end-a-new-york-je-suis-descendu-au-village-avec-mon-trombone-dans-un-club-qui-faisait-porte-ouverte-il-y-avait-un-grand-panneau-sur-la-fenetre-qui-disant-jam-session-dimanche-apres-midi-le-dimanche-apres-midi-je-suis-alle-avec-mon-instrument-et-un-groupe-jouait-un-blues-en-f-donc-j-ai-pense-eh-super-j-aime-jouer-le-blues-en-f-j-ai-mis-mon-etui-sur-la-table-je-pris-mon-trombone-et-en-passant-par-la-droite-je-me-suis-assit-avec-eux-mon-jeu-a-ce-moment-dans-ma-vie-etait-influence-par-george-brunies-un-tromboniste-dixieland-alors-j-ai-commence-a-jouer-du-trombone-avec-ce-groupe-apres-quelques-mesures-ils-ont-arrete-brutalement-le-blues-f-et-le-pianiste-a-declare-cherokee-en-e-et-sont-parties-e-e-a-e-e-a-a-a-n-e-a-e-e-s-o-l-a-rs_p41",
+      "title": "John Welch J'avais Dix-huit Ans Et Etais Tres Naif. J'avais Etudie L'arrangement Avec Bill Russo. Je Devais Aller Dans Le Dakota Du Sud A L'universite Pour Y Etudier La Musique Et Je Me Trouvais Dans Une Situation Vraiment Malheureuse. J'ai Ecrit A Bill Russo Et Il M'avait Recommande Lennie Tristano, A New York Pour Prendre Des Leons. Alors, J'ai Pris Le Bus Pour New York. C'etait Mon Premier Week-end A New York. Je Suis Descendu Au Village Avec Mon Trombone Dans Un Club Qui Faisait Porte Ouverte. Il Y Avait Un Grand Panneau Sur La Fenetre Qui Disant Jam Session - Dimanche Apres-midi. Le Dimanche Apres-midi Je Suis Alle Avec Mon Instrument Et Un Groupe Jouait Un Blues En F. Donc J'ai Pense, Eh Super, J'aime Jouer Le Blues En F. J'ai Mis Mon Etui Sur La Table, Je Pris Mon Trombone Et En Passant Par La Droite Je Me Suis Assit Avec Eux. Mon Jeu, A Ce Moment Dans Ma Vie, Etait Influence Par George Brunies, Un Tromboniste Dixieland, Alors J'ai Commence A Jouer Du Trombone Avec Ce Groupe. Apres Quelques Mesures, Ils Ont Arrete Brutalement Le Blues F Et Le Pianiste A Declare, Cherokee En E Et Sont Parties E E A E E A A A N E A E E S O L A Rs",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_041.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 41
+      },
+      "search_text": "john welch j'avais dix-huit ans et etais tres naif. j'avais etudie l'arrangement avec bill russo. je devais aller dans le dakota du sud a l'universite pour y etudier la musique et je me trouvais dans une situation vraiment malheureuse. j'ai ecrit a bill russo et il m'avait recommande lennie tristano, a new york pour prendre des leons. alors, j'ai pris le bus pour new york. c'etait mon premier week-end a new york. je suis descendu au village avec mon trombone dans un club qui faisait porte ouverte. il y avait un grand panneau sur la fenetre qui disant jam session - dimanche apres-midi. le dimanche apres-midi je suis alle avec mon instrument et un groupe jouait un blues en f. donc j'ai pense, eh super, j'aime jouer le blues en f. j'ai mis mon etui sur la table, je pris mon trombone et en passant par la droite je me suis assit avec eux. mon jeu, a ce moment dans ma vie, etait influence par george brunies, un tromboniste dixieland, alors j'ai commence a jouer du trombone avec ce groupe. apres quelques mesures, ils ont arrete brutalement le blues f et le pianiste a declare, cherokee en e et sont parties e e a e e a a a n e a e e s o l a rs"
+    },
+    {
+      "id": "cessions-theorique-5-essayer-de-repondre-le-rapidement-possible-1-le9dub79b7est-2-la-gamme-diminuee-a-combien-de-tonalites-differentes-3-combien-il-y-a-de-notes-dans-une-gamme-tonique_p46",
+      "title": "Cessions Theorique-5 Essayer De Repondre Le Rapidement Possible 1. Le9dub79b7est 2. La Gamme Diminuee A Combien De Tonalites Differentes __ 3. Combien Il Y A De Notes Dans Une Gamme Tonique __",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_046.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 46
+      },
+      "search_text": "cessions theorique-5 essayer de repondre le rapidement possible 1. le9dub79b7est 2. la gamme diminuee a combien de tonalites differentes __ 3. combien il y a de notes dans une gamme tonique __"
+    },
+    {
+      "id": "iiv71-progression-avec-l-accent-sur-la-7e-resolus-a-la-3e-1j-g7-c-d-7-g7-1-t-5-t-st8-2-d-g7-c-lp-7-g7-p_p47",
+      "title": "Iiv71 -progression Avec L'accent Sur La 7e Resolus A La 3e 1j - G7 C D-7 G7 1 - T 5 T St8 2 D- G7 C Lp-7 G7 P",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_047.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 47
+      },
+      "search_text": "iiv71 -progression avec l'accent sur la 7e resolus a la 3e 1j - g7 c d-7 g7 1 - t 5 t st8 2 d- g7 c lp-7 g7 p"
+    },
+    {
+      "id": "cessions-theorique-4-ii-v7-i-ii-v7-i-sequences-dans-les-modes-majeures-ii-v7-i-sequences-dans-les-modes-mineures-j-ai-ecrit-lun-des-trois-symboles-d-accord-et-vous-devez-remplir-les-deux-autres-symboles-d-accord-l-exercice-se-lit-de-gauche-a-droite-en-mode-mineur-l-accord-ii-devient-demi-diminue-et-l-accord-v7-est-generalement-modifie-avec-b9-et-9_p45",
+      "title": "Cessions Theorique-4 - Ii V7 I Ii - V7 - I Sequences Dans Les Modes Majeures Ii - V7 - I Sequences Dans Les Modes Mineures J'ai Ecrit Lun Des Trois Symboles D'accord Et Vous Devez Remplir Les Deux Autres Symboles D'accord. L'exercice Se Lit De Gauche A Droite. En Mode Mineur, L'accord Ii Devient Demi Diminue, Et L'accord V7 Est Generalement Modifie Avec B9 Et 9.",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_045.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 45
+      },
+      "search_text": "cessions theorique-4 - ii v7 i ii - v7 - i sequences dans les modes majeures ii - v7 - i sequences dans les modes mineures j'ai ecrit lun des trois symboles d'accord et vous devez remplir les deux autres symboles d'accord. l'exercice se lit de gauche a droite. en mode mineur, l'accord ii devient demi diminue, et l'accord v7 est generalement modifie avec b9 et 9."
+    },
+    {
+      "id": "blues-o-bluesenf-2notes-bluesenf-2notes-blues-en-f-3-notes-blues-en-bb-2notes-blues-en-bb-2-notes-blues-en-bb-3-notes-blues-en-bb-4-notes-jouer-la-tonique-de-la-main-gauche-pour-vous-aider-a-obtenir-le-son-du-blues-vous-finirez-par-jouer-ces-notes-de-ln-main-nattrhe-nfin-imnraviser-de-in-main-draite-en-nratinuant-les-nammes-lee-rharniie-los-erhemne-or_p48",
+      "title": "Blues O Bluesenf-2notes Bluesenf -2notes Blues En F - 3 Notes Blues En Bb -2notes Blues En Bb -2 Notes Blues En Bb - 3 Notes Blues En Bb - 4 Notes Jouer La Tonique De La Main Gauche Pour Vous Aider A Obtenir Le Son Du Blues. Vous Finirez Par Jouer Ces Notes De Ln Main Nattrhe Nfin Imnraviser De In Main Draite En Nratinuant Les Nammes Lee Rharniie Los Erhemne Or",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_048.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 48
+      },
+      "search_text": "blues o bluesenf-2notes bluesenf -2notes blues en f - 3 notes blues en bb -2notes blues en bb -2 notes blues en bb - 3 notes blues en bb - 4 notes jouer la tonique de la main gauche pour vous aider a obtenir le son du blues. vous finirez par jouer ces notes de ln main nattrhe nfin imnraviser de in main draite en nratinuant les nammes lee rharniie los erhemne or"
+    },
+    {
+      "id": "piano-voicing-ila71-tonalites-majeures-v-s-m-e-x-5-l-bibenehennencenpencnennahrnnnmnl-ws-jor-jes-ica-i-cz-i-iwn-i-i-w7-iwo-is-i-h_p51",
+      "title": "Piano Voicing Ila71 - Tonalites Majeures V S M E X 5 L Bibenehennencenpencnennahrnnnmnl Ws Jor Jes Ica I Cz I Iwn I I W7 Iwo Is I H--,",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_051.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 51
+      },
+      "search_text": "piano voicing ila71 - tonalites majeures v s m e x 5 l bibenehennencenpencnennahrnnnmnl ws jor jes ica i cz i iwn i i w7 iwo is i h--,"
+    },
+    {
+      "id": "oii-v7-i-qii-v7-i-majeur-7e-dbom-ii-v7i-c-7f7-bbabi6-b-7e7-aa-a6-bb-7e7-aa-a6-a-7-d7-ga-g6-pestsssssssssssses-sss-ss-ss-og-3-13-q-e-ds-d-e-dn-d-d-a-7di7-gag6-g-7c7-fa-f6-f-7b7-ea-e6-f7b7-ea-e-p-e-rr-e-e-ce-r-cr-r-v-v-e-r-7-m_p50",
+      "title": "Oii-v7-i Qii-v7-i Majeur, 7e Dbom, Ii-v7i C-7f7 Bbabi6 B-7e7 - Aa A6 Bb-7e7 Aa A6 A-7 D7 Ga G6 Pestsssssssssssses Sss Ss Ss Og 3 13 Q E Ds D E Dn D D A-7di7 Gag6 G-7c7 Fa F6 F-7b7 Ea E6 F7b7 Ea E P E Rr E E Ce R Cr R V V E R 7 M",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_050.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 50
+      },
+      "search_text": "oii-v7-i qii-v7-i majeur, 7e dbom, ii-v7i c-7f7 bbabi6 b-7e7 - aa a6 bb-7e7 aa a6 a-7 d7 ga g6 pestsssssssssssses sss ss ss og 3 13 q e ds d e dn d d a-7di7 gag6 g-7c7 fa f6 f-7b7 ea e6 f7b7 ea e p e rr e e ce r cr r v v e r 7 m"
+    },
+    {
+      "id": "majeur-et-7e-de-dominante-majeur-cycle-complet-3e-et-7e-a-ca-fa-bba-eba-aba-dba-gba-baa-ea-aa-da-ga-ca-f-e-s-e-v-o-a-gts-imruiaariaai-6-grb-eemmece-n-se-en-d-a-ca-fa-bba-em-aa-dba-gh-ba-ea-aa-da-ga-ca_p49",
+      "title": "Majeur Et 7e De Dominante Majeur - Cycle Complet -3e Et 7e A Ca Fa Bba Eba Aba Dba Gba Baa Ea Aa Da Ga Ca F E S E V - O A Gts Imruiaariaai 6 Grb---eemmece N Se En D A Ca Fa Bba Em Aa Dba Gh Ba Ea Aa Da Ga Ca",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_049.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 49
+      },
+      "search_text": "majeur et 7e de dominante majeur - cycle complet -3e et 7e a ca fa bba eba aba dba gba baa ea aa da ga ca f e s e v - o a gts imruiaariaai 6 grb---eemmece n se en d a ca fa bba em aa dba gh ba ea aa da ga ca"
+    },
+    {
+      "id": "o-v79-i-toutes-les-tonalitees-mineures-b-vs-1-ec-eness-en-es-se-pe-e-e-p-i-i-n-pr-se-e-e-t-hc-i-no-67-cr-i-s-co-b7-i-u7-i-we-ent-in-ail-h-f-17e-f-3-be-2-h-v5-2-e-a-p-c-e-e_p52",
+      "title": "O V79 I Toutes Les Tonalitees Mineures B Vs 1 Ec Eness En Es Se Pe E E P I I N Pr Se E E T Hc I No 67 Cr I S Co B7 I U7 I We Ent In Ail H -f 17e F 3 Be - 2 H V5 2 E A P C E E",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_052.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 52
+      },
+      "search_text": "o v79 i toutes les tonalitees mineures b vs 1 ec eness en es se pe e e p i i n pr se e e t hc i no 67 cr i s co b7 i u7 i we ent in ail h -f 17e f 3 be - 2 h v5 2 e a p c e e"
+    },
+    {
+      "id": "points-a-retenir-de-jamey-aebersolds-tire-du-seminaire-n-importe-qui-peut-improviser-les-deux-facteurs-qui-empechent-les-gens-d-improviser-sont-la-peur-de-se-perdre-et-la-peur-de-jouer-une-fausse-note-enregistrez-votre-propre-jeu-et-ecoutez-vous-ne-soyez-pas-critique-simplement-ecoutez-l-humour-est-une-partie-importante-de-la-creativite-la-tvtue-l-imagination-l-ignorance-tue-comme-le-tabac_p53",
+      "title": "Points A Retenir De Jamey Aebersolds Tire Du Seminaire N'importe Qui Peut Improviser Les Deux Facteurs Qui Empechent Les Gens D'improviser Sont La Peur De Se Perdre Et La Peur De Jouer Une Fausse Note. - Enregistrez Votre Propre Jeu Et Ecoutez-vous. Ne Soyez Pas Critique. Simplement, Ecoutez. L'humour Est Une Partie Importante De La Creativite. La Tvtue L'imagination. L'ignorance Tue, Comme Le Tabac.",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_053.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 53
+      },
+      "search_text": "points a retenir de jamey aebersolds tire du seminaire n'importe qui peut improviser les deux facteurs qui empechent les gens d'improviser sont la peur de se perdre et la peur de jouer une fausse note. - enregistrez votre propre jeu et ecoutez-vous. ne soyez pas critique. simplement, ecoutez. l'humour est une partie importante de la creativite. la tvtue l'imagination. l'ignorance tue, comme le tabac."
+    },
+    {
+      "id": "lorsque-vous-faites-un-solo-utilisez-la-repetition-et-la-sequence-ne-pas-radoter-cela-permet-a-l-auditeur-d-anticiper-ce-que-vous-faites-ceci-est-connu-comme-l-improvisation-thematique-les-solos-de-sonny-rollins-sont-de-bons-exemples-pour-cela-l-intervalle-entre-b-bemol-et-e-contient-trois-tons-sib-c-d-e-d-ou-le-nom-de-triton-les-adultes-ne-prennent-pas-le-temps-necessaire-pour-apprendre-a-jouer-du-jazz-ou-meme-simplement-de-l-ecouter-si-vous-souhaitez-conserver-l-harmonie-du-morceau-jouez-la-tonique-de-laccord-sur-des-temps-un-et-trois-latierce-la-quinte-et-la-septieme-donnent-un-aperu-de-l-harmonie-une-caracteristique-des-solos-en-be-bop-est-qu-ils-utilisent-explicitement-une-harmonie-avez-vous-memorises-une-douzaine-de-morceaux-savoir-la-melodie-et-la-forme-etre-en-mesure-d-ecrire-les-progressions-d-accords-jamey-a-memorises-1000-morceaux-apprenez-quelques-airs-et-les-ecouter-toute-la-journee-pour-les-garder-dans-votre-tete-mettez-votre-repertoire-sur-un-ordinateur-portable-afin-que-vous-puissiez-l-examiner-fn-auiise-d-evercire-mie-vs-calnc-reccemblent-ce-qe-vaue-aentendez-dans-vatre-tete-caiter-un-n-plav-a-lana-et_p55",
+      "title": "Lorsque Vous Faites Un Solo, Utilisez La Repetition Et La Sequence, Ne Pas Radoter. Cela Permet A L'auditeur D'anticiper Ce Que Vous Faites. Ceci Est Connu Comme L'improvisation Thematique. Les Solos De Sonny Rollins Sont De Bons Exemples Pour Cela. L'intervalle Entre B Bemol Et E Contient Trois Tons Sib, C, D, E D'ou Le Nom De Triton. Les Adultes, Ne Prennent Pas Le Temps Necessaire Pour Apprendre A Jouer Du Jazz Ou Meme Simplement De L'ecouter Si Vous Souhaitez Conserver L'harmonie Du Morceau, Jouez La Tonique De Laccord Sur Des Temps Un Et Trois. Latierce, La Quinte Et La Septieme Donnent Un Aperu De L'harmonie. Une Caracteristique Des Solos En Be-bop Est Qu'ils Utilisent Explicitement Une Harmonie. Avez-vous Memorises Une Douzaine De Morceaux Savoir La Melodie Et La Forme, Etre En Mesure D'ecrire Les Progressions D'accords Jamey A Memorises 1000 Morceaux Apprenez Quelques Airs, Et Les Ecouter Toute La Journee Pour Les Garder Dans Votre Tete. Mettez Votre Repertoire Sur Un Ordinateur Portable Afin Que Vous Puissiez L'examiner. Fn Auiise D'evercire Mie Vs Calnc Reccemblent Ce Qe Vaue Aentendez Dans Vatre Tete Caiter Un N Plav-a-lana Et",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_055.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 55
+      },
+      "search_text": "lorsque vous faites un solo, utilisez la repetition et la sequence, ne pas radoter. cela permet a l'auditeur d'anticiper ce que vous faites. ceci est connu comme l'improvisation thematique. les solos de sonny rollins sont de bons exemples pour cela. l'intervalle entre b bemol et e contient trois tons sib, c, d, e d'ou le nom de triton. les adultes, ne prennent pas le temps necessaire pour apprendre a jouer du jazz ou meme simplement de l'ecouter si vous souhaitez conserver l'harmonie du morceau, jouez la tonique de laccord sur des temps un et trois. latierce, la quinte et la septieme donnent un aperu de l'harmonie. une caracteristique des solos en be-bop est qu'ils utilisent explicitement une harmonie. avez-vous memorises une douzaine de morceaux savoir la melodie et la forme, etre en mesure d'ecrire les progressions d'accords jamey a memorises 1000 morceaux apprenez quelques airs, et les ecouter toute la journee pour les garder dans votre tete. mettez votre repertoire sur un ordinateur portable afin que vous puissiez l'examiner. fn auiise d'evercire mie vs calnc reccemblent ce qe vaue aentendez dans vatre tete caiter un n plav-a-lana et"
+    },
+    {
+      "id": "un-clavier-est-tres-important-pour-l-apprentissage-d-harmonie-et-une-audition-des-accords-de-qualite-sur-un-clavier-tout-est-presente-simplement-pour-vous-vous-pouvez-obtenir-un-clavier-electrique-pour-moins-de-100-iis-sont-tres-visuels-jouez-au-clair-de-la-lune-joyeux-anniversaire-ou-freres-jacques-dans-les-douze-tonalites-vous-permet-d-obtenir-une-communion-entre-votre-esprit-et-votre-instrument-si-vous-commencez-ou-terminez-une-phrase-sur-un-ton-de-laccord-tonal-3e-ou-5e-vous-ne-pouvez-pas-vous-trompez-pratiquez-les-gammes-pendant-deux-minutes-intensivement-rapides-sur-8-notes-jusqu-a-ce-qu-elles-deviennent-automatiques-les-yeux-fermes-c-est-mieux-j-ai-l-idee-que-les-gens-apprennent-l-instrument-comme-un-exercice-de-patience-au-lieu-d-apprendre-a-le-connaitre-deplacement-d-un-demi-ton-est-facile-a-faire-avec-votre-voix-mais-plus-difficile-sur-votre-instrument-moi-jamey-en-sait-beaucoup-et-je-peux-faire-beaucoup-mais-je-ne-peux-pas-le-faire-a-votre-place-si-vous-reflechissez-a-ce-que-vous-faites-vous-vous-en-souviendrez-paur-annrendre-uine-meladie-memaricez-lec-chhannemeante-meeure-nar-mesure-tnuer-lec-nammes-de-chanuie-accard-ruiis_p54",
+      "title": "Un Clavier Est Tres Important Pour L'apprentissage D'harmonie Et Une Audition Des Accords De Qualite. Sur Un Clavier Tout Est Presente Simplement Pour Vous. Vous Pouvez Obtenir Un Clavier Electrique Pour Moins De 100 . Iis Sont Tres Visuels. - Jouez Au Clair De La Lune, Joyeux Anniversaire Ou Freres Jacques Dans Les Douze Tonalites Vous Permet D'obtenir Une Communion Entre Votre Esprit Et Votre Instrument. Si Vous Commencez Ou Terminez Une Phrase Sur Un Ton De Laccord Tonal, 3e Ou 5e Vous Ne Pouvez Pas Vous Trompez. Pratiquez Les Gammes Pendant Deux Minutes Intensivement, Rapides Sur 8 Notes, Jusqu'a Ce Qu'elles Deviennent Automatiques. Les Yeux Fermes C'est Mieux. J'ai L'idee Que Les Gens Apprennent L'instrument Comme Un Exercice De Patience, Au Lieu D'apprendre A Le Connaitre. Deplacement D'un Demi-ton Est Facile A Faire Avec Votre Voix, Mais Plus Difficile Sur Votre Instrument. Moi, Jamey, En Sait Beaucoup, Et Je Peux Faire Beaucoup, Mais Je Ne Peux Pas Le Faire A Votre Place Si Vous Reflechissez A Ce Que Vous Faites, Vous Vous En Souviendrez. Paur Annrendre Uine Meladie Memaricez Lec Chhannemeante Meeure Nar Mesure Tnuer Lec Nammes De Chanuie Accard. Ruiis",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/Methodes/aebersold-FRENCH_converted/assets/page_054.png",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 54
+      },
+      "search_text": "un clavier est tres important pour l'apprentissage d'harmonie et une audition des accords de qualite. sur un clavier tout est presente simplement pour vous. vous pouvez obtenir un clavier electrique pour moins de 100 . iis sont tres visuels. - jouez au clair de la lune, joyeux anniversaire ou freres jacques dans les douze tonalites vous permet d'obtenir une communion entre votre esprit et votre instrument. si vous commencez ou terminez une phrase sur un ton de laccord tonal, 3e ou 5e vous ne pouvez pas vous trompez. pratiquez les gammes pendant deux minutes intensivement, rapides sur 8 notes, jusqu'a ce qu'elles deviennent automatiques. les yeux fermes c'est mieux. j'ai l'idee que les gens apprennent l'instrument comme un exercice de patience, au lieu d'apprendre a le connaitre. deplacement d'un demi-ton est facile a faire avec votre voix, mais plus difficile sur votre instrument. moi, jamey, en sait beaucoup, et je peux faire beaucoup, mais je ne peux pas le faire a votre place si vous reflechissez a ce que vous faites, vous vous en souviendrez. paur annrendre uine meladie memaricez lec chhannemeante meeure nar mesure tnuer lec nammes de chanuie accard. ruiis"
     },
     {
       "id": "Theorie/Arpeges/assets/page_056.png",
@@ -18559,50 +18175,6 @@
       "search_text": "page_031 vous devez arriver au point ot! vous pouvez instantanément trouvez i’accent (appuyé, moyen, léger, staccato,\nlegato, etc.) de toute note ou groupe de notes a tout moment que vous choisissez, sans perturber le flux et la\nsensation de vos lignes mélodiques.\n\ntrés important: ne pas se contenter de la pratique de la gamme g majeur ou la gamme chromatique utilisez ces\nexercices d'articulation pour toutes les gammes et les accords et dans tous les tonalités rappelez-vous, vous\nimprovisez dans tous les hammer-on jazz modal"
     },
     {
-      "id": "page_415.png",
-      "title": "Page 415",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_415.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 415
-      },
-      "search_text": "page 415"
-    },
-    {
-      "id": "page_416.png",
-      "title": "Page 416",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_416.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 416
-      },
-      "search_text": "page 416"
-    },
-    {
-      "id": "page_417.png",
-      "title": "Page 417",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_417.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 417
-      },
-      "search_text": "page 417"
-    },
-    {
-      "id": "page_418.png",
-      "title": "Page 418",
-      "type": "image",
-      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_418.png",
-      "source": "songs_index.json",
-      "metadata": {
-        "page": 418
-      },
-      "search_text": "page 418"
-    },
-    {
       "id": "metadata",
       "title": "Sans titre",
       "type": "other",
@@ -18657,6 +18229,165 @@
       "search_text": "sans titre"
     },
     {
+      "id": "page_0001.jpg",
+      "title": "Page 1",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0001.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 1
+      },
+      "search_text": "page 1"
+    },
+    {
+      "id": "page_0002.jpg",
+      "title": "Page 2",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0002.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 2
+      },
+      "search_text": "page 2"
+    },
+    {
+      "id": "page_0003.jpg",
+      "title": "edited volumes which abound on the market today The Real Book is",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0003.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 3,
+        "ocr_text": "edited volumes which abound on the market today. The Real Book is\n",
+        "ocr_confidence": 0.9171696472167968
+      },
+      "search_text": "edited volumes which abound on the market today the real book is edited volumes which abound on the market today. the real book is\n"
+    },
+    {
+      "id": "page_0004.jpg",
+      "title": "A B Cont",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0004.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "key": "A",
+        "page": 4,
+        "ocr_text": "A . B Cont.\n",
+        "ocr_confidence": 0.8831634521484375
+      },
+      "search_text": "a b cont a . b cont.\n"
+    },
+    {
+      "id": "page_0005.jpg",
+      "title": "Como en vietnam",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0005.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 5
+      },
+      "search_text": "como en vietnam"
+    },
+    {
+      "id": "page_0006.jpg",
+      "title": "G Cont I Cont",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0006.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "key": "G",
+        "page": 6,
+        "ocr_text": "G Cont. I Cont.\n",
+        "ocr_confidence": 0.8745600891113281
+      },
+      "search_text": "g cont i cont g cont. i cont.\n"
+    },
+    {
+      "id": "page_0007.jpg",
+      "title": "Lonnie's lament",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0007.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 7
+      },
+      "search_text": "lonnie's lament"
+    },
+    {
+      "id": "page_0008.jpg",
+      "title": "R S CONT",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0008.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 8,
+        "ocr_text": "R S CONT.\n",
+        "ocr_confidence": 0.8860623931884766
+      },
+      "search_text": "r s cont r s cont.\n"
+    },
+    {
+      "id": "page_0009.jpg",
+      "title": "WAIT TILL YOU SEE HER 445 WINDOWSeoeveonsovssossansansacas 466",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0009.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 9,
+        "ocr_text": "WAIT TILL YOU SEE HER........ 445 WINDOWS.eoeveonsovssossansansacas 466\n",
+        "ocr_confidence": 0.7519094848632812
+      },
+      "search_text": "wait till you see her 445 windowseoeveonsovssossansansacas 466 wait till you see her........ 445 windows.eoeveonsovssossansansacas 466\n"
+    },
+    {
+      "id": "page_0010.jpg",
+      "title": "Page 10",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0010.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 10
+      },
+      "search_text": "page 10"
+    },
+    {
+      "id": "page_0011.jpg",
+      "title": "A call for all demons",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0011.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "key": "A",
+        "composer": "Sun Ra",
+        "page": 11
+      },
+      "search_text": "a call for all demons sun ra"
+    },
+    {
+      "id": "page_0012.jpg",
+      "title": "Page 12",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0012.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 12
+      },
+      "search_text": "page 12"
+    },
+    {
+      "id": "page_0013.jpg",
+      "title": "A fine romance",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0013.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "key": "A",
+        "composer": "Kern/fields",
+        "page": 13
+      },
+      "search_text": "a fine romance kern/fields"
+    },
+    {
       "id": "page_0014.png",
       "title": "A family joy",
       "type": "image",
@@ -18668,6 +18399,33 @@
         "page": 14
       },
       "search_text": "a family joy michael gibbs"
+    },
+    {
+      "id": "page_0015.jpg",
+      "title": "A family joy page 2",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0015.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "key": "A",
+        "composer": "Michael Gibbs",
+        "page": 15
+      },
+      "search_text": "a family joy page 2 michael gibbs"
+    },
+    {
+      "id": "page_0016.jpg",
+      "title": "E'EE",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0016.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "key": "E",
+        "page": 16,
+        "ocr_text": "E‘='E==E=\n",
+        "ocr_confidence": 0.7150336456298828
+      },
+      "search_text": "e'ee e‘='e==e=\n"
     },
     {
       "id": "page_0017.png",
@@ -18695,6 +18453,42 @@
       "search_text": "african flower duke ellington"
     },
     {
+      "id": "page_0019.jpg",
+      "title": "Lane ea 8 HE A Sanwiec, 7 Fu Gn? AMT Qu Tu LE a oo ee | |",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0019.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "key": "A",
+        "page": 19,
+        "ocr_text": "Lane ea 8 HE A Sanwiec, 7\n\nFu Gn? AMT Qu Tu\n\nLE a oo ee | |"
+      },
+      "search_text": "lane ea 8 he a sanwiec, 7 fu gn? amt qu tu le a oo ee | | lane ea 8 he a sanwiec, 7\n\nfu gn? amt qu tu\n\nle a oo ee | |"
+    },
+    {
+      "id": "page_0020.jpg",
+      "title": "Page 20",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0020.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 20
+      },
+      "search_text": "page 20"
+    },
+    {
+      "id": "page_0021.jpg",
+      "title": "IE Sony RoLLTNS RS 7 si ow PIE a tar aa —",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0021.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 21,
+        "ocr_text": "IE\nSony RoLLTNS\n\nRS 7\nsi ow PIE a tar aa —"
+      },
+      "search_text": "ie sony rolltns rs 7 si ow pie a tar aa — ie\nsony rolltns\n\nrs 7\nsi ow pie a tar aa —"
+    },
+    {
       "id": "page_0022.png",
       "title": "Alice in wonderland",
       "type": "image",
@@ -18707,6 +18501,21 @@
       "search_text": "alice in wonderland fain/hilliard"
     },
     {
+      "id": "page_0023.jpg",
+      "title": "All blues",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0023.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "techniques": [
+          "Blues"
+        ],
+        "composer": "Miles Davis",
+        "page": 23
+      },
+      "search_text": "all blues miles davis blues"
+    },
+    {
       "id": "page_0024.png",
       "title": "All in love is Fair",
       "type": "image",
@@ -18717,6 +18526,53 @@
         "page": 24
       },
       "search_text": "all in love is fair stevie wonder"
+    },
+    {
+      "id": "page_0025.jpg",
+      "title": "Page 25",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0025.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 25
+      },
+      "search_text": "page 25"
+    },
+    {
+      "id": "page_0026.jpg",
+      "title": "all of me",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0026.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "composer": "simone&Marks",
+        "page": 26
+      },
+      "search_text": "all of me simone&marks"
+    },
+    {
+      "id": "page_0027.jpg",
+      "title": "all of you",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0027.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "composer": "Call porter",
+        "page": 27
+      },
+      "search_text": "all of you call porter"
+    },
+    {
+      "id": "page_0028.jpg",
+      "title": "all the things you are",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0028.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "composer": "hammerstein&kern",
+        "page": 28
+      },
+      "search_text": "all the things you are hammerstein&kern"
     },
     {
       "id": "page_0029.png",
@@ -25358,6 +25214,92 @@
         "page": 109
       },
       "search_text": "conclusion"
+    },
+    {
+      "id": "page_0014.jpg",
+      "title": "Pattern 39 Pattern 40 Pattern 41",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0014.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "techniques": [
+          "Pattern"
+        ],
+        "page": 14,
+        "track": 39,
+        "ocr_text": "| saniSeleies\n",
+        "ocr_confidence": 1
+      },
+      "search_text": "pattern 39 pattern 40 pattern 41 | saniseleies\n pattern"
+    },
+    {
+      "id": "page_0017.jpg",
+      "title": "—\n\ne",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0017.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "key": "e",
+        "page": 17,
+        "ocr_text": "—\n\ne"
+      },
+      "search_text": "—\n\ne —\n\ne"
+    },
+    {
+      "id": "page_0018.jpg",
+      "title": "Page 18",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0018.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 18
+      },
+      "search_text": "page 18"
+    },
+    {
+      "id": "page_0022.jpg",
+      "title": "Pattern 67 Pattern 68 Pattern 69 Pattern 70",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0022.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "techniques": [
+          "Pattern"
+        ],
+        "page": 22,
+        "track": 67,
+        "ocr_text": ",';Efﬁ:Lg{EEE_—iﬂ\n",
+        "ocr_confidence": 1
+      },
+      "search_text": "pattern 67 pattern 68 pattern 69 pattern 70 ,';efﬁ:lg{eee_—iﬂ\n pattern"
+    },
+    {
+      "id": "page_0024.jpg",
+      "title": "Pattern 75 Pattern 76 Pattern 77",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0024.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "techniques": [
+          "Pattern"
+        ],
+        "page": 24,
+        "track": 75,
+        "ocr_text": "L*'_’:;—H\"i—’;h‘;,*?’——‘j\n",
+        "ocr_confidence": 1
+      },
+      "search_text": "pattern 75 pattern 76 pattern 77 l*'_’:;—h\"i—’;h‘;,*?’——‘j\n pattern"
+    },
+    {
+      "id": "page_0029.jpg",
+      "title": "Page 29",
+      "type": "image",
+      "url": "https://11drumboy11.github.io/Prof-de-basse/assets/pages/page_0029.jpg",
+      "source": "songs_index.json",
+      "metadata": {
+        "page": 29
+      },
+      "search_text": "page 29"
     }
   ],
   "statistics": {
@@ -25366,6 +25308,6 @@
       "other": 6
     },
     "sources_merged": 10,
-    "with_ocr": 814
+    "with_ocr": 805
   }
 }
