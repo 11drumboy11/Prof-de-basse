@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof de Basse - Recherche Universelle</title>
-    <meta name="description" content="Moteur de recherche intelligent pour toutes les ressources pédagogiques de basse">
+    <title>Prof de Basse - Moteur de Recherche Complet</title>
+    <meta name="description" content="Recherchez parmi 363+ MP3, 71 PDFs et des centaines de pages de méthodes">
     <style>
         * {
             margin: 0;
@@ -14,13 +14,13 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2C5F7A 0%, #8B7355 100%);
             padding: 20px;
             line-height: 1.6;
         }
         
         .container {
-            max-width: 1400px;
+            max-width: 1600px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
@@ -28,8 +28,9 @@
             overflow: hidden;
         }
         
+        /* HEADER */
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2C5F7A 0%, #8B7355 100%);
             color: white;
             padding: 60px 40px;
             text-align: center;
@@ -46,13 +47,37 @@
             opacity: 0.95;
         }
         
-        /* BARRE DE RECHERCHE STICKY */
+        .stats {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        /* SEARCH BAR STICKY */
         .search-bar {
             position: sticky;
             top: 0;
             background: white;
             padding: 20px 40px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #2C5F7A;
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
@@ -60,196 +85,190 @@
         .search-container {
             display: flex;
             gap: 15px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .search-input-wrapper {
-            flex: 1;
-            min-width: 300px;
-            position: relative;
+            margin-bottom: 15px;
         }
         
         #searchInput {
-            width: 100%;
-            padding: 15px 50px 15px 20px;
+            flex: 1;
+            padding: 15px 20px;
             font-size: 16px;
-            border: 2px solid #667eea;
+            border: 2px solid #2C5F7A;
             border-radius: 10px;
             outline: none;
             transition: all 0.3s;
         }
         
         #searchInput:focus {
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+            box-shadow: 0 0 0 3px rgba(44, 95, 122, 0.2);
         }
         
-        .search-icon {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 20px;
-            color: #667eea;
+        .search-button {
+            padding: 15px 30px;
+            background: #2C5F7A;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .search-button:hover {
+            background: #8B7355;
+            transform: translateY(-2px);
+        }
+        
+        /* FILTERS */
+        .filters-bar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        
+        .filter-chip {
+            padding: 8px 16px;
+            background: #f5f5f5;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .filter-chip:hover {
+            background: #e0e0e0;
+        }
+        
+        .filter-chip.active {
+            background: #2C5F7A;
+            color: white;
+            border-color: #2C5F7A;
         }
         
         .search-stats {
             font-size: 14px;
             color: #666;
-            padding: 5px 0;
         }
         
-        /* FILTRES */
-        .filters-bar {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
-        
-        .filter-chip {
-            padding: 8px 16px;
-            border: 2px solid #e0e0e0;
-            border-radius: 20px;
-            background: white;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 14px;
-            font-weight: 600;
-        }
-        
-        .filter-chip:hover {
-            border-color: #667eea;
-            background: #f0f0ff;
-        }
-        
-        .filter-chip.active {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-        }
-        
-        .advanced-search-link {
-            padding: 8px 16px;
-            background: #764ba2;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-        
-        .advanced-search-link:hover {
-            background: #5a3680;
-            transform: translateY(-2px);
-        }
-        
-        /* RÉSULTATS */
-        .results-container {
+        /* RESULTS GRID */
+        .results-section {
             padding: 40px;
         }
         
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        /* RESULT CARD */
         .result-card {
-            background: white;
+            background: #f8f9fa;
             border: 2px solid #e0e0e0;
             border-radius: 12px;
             padding: 20px;
-            margin-bottom: 20px;
             transition: all 0.3s;
             cursor: pointer;
         }
         
         .result-card:hover {
-            border-color: #667eea;
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
-            transform: translateY(-3px);
+            border-color: #D4A574;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
         
         .result-header {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 10px;
+            gap: 12px;
+            margin-bottom: 12px;
         }
         
         .result-icon {
             font-size: 32px;
+            flex-shrink: 0;
         }
         
         .result-title {
-            font-size: 20px;
-            font-weight: 600;
-            color: #333;
             flex: 1;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2C5F7A;
         }
         
         .result-type {
-            padding: 4px 12px;
-            background: #667eea;
+            padding: 4px 10px;
+            background: #D4A574;
             color: white;
             border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-        
-        .result-excerpt {
-            color: #666;
-            font-size: 14px;
-            margin: 10px 0;
-            line-height: 1.6;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
         }
         
         .result-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
+            gap: 6px;
+            margin-bottom: 12px;
         }
         
         .meta-tag {
-            background: #f0f0f0;
             padding: 4px 10px;
-            border-radius: 8px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
             font-size: 12px;
             color: #666;
+        }
+        
+        .result-excerpt {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 12px;
+            line-height: 1.5;
         }
         
         .result-actions {
             display: flex;
             gap: 10px;
-            margin-top: 15px;
         }
         
         .action-btn {
-            padding: 8px 16px;
-            border: 2px solid #667eea;
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #2C5F7A;
             background: white;
-            color: #667eea;
+            color: #2C5F7A;
             border-radius: 8px;
-            cursor: pointer;
+            font-size: 14px;
             font-weight: 600;
-            transition: all 0.3s;
+            cursor: pointer;
+            transition: all 0.2s;
         }
         
         .action-btn:hover {
-            background: #667eea;
+            background: #2C5F7A;
             color: white;
         }
         
         .action-btn.primary {
-            background: #667eea;
+            background: #2C5F7A;
             color: white;
         }
         
         .action-btn.primary:hover {
-            background: #5a6bd6;
+            background: #8B7355;
         }
         
         /* NO RESULTS */
         .no-results {
             text-align: center;
-            padding: 60px 20px;
-            color: #666;
+            padding: 80px 20px;
+            color: #999;
         }
         
         .no-results-icon {
@@ -257,156 +276,304 @@
             margin-bottom: 20px;
         }
         
-        /* LOADING */
-        .loading {
-            text-align: center;
-            padding: 60px 20px;
-            color: #667eea;
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.9);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
         }
         
-        .loading-spinner {
-            font-size: 48px;
-            animation: spin 1s linear infinite;
+        .modal.active {
+            display: flex;
         }
         
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 1200px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: #2C5F7A;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        .modal-body {
+            padding: 60px 40px 40px;
+        }
+        
+        .modal-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .modal-audio {
+            width: 100%;
+            margin: 20px 0;
         }
         
         /* MOBILE */
         @media (max-width: 768px) {
-            .search-container {
-                flex-direction: column;
-            }
-            
-            .search-input-wrapper {
-                min-width: 100%;
-            }
-            
-            .filters-bar {
-                justify-content: center;
-            }
+            header h1 { font-size: 32px; }
+            .search-container { flex-direction: column; }
+            .results-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- HEADER -->
         <header>
             <h1>🎸 Prof de Basse</h1>
             <div class="subtitle">
-                Recherche Universelle - 1125+ Ressources
+                Moteur de Recherche Complet - Toutes vos ressources au même endroit
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="statMP3">99</div>
+                    <div class="stat-label">MP3</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="statPDF">71</div>
+                    <div class="stat-label">PDFs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="statImages">600+</div>
+                    <div class="stat-label">Pages</div>
+                </div>
             </div>
         </header>
         
-        <!-- BARRE DE RECHERCHE STICKY -->
+        <!-- SEARCH BAR STICKY -->
         <div class="search-bar">
             <div class="search-container">
-                <div class="search-input-wrapper">
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        placeholder="🔍 Rechercher : 'gamme pentatonique mineure', 'So What', 'funk patterns'..."
-                        autocomplete="off"
-                    >
-                    <span class="search-icon">🔍</span>
-                </div>
-                <a href="advanced-search.html" class="advanced-search-link">
-                    🎯 Recherche Avancée
-                </a>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="🔍 Rechercher : 'So What', 'funk patterns', 'gamme pentatonique', 'Track 12'..."
+                    autocomplete="off"
+                >
+                <button class="search-button" onclick="performSearch()">
+                    🔍 Rechercher
+                </button>
             </div>
             
-            <div class="filters-bar" id="filtersBar">
-                <div class="filter-chip active" data-filter="type" data-value="all">
+            <div class="filters-bar">
+                <div class="filter-chip active" data-type="all" onclick="filterByType('all')">
                     📚 Tout
                 </div>
-                <div class="filter-chip" data-filter="type" data-value="mp3">
+                <div class="filter-chip" data-type="mp3" onclick="filterByType('mp3')">
                     🎵 MP3
                 </div>
-                <div class="filter-chip" data-filter="type" data-value="pdf">
+                <div class="filter-chip" data-type="pdf" onclick="filterByType('pdf')">
                     📄 PDF
                 </div>
-                <div class="filter-chip" data-filter="type" data-value="image">
+                <div class="filter-chip" data-type="image" onclick="filterByType('image')">
                     🖼️ Images
                 </div>
-                <div class="filter-chip" data-filter="style" data-value="funk">
-                    🎸 Funk
-                </div>
-                <div class="filter-chip" data-filter="style" data-value="jazz">
-                    🎺 Jazz
-                </div>
-                <div class="filter-chip" data-filter="style" data-value="slap">
-                    👋 Slap
+                <div class="filter-chip" data-type="html" onclick="filterByType('html')">
+                    📝 HTML
                 </div>
             </div>
             
             <div class="search-stats" id="searchStats">
-                Chargement de l'index...
+                Prêt à rechercher...
             </div>
         </div>
         
-        <!-- RÉSULTATS -->
-        <div class="results-container" id="resultsContainer">
-            <div class="loading">
-                <div class="loading-spinner">⏳</div>
-                <p>Chargement du moteur de recherche...</p>
+        <!-- RESULTS -->
+        <div class="results-section">
+            <div class="results-grid" id="resultsGrid">
+                <!-- Results will be injected here -->
             </div>
         </div>
     </div>
     
-    <!-- MOTEUR DE RECHERCHE -->
-    <script src="search-engine-pro.js"></script>
+    <!-- MODAL -->
+    <div class="modal" id="resourceModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Resource content will be injected here -->
+            </div>
+        </div>
+    </div>
     
     <script>
-        // Instance du moteur
-        const searchEngine = new ProfDeBasseSearch();
+        // ==========================================
+        // BASE DE DONNÉES DES RESSOURCES
+        // ==========================================
         
-        // Filtres actifs
-        let activeFilters = {
-            type: 'all',
-            style: null,
-            level: null
-        };
+        const GITHUB_BASE = 'https://11drumboy11.github.io/Prof-de-basse';
         
-        // Initialisation
+        let allResources = [];
+        let filteredResources = [];
+        let activeFilter = 'all';
+        
+        // Charger les ressources au démarrage
         async function init() {
-            const success = await searchEngine.init('mega-search-index.json');
+            allResources = await loadAllResources();
+            filteredResources = allResources;
+            displayResults(allResources);
+            updateStats();
+        }
+        
+        // Charger toutes les ressources depuis le repo GitHub
+        async function loadAllResources() {
+            const resources = [];
             
-            if (success) {
-                const stats = searchEngine.getStats();
-                document.getElementById('searchStats').textContent = 
-                    `${stats.total} ressources indexées - Recherche prête ✅`;
-                
-                // Afficher tous les résultats par défaut
-                displayResults(searchEngine.megaIndex);
-            } else {
-                document.getElementById('resultsContainer').innerHTML = `
-                    <div class="no-results">
-                        <div class="no-results-icon">⚠️</div>
-                        <h2>Erreur de chargement</h2>
-                        <p>Impossible de charger l'index de recherche.</p>
-                    </div>
-                `;
+            // 1. MP3 - 70s Funk & Disco (Track 01-99)
+            for (let i = 1; i <= 99; i++) {
+                const trackNum = i.toString().padStart(2, '0');
+                resources.push({
+                    id: `mp3-70funk-${trackNum}`,
+                    title: `Track ${trackNum} - 70s Funk & Disco`,
+                    type: 'mp3',
+                    url: `${GITHUB_BASE}/Methodes/70%20Funk%20&%20Disco%20bass%20MP3/Track%20${trackNum}.mp3`,
+                    method: '70s Funk & Disco',
+                    track: trackNum,
+                    tags: ['funk', 'disco', 'bass', 'method'],
+                    searchText: `track ${trackNum} 70s funk disco bass method`
+                });
             }
-        }
-        
-        // Recherche
-        function performSearch() {
-            const query = document.getElementById('searchInput').value;
-            const results = searchEngine.search(query, activeFilters);
-            displayResults(results);
             
-            // Stats
-            document.getElementById('searchStats').textContent = 
-                `${results.length} résultat(s) trouvé(s)`;
+            // 2. PDFs - Théorie
+            const theoryPDFs = [
+                { name: 'Armure - Tonalités', file: 'Armure%20-%20Tonalit%C3%A9s.pdf' },
+                { name: 'Gamme Majeure Harmonisée', file: 'Gamme%20majeure%20harmonis%C3%A9e.pdf' },
+                { name: 'Intervalles', file: 'Intervalles.pdf' },
+                { name: 'Les Modes', file: 'Les%20modes.pdf' },
+                { name: 'Pentatoniques', file: 'Pentatoniques.pdf' }
+            ];
+            
+            theoryPDFs.forEach(pdf => {
+                resources.push({
+                    id: `pdf-theory-${pdf.file}`,
+                    title: pdf.name,
+                    type: 'pdf',
+                    url: `${GITHUB_BASE}/Theorie/${pdf.file}`,
+                    category: 'theory',
+                    tags: ['theory', 'pdf', 'théorie'],
+                    searchText: `${pdf.name.toLowerCase()} theory théorie pdf`
+                });
+            });
+            
+            // 3. Méthodes converties en HTML avec pages
+            const methods = [
+                {
+                    name: '70s Funk & Disco Bass',
+                    folder: '70%20Funk%20%26%20Disco%20bass_with_index',
+                    pages: 82,
+                    prefix: '70funk'
+                },
+                {
+                    name: 'Real Book Funk Soul',
+                    folder: 'Real%20book%20funk%20soul_with_index',
+                    pages: 105,
+                    prefix: 'rbfunk'
+                }
+            ];
+            
+            methods.forEach(method => {
+                // Page HTML de navigation
+                resources.push({
+                    id: `html-${method.prefix}`,
+                    title: `${method.name} - Navigation`,
+                    type: 'html',
+                    url: `${GITHUB_BASE}/Methodes/${method.folder}/index_local.html`,
+                    method: method.name,
+                    tags: ['method', 'navigation', 'html'],
+                    searchText: `${method.name.toLowerCase()} navigation index`
+                });
+                
+                // Pages individuelles (images)
+                for (let i = 0; i < method.pages; i++) {
+                    const pageNum = i.toString().padStart(4, '0');
+                    resources.push({
+                        id: `page-${method.prefix}-${pageNum}`,
+                        title: `${method.name} - Page ${i + 1}`,
+                        type: 'image',
+                        url: `${GITHUB_BASE}/Methodes/${method.folder}/assets/page_${pageNum}.jpg`,
+                        method: method.name,
+                        page: i + 1,
+                        tags: ['page', 'sheet music', 'partition'],
+                        searchText: `${method.name.toLowerCase()} page ${i + 1} partition`
+                    });
+                }
+            });
+            
+            return resources;
         }
         
-        // Afficher résultats
+        // ==========================================
+        // RECHERCHE
+        // ==========================================
+        
+        function performSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            if (query === '') {
+                filteredResources = allResources;
+            } else {
+                filteredResources = allResources.filter(resource => {
+                    return resource.searchText.includes(query) ||
+                           resource.title.toLowerCase().includes(query) ||
+                           resource.tags.some(tag => tag.includes(query));
+                });
+            }
+            
+            // Appliquer le filtre actif
+            if (activeFilter !== 'all') {
+                filteredResources = filteredResources.filter(r => r.type === activeFilter);
+            }
+            
+            displayResults(filteredResources);
+            updateSearchStats(query, filteredResources.length);
+        }
+        
+        function filterByType(type) {
+            activeFilter = type;
+            
+            // Update active filter chip
+            document.querySelectorAll('.filter-chip').forEach(chip => {
+                chip.classList.remove('active');
+            });
+            document.querySelector(`[data-type="${type}"]`).classList.add('active');
+            
+            performSearch();
+        }
+        
+        // ==========================================
+        // AFFICHAGE
+        // ==========================================
+        
         function displayResults(results) {
-            const container = document.getElementById('resultsContainer');
+            const grid = document.getElementById('resultsGrid');
             
             if (results.length === 0) {
-                container.innerHTML = `
+                grid.innerHTML = `
                     <div class="no-results">
                         <div class="no-results-icon">🔍</div>
                         <h2>Aucun résultat</h2>
@@ -416,132 +583,162 @@
                 return;
             }
             
-            const html = results.map(resource => createResultCard(resource)).join('');
-            container.innerHTML = html;
+            const html = results.map(resource => createResourceCard(resource)).join('');
+            grid.innerHTML = html;
         }
         
-        // Créer carte résultat
-        function createResultCard(resource) {
+        function createResourceCard(resource) {
             const icon = getTypeIcon(resource.type);
-            const excerpt = getExcerpt(resource);
             const tags = getTags(resource);
             
             return `
-                <div class="result-card" onclick="openResource('${resource.url}')">
+                <div class="result-card" onclick='openResource(${JSON.stringify(resource)})'>
                     <div class="result-header">
                         <div class="result-icon">${icon}</div>
                         <div class="result-title">${resource.title}</div>
-                        <div class="result-type">${resource.type.toUpperCase()}</div>
+                        <div class="result-type">${resource.type}</div>
                     </div>
-                    
-                    ${excerpt ? `<div class="result-excerpt">${excerpt}</div>` : ''}
                     
                     <div class="result-meta">
                         ${tags.map(tag => `<span class="meta-tag">${tag}</span>`).join('')}
                     </div>
                     
                     <div class="result-actions">
-                        <button class="action-btn primary" onclick="event.stopPropagation(); openResource('${resource.url}')">
+                        <button class="action-btn primary" onclick="event.stopPropagation(); openResourceDirect('${resource.url}')">
                             🔗 Ouvrir
                         </button>
                         <button class="action-btn" onclick="event.stopPropagation(); copyUrl('${resource.url}')">
-                            📋 Copier URL
+                            📋 Copier
                         </button>
                     </div>
                 </div>
             `;
         }
         
-        // Helper functions
         function getTypeIcon(type) {
             const icons = {
                 'mp3': '🎵',
                 'pdf': '📄',
                 'image': '🖼️',
-                'html': '📝',
-                'data': '📊'
+                'html': '📝'
             };
             return icons[type] || '📁';
         }
         
-        function getExcerpt(resource) {
-            const text = resource.metadata?.ocr_text || resource.metadata?.description || '';
-            if (!text) return '';
-            
-            const maxLength = 200;
-            if (text.length <= maxLength) return text;
-            return text.substring(0, maxLength) + '...';
-        }
-        
         function getTags(resource) {
             const tags = [];
-            
-            if (resource.metadata?.page) tags.push(`Page ${resource.metadata.page}`);
-            if (resource.metadata?.track) tags.push(`Track ${resource.metadata.track}`);
-            if (resource.metadata?.composer) tags.push(resource.metadata.composer);
-            if (resource.metadata?.tempo) tags.push(`♩=${resource.metadata.tempo}`);
-            if (resource.metadata?.key) tags.push(resource.metadata.key);
-            
-            const styles = resource.metadata?.styles || [];
-            const techniques = resource.metadata?.techniques || [];
-            tags.push(...styles, ...techniques);
-            
-            return tags.slice(0, 8); // Max 8 tags
+            if (resource.method) tags.push(resource.method);
+            if (resource.track) tags.push(`Track ${resource.track}`);
+            if (resource.page) tags.push(`Page ${resource.page}`);
+            if (resource.category) tags.push(resource.category);
+            return tags.slice(0, 4);
         }
         
-        function openResource(url) {
+        // ==========================================
+        // ACTIONS
+        // ==========================================
+        
+        function openResource(resource) {
+            const modal = document.getElementById('resourceModal');
+            const modalBody = document.getElementById('modalBody');
+            
+            let content = `
+                <h2>${resource.title}</h2>
+                <div class="result-meta" style="margin: 20px 0;">
+                    ${getTags(resource).map(tag => `<span class="meta-tag">${tag}</span>`).join('')}
+                </div>
+            `;
+            
+            if (resource.type === 'mp3') {
+                content += `
+                    <audio controls class="modal-audio" src="${resource.url}">
+                        Votre navigateur ne supporte pas l'audio HTML5.
+                    </audio>
+                    <p>
+                        <a href="${resource.url}" target="_blank" class="action-btn primary" style="display: inline-block; text-decoration: none;">
+                            🔗 Ouvrir dans un nouvel onglet
+                        </a>
+                    </p>
+                `;
+            } else if (resource.type === 'image') {
+                content += `
+                    <img src="${resource.url}" class="modal-image" alt="${resource.title}">
+                    <p>
+                        <a href="${resource.url}" target="_blank" class="action-btn primary" style="display: inline-block; text-decoration: none;">
+                            🔗 Voir en plein écran
+                        </a>
+                    </p>
+                `;
+            } else {
+                content += `
+                    <p style="margin: 20px 0;">
+                        <a href="${resource.url}" target="_blank" class="action-btn primary" style="display: inline-block; padding: 15px 30px; text-decoration: none;">
+                            🔗 Ouvrir la ressource
+                        </a>
+                    </p>
+                `;
+            }
+            
+            modalBody.innerHTML = content;
+            modal.classList.add('active');
+        }
+        
+        function openResourceDirect(url) {
             window.open(url, '_blank');
+        }
+        
+        function closeModal() {
+            document.getElementById('resourceModal').classList.remove('active');
         }
         
         function copyUrl(url) {
             navigator.clipboard.writeText(url).then(() => {
-                alert('✅ URL copiée : ' + url);
+                alert('✅ URL copiée !');
             });
         }
         
-        // Event listeners
-        document.getElementById('searchInput').addEventListener('input', 
-            debounce(performSearch, 300)
-        );
+        // ==========================================
+        // STATS
+        // ==========================================
         
-        // Filtres
-        document.getElementById('filtersBar').addEventListener('click', (e) => {
-            if (e.target.classList.contains('filter-chip')) {
-                const filter = e.target.dataset.filter;
-                const value = e.target.dataset.value;
-                
-                // Toggle active
-                document.querySelectorAll(`[data-filter="${filter}"]`).forEach(chip => {
-                    chip.classList.remove('active');
-                });
-                e.target.classList.add('active');
-                
-                // Update filters
-                if (value === 'all') {
-                    activeFilters[filter] = filter === 'type' ? 'all' : null;
-                } else {
-                    activeFilters[filter] = value;
-                }
-                
-                performSearch();
-            }
-        });
-        
-        // Debounce helper
-        function debounce(func, wait) {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-            };
+        function updateStats() {
+            const mp3Count = allResources.filter(r => r.type === 'mp3').length;
+            const pdfCount = allResources.filter(r => r.type === 'pdf').length;
+            const imageCount = allResources.filter(r => r.type === 'image').length;
+            
+            document.getElementById('statMP3').textContent = mp3Count;
+            document.getElementById('statPDF').textContent = pdfCount;
+            document.getElementById('statImages').textContent = imageCount + '+';
         }
         
-        // Init au chargement
+        function updateSearchStats(query, count) {
+            const stats = document.getElementById('searchStats');
+            if (query) {
+                stats.textContent = `${count} résultat(s) pour "${query}"`;
+            } else {
+                stats.textContent = `${count} ressources affichées`;
+            }
+        }
+        
+        // ==========================================
+        // EVENT LISTENERS
+        // ==========================================
+        
+        document.getElementById('searchInput').addEventListener('input', performSearch);
+        document.getElementById('searchInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') performSearch();
+        });
+        
+        // Close modal on click outside
+        document.getElementById('resourceModal').addEventListener('click', (e) => {
+            if (e.target.id === 'resourceModal') closeModal();
+        });
+        
+        // Init
         init();
+        
+        console.log('%c🎸 Prof de Basse - Moteur de Recherche', 'font-size: 20px; color: #2C5F7A; font-weight: bold;');
+        console.log('Toutes les ressources sont chargées depuis GitHub Pages');
     </script>
 </body>
 </html>
